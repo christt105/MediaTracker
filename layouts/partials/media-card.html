@@ -1,0 +1,35 @@
+<div class="media-card" 
+     data-title="{{ lower .Title }}" 
+     data-year="{{ .Params.year }}" 
+     data-type="{{ .Params.type }}">
+
+    <div class="media-poster">
+        <a href="{{ .Permalink }}">
+            {{ $img := .Params.image | default "/images/default-poster.png" }}
+            <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+        </a>
+        
+        {{ if .Params.fa_icon }}
+        <div class="media-type-icon">
+            <i class="{{ .Params.fa_icon }}"></i>
+        </div>
+        {{ end }}
+
+        {{ if and (eq .Params.status "Acabado") .Params.rating }}
+        <div class="media-rating">
+            ★ {{ .Params.rating }}
+        </div>
+        {{ end }}
+    </div>
+
+    <div class="media-info">
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <small>
+            {{ if eq .Params.status "Acabado" }}
+                {{ .Date.Format "2 Jan 2006" }}
+            {{ else }}
+                {{ .Params.status | default "En curso" }}
+            {{ end }}
+        </small>
+    </div>
+</div>

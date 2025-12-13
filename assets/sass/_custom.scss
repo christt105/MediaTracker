@@ -1,0 +1,71 @@
+.media-grid {
+    display: grid;
+    /* Esto crea columnas automáticas responsivas */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.media-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.media-card:hover {
+    transform: scale(1.03); /* Efecto zoom al pasar el ratón */
+}
+
+.media-poster img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3; /* Mantiene proporción de poster */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.media-type-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Títulos de sección con iconos */
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--secondary); /* Usa variables del theme */
+    padding-bottom: 10px;
+}
+
+.section-divider {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px dashed #ccc;
+}
+
+/* Ajustes para el Rating (Estrellas) */
+.media-rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #ffc107;
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* La Grid (Recapitulando de la respuesta anterior) */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Tarjetas un pelín más pequeñas para home */
+    gap: 20px;
+}

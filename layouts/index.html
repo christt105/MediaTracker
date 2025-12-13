@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{{- $defaultColor := .Site.Params.defaultColor | default "auto" -}}
+
+{{- if eq $defaultColor "dark" -}}
+<html lang="{{ .Site.LanguageCode }}" class="dark">
+{{- else if eq $defaultColor "light" -}}
+<html lang="{{ .Site.LanguageCode }}" class="light">
+{{- else -}}
+<html lang="{{ .Site.LanguageCode }}">
+{{- end -}}
+
+{{- partial "head.html" . -}}
+
+<body data-theme="{{ $defaultColor }}" class="notransition">
+    {{- partial "scriptsBodyStart.html" . -}}
+    
+    {{- partial "header.html" . -}}
+    
+    <div class="wrapper">
+        
+        <div class="profile-header">
+            {{ partial "bio" . }}
+        </div>
+        
+        <main aria-label="Content">
+            
+            {{ $media := where .Site.RegularPages "Params.type" "in" (slice "movie" "tv" "videogame" "season") }}
+
+            {{ $enCurso := where $media "Params.status" "ne" "Acabado" }}
+            {{ $enCurso = where $enCurso "Params.status" "ne" "Sin Empezar" }}
+            
+            {{ if gt (len $enCurso) 0 }}
+            <div class="home-section">
+                <h3 class="section-title">En Curso / Viendo ahora</h3>
+                <div class="media-grid">
+                    {{ range $enCurso.ByLastmod.Reverse }}
+                        {{ partial "media-card.html" . }}
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
+            {{ if and (gt (len $enCurso) 0) (gt (len $media) 0) }}
+            <hr class="section-divider">
+            {{ end }}
+
+            {{ $completado := where $media "Params.status" "eq" "Acabado" }}
+
+            <div class="home-section">
+                <h3 class="section-title">Historial Completo</h3>
+                <div class="media-grid">
+                    {{ range first 20 $completado.ByDate.Reverse }}
+                         {{ partial "media-card.html" . }}
+                    {{ end }}
+                </div>
+                
+                {{ if gt (len $completado) 20 }}
+                <div style="text-align: center; margin-top: 30px;">
+                    <p>... y {{ sub (len $completado) 20 }} más.</p>
+                </div>
+                {{ end }}
+            </div>
+
+        </main>
+    </div>
+
+    {{- partial "footer.html" . -}}
+    {{- partial "scriptsBodyEnd.html" . -}}
+</body>
+</html>
