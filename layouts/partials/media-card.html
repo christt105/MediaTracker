@@ -26,7 +26,8 @@
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <small>
             {{ if eq .Params.status "Acabado" }}
-                {{ .Date.Format "2 Jan 2006" }}
+                {{ $configDateFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
+                {{ time.Format $configDateFormat .Date }}
             {{ else }}
                 {{ .Params.status | default "En curso" }}
             {{ end }}
