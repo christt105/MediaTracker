@@ -6,7 +6,7 @@
     <div class="media-poster">
         <a href="{{ .Permalink }}">
             {{ $img := .Params.image | default "/images/default-poster.png" }}
-            <img src="{{ $img }}" alt="{{ .Title }}" loading="lazy">
+            <img src="{{ $img | relURL }}" alt="{{ .Title }}" loading="lazy">
         </a>
         
         {{ if .Params.fa_icon }}

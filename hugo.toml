@@ -1,5 +1,5 @@
 title = "Media Tracker"
-baseURL = 'https://christt105.github.io/MediaTracker'
+baseURL = 'https://christt105.github.io/MediaTracker/'
 languageCode = 'es-es'
 defaultContentLanguage = "es"
 enableEmoji = true
