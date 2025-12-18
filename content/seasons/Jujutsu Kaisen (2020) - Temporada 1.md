@@ -7,7 +7,8 @@ rewatches: []
 season_number: 1
 serie: Jujutsu Kaisen (2020)
 status: Acabado
-tags: anime
+tags:
+- anime
 title: Jujutsu Kaisen - Temporada 1
 type: season
 ---

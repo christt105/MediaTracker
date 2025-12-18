@@ -7,7 +7,8 @@ rewatches: []
 season_number: 4
 serie: Ataque a los Titanes (2013)
 status: Acabado
-tags: anime
+tags:
+- anime
 title: 'Ataque a los Titanes: Final Season - The Final Chapters'
 type: season
 ---

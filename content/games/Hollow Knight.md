@@ -29,6 +29,7 @@ status: Acabado
 steamgriddb_id: 7545
 tags:
 - completado100
+- platinado
 title: Hollow Knight
 type: videogame
 ---

@@ -11,7 +11,7 @@ overview: Experimenta las maravillas del mundo como nunca antes en esta épica d
 rating: null
 release_date: '2022-05-23'
 rewatches: []
-status: Pausado
+status: Sin Empezar
 tags: []
 temporadas:
 - Planeta prehistórico (2022) - Temporada 1

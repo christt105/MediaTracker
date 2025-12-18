@@ -7,7 +7,8 @@ rewatches: []
 season_number: 1
 serie: Vinland Saga (2019)
 status: Acabado
-tags: anime
+tags:
+- anime
 title: Vinland Saga - Temporada 1
 type: season
 ---

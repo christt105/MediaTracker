@@ -17,7 +17,8 @@ release_date: '2018-12-21'
 rewatches: []
 status: Acabado
 steamgriddb_id: 5284821
-tags: []
+tags:
+- pokemon
 title: Pokémon Following Renegade Platinum
 type: videogame
 ---
