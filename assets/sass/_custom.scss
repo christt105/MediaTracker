@@ -69,3 +69,62 @@
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Tarjetas un pelín más pequeñas para home */
     gap: 20px;
 }
+
+/* --- Estilos para la agrupación por años --- */
+.year-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    opacity: 0.3; /* Efecto visual sutil */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.year-group:first-of-type .year-title {
+    margin-top: 10px; /* Menos margen para el primer año */
+    opacity: 1; /* El año actual se ve fuerte */
+    color: var(--primary); /* Usa el color de tu tema */
+}
+
+/* --- Estilos para el botón de Pausados/Abandonados --- */
+.hidden-section-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#toggle-hidden-btn {
+    background-color: transparent;
+    border: 2px dashed #888;
+    color: inherit;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+#toggle-hidden-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: rgba(0,0,0,0.05);
+}
+
+#toggle-hidden-btn.active {
+    border-style: solid;
+    margin-bottom: 20px;
+}
+
+
+
+.subsection-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
