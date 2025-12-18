@@ -24,12 +24,33 @@
 
             {{ $media := where .Site.RegularPages "Params.type" "in" (slice "movie" "tv" "videogame" "season") }}
 
+            {{ $mediaClean := slice }}
+
+            {{/* Filter tv that contains seasons */}}
+            {{ range $media }}
+                {{ $esPadreSinFecha := false }}
+
+                {{ if or (not (eq .Params.type "tv")) (not .Params.temporadas) (eq (len .Params.temporadas) 0) }}
+                    {{ $mediaClean = $mediaClean | append . }}
+                    {{ continue }}
+                {{ end }}
+
+                {{ if (eq .Date.Year 1) }}
+                    {{ $esPadreSinFecha = true }}
+                {{ end }}
+
+                {{ if not $esPadreSinFecha }}
+                    {{ $mediaClean = $mediaClean | append . }}
+                {{ end }}
+            {{ end }}
+
+            {{ $media = $mediaClean }}
+
             {{ $acabados := where $media "Params.status" "eq" "Acabado" }}
             {{ $pausados := where $media "Params.status" "eq" "Pausado" }}
             {{ $abandonados := where $media "Params.status" "eq" "Abandonado" }}
             
             {{ $enCurso := where $media "Params.status" "not in" (slice "Acabado" "Pausado" "Abandonado" "Sin Empezar") }}
-
 
             {{ if gt (len $enCurso) 0 }}
             <div class="home-section">
@@ -82,7 +103,13 @@
             {{ range $acabadosSorted.GroupByDate "2006" }}
                 
                 <div class="year-group">
-                    <h2 class="year-title">{{ .Key }}</h2> <div class="media-grid">
+                    <h2 class="year-title">
+                        {{ if eq .Key "0001" }}
+                            No recuerdo cuándo
+                        {{ else }}
+                            {{ .Key }}
+                        {{ end }}
+                    </h2> <div class="media-grid">
                         {{ range .Pages }}
                             {{ partial "media-card.html" . }}
                         {{ end }}
