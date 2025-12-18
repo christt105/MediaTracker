@@ -17,7 +17,8 @@ release_date: '2022-11-18'
 rewatches: []
 status: Acabado
 steamgriddb_id: 5331702
-tags: []
+tags:
+- pokemon
 title: Pokémon Scarlet
 type: videogame
 ---

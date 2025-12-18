@@ -10,7 +10,7 @@ genres:
 image: images/covers/tmdb_b5Jb7GoQaqIXy4VEdnQa0UrQZI.jpg
 overview: El Gato con Botas se embarca en un viaje épico para encontrar al mítico
   Último Deseo y recuperar sus nueve vidas.
-rating: null
+rating: '7'
 release_date: '2022-12-07'
 rewatches:
 - 2024-08-03

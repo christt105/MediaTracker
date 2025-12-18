@@ -21,7 +21,8 @@ rewatches: []
 status: Acabado
 steam_appid: null
 steamgriddb_id: 1329
-tags: []
+tags:
+- platinado
 title: Prototype 2
 type: videogame
 ---

@@ -15,7 +15,8 @@ rating: null
 release_date: '2002-10-03'
 rewatches: []
 status: Acabado
-tags: []
+tags:
+- anime
 temporadas: []
 title: Naruto
 tmdb_id: 46260
