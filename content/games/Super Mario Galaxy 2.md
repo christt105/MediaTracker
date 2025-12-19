@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_e09e179ebfb849e4fea02fcd8a7ab949_banner.png
+banner_image: images/covers/steamgriddb_b5141428fc38a8f2a5229286449727f1.png
 date: '2024-10-06'
 developer: Nintendo EAD
 genres:
 - Platform
 - Adventure
 igdb_id: 1078
-image: images/covers/img_06ec4423021f098da760fa0855b6b94f.png
+image: images/covers/steamgriddb_e407ebda50100920810c87e64a79abd8.png
 overview: Shining stardust falls on the Mushroom Kingdom once every hundred years.
   That time had come again…  “Dear Mario, Would you like to share some cake while
   we watch the shooting stars? Meet me at the castle! Peach”  Mario ran through the

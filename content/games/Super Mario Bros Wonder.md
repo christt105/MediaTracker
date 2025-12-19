@@ -1,11 +1,11 @@
 ---
-banner_image: images/covers/img_242c34952aeead61882e19d547893e27_banner.png
+banner_image: images/covers/steamgriddb_6f99be860d58f3411dc03da94a6db955.png
 date: '2024-02-17'
 developer: Nintendo EPD Production Group No. 10
 genres:
 - Platform
 igdb_id: 254339
-image: images/covers/img_d9dfe847b0869400f8c41fb63909d708.png
+image: images/covers/steamgriddb_66da3b21fe18692332284c64e08b8e02.png
 overview: ' '
 platforms:
 - Steam Deck

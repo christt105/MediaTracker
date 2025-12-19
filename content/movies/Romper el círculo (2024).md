@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_8yPSYhooj8nyBbmV3GVdLDwuE7e_banner.jpg
+banner_image: images/covers/tmdb_8yPSYhooj8nyBbmV3GVdLDwuE7e.jpg
 date: '2024-08-09'
 genres:
 - Drama

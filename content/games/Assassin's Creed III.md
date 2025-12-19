@@ -1,11 +1,11 @@
 ---
-banner_image: images/covers/img_213ccf5ccee43452bcc19b46069ff5c4_banner.png
+banner_image: images/covers/steamgriddb_1b291d5ca549452863d9ae59be207248.png
 date: '2013-02-07'
 developer: Ubisoft Montreal
 genres:
 - Adventure
 igdb_id: 1266
-image: images/covers/img_20a75cf0e428ec0609eaa189b3606ed8.png
+image: images/covers/steamgriddb_5d032420ce52894fa826e0fea5a60ac5.png
 overview: ' '
 platforms:
 - PS3

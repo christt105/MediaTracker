@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_vmBSlRZYKfNdaDZ7wGkrSNbmdMI_banner.jpg
+banner_image: images/covers/tmdb_vmBSlRZYKfNdaDZ7wGkrSNbmdMI.jpg
 date: '2023-09-21'
 genres:
 - Acción

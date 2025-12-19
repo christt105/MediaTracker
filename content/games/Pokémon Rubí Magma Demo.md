@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_84b417d25a2e50d62544c8c9b87f5350_banner.jpg
+banner_image: images/covers/img_84b417d25a2e50d62544c8c9b87f5350.jpg
 date: '2023-11-03'
 developer: Game Freak
 genres:

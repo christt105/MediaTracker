@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_7fb1745ffab78af2ab5dff88f536efdb_banner.png
+banner_image: images/covers/steamgriddb_0d5a4a5a748611231b945d28436b8ece.png
 date: '2023-12-13'
 developer: The Game Kitchen
 genres:
@@ -9,7 +9,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 26820
-image: images/covers/img_3a64fc8cbd18d735f935188c87ea593f.jpg
+image: images/covers/steamgriddb_25c2c7b955a7e2580daa62534486ec09.jpg
 overview: A foul curse has fallen upon the land of Cvstodia and all its inhabitants
   - it is simply known as The Miracle.  Play as The Penitent One - a sole survivor
   of the massacre of the ‘Silent Sorrow’. Trapped in an endless cycle of death and

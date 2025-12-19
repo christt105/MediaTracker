@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_ce5938e117e36d92ef13e0ab42330ba4_banner.jpg
+banner_image: images/covers/steamgriddb_8e50134dc2d9e291fde5c0a5563fca18.jpg
 date: '2013-03-28'
 developer: Ubisoft Montreal
 genres:
 - Shooter
 - Adventure
 igdb_id: 529
-image: images/covers/img_85cc8bde9830111322a2b0daf3f1a96d.png
+image: images/covers/steamgriddb_5d4acfa10303c58039e94acd803e9482.png
 overview: Far beyond the limits of civilization lies an island, a lawless place ruled
   by violence and human suffering, where your only escape is through drugs or the
   muzzle of a gun. This is where you find yourself, stranded in a place that has forgotten

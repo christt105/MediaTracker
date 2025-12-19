@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_15efbcb8972f0110b1afef26488cb0e3_banner.jpg
+banner_image: images/covers/steamgriddb_d6c625ffc79cd2e7e1668ff078053911.jpg
 date: '2024-07-13'
 developer: Playdead
 genres:
@@ -8,7 +8,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 7342
-image: images/covers/img_8bbaad99ae9077689ac6ec1960fc268e.png
+image: images/covers/steamgriddb_a8b4e1711d6984d13cb9050939f14dc3.png
 overview: ' '
 platforms:
 - Steam Deck

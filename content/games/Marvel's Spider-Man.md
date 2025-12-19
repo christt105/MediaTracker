@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_a34fd6d9a68b78f88a666672e11e0cb1_banner.png
+banner_image: images/covers/steamgriddb_fd512441a1a791770a6fa573d688bff5.png
 date: '2019-01-19'
 developer: Insomniac Games
 genres:
 - Hack and slash/Beat 'em up
 - Adventure
 igdb_id: 19565
-image: images/covers/img_1ad1ebe9d2ac0f2685400a59ad58ffd3.png
+image: images/covers/steamgriddb_1bc38477bc1f540837e39eb0b8dbb520.png
 overview: ' '
 platforms:
 - PS4

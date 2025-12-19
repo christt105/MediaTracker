@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_24146ff560777db4a415d23792fb9ccc_banner.png
+banner_image: images/covers/steamgriddb_22ac3c5a5bf0b520d281c122d1490650.png
 date: '2014-06-29'
 developer: Ubisoft Montreal
 genres:
 - Shooter
 - Adventure
 igdb_id: 1121
-image: images/covers/img_0f9802932753e1b5341f3ef613c2ebce.png
+image: images/covers/steamgriddb_df827da31d664707840bc6c221f22d72.png
 overview: You play as Aiden Pearce, a brilliant hacker and former thug, whose criminal
   past led to a violent family tragedy. While seeking justice for those events, you'll
   monitor and hack those around you by manipulating the ctOS from the palm of your

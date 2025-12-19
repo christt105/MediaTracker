@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_i2GVEvltEu3BXn5crBSxgKuTaca_banner.jpg
+banner_image: images/covers/tmdb_i2GVEvltEu3BXn5crBSxgKuTaca.jpg
 date: '2025-08-10'
 genres:
 - Terror

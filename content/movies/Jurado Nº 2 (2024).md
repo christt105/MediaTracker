@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_wHXyGLjYPm4bHNKFQPCfYWiTeSH_banner.jpg
+banner_image: images/covers/tmdb_wHXyGLjYPm4bHNKFQPCfYWiTeSH.jpg
 date: '2025-06-25'
 genres:
 - Drama

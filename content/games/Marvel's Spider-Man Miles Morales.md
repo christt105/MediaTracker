@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_b95bd53ca8958dff3d1183388d1abc65_banner.png
+banner_image: images/covers/steamgriddb_1cdbe1bd17b0d6788eaaf07c01e0899f.png
 date: '2023-02-21'
 developer: Insomniac Games
 genres:
 - Hack and slash/Beat 'em up
 - Adventure
 igdb_id: 134581
-image: images/covers/img_a8cfe8fb5c5225d7fe1af931f8157192.png
+image: images/covers/steamgriddb_631b76d230d158d465ccc38f9e7d569c.png
 overview: ' '
 platforms:
 - PC

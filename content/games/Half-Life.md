@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_2d189820ee94cc46e4f76372ff6178ad_banner.png
+banner_image: images/covers/steamgriddb_28b5c16e94780f8c5c1b9431a8a4a164.png
 date: null
 developer: Valve
 genres:
@@ -7,7 +7,7 @@ genres:
 - Puzzle
 - Adventure
 igdb_id: 231
-image: images/covers/img_53029ec60b14e5d4309b6918d1758428.png
+image: images/covers/steamgriddb_79c9b8bb1e04c2b1aaa4e28092959b6a.png
 overview: Dr. Gordon Freeman arrives late for work at 8:47 am in the Black Mesa Research
   Facility, using the advanced Black Mesa tram system that leads through the facility.
   He arrives at the Anomalous Materials Lab, his work place, and he is informed by

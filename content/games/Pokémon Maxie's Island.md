@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_1515b636cc992cb69653922f793cd262_banner.jpg
+banner_image: images/covers/img_1515b636cc992cb69653922f793cd262.jpg
 date: '2025-07-07'
 developer: wiz1989
 genres:

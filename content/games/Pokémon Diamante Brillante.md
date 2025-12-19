@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_b00dc5afc1eb493a348f986bb62c4404_banner.png
+banner_image: images/covers/steamgriddb_19c552afb2174ff2d58aff1b589b28c1.png
 date: '2021-12-13'
 developer: ILCA
 genres:
@@ -7,7 +7,7 @@ genres:
 - Turn-based strategy (TBS)
 - Adventure
 igdb_id: 144051
-image: images/covers/img_4f2ba232ff258764f0ba776532ac9fe4.png
+image: images/covers/steamgriddb_fa92ff9fa650495c0797c21e8587551a.png
 overview: ' '
 platforms:
 - Nintendo Switch

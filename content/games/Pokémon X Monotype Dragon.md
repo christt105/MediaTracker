@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_a55f2dcda716a2429e4c4e621e0e61fd_banner.jpg
+banner_image: images/covers/steamgriddb_6d77155f3c6738dd7245869d457c4a11.jpg
 date: null
 developer: Game Freak
 genres:
@@ -7,7 +7,7 @@ genres:
 - Turn-based strategy (TBS)
 - Adventure
 igdb_id: 2286
-image: images/covers/img_fd6d0b5d0e4e2c0b5a6ed1ae974348f4.png
+image: images/covers/steamgriddb_db5b8809adfe08d1a09022ef03516cf0.png
 overview: ' '
 rating: null
 related: []

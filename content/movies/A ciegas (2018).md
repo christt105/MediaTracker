@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_5EBEo1snvnTnrZVChSja0cjKolx_banner.jpg
+banner_image: images/covers/tmdb_5EBEo1snvnTnrZVChSja0cjKolx.jpg
 date: null
 genres:
 - Terror

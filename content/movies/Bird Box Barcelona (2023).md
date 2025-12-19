@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_7tu0bQi8Tw2BrOB5vFyUjVtWma0_banner.jpg
+banner_image: images/covers/tmdb_7tu0bQi8Tw2BrOB5vFyUjVtWma0.jpg
 date: '2023-07-16'
 genres:
 - Terror

@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_569d00ec965ff4c6043e6f3d446c0bfc_banner.png
+banner_image: images/covers/steamgriddb_a9e62051dc74e8b58a3347fb70078f1a.png
 date: '2023-10-20'
 developer: Nintendo EAD
 genres:
 - Platform
 - Adventure
 igdb_id: 1077
-image: images/covers/img_31b2c995e248c56070b620931b370f7f.png
+image: images/covers/steamgriddb_850660ba5cb014184e5cc0e6b3d4c6bb.png
 overview: Every hundred years, a huge comet flies by in the skies above the Mushroom
   Kingdom. One year, that comet filled the entire sky, and from it fell a stream of
   shooting stars. The Toads scooped up the Star Bits and brought them to the castle,

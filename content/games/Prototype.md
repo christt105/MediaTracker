@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_cdb73467b2e0588085f5cb9370d4ea4a_banner.jpg
+banner_image: images/covers/steamgriddb_08f90c1a417155361a5c4b8d297e0d78.jpg
 date: '2012-03-16'
 developer: Radical Entertainment
 genres:
@@ -7,7 +7,7 @@ genres:
 - Hack and slash/Beat 'em up
 - Adventure
 igdb_id: 570
-image: images/covers/img_8322496af8f50090641019683b5706fb.png
+image: images/covers/steamgriddb_b22f88e3aaffe96b7f562526237db167.png
 overview: The game follows Alexander J. Mercer (voiced by Barry Pepper) who wakes
   up in a morgue in the basement of Gentek, a genetic engineering company based in
   Manhattan, sending a pair of scientists that were just about to perform an autopsy

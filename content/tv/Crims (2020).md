@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_fBZEtFwjvdmp1oOQb1SOnqV8LCm_banner.jpg
+banner_image: images/covers/tmdb_fBZEtFwjvdmp1oOQb1SOnqV8LCm.jpg
 date: '2025-03-17'
 genres:
 - Crimen

@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_pOR4Aye28KLZ5Jogu8zc3yiqBpT_banner.jpg
+banner_image: images/covers/tmdb_pOR4Aye28KLZ5Jogu8zc3yiqBpT.jpg
 date: '2025-07-03'
 genres:
 - Suspense

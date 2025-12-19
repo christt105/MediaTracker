@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_b27d8b4dcb5601c330192b3dc0236e6f_banner.jpg
+banner_image: images/covers/steamgriddb_c90e274d55309db944076afb3ff9c391.jpg
 date: '2018-05-20'
 developer: Playdead
 genres:
@@ -8,7 +8,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 1331
-image: images/covers/img_b4504a11a92615f8639d03a8c89c6d0f.png
+image: images/covers/steamgriddb_691dc5b7272b343c9ea3ed9fa84b32f6.png
 overview: ' '
 platforms: []
 rating: null

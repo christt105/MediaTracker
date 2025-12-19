@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_coaPCIqQBPUZsOnJcWZxhaORcDT_banner.jpg
+banner_image: images/covers/tmdb_coaPCIqQBPUZsOnJcWZxhaORcDT.jpg
 date: '2024-04-29'
 genres:
 - Action & Adventure

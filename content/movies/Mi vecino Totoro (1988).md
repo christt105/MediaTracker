@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_95ozIP0A2fKaAXxwDxUEVn74Iux_banner.jpg
+banner_image: images/covers/tmdb_95ozIP0A2fKaAXxwDxUEVn74Iux.jpg
 date: '2023-12-29'
 genres:
 - Fantasía

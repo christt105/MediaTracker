@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_vQ5T84t8h4N2xAswNFW9fkVIyZq_banner.jpg
+banner_image: images/covers/tmdb_vQ5T84t8h4N2xAswNFW9fkVIyZq.jpg
 date: '2024-01-20'
 genres:
 - Misterio

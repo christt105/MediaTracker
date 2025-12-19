@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_vMTlir2E9mJN5PbM1DPran0LWjG_banner.jpg
+banner_image: images/covers/tmdb_vMTlir2E9mJN5PbM1DPran0LWjG.jpg
 date: '2022-02-13'
 genres:
 - Acción

@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_21fc29dfeb82b86d997ba0646af307b4_banner.png
+banner_image: images/covers/steamgriddb_f037f3c3ae59cd2f7d5e4f1afef1e95e.png
 date: '2023-09-22'
 developer: Pixelatto
 genres:
@@ -8,7 +8,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 118922
-image: images/covers/img_3a399fa52e278bb16d752936f42fdd4b.png
+image: images/covers/steamgriddb_92b0c9b21ac174782996bb3ade4849a5.png
 overview: ' '
 platforms:
 - Steam Deck

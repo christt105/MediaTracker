@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_aY7zv2pfk9H0QxaaL3PBjvalbKQ_banner.jpg
+banner_image: images/covers/tmdb_aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg
 date: null
 genres:
 - Crimen

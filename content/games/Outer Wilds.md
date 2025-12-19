@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_c9cf01d9e02adf772db0824666bccbac_banner.png
+banner_image: images/covers/steamgriddb_1166db2e6b57e62146edee2f05a5c885.png
 date: '2025-10-30'
 developer: Mobius Digital
 genres:
@@ -8,7 +8,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 11737
-image: images/covers/img_26cbba50576ba17e8bf3000028a3b274.jpg
+image: images/covers/steamgriddb_f3482a102a8dfa7ecdf57d63ec37872a.jpg
 overview: Welcome to the Space Program! You're the newest recruit of Outer Wilds Ventures,
   a fledgling space program searching for answers in a strange, constantly evolving
   solar system. What lurks in the heart of the ominous Dark Bramble? Who built the

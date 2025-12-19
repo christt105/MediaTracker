@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_5e7602e8e2cea33fa3d45161ddde3edf_banner.jpg
+banner_image: images/covers/steamgriddb_811be42d722f824eb6cb90ab95ef9e21.jpg
 date: '2025-08-20'
 developer: Tyler Glaiel
 genres:
@@ -7,7 +7,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 36846
-image: images/covers/img_7ef6d4185a57cd4d0f0799772eac7b2d.png
+image: images/covers/steamgriddb_e21474d71ab3960b460f6f65ba4763df.png
 overview: ' '
 platforms:
 - Steam Deck

@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_1K3JmSNUN8OpjYsCjc0Hy0SYxAb_banner.jpg
+banner_image: images/covers/tmdb_1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg
 date: null
 genres:
 - Ciencia ficción

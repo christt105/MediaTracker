@@ -1,6 +1,6 @@
 ---
 air_date: null
-banner_image: images/covers/tmdb_6342n1ojL6RDUg7kgIBlrq200zZ_banner.jpg
+banner_image: images/covers/tmdb_6342n1ojL6RDUg7kgIBlrq200zZ.jpg
 date: null
 image: images/covers/tmdb_8xMgvidm5qzT4U6Qkj9N2kSIxTy.jpg
 rewatches: []

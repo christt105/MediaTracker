@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_39cbfca46b69cc0fb9335ded5ab110d8_banner.webp
+banner_image: images/covers/img_39cbfca46b69cc0fb9335ded5ab110d8.webp
 date: '2023-10-06'
 developer: Elena Vidad
 genres:

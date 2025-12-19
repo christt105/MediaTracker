@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_xMJvffWIaW9MtlY9aIXKViUNeIO_banner.jpg
+banner_image: images/covers/tmdb_xMJvffWIaW9MtlY9aIXKViUNeIO.jpg
 date: '2025-12-11'
 genres:
 - Comedia

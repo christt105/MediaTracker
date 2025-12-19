@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_2c090a6941e17d3a15cdfa20b891b148_banner.png
+banner_image: images/covers/steamgriddb_2cf48a149caf6a7f6331511988d4174e.png
 date: '2012-03-16'
 developer: Naughty Dog
 genres:
@@ -7,7 +7,7 @@ genres:
 - Platform
 - Adventure
 igdb_id: 512
-image: images/covers/img_25a05215cad61f7a6620127491fc3c47.png
+image: images/covers/steamgriddb_fd89e76448f934ed44572ec77f4c8d64.png
 overview: ''
 platforms:
 - PS3

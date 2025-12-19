@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_5TuYFn7ghjqyUYILiTCTqj1z1qp_banner.jpg
+banner_image: images/covers/tmdb_5TuYFn7ghjqyUYILiTCTqj1z1qp.jpg
 date: '2024-02-03'
 genres:
 - Documental

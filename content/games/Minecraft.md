@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_7ac1d05741ee8ccb20c3fe77ff0da1c9_banner.png
+banner_image: images/covers/steamgriddb_ecd812da02543c0269cfc2c56ab3c3c0.png
 date: null
 developer: Mojang Studios
 genres:
@@ -7,7 +7,7 @@ genres:
 - Adventure
 - Arcade
 igdb_id: 135400
-image: images/covers/img_e2f03f73559b661bab290322ed747b44.png
+image: images/covers/steamgriddb_3f8e95182f3e7068a4772a1314160159.png
 overview: ''
 platforms: []
 rating: null

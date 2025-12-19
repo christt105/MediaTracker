@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_18e01e0084ae4163486281b621b91ef0_banner.png
+banner_image: images/covers/steamgriddb_22dc3a0418ae1b9b41c4daa7b9631559.png
 date: null
 developer: Game Freak
 genres:
@@ -7,7 +7,7 @@ genres:
 - Turn-based strategy (TBS)
 - Adventure
 igdb_id: 144054
-image: images/covers/img_8e94565e48948315b8e6f997c2cb6d9f.png
+image: images/covers/steamgriddb_ce098cf158927e2cea10919e1e2b36a3.png
 overview: The story starts with the main character getting sent back in time by Arceus
   to the Hisui region, the Sinnoh region of ancient times, with one task in hand—to
   seek out all Pokemon. From the same day onward, strange lightning from the rift
