@@ -26,6 +26,8 @@ SOURCE_COVERS_DIR = SOURCE_PATH / "Portadas"
 # Destination Directories (Hugo)
 CONTENT_DIR = BASE_DIR / "content"
 IMAGES_DIR = BASE_DIR / "static" / "images"
+COVERS_DIR = IMAGES_DIR / "covers"
+BANNERS_DIR = IMAGES_DIR / "banners"
 
 # Mappings: Obsidian Type -> Hugo Section (Folder)
 SECTION_MAP = {
@@ -36,8 +38,8 @@ SECTION_MAP = {
 }
 
 # Ensure destination directories exist
-(IMAGES_DIR / "covers").mkdir(parents=True, exist_ok=True)
-(IMAGES_DIR / "banners").mkdir(parents=True, exist_ok=True)
+COVERS_DIR.mkdir(parents=True, exist_ok=True)
+BANNERS_DIR.mkdir(parents=True, exist_ok=True)
 
 # ==========================================
 # HELPER FUNCTIONS
@@ -186,7 +188,16 @@ def process_image(source_str, metadata, is_banner=False):
 
 def migrate():
     print("--- STARTING MIGRATION ---")
-    
+
+    # Get all covers and banners
+    covers = []
+    banners = []
+
+    for cover in COVERS_DIR.glob("*"):
+        covers.append(cover.name)
+    for banner in BANNERS_DIR.glob("*"):
+        banners.append(banner.name)
+
     for obsidian_type, source_dir in SOURCE_DIRS.items():
         if not source_dir.exists():
             print(f"Skipping {obsidian_type}: Directory not found ({source_dir})")
@@ -215,6 +226,9 @@ def migrate():
                     new_cover = process_image(post['cover'], post.metadata)
                     if new_cover:
                         post['image'] = new_cover
+                        cover_name = new_cover.split("/")[-1]
+                        if cover_name in covers:
+                            covers.remove(cover_name)
                     # Remove original obsidian field to keep frontmatter clean
                     del post['cover']
 
@@ -222,6 +236,9 @@ def migrate():
                     new_banner = process_image(post['banner'], post.metadata, is_banner=True)
                     if new_banner:
                         post['banner_image'] = new_banner
+                        banner_name = new_banner.split("/")[-1]
+                        if banner_name in banners:
+                            banners.remove(banner_name)
                     del post['banner']
 
                 # 2. PROCESS RELATIONS (WikiLinks)
@@ -268,6 +285,14 @@ def migrate():
                 print(f"ERROR processing {file_path.name}: {e}")
 
     print("\n--- MIGRATION FINISHED ---")
+
+    # Remove unused covers
+    for cover in covers:
+        os.remove(COVERS_DIR / cover)
+
+    # Remove unused banners
+    for banner in banners:
+        os.remove(BANNERS_DIR / banner)
 
 if __name__ == "__main__":
     migrate()
