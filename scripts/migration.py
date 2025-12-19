@@ -25,7 +25,7 @@ SOURCE_COVERS_DIR = SOURCE_PATH / "Portadas"
 
 # Destination Directories (Hugo)
 CONTENT_DIR = BASE_DIR / "content"
-IMAGES_DIR = BASE_DIR / "static" / "images" / "covers"
+IMAGES_DIR = BASE_DIR / "static" / "images"
 
 # Mappings: Obsidian Type -> Hugo Section (Folder)
 SECTION_MAP = {
@@ -36,7 +36,8 @@ SECTION_MAP = {
 }
 
 # Ensure destination directories exist
-IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+(IMAGES_DIR / "covers").mkdir(parents=True, exist_ok=True)
+(IMAGES_DIR / "banners").mkdir(parents=True, exist_ok=True)
 
 # ==========================================
 # HELPER FUNCTIONS
@@ -58,7 +59,7 @@ def clean_wikilink(text):
         return match.group(1)
     return text
 
-def get_image_filename(source_str, metadata, suffix=""):
+def get_image_filename(source_str, metadata):
     """
     Genera un nombre de archivo único.
     PRIORIDAD 1: ID de la imagen extraído de la URL (TMDB/TVDB) para permitir cambios de portada.
@@ -72,7 +73,8 @@ def get_image_filename(source_str, metadata, suffix=""):
         try:
             filename_with_ext = source_str.split('/')[-1] # 1CfZCb56vWjq37uXtbKNMevMzwG.jpg
             image_id = filename_with_ext.split('.')[0]    # 1CfZCb56vWjq37uXtbKNMevMzwG
-            return f"tmdb_{image_id}{suffix}.jpg"
+            ext = filename_with_ext.split('.')[1]         # jpg
+            return f"tmdb_{image_id}.{ext}"
         except:
             pass # Si falla el parseo, saltamos al hash
 
@@ -82,14 +84,32 @@ def get_image_filename(source_str, metadata, suffix=""):
         try:
             filename_with_ext = source_str.split('/')[-1]
             image_id = filename_with_ext.split('.')[0]
-            return f"tvdb_{image_id}{suffix}.jpg"
+            ext = filename_with_ext.split('.')[1]
+            return f"tvdb_{image_id}.{ext}"
+        except:
+            pass
+
+    if "steamgriddb" in source_str:
+        try:
+            filename_with_ext = source_str.split('/')[-1]
+            image_id = filename_with_ext.split('.')[0]
+            ext = filename_with_ext.split('.')[1]
+            return f"steamgriddb_{image_id}.{ext}"
+        except:
+            pass
+    
+    if "steamstatic.com" in source_str:
+        try:
+            filename_with_ext = source_str.split('/')[-2]
+            image_id = filename_with_ext.split('.')[0]
+            ext = "jpg"
+            return f"steam_{image_id}.{ext}"
         except:
             pass
 
     # 3. Caso Genérico / Archivos Locales / Steam / IGDB
     # Usamos MD5 del string.
     # - Si es local: "[[Cover1.png]]" da un hash distinto a "[[Cover2.png]]".
-    # - Si es Steam: Una URL distinta da un hash distinto.
     
     # Intentar adivinar extensión (útil para png locales)
     ext = ".jpg"
@@ -99,7 +119,7 @@ def get_image_filename(source_str, metadata, suffix=""):
             ext = "." + possible_ext
 
     hash_object = hashlib.md5(source_str.encode())
-    return f"img_{hash_object.hexdigest()}{suffix}{ext}"
+    return f"img_{hash_object.hexdigest()}{ext}"
 
 def process_image(source_str, metadata, is_banner=False):
     """
@@ -110,12 +130,14 @@ def process_image(source_str, metadata, is_banner=False):
         return None
 
     # Determine target filename
-    suffix = "_banner" if is_banner else ""
-    filename = get_image_filename(source_str, metadata, suffix)
-    dest_path = IMAGES_DIR / filename
+    folder = "banners" if is_banner else "covers"
+    filename = get_image_filename(source_str, metadata)
+    dest_path = IMAGES_DIR / folder / filename
     
-    # CHECK CACHE: If file exists, skip download
-    if dest_path.exists():
+    is_local_image = "[[" in source_str
+    
+    # CHECK CACHE: If file exists, skip download.
+    if not is_local_image and dest_path.exists():
         # print(f"  [Cache Hit] {filename}")
         return f"images/covers/{filename}"
 
@@ -134,7 +156,7 @@ def process_image(source_str, metadata, is_banner=False):
             return None
 
     # CASE B: Local Obsidian Link [[...]]
-    elif "[[" in source_str:
+    elif is_local_image:
         # Extract the clean path from the wikilink
         # Example: "[[Media Tracker/Portadas/Img.png]]" -> "Media Tracker/Portadas/Img.png"
         raw_path = re.search(r'\[\[(.*?)(\|.*)?\]\]', source_str)
@@ -182,9 +204,8 @@ def migrate():
                 post = frontmatter.load(file_path)
                 
                 # Verify type matches the folder (sanity check)
-                if post.get('type') != obsidian_type: 
-                    # Note: Sometimes seasons might not have type defined in your vault, 
-                    # but if they are in the folder, we treat them as such.
+                if post.get('type') != obsidian_type:
+                    print(f"  [Warning] Type mismatch: {file_path.name}")
                     pass
 
                 print(f"Processing: {file_path.name}")
