@@ -1,11 +1,11 @@
 ---
-banner_image: images/covers/img_1e0f18c435b45b893971b4311bcc271c_banner.png
+banner_image: images/covers/steamgriddb_251c5ffd6b62cc21c446c963c76cf214.png
 date: null
 developer: Valve
 genres:
 - Shooter
 igdb_id: 233
-image: images/covers/img_6deabbe2c524b11cde5fae039864206d.jpg
+image: images/covers/steam_220.jpg
 overview: ''
 platforms: []
 rating: null

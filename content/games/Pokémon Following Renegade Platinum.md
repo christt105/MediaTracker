@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_ce66a2c60a098cce65711e0c68ba1047_banner.png
+banner_image: images/covers/steamgriddb_7da6279d738fdaef64d4c7f08d6c1e92.png
 date: '2023-08-12'
 developer: Drayano60
 genres:
@@ -7,7 +7,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 127564
-image: images/covers/img_05c3b9f453bdafe4ea8d190d8b1c13ba.png
+image: images/covers/steamgriddb_9b1d598b81584e9cdad4d163b7176f51.png
 overview: ' '
 platforms:
 - Steam Deck

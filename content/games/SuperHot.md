@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_ed99bc95c53fa4ea76e99e1f87bdc565_banner.png
+banner_image: images/covers/steamgriddb_a19744e268754fb0148b017647355b7b.png
 date: '2025-08-24'
 developer: SUPERHOT Team
 genres:
@@ -8,7 +8,7 @@ genres:
 - Tactical
 - Indie
 igdb_id: 7205
-image: images/covers/img_280282240b63ba354936f6c28257c1fa.png
+image: images/covers/steamgriddb_33ce538f76f7a4060a93caa7bfd6c8c3.png
 overview: ' '
 platforms:
 - Steam Deck

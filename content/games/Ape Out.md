@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_36feb69caf40e9795ae278cded5f07ac_banner.png
+banner_image: images/covers/steamgriddb_7ce7fe98a64dd1ef509fedb677fcea5a.png
 date: '2022-06-14'
 developer: Gabe Cuzzillo
 genres:
@@ -9,7 +9,7 @@ genres:
 - Indie
 - Arcade
 igdb_id: 27719
-image: images/covers/img_02ff1fcef825c3af07a5719246ee55ca.jpg
+image: images/covers/steam_447150.jpg
 overview: Ape Out es un smash 'em up estilizado, colorista y de una intensidad salvaje,
   sobre una huida primaria llena de violencia rítmica y jazz frenético.
 platforms:

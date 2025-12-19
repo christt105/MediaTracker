@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_311d3f47784f76155dc4b32a23c06ddc_banner.jpg
+banner_image: images/covers/steamgriddb_16027c9f54c2ac3e7fa0da84dbdabbac.jpg
 date: null
 developer: Naughty Dog
 genres:
 - Shooter
 - Adventure
 igdb_id: 26192
-image: images/covers/img_33d9e52c8bb202318c84346914495424.png
+image: images/covers/steamgriddb_0230061ed918ad8c48635cd123e28eff.png
 overview: Five years after their dangerous journey across the post-pandemic United
   States, Ellie and Joel have settled down in Jackson, Wyoming. Living amongst a thriving
   community of survivors has allowed them peace and stability, despite the constant

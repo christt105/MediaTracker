@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_018bc608e8ae70e87c8729b122f69cfb_banner.png
+banner_image: images/covers/steamgriddb_9b3c2148ce85c4124006e10631e77b28.png
 date: '2025-06-29'
 developer: Game Freak
 genres:
@@ -8,7 +8,7 @@ genres:
 - Turn-based strategy (TBS)
 - Adventure
 igdb_id: 6897
-image: images/covers/img_0cba030a2464c34f0d2e78b3b2457b79.png
+image: images/covers/steamgriddb_b07b27053e3722d60e0d2d661b04d5da.png
 overview: ' '
 platforms:
 - Steam Deck

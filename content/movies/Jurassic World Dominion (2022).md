@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_9eAn20y26wtB3aet7w9lHjuSgZ3_banner.jpg
+banner_image: images/covers/tmdb_9eAn20y26wtB3aet7w9lHjuSgZ3.jpg
 date: '2022-07-29'
 genres:
 - Aventura

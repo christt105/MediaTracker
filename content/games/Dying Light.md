@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_95deb9c63567f05233f535dc9666241f_banner.png
+banner_image: images/covers/steamgriddb_189e3f782cbb3f4cc1ae9702adca884e.png
 date: null
 developer: Techland
 genres:
@@ -7,7 +7,7 @@ genres:
 - Role-playing (RPG)
 - Adventure
 igdb_id: 3042
-image: images/covers/img_2ef19d0a6c0249b86b4070ea5d63e57f.jpg
+image: images/covers/steamgriddb_795ced384fdcad15310b46841a6f145c.jpg
 overview: In the city of Harran, a mysterious viral outbreak has turned most of the
   population into hyper-aggressive zombie-like creatures, forcing Harran's Defense
   Ministry to quarantine the entire city. The Global Relief Effort (GRE) assists survivors

@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_5f8124622f8c431657152621c2901b26_banner.jpg
+banner_image: images/covers/steamgriddb_c263e540e76c57607b5e1b613fbc8732.jpg
 date: '2024-08-08'
 developer: Bend Studio
 genres:
 - Shooter
 - Adventure
 igdb_id: 19561
-image: images/covers/img_c8c61c938d49193433a1bef5482e2b02.png
+image: images/covers/steamgriddb_d60a556b10d7313b7e4026b4b9a19f32.png
 overview: Deacon St. John, a former outlaw and drifter, searches for purpose in a
   world ravaged by a pandemic that has turned much of humanity into mindless, violent
   creatures called Freakers. Driven by the hope that his wife, Sarah, may still be

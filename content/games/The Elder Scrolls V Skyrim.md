@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_5cf6803b7b2a6874483facd49f48df79_banner.png
+banner_image: images/covers/steamgriddb_9d2a94578afaf9d49c96a8251a313683.png
 date: null
 developer: Bethesda Game Studios
 genres:
 - Role-playing (RPG)
 - Adventure
 igdb_id: 472
-image: images/covers/img_f96d6504c53351c16c58ae1780b29221.png
+image: images/covers/steamgriddb_d17f1582a4c9ae2078ae91ca7b5645ea.png
 overview: The Empire of Tamriel is on the edge. The High King of Skyrim has been murdered.
   Alliances form as claims to the throne are made. In the midst of this conflict,
   a far more dangerous, ancient evil is awakened. Dragons, long lost to the passages

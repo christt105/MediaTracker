@@ -1,6 +1,6 @@
 ---
 air_date: null
-banner_image: images/covers/tmdb_aY7zv2pfk9H0QxaaL3PBjvalbKQ_banner.jpg
+banner_image: images/covers/tmdb_aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg
 date: '2022-07-28'
 image: images/covers/tmdb_gI8z3GRoWN8LQbeSkkn5jbdNM7R.jpg
 rewatches: []

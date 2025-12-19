@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_06a88183ed2d29093f169b744d0bd27c_banner.png
+banner_image: images/covers/steamgriddb_97c81649fa58303996aaf556b17043ca.png
 date: '2024-09-06'
 developer: Spike Chunsoft
 genres:
 - Role-playing (RPG)
 - Adventure
 igdb_id: 128069
-image: images/covers/img_8eccd86b8d6e8714b675bc2c1d55a0c8.png
+image: images/covers/steamgriddb_b43e49b1fc20ff9f2658bfcc9bcd8586.png
 overview: ' '
 platforms:
 - Steam Deck

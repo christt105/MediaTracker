@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_d65ec1f90def97c01c633f115fa0466b_banner.png
+banner_image: images/covers/steamgriddb_dc70227a7d9df5f27f0e78c82ad7099d.png
 date: '2018-04-02'
 developer: Arkane Studios
 genres:
@@ -7,7 +7,7 @@ genres:
 - Role-playing (RPG)
 - Adventure
 igdb_id: 533
-image: images/covers/img_d2ec2bbed361e9026c12948a16bc1c01.jpg
+image: images/covers/steamgriddb_0a1bc06b767503a7bf48ac496f810b2d.jpg
 overview: Dishonored is set in Dunwall, an industrial whaling city where strange steampunk-inspired
   technology and otherworldly forces coexist in the shadows. You are the once-trusted
   bodyguard of the beloved Empress. Framed for her murder, you become an infamous

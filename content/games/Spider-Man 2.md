@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_06c266230de2682d28f1820a70fc47e7_banner.png
+banner_image: images/covers/steamgriddb_79ee9d25b9de58d3a33b3cdb9338dc23.png
 date: null
 developer: Vicarious Visions
 genres:
 - Hack and slash/Beat 'em up
 - Adventure
 igdb_id: 218127
-image: images/covers/img_617a04be44a25a7fc7d22561e1966d4d.png
+image: images/covers/steamgriddb_63e0f67d39cb10f4835dda5c33addfbc.png
 overview: While patrolling the city one day, Spider-Man spots several thugs attempting
   to rob a bank and stops them. Later that night, after having dinner with his friends
   Mary Jane Watson (for whom he has hidden feelings) and Harry Osborn (who despises

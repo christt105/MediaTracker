@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_8be10e2bfea1c2643ab54f3d55862cec_banner.jpg
+banner_image: images/covers/steamgriddb_17d23e54aab31807fc9060d0d191161b.jpg
 date: '2024-04-06'
 developer: Thekla, Inc
 genres:
@@ -7,7 +7,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 5601
-image: images/covers/img_2d44e12c8d58c7a4952a869e41a88f05.png
+image: images/covers/steamgriddb_91c7379a5e7bd662a2594e195e821ab7.png
 overview: 'You wake up, alone, on a strange island full of puzzles that will challenge
   and surprise you.  You don''t remember who you are, and you don''t remember how
   you got here, but there''s one thing you can do: explore the island in hope of discovering

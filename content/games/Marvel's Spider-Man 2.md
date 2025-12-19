@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_2254942732c969355612e3725d64f907_banner.png
+banner_image: images/covers/steamgriddb_bf093076c62506c87f27125135d153bf.png
 date: null
 developer: Insomniac Games
 genres:
 - Hack and slash/Beat 'em up
 - Adventure
 igdb_id: 127044
-image: images/covers/img_7a17f62fe73a352ff153cd436a4a31b5.png
+image: images/covers/steamgriddb_2572510b22e85f491270becf2fc166f7.png
 overview: The incredible power of the symbiote forces Peter and Miles to face the
   ultimate test of strength, both inside and outside the mask, as they balance their
   lives, friendships and their duty to protect those in need.

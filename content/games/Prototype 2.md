@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_ebdb892ff9bd38461695f4a8f276a702_banner.png
+banner_image: images/covers/steamgriddb_91f9fec9b080c74297a55c392b5f40a4.png
 date: '2012-05-22'
 developer: Radical Entertainment
 genres:
@@ -7,7 +7,7 @@ genres:
 - Hack and slash/Beat 'em up
 - Adventure
 igdb_id: 2988
-image: images/covers/img_745c6c4ae21889f7dc35d6a40a43522f.png
+image: images/covers/steamgriddb_ce6b01e4cd4166124283f11b1a09fe8a.png
 overview: Two years after the events of the original game, Sergeant James Heller,
   after returning from touring in Iraq, discovers his wife and daughter to be declared
   dead, causing him to rejoin the military in the fight for NYZ against the Blacklight

@@ -1,11 +1,11 @@
 ---
-banner_image: images/covers/img_9d4da910a2d5934da826cc6d917b14bc_banner.png
+banner_image: images/covers/steamgriddb_5b685c54b72bac34e7b56feb9f7be2c5.png
 date: '2011-10-25'
 developer: Treyarch
 genres:
 - Shooter
 igdb_id: 545
-image: images/covers/img_9d6949d0ba3549fc13491b009e9c3bcc.png
+image: images/covers/steamgriddb_b9b065288cf8d4eba8b9ac1ad9c52aaf.png
 overview: Black Ops takes place between 1961 and 1968 during the Cold War, 16 years
   after the events of World at War. It portrays a secret history of CIA clandestine
   black operations carried out behind enemy lines. Much of the campaign is told through

@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_ciizJ9Okzt9tBBGK7Q3T14LFT2j_banner.jpg
+banner_image: images/covers/tmdb_ciizJ9Okzt9tBBGK7Q3T14LFT2j.jpg
 date: '2024-07-21'
 genres:
 - Sci-Fi & Fantasy

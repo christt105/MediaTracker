@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_vExnxa9AvhXXjuYja9980U4Mem0_banner.jpg
+banner_image: images/covers/tmdb_vExnxa9AvhXXjuYja9980U4Mem0.jpg
 date: null
 genres:
 - Animación

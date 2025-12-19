@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_9k6dWJws6iAxZTG5Nz4Ow1gamB1_banner.jpg
+banner_image: images/covers/tmdb_9k6dWJws6iAxZTG5Nz4Ow1gamB1.jpg
 date: '2022-07-29'
 genres:
 - Documental

@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_78a1cd9f6a12bd02a17d8ff79831fdfd_banner.png
+banner_image: images/covers/steamgriddb_e089b3b5750148e7f7fcc282635fb2d4.png
 date: '2021-01-20'
 developer: Nintendo EPD Production Group No. 3
 genres:
 - Puzzle
 - Adventure
 igdb_id: 7346
-image: images/covers/img_b876462f4e3a721c9b4ff3fb0bc89bab.png
+image: images/covers/steamgriddb_121b81f7d167ca2c24fdab4f044048f8.png
 overview: Link is awakened in a room by a voice calling him and learns that he has
   been asleep for 100 years after failing to stop a monster called Calamity Ganon.
   Although the monster is being held in Hyrule Castle by Princess Zelda, Calamity

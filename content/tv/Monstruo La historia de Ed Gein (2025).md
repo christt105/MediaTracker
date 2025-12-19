@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_cm2oUAPiTE1ERoYYOzzgloQw4YZ_banner.jpg
+banner_image: images/covers/tmdb_cm2oUAPiTE1ERoYYOzzgloQw4YZ.jpg
 date: null
 genres:
 - Drama

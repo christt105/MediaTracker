@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_aJn9XeesqsrSLKcHfHP4u5985hn_banner.jpg
+banner_image: images/covers/tmdb_aJn9XeesqsrSLKcHfHP4u5985hn.jpg
 date: '2023-09-22'
 genres:
 - Ciencia ficción

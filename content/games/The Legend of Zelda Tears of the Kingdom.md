@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_367a931b091f7d7c905dd796958f6509_banner.png
+banner_image: images/covers/steamgriddb_aa23a647b581371fb0c5803263da1345.png
 date: '2024-04-27'
 developer: Nintendo EPD Production Group No. 3
 genres:
 - Puzzle
 - Adventure
 igdb_id: 119388
-image: images/covers/img_ec3a27323e9cf199b1fbf7b25d46afb8.png
+image: images/covers/steamgriddb_ae758fbcbd5bd841516c53b3c08ebc6f.png
 overview: While exploring the caves underneath Hyrule Castle to investigate the origins
   of the gloom (a dangerous substance which appeared all over the kingdom), Link and
   Zelda not only find old archeological remains of the Zonai, an ancient race said

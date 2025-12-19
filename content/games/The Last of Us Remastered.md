@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_f8b2a264422e4e48be12203a4d339f99_banner.png
+banner_image: images/covers/steamgriddb_d6a1499555c182d0fa8919c666fa4710.png
 date: '2023-02-19'
 developer: Naughty Dog
 genres:
 - Shooter
 - Adventure
 igdb_id: 6036
-image: images/covers/img_2df22d1d32a02bd3d594eeedd8f437d0.png
+image: images/covers/steamgriddb_9db1c4a3a80276439554314a0b2dabe2.png
 overview: Twenty years after a mutated fungus started turning people all over the
   world into deadly zombies, humans become an endangered species. Joel, a Texan in
   his forties with the "emotional range of a teaspoon" (to quote Hermione from Harry

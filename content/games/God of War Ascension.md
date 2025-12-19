@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_8a37e62ce8381e377a1f7673973dd8cb_banner.jpg
+banner_image: images/covers/steamgriddb_53cdd4182f8d7e4b71e9b598f46f814b.jpg
 date: '2013-07-10'
 developer: SCE Santa Monica Studio
 genres:
 - Hack and slash/Beat 'em up
 - Adventure
 igdb_id: 1291
-image: images/covers/img_d922b6e5e9b09a1ed5fce1f381ce89d8.png
+image: images/covers/steamgriddb_08a45f6c13e692943ada130a739b1f68.png
 overview: In a war between the astronomically large deities known as the Primordials,
   the madness and rage of the war took form, becoming the three guardians of honor,
   the Furies, who were tasked with exacting retribution onto any oath-breaker or betrayer.

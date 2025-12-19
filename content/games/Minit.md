@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_2eb564ac4628d69c3fcd2caccab507aa_banner.png
+banner_image: images/covers/steamgriddb_e57174548ea87569040afe197a881803.png
 date: '2022-06-17'
 developer: Kitty Calis
 genres:
@@ -8,7 +8,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 26970
-image: images/covers/img_dae705c10264c37c949f15d6a5ba492f.jpg
+image: images/covers/steam_609490.jpg
 overview: ' '
 platforms:
 - PC

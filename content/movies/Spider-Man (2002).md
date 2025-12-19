@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_gkINAPOuwUFo2Qphs3OUUbjUKUZ_banner.jpg
+banner_image: images/covers/tmdb_gkINAPOuwUFo2Qphs3OUUbjUKUZ.jpg
 date: null
 genres:
 - Acción

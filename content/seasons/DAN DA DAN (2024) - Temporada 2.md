@@ -1,6 +1,6 @@
 ---
 air_date: null
-banner_image: images/covers/tmdb_uNTrRKIOyKYISthoeizghtXPEOK_banner.jpg
+banner_image: images/covers/tmdb_uNTrRKIOyKYISthoeizghtXPEOK.jpg
 date: '2025-11-09'
 image: images/covers/tvdb_6867027607c12.jpg
 rewatches: []

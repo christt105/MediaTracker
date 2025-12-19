@@ -1,6 +1,6 @@
 ---
 air_date: null
-banner_image: images/covers/tmdb_8HM3NtsejczRKDz7agUVFdppicJ_banner.jpg
+banner_image: images/covers/tmdb_8HM3NtsejczRKDz7agUVFdppicJ.jpg
 date: '2024-05-14'
 image: images/covers/tmdb_xbECOYxvv3f5BVVjQJ1sUAkxirt.jpg
 rewatches: []

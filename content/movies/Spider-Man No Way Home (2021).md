@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_Bwh7Lol5k3hSqYOtqXWxbbJVMx_banner.jpg
+banner_image: images/covers/tmdb_Bwh7Lol5k3hSqYOtqXWxbbJVMx.jpg
 date: '2021-12-18'
 genres:
 - Acción

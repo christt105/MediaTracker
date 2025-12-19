@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_0c5751c7d5b753a766cfe6d28ceede27_banner.png
+banner_image: images/covers/steamgriddb_de98be2c4c6a599dc862cac42b8e0566.png
 date: '2023-01-09'
 developer: Game Freak
 genres:
@@ -7,7 +7,7 @@ genres:
 - Turn-based strategy (TBS)
 - Adventure
 igdb_id: 191931
-image: images/covers/img_0f24f582fe20a417959133fd35f061ca.png
+image: images/covers/steamgriddb_181426fbde5526374ea654b59c16577e.png
 overview: ' '
 platforms:
 - Nintendo Switch

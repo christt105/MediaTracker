@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_1d929df1cdb911c05c7054235e6e3a97_banner.jpg
+banner_image: images/covers/steamgriddb_ecd122037c0fd785861279d853231ccc.jpg
 date: '2019-01-23'
 developer: Valve
 genres:
@@ -7,7 +7,7 @@ genres:
 - Platform
 - Puzzle
 igdb_id: 71
-image: images/covers/img_e7e7005992c76ba09ef95b0f439b0283.png
+image: images/covers/steamgriddb_dcb88e77b00e85321d39b4e4097c1107.png
 overview: ''
 platforms: []
 rating: null

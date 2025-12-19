@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_a920f83e662800dfd4a998925522279c_banner.jpg
+banner_image: images/covers/img_a920f83e662800dfd4a998925522279c.jpg
 date: '2011-10-01'
 developer: Naughty Dog
 genres:

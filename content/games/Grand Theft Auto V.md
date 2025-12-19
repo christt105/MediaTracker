@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_86936b4f4876603a593bf63b94b5de1e_banner.png
+banner_image: images/covers/steamgriddb_bad5f33780c42f2588878a9d07405083.png
 date: '2013-10-07'
 developer: Rockstar North
 genres:
@@ -7,7 +7,7 @@ genres:
 - Racing
 - Adventure
 igdb_id: 1020
-image: images/covers/img_496568c15b8b8973e6c8dbae76a1b0d5.png
+image: images/covers/steamgriddb_c8f548a72b43e28522cba5f935407d6c.png
 overview: 'Los Santos: a sprawling sun-soaked metropolis full of self-help gurus,
   starlets and fading celebrities, once the envy of the Western world, now struggling
   to stay afloat in an era of economic uncertainty and cheap reality TV.  Amidst the

@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_6zpqAdAmOktVVcQXhy85Y1oBu5e_banner.jpg
+banner_image: images/covers/tmdb_6zpqAdAmOktVVcQXhy85Y1oBu5e.jpg
 date: null
 genres:
 - Action & Adventure

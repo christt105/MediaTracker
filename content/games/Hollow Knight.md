@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_f6feaacb390476c0a4ef47d6fb49ffc3_banner.png
+banner_image: images/covers/steamgriddb_2a23698064df1354a4ba703528ef20e9.png
 date: '2018-08-27'
 developer: Team Cherry
 genres:
@@ -7,7 +7,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 14593
-image: images/covers/img_d6e15d9fecbe1c2bec4fb1abb0af8865.png
+image: images/covers/steamgriddb_9122e6917c43df2c068332f00db0ff97.png
 overview: ' '
 platforms:
 - PC

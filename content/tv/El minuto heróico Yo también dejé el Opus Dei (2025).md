@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_y33B9jI4FW6NIyHuHqAWFtnNydJ_banner.jpg
+banner_image: images/covers/tmdb_y33B9jI4FW6NIyHuHqAWFtnNydJ.jpg
 date: '2025-02-27'
 genres:
 - Documental

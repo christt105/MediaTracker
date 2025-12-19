@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_6sHC954QPhrrLsT6WPkSie9hVmI_banner.jpg
+banner_image: images/covers/tmdb_6sHC954QPhrrLsT6WPkSie9hVmI.jpg
 date: '2022-04-19'
 genres:
 - Animación

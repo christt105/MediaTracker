@@ -1,12 +1,12 @@
 ---
-banner_image: images/covers/img_72fcd57aaa09dadf3155747545f6d5cc_banner.png
+banner_image: images/covers/steamgriddb_0bdd128ea21d481cddf93a54815802dc.png
 date: '2024-06-16'
 developer: Moon Studios
 genres:
 - Platform
 - Adventure
 igdb_id: 37001
-image: images/covers/img_d21d0105b48b8cb5ce63b3e37e095cf1.png
+image: images/covers/steamgriddb_cf1d15ac3ce0255dd636fb020e51a23a.png
 overview: ' '
 platforms:
 - Steam Deck

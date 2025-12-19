@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_0b4e3deb8cba5c4835c69392565b7091_banner.png
+banner_image: images/covers/steamgriddb_3700c6648c0df5c6f04713e555721cf3.png
 date: '2023-12-04'
 developer: Nintendo EPD
 genres:
@@ -7,7 +7,7 @@ genres:
 - Platform
 - Adventure
 igdb_id: 15698
-image: images/covers/img_0f19ffb71afeefcc6df647c022cd9615.png
+image: images/covers/steamgriddb_38cfea09e10bd786ff870d78de0cb62b.png
 overview: 'Face off against unrelenting E.M.M.I. robots: once DNA-extracting research
   machines, the imposing E.M.M.I. are now hunting Samus down. Tensions are high as
   you evade these E.M.M.I. to avoid a cruel death while finding a way to take them

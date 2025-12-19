@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/tmdb_nv5wwZou159v5OC61i4ElR7OqyY_banner.jpg
+banner_image: images/covers/tmdb_nv5wwZou159v5OC61i4ElR7OqyY.jpg
 date: '2024-07-16'
 genres:
 - Fantasía

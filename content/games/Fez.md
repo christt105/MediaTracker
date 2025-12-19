@@ -1,5 +1,5 @@
 ---
-banner_image: images/covers/img_46232e64ed89909f2981f521b5c74d5e_banner.png
+banner_image: images/covers/steamgriddb_e5cb9cf7a3b66aed15faba79d226a332.png
 date: '2023-04-08'
 developer: Polytron Corporation
 genres:
@@ -8,7 +8,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 1991
-image: images/covers/img_26827ea8a89898f3ca0b88eaef1608da.png
+image: images/covers/steamgriddb_45aea7db0f03fecc77f969bd296cdc62.png
 overview: ' '
 platforms:
 - Steam Deck
