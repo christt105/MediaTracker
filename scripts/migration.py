@@ -172,6 +172,7 @@ def migrate():
 
         hugo_section = SECTION_MAP.get(obsidian_type, "others")
         target_dir = CONTENT_DIR / hugo_section
+        shutil.rmtree(target_dir, ignore_errors=True)
         target_dir.mkdir(parents=True, exist_ok=True)
         
         print(f"\nProcessing section: {obsidian_type.upper()} -> {hugo_section}/")
