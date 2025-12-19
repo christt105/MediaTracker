@@ -10,6 +10,7 @@
 {{- end -}}
 
 {{- partial "head.html" . -}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <body data-theme="{{ $defaultColor }}" class="notransition">
     {{- partial "scriptsBodyStart.html" . -}}
@@ -28,20 +29,20 @@
 
             {{/* Filter tv that contains seasons */}}
             {{ range $media }}
-                {{ $esPadreSinFecha := false }}
+            {{ $esPadreSinFecha := false }}
 
-                {{ if or (not (eq .Params.type "tv")) (not .Params.temporadas) (eq (len .Params.temporadas) 0) }}
-                    {{ $mediaClean = $mediaClean | append . }}
-                    {{ continue }}
-                {{ end }}
+            {{ if or (not (eq .Params.type "tv")) (not .Params.temporadas) (eq (len .Params.temporadas) 0) }}
+            {{ $mediaClean = $mediaClean | append . }}
+            {{ continue }}
+            {{ end }}
 
-                {{ if (eq .Date.Year 1) }}
-                    {{ $esPadreSinFecha = true }}
-                {{ end }}
+            {{ if (eq .Date.Year 1) }}
+            {{ $esPadreSinFecha = true }}
+            {{ end }}
 
-                {{ if not $esPadreSinFecha }}
-                    {{ $mediaClean = $mediaClean | append . }}
-                {{ end }}
+            {{ if not $esPadreSinFecha }}
+            {{ $mediaClean = $mediaClean | append . }}
+            {{ end }}
             {{ end }}
 
             {{ $media = $mediaClean }}
@@ -49,15 +50,16 @@
             {{ $acabados := where $media "Params.status" "eq" "Acabado" }}
             {{ $pausados := where $media "Params.status" "eq" "Pausado" }}
             {{ $abandonados := where $media "Params.status" "eq" "Abandonado" }}
-            
-            {{ $enCurso := where $media "Params.status" "not in" (slice "Acabado" "Pausado" "Abandonado" "Sin Empezar") }}
+
+            {{ $enCurso := where $media "Params.status" "not in" (slice "Acabado" "Pausado" "Abandonado" "Sin Empezar")
+            }}
 
             {{ if gt (len $enCurso) 0 }}
             <div class="home-section">
                 <h3 class="section-title"><i class="fas fa-play"></i> En Curso</h3>
                 <div class="media-grid">
                     {{ range $enCurso.ByLastmod.Reverse }}
-                        {{ partial "media-card.html" . }}
+                    {{ partial "media-card.html" . }}
                     {{ end }}
                 </div>
             </div>
@@ -70,14 +72,14 @@
                 <button id="toggle-hidden-btn" onclick="toggleHiddenSection()">
                     Ver Pausados y Abandonados ({{ add (len $pausados) (len $abandonados) }})
                 </button>
-                
+
                 <div id="hidden-content" style="display: none;">
-                    
+
                     {{ if gt (len $pausados) 0 }}
                     <h4 class="subsection-title">⏸️ Pausados</h4>
                     <div class="media-grid">
                         {{ range $pausados.ByLastmod.Reverse }}
-                            {{ partial "media-card.html" . }}
+                        {{ partial "media-card.html" . }}
                         {{ end }}
                     </div>
                     {{ end }}
@@ -86,7 +88,7 @@
                     <h4 class="subsection-title">🗑️ Abandonados</h4>
                     <div class="media-grid">
                         {{ range $abandonados.ByLastmod.Reverse }}
-                            {{ partial "media-card.html" . }}
+                        {{ partial "media-card.html" . }}
                         {{ end }}
                     </div>
                     {{ end }}
@@ -101,47 +103,49 @@
             {{ $acabadosSorted := $acabados.ByDate.Reverse }}
 
             {{ range $acabadosSorted.GroupByDate "2006" }}
-                
-                <div class="year-group">
-                    <h2 class="year-title">
-                        {{ if eq .Key "0001" }}
-                            No recuerdo cuándo
-                        {{ else }}
-                            {{ .Key }}
-                        {{ end }}
-                    </h2> <div class="media-grid">
-                        {{ range .Pages }}
-                            {{ partial "media-card.html" . }}
-                        {{ end }}
-                    </div>
+
+            <div class="year-group">
+                <h2 class="year-title">
+                    {{ if eq .Key "0001" }}
+                    No recuerdo cuándo
+                    {{ else }}
+                    {{ .Key }}
+                    {{ end }}
+                </h2>
+                <div class="media-grid">
+                    {{ range .Pages }}
+                    {{ partial "media-card.html" . }}
+                    {{ end }}
                 </div>
+            </div>
 
             {{ else }}
-                <p>Aún no hay elementos completados.</p>
+            <p>Aún no hay elementos completados.</p>
             {{ end }}
 
         </main>
     </div>
 
     {{- partial "footer.html" . -}}
-    
+
     <script>
-    function toggleHiddenSection() {
-        var content = document.getElementById("hidden-content");
-        var btn = document.getElementById("toggle-hidden-btn");
-        
-        if (content.style.display === "none") {
-            content.style.display = "block";
-            btn.innerText = "Ocultar Pausados y Abandonados";
-            btn.classList.add("active");
-        } else {
-            content.style.display = "none";
-            btn.innerText = "Ver Pausados y Abandonados";
-            btn.classList.remove("active");
+        function toggleHiddenSection() {
+            var content = document.getElementById("hidden-content");
+            var btn = document.getElementById("toggle-hidden-btn");
+
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                btn.innerText = "Ocultar Pausados y Abandonados";
+                btn.classList.add("active");
+            } else {
+                content.style.display = "none";
+                btn.innerText = "Ver Pausados y Abandonados";
+                btn.classList.remove("active");
+            }
         }
-    }
     </script>
-    
+
     {{- partial "scriptsBodyEnd.html" . -}}
 </body>
+
 </html>
