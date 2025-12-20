@@ -27,7 +27,7 @@ title: 'Hollow Knight: Silksong'
 type: videogame
 ---
 
-El mejor juego que Team Cherry podía dar a los fans de [[Media Tracker/Juegos/Hollow Knight|Hollow Knight]].
+El mejor juego que Team Cherry podía dar a los fans de [Hollow Knight]({{< ref "Hollow Knight" >}}).
 
 - Acto 2 superado el 2025-09-17
 - Acto 3 superado el 2025-10-19

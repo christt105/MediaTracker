@@ -21,6 +21,6 @@ tmdb_id: 4935
 type: movie
 ---
 
-Película preciosa de [[Studio Ghibli]]. Una banda sonora espectacular.
+Película preciosa de Studio Ghibli. Una banda sonora espectacular.
 
-Visto en el cine con [[Agui]] y [[Moreno]].
+Visto en el cine con Agui y Moreno.
