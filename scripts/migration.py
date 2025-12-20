@@ -14,7 +14,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent.parent.absolute()
 
 # Source Directories (Obsidian Vault)
-SOURCE_PATH = Path("/home/christian/syncthing/Obsidian/Atlas/Media Tracker")
+SOURCE_ROOT = Path("/home/christian/syncthing/Obsidian/Atlas")
+SOURCE_PATH = SOURCE_ROOT / "Media Tracker"
 SOURCE_DIRS = {
     "movie": SOURCE_PATH / "Movies",
     "tv": SOURCE_PATH / "TVs",
@@ -61,7 +62,7 @@ def clean_wikilink(text):
         return match.group(1)
     return text
 
-def get_image_filename(source_str, metadata):
+def get_image_filename(source_str):
     """
     Genera un nombre de archivo único.
     PRIORIDAD 1: ID de la imagen extraído de la URL (TMDB/TVDB) para permitir cambios de portada.
@@ -123,7 +124,7 @@ def get_image_filename(source_str, metadata):
     hash_object = hashlib.md5(source_str.encode())
     return f"img_{hash_object.hexdigest()}{ext}"
 
-def process_image(source_str, metadata, is_banner=False):
+def process_image(source_str, note_src, type="cover"):
     """
     Downloads URL or Copies Local File. 
     Returns the relative path for Hugo frontmatter.
@@ -132,16 +133,32 @@ def process_image(source_str, metadata, is_banner=False):
         return None
 
     # Determine target filename
-    folder = "banners" if is_banner else "covers"
-    filename = get_image_filename(source_str, metadata)
-    dest_path = IMAGES_DIR / folder / filename
+    if type == "cover":
+        folder = "covers"
+    elif type == "banner":
+        folder = "banners"
+    elif type == "content":
+        folder = "content"
+
+    filename = get_image_filename(source_str)
+
+    if type == "content" and note_src:
+        # note_src in this context will be the destination bundle directory when type="content"
+        # We want to save to bundle_dir/images
+        folder_dir = note_src / "images"
+        folder_dir.mkdir(parents=True, exist_ok=True)
+        dest_path = folder_dir / filename
+        return_path = f"images/{filename}"
+    else:
+        dest_path = IMAGES_DIR / folder / filename
+        return_path = f"images/{folder}/{filename}"
     
     is_local_image = "[[" in source_str
     
     # CHECK CACHE: If file exists, skip download.
     if not is_local_image and dest_path.exists():
         # print(f"  [Cache Hit] {filename}")
-        return f"images/covers/{filename}"
+        return return_path
 
     # CASE A: Web URL (TMDB/TVDB)
     if str(source_str).startswith("http"):
@@ -152,7 +169,7 @@ def process_image(source_str, metadata, is_banner=False):
             if response.status_code == 200:
                 with open(dest_path, 'wb') as f:
                     shutil.copyfileobj(response.raw, f)
-                return f"images/covers/{filename}"
+                return return_path
         except Exception as e:
             print(f"  [Error] Failed to download {source_str}: {e}")
             return None
@@ -172,11 +189,15 @@ def process_image(source_str, metadata, is_banner=False):
             # 2. If not found, try looking inside the "Portadas" folder directly
             if not local_file.exists():
                 local_file = SOURCE_COVERS_DIR / os.path.basename(clean_path)
+            
+            # 3. If not found, try looking inside the root of the vault
+            if not local_file.exists():
+                local_file = SOURCE_ROOT / clean_path
 
             if local_file.exists():
                 print(f"  [Copying] {local_file.name} -> {filename}")
                 shutil.copy(local_file, dest_path)
-                return f"images/covers/{filename}"
+                return return_path
             else:
                 print(f"  [Warning] Local image not found: {clean_path}")
 
@@ -223,7 +244,7 @@ def migrate():
 
                 # 1. PROCESS IMAGES (Cover & Banner)
                 if post.get('cover'):
-                    new_cover = process_image(post['cover'], post.metadata)
+                    new_cover = process_image(post['cover'], file_path, type="cover")
                     if new_cover:
                         post['image'] = new_cover
                         cover_name = new_cover.split("/")[-1]
@@ -233,7 +254,7 @@ def migrate():
                     del post['cover']
 
                 if post.get('banner'):
-                    new_banner = process_image(post['banner'], post.metadata, is_banner=True)
+                    new_banner = process_image(post['banner'], file_path, type="banner")
                     if new_banner:
                         post['banner_image'] = new_banner
                         banner_name = new_banner.split("/")[-1]
@@ -261,22 +282,25 @@ def migrate():
                         clean_related.append(clean_wikilink(rel))
                     post['related'] = clean_related
 
-                # 3. CONTENT CLEANUP
-                # Clean wikilinks inside the body text as well
-                if post.content:
-                    # Replace [[Link|Text]] with Text
-                    post.content = re.sub(r'\[\[(?:[^|\]]*\|)?([^\]]+)\]\]', r'\1', post.content)
+                # 3. PREPARE DESTINATION (Moved up)
+                slug = file_path.stem
+                post_dir = target_dir / slug
+                post_dir.mkdir(parents=True, exist_ok=True)
 
-                # 4. DATE FORMATTING (Optional but recommended)
-                # Ensure dates are strings for Hugo to avoid parsing errors
-                if post.get('date'):
-                    post['date'] = str(post['date'])
-                if post.get('release_date'):
-                    post['release_date'] = str(post['release_date'])
+                # 4. CONTENT CLEANUP (Now has access to post_dir)
+                if post.content:
+                    # Get all the images
+                    images = re.findall(r'!\[\[(.*?)\]\]', post.content)
+
+                    # Process each image
+                    for image in images:
+                        # Pass post_dir as the 'note_src' so it saves images there
+                        new_image = process_image(f"[[{image}]]", post_dir, type="content")
+                        if new_image:
+                            post.content = post.content.replace(f'![[{image}]]', f'![{os.path.basename(image)}]({new_image})')
 
                 # 5. WRITE FILE
-                # We use the original filename
-                destination_file = target_dir / file_path.name
+                destination_file = post_dir / "index.md"
                 
                 with open(destination_file, 'w', encoding='utf-8') as f:
                     f.write(frontmatter.dumps(post))
