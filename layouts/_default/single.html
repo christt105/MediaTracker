@@ -1,0 +1,146 @@
+{{ define "main" }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            {{ if .Params.banner_image }}
+            <div class="media-header">
+                {{/* Use absolute URL for the banner style */}}
+                <div class="media-banner" style="background-image: url('{{ .Params.banner_image | absURL }}');">
+                    <div class="media-banner-overlay"></div>
+                </div>
+
+                <div class="media-info-container">
+                    {{ if .Params.image }}
+                    <div class="media-cover">
+                        <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+                        {{ if .Params.rating }}
+                        <div class="media-rating-badge">{{ .Params.rating }}</div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+
+                    <div class="media-details">
+                        <h1 class="header-title">{{ .Title }}</h1>
+
+                        <div class="media-meta">
+                            {{/* Type Badge */}}
+                            {{ if .Params.type }}
+                            <span class="meta-item status-badge type-{{ .Params.type | lower }}">{{ .Params.type |
+                                humanize }}</span>
+                            {{ end }}
+
+                            {{/* Date / Release Date */}}
+                            {{ $dateDisplay := .Params.release_date | default .Date }}
+                            {{ if $dateDisplay }}
+                            <span class="meta-item">
+                                <span class="icon">📅</span> {{ $dateDisplay | time.Format ":date_medium" }}
+                            </span>
+                            {{ end }}
+
+                            {{/* Developer (Games) */}}
+                            {{ if .Params.developer }}
+                            <span class="meta-item"><span class="icon">💻</span> {{ .Params.developer }}</span>
+                            {{ end }}
+
+                            {{/* Status */}}
+                            {{ if .Params.status }}
+                            <span class="meta-item status-badge {{ .Params.status | lower }}">{{ .Params.status
+                                }}</span>
+                            {{ end }}
+                        </div>
+
+                        {{/* Series Link (for Seasons) */}}
+                        {{ if .Params.serie }}
+                        <div class="media-relation">
+                            <strong>Pertenece a:</strong>
+                            <a href="{{ ref . .Params.serie }}">{{ .Params.serie }}</a>
+                        </div>
+                        {{ end }}
+
+                        {{/* Overview */}}
+                        {{ if .Params.overview }}
+                        <div class="media-overview">
+                            <p>{{ .Params.overview }}</p>
+                        </div>
+                        {{ end }}
+
+                        {{/* Genres & Tags */}}
+                        <div class="media-taxonomies">
+                            {{ if .Params.genres }}
+                            <div class="taxonomy-group">
+                                {{ range .Params.genres }}
+                                <span class="genre-tag">{{ . }}</span>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+
+                            {{ if .Params.tags }}
+                            <div class="taxonomy-group tags-list">
+                                {{ $tags := .Params.tags }}
+                                {{ if not (reflect.IsSlice $tags) }}
+                                {{ $tags = slice $tags }}
+                                {{ end }}
+                                {{ range $tags }}
+                                <a href="{{ " tags/" | relLangURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                        </div>
+
+                        {{/* Rewatches */}}
+                        {{ if .Params.rewatches }}
+                        <div class="media-rewatches">
+                            <strong>Rewatches:</strong>
+                            <ul>
+                                {{ range .Params.rewatches }}
+                                <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        {{ end }}
+
+                        {{/* Seasons List (for Series) */}}
+                        {{ if .Params.temporadas }}
+                        <div class="media-seasons">
+                            <h3>Temporadas</h3>
+                            <ul>
+                                {{ range .Params.temporadas }}
+                                {{/* Clean the path: remove "Media Tracker/" prefix if present */}}
+                                {{ $path := . | replaceRE "^Media Tracker/" "" }}
+                                <li>
+                                    <a href="{{ $path | relLangURL }}">{{ $path | path.Base | replaceRE ".md$" "" }}</a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        {{ end }}
+
+                    </div>
+                </div>
+            </div>
+            {{ else }}
+            <header class="header">
+                {{/* Fallback Default Layout for text-only posts */}}
+                <h1 class="header-title">{{ .Title }}</h1>
+                {{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
+                {{ with .Date }}
+                {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
+                <div class="post-meta">
+                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }}
+                    </time>
+                </div>
+                {{ end }}
+            </header>
+            {{ end }}
+
+            {{/* Content */}}
+            <div class="page-content">
+                {{ .Content }}
+            </div>
+
+            {{ partial "toc.html" .}}
+        </article>
+        {{- partial "comments.html" . -}}
+    </main>
+</div>
+{{ end }}

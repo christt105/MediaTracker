@@ -39,7 +39,7 @@ enableEmoji = true
   mainSections = ['movies', 'games', 'tv'] # Importante para que Hugo sepa qué listar
   
   # Opciones visuales
-  toc = true 
+  toc = false 
   goToTop = true
   dateFormat = "2 Jan 2006"
 
