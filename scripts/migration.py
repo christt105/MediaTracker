@@ -62,6 +62,33 @@ def clean_wikilink(text):
         return match.group(1)
     return text
 
+def convert_wikilinks(text, known_files):
+    """
+    Converts [[Path/To/Note|Alias]] to [Alias]({{< ref "Note" >}})
+    Only if "Note" is in known_files.
+    """
+    def replacer(match):
+        inner = match.group(1)
+        alias = inner
+        target = inner
+        
+        if '|' in inner:
+            target, alias = inner.split('|', 1)
+        
+        # Extract filename (removing path)
+        filename = target.split('/')[-1]
+        if filename.endswith('.md'):
+            filename = filename[:-3]
+            
+        if filename in known_files:
+            return f'[{alias}]({{{{< ref "{filename}" >}}}})'
+        else:
+            # If valid note not found, just return the Alias text
+            return alias
+
+    # Negative lookbehind to avoid matching ![[...]] (images)
+    return re.sub(r'(?<!\!)\[\[(.*?)\]\]', replacer, text)
+
 def get_image_filename(source_str):
     """
     Genera un nombre de archivo único.
@@ -219,6 +246,14 @@ def migrate():
     for banner in BANNERS_DIR.glob("*"):
         banners.append(banner.name)
 
+    # 0. PRE-SCAN: Gather all valid files to validate WikiLinks
+    known_files = set()
+    for _, source_dir in SOURCE_DIRS.items():
+        if source_dir.exists():
+            for f in source_dir.glob("*.md"):
+                known_files.add(f.stem)
+
+
     for obsidian_type, source_dir in SOURCE_DIRS.items():
         if not source_dir.exists():
             print(f"Skipping {obsidian_type}: Directory not found ({source_dir})")
@@ -282,26 +317,41 @@ def migrate():
                         clean_related.append(clean_wikilink(rel))
                     post['related'] = clean_related
 
-                # 3. PREPARE DESTINATION (Moved up)
-                slug = file_path.stem
-                post_dir = target_dir / slug
-                post_dir.mkdir(parents=True, exist_ok=True)
-
-                # 4. CONTENT CLEANUP (Now has access to post_dir)
+                # 3. DETECT CONTENT IMAGES
+                has_content_images = False
+                content_images = []
                 if post.content:
-                    # Get all the images
-                    images = re.findall(r'!\[\[(.*?)\]\]', post.content)
+                    content_images = re.findall(r'!\[\[(.*?)\]\]', post.content)
+                    if content_images:
+                        has_content_images = True
 
-                    # Process each image
-                    for image in images:
-                        # Pass post_dir as the 'note_src' so it saves images there
-                        new_image = process_image(f"[[{image}]]", post_dir, type="content")
-                        if new_image:
-                            post.content = post.content.replace(f'![[{image}]]', f'![{os.path.basename(image)}]({new_image})')
-
-                # 5. WRITE FILE
-                destination_file = post_dir / "index.md"
+                # 4. PREPARE DESTINATION
+                slug = file_path.stem
                 
+                if has_content_images:
+                    # Leaf Bundle: folder/index.md
+                    post_dir = target_dir / slug
+                    post_dir.mkdir(parents=True, exist_ok=True)
+                    destination_file = post_dir / "index.md"
+                    image_target_dir = post_dir 
+                else:
+                    # Simple Page: filename.md
+                    destination_file = target_dir / f"{slug}.md"
+                    image_target_dir = None
+
+                # 5. PROCESS CONTENT
+                if post.content:
+                    # A. Process Images
+                    if has_content_images:
+                        for image in content_images:
+                            new_image = process_image(f"[[{image}]]", image_target_dir, type="content")
+                            if new_image:
+                                post.content = post.content.replace(f'![[{image}]]', f'![{os.path.basename(image)}]({new_image})')
+                    
+                    # B. Process Wikilinks
+                    post.content = convert_wikilinks(post.content, known_files)
+
+                # 6. WRITE FILE
                 with open(destination_file, 'w', encoding='utf-8') as f:
                     f.write(frontmatter.dumps(post))
 
