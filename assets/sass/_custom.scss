@@ -182,3 +182,179 @@
     color: #000;
     font-weight: bold;
 }
+
+/* Single Page Media Layout */
+.media-header {
+    position: relative;
+    margin-bottom: 40px;
+    /* Removed negative margin to prevent overlap issues unless header is transparent */
+    border-radius: 12px;
+}
+
+.media-banner {
+    width: 100%;
+    height: 350px;
+    /* Increased height */
+    background-size: cover;
+    background-position: center top;
+    /* Better positioning for faces */
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.media-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.95) 100%);
+}
+
+.media-info-container {
+    display: flex;
+    gap: 30px;
+    margin-top: -100px;
+    /* Pull content up layout */
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.media-cover {
+    flex-shrink: 0;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background: #222;
+    position: relative;
+    align-self: flex-start;
+    /* Prevent stretching */
+}
+
+.media-cover img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.media-details {
+    padding-top: 110px;
+    /* Push text down to align nicely */
+    flex-grow: 1;
+}
+
+.media-details .header-title {
+    margin: 0 0 10px 0;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.media-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: var(--secondary);
+}
+
+.media-overview {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 800px;
+}
+
+.media-taxonomies {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.taxonomy-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-link {
+    font-size: 0.85rem;
+    color: var(--primary);
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.tag-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.media-seasons h3,
+.media-rewatches h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    padding-bottom: 5px;
+}
+
+.media-seasons ul,
+.media-rewatches ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.media-seasons li,
+.media-rewatches li {
+    margin-bottom: 5px;
+}
+
+.media-relation {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .media-info-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: -60px;
+        padding: 0 15px;
+    }
+
+    .media-cover {
+        width: 160px;
+    }
+
+    .media-details {
+        padding-top: 10px;
+    }
+
+    .media-details .header-title {
+        font-size: 2rem;
+    }
+
+    .media-meta {
+        justify-content: center;
+    }
+
+    .media-overview {
+        text-align: left;
+    }
+}
