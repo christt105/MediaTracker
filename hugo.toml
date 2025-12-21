@@ -8,7 +8,6 @@ enableEmoji = true
   [[module.imports]]
     path = "github.com/hugo-sid/hugo-blog-awesome"
 
-# --- MENÚ DE NAVEGACIÓN ---
 [menu]
   [[menu.main]]
     pageRef="/"
@@ -16,7 +15,7 @@ enableEmoji = true
     url = '/'
     weight = 10
   [[menu.main]]
-    pageRef="movies" # Apunta a tus carpetas nuevas
+    pageRef="movies"
     name = 'Películas'
     url = '/movies/'
     weight = 20
@@ -31,26 +30,22 @@ enableEmoji = true
     url = '/games/'
     weight = 30
 
-# --- CONFIGURACIÓN DEL SITIO ---
 [params]
   sitename = "Media Tracker"
-  defaultColor = "dark" # dark, light, o auto
-  description = "Mi colección personal de películas y videojuegos."
-  mainSections = ['movies', 'games', 'tv'] # Importante para que Hugo sepa qué listar
-  
-  # Opciones visuales
+  defaultColor = "dark"
+  description = "Mi colección personal de películas, series y videojuegos."
+  mainSections = ['movies', 'games', 'tv'] 
+
   toc = false 
   goToTop = true
   dateFormat = "2 Jan 2006"
 
-# --- TU PERFIL (BIO) ---
 [params.author]
   avatar = "avatar.webp"
   intro = "Media Tracker"
   name = "christt105"
-  description = "Este es mi rincón personal donde guardo un registro de todo lo que consumo. Automatizado con Obsidian y Hugo."
+  description = "Este es mi rincón personal donde guardo un registro de todas las películas, series y videojuegos que consumo. Generado con Obsidian y Hugo."
 
-# --- REDES SOCIALES (Opcional) ---
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/christt105"
