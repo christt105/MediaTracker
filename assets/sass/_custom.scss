@@ -358,3 +358,58 @@
         text-align: left;
     }
 }
+
+/* Status Badges */
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: #95a5a6; /* Default gray */
+    display: inline-flex;
+    align-items: center;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Media Types */
+.status-badge.type-movie,
+.status-badge.movie {
+    background-color: #2980b9; /* Blue */
+}
+
+.status-badge.type-videogame,
+.status-badge.videogame {
+    background-color: #e74c3c; /* Red */
+}
+
+.status-badge.type-serie,
+.status-badge.type-tv,
+.status-badge.serie,
+.status-badge.tv {
+    background-color: #9b59b6; /* Purple */
+}
+
+/* Statuses */
+.status-badge.acabado {
+    background-color: #2ecc71; /* Green */
+}
+
+.status-badge.jugando {
+    background-color: #f39c12; /* Orange */
+}
+
+.status-badge.pendiente {
+    background-color: #34495e; /* Dark Blue-Gray */
+}
+
+.status-badge.abandonado {
+    background-color: #c0392b; /* Dark Red */
+}
+
+.status-badge.esperando {
+    background-color: #1abc9c; /* Teal */
+}
