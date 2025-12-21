@@ -194,6 +194,7 @@
 .media-banner {
     width: 100%;
     height: 350px;
+    // margin-top: 50px;
     /* Increased height */
     background-size: cover;
     background-position: center top;
@@ -210,7 +211,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.95) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 60%, rgba(0, 0, 0, 0.4) 100%);
 }
 
 .media-info-container {
@@ -367,49 +368,78 @@
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    background-color: #95a5a6; /* Default gray */
+    background-color: #95a5a6;
+    /* Default gray */
     display: inline-flex;
     align-items: center;
     line-height: normal;
     letter-spacing: 0.5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 /* Media Types */
 .status-badge.type-movie,
 .status-badge.movie {
-    background-color: #2980b9; /* Blue */
+    background-color: #2980b9;
+    /* Blue */
 }
 
 .status-badge.type-videogame,
 .status-badge.videogame {
-    background-color: #e74c3c; /* Red */
+    background-color: #e74c3c;
+    /* Red */
 }
 
 .status-badge.type-serie,
 .status-badge.type-tv,
 .status-badge.serie,
 .status-badge.tv {
-    background-color: #9b59b6; /* Purple */
+    background-color: #9b59b6;
+    /* Purple */
 }
 
 /* Statuses */
 .status-badge.acabado {
-    background-color: #2ecc71; /* Green */
+    background-color: #2ecc71;
+    /* Green */
 }
 
 .status-badge.jugando {
-    background-color: #f39c12; /* Orange */
+    background-color: #f39c12;
+    /* Orange */
 }
 
 .status-badge.pendiente {
-    background-color: #34495e; /* Dark Blue-Gray */
+    background-color: #34495e;
+    /* Dark Blue-Gray */
 }
 
 .status-badge.abandonado {
-    background-color: #c0392b; /* Dark Red */
+    background-color: #c0392b;
+    /* Dark Red */
 }
 
 .status-badge.esperando {
-    background-color: #1abc9c; /* Teal */
+    background-color: #1abc9c;
+    /* Teal */
+}
+
+/* --- Layout Redesign --- */
+
+/* 1. Header Z-Index Fix */
+/* Force navbar above everything else using !important to override theme defaults if necessary */
+.menu {
+    z-index: 100;
+}
+
+/* 2. Banner Sizing & Styling */
+/* Default .media-banner is already defined above (fixed 350px height) */
+
+.media-banner.type-videogame {
+    /* Games get specific 1920x620 aspect ratio (~3.1:1) */
+    height: auto;
+    aspect-ratio: 1920/620;
+    background-position: center center;
+    max-height: 85vh;
+    /* Cap height on very large screens */
 }

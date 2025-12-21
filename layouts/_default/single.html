@@ -5,7 +5,8 @@
             {{ if .Params.banner_image }}
             <div class="media-header">
                 {{/* Use absolute URL for the banner style */}}
-                <div class="media-banner" style="background-image: url('{{ .Params.banner_image | absURL }}');">
+                <div class="media-banner type-{{ .Params.type | lower }}"
+                    style="background-image: url('{{ .Params.banner_image | absURL }}');">
                     <div class="media-banner-overlay"></div>
                 </div>
 
@@ -30,7 +31,7 @@
                             {{ end }}
 
                             {{/* Date / Release Date */}}
-                            {{ $dateDisplay := .Params.release_date | default .Date }}
+                            {{ $dateDisplay := .Params.date | default .Date }}
                             {{ if $dateDisplay }}
                             <span class="meta-item">
                                 <span class="icon">📅</span> {{ $dateDisplay | time.Format ":date_medium" }}
@@ -38,9 +39,9 @@
                             {{ end }}
 
                             {{/* Developer (Games) */}}
-                            {{ if .Params.developer }}
+                            <!-- {{ if .Params.developer }}
                             <span class="meta-item"><span class="icon">💻</span> {{ .Params.developer }}</span>
-                            {{ end }}
+                            {{ end }} -->
 
                             {{/* Status */}}
                             {{ if .Params.status }}
@@ -52,7 +53,7 @@
                         {{/* Series Link (for Seasons) */}}
                         {{ if .Params.serie }}
                         <div class="media-relation">
-                            <strong>Pertenece a:</strong>
+                            <strong>Serie:</strong>
                             <a href="{{ ref . .Params.serie }}">{{ .Params.serie }}</a>
                         </div>
                         {{ end }}
@@ -89,7 +90,7 @@
                             <div class="taxonomy-group tags-list">
                                 {{ $tags := .Params.tags }}
                                 {{ if not (reflect.IsSlice $tags) }}
-                                {{ $tags := slice $tags }}
+                                {{ $tags = slice $tags }}
                                 {{ end }}
                                 {{ range $tags }}
                                 {{ $tagName := . | urlize }}
@@ -106,7 +107,7 @@
                             <strong>Rewatches:</strong>
                             <ul>
                                 {{ range .Params.rewatches }}
-                                <li>{{ . }}</li>
+                                <li>{{ . | time.Format ":date_medium" }}</li>
                                 {{ end }}
                             </ul>
                         </div>
@@ -118,10 +119,13 @@
                             <h3>Temporadas</h3>
                             <ul>
                                 {{ range .Params.temporadas }}
-                                {{/* Clean the path: remove "Media Tracker/" prefix if present */}}
-                                {{ $path := . | replaceRE "^Media Tracker/" "" }}
+                                {{ $seasonPath := . | replaceRE "^Media Tracker/" "" }}
+                                {{ if not (findRE "/" $seasonPath) }}
+                                {{ $seasonPath = printf "seasons/%s" $seasonPath }}
+                                {{ end }}
                                 <li>
-                                    <a href="{{ $path | relLangURL }}">{{ $path | path.Base | replaceRE ".md$" "" }}</a>
+                                    <a href="{{ ref $ $seasonPath }}">{{ $seasonPath | path.Base | replaceRE ".md$" ""
+                                        }}</a>
                                 </li>
                                 {{ end }}
                             </ul>
