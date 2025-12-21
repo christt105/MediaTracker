@@ -56,7 +56,7 @@
 
             {{ if gt (len $enCurso) 0 }}
             <div class="home-section">
-                <h3 class="section-title"><i class="fas fa-play"></i> En Curso</h3>
+                <h3 class="section-title">En Curso</h3>
                 <div class="media-grid">
                     {{ range $enCurso.ByLastmod.Reverse }}
                     {{ partial "media-card.html" . }}
@@ -76,7 +76,7 @@
                 <div id="hidden-content" style="display: none;">
 
                     {{ if gt (len $pausados) 0 }}
-                    <h4 class="subsection-title">⏸️ Pausados</h4>
+                    <h4 class="subsection-title">Pausados</h4>
                     <div class="media-grid">
                         {{ range $pausados.ByLastmod.Reverse }}
                         {{ partial "media-card.html" . }}
@@ -85,7 +85,7 @@
                     {{ end }}
 
                     {{ if gt (len $abandonados) 0 }}
-                    <h4 class="subsection-title">🗑️ Abandonados</h4>
+                    <h4 class="subsection-title">Abandonados</h4>
                     <div class="media-grid">
                         {{ range $abandonados.ByLastmod.Reverse }}
                         {{ partial "media-card.html" . }}
@@ -98,7 +98,7 @@
             {{ end }}
 
 
-            <h3 class="section-title"><i class="fas fa-check-circle"></i>Completado</h3>
+            <h3 class="section-title">Completado</h3>
 
             {{ $acabadosSorted := $acabados.ByDate.Reverse }}
 
