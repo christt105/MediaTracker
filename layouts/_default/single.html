@@ -58,30 +58,43 @@
                         {{ end }}
 
                         {{/* Overview */}}
-                        {{ if .Params.overview }}
-                        <div class="media-overview">
-                            <p>{{ .Params.overview }}</p>
+                        {{/* External Links */}}
+                        <div class="media-external-links">
+                            {{ if .Params.tmdb_id }}
+                            {{ $mediaType := "movie" }}
+                            {{ if (or (eq (lower .Params.type) "serie") (eq (lower .Params.type) "tv")) }}
+                            {{ $mediaType = "tv" }}
+                            {{ end }}
+                            <a href="https://www.themoviedb.org/{{ $mediaType }}/{{ .Params.tmdb_id }}" target="_blank"
+                                rel="noopener noreferrer" class="external-link">TMDB</a>
+                            {{ end }}
+
+                            {{ if .Params.steam_appid }}
+                            <a href="https://store.steampowered.com/app/{{ .Params.steam_appid }}" target="_blank"
+                                rel="noopener noreferrer" class="external-link">Steam</a>
+                            {{ end }}
                         </div>
-                        {{ end }}
 
                         {{/* Genres & Tags */}}
                         <div class="media-taxonomies">
-                            {{ if .Params.genres }}
+                            <!-- {{ if .Params.genres }}
                             <div class="taxonomy-group">
                                 {{ range .Params.genres }}
                                 <span class="genre-tag">{{ . }}</span>
                                 {{ end }}
                             </div>
-                            {{ end }}
+                            {{ end }} -->
 
                             {{ if .Params.tags }}
                             <div class="taxonomy-group tags-list">
                                 {{ $tags := .Params.tags }}
                                 {{ if not (reflect.IsSlice $tags) }}
-                                {{ $tags = slice $tags }}
+                                {{ $tags := slice $tags }}
                                 {{ end }}
                                 {{ range $tags }}
-                                <a href="{{ " tags/" | relLangURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
+                                {{ $tagName := . | urlize }}
+                                {{ $tagPath := printf "tags/%s" $tagName }}
+                                <a href="{{ $tagPath | relLangURL }}" class="tag-link">#{{ . }}</a>
                                 {{ end }}
                             </div>
                             {{ end }}
