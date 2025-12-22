@@ -194,7 +194,6 @@
 .media-banner {
     width: 100%;
     height: 350px;
-    // margin-top: 50px;
     /* Increased height */
     background-size: cover;
     background-position: center top;
@@ -358,6 +357,10 @@
     .media-overview {
         text-align: left;
     }
+
+    .wrapper {
+        margin-top: 35px;
+    }
 }
 
 /* Status Badges */
@@ -404,12 +407,12 @@
     /* Green */
 }
 
-.status-badge.jugando {
+.status-badge.en.curso {
     background-color: #f39c12;
     /* Orange */
 }
 
-.status-badge.pendiente {
+.status-badge.pausado {
     background-color: #34495e;
     /* Dark Blue-Gray */
 }
@@ -419,27 +422,8 @@
     /* Dark Red */
 }
 
-.status-badge.esperando {
-    background-color: #1abc9c;
-    /* Teal */
-}
 
-/* --- Layout Redesign --- */
-
-/* 1. Header Z-Index Fix */
-/* Force navbar above everything else using !important to override theme defaults if necessary */
-.menu {
+.navbar {
     z-index: 100;
-}
-
-/* 2. Banner Sizing & Styling */
-/* Default .media-banner is already defined above (fixed 350px height) */
-
-.media-banner.type-videogame {
-    /* Games get specific 1920x620 aspect ratio (~3.1:1) */
-    height: auto;
-    aspect-ratio: 1920/620;
-    background-position: center center;
-    max-height: 85vh;
-    /* Cap height on very large screens */
+    min-height: auto;
 }
