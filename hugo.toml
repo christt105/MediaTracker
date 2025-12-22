@@ -10,11 +10,6 @@ enableEmoji = true
 
 [menu]
   [[menu.main]]
-    pageRef="/"
-    name = 'Inicio'
-    url = '/'
-    weight = 10
-  [[menu.main]]
     pageRef="movies"
     name = 'Películas'
     url = '/movies/'
