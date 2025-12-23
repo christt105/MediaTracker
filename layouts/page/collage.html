@@ -1,0 +1,254 @@
+{{ define "main" }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<div class="collage-wrapper">
+    
+    <aside class="collage-controls">
+        <h2>🛠️ Configurar Collage</h2>
+        
+        <div class="control-group">
+            <label>📅 Desde:</label>
+            <input type="date" id="start-date">
+        </div>
+
+        <div class="control-group">
+            <label>📅 Hasta:</label>
+            <input type="date" id="end-date">
+        </div>
+
+        <div class="control-group">
+            <label>Tipo de Medio:</label>
+            <div class="checkbox-wrapper">
+                <label><input type="checkbox" value="movie" checked> Películas</label>
+                <label><input type="checkbox" value="tv" checked> Series/TV</label>
+                <label><input type="checkbox" value="videogame" checked> Juegos</label>
+                <label><input type="checkbox" value="season" checked> Temporadas</label>
+            </div>
+        </div>
+        
+        <div class="control-group">
+             <label>Solo Acabados:</label>
+             <label><input type="checkbox" id="only-finished" checked> Sí, solo completados</label>
+        </div>
+
+        <div class="control-group">
+            <label>Columnas: <span id="col-val">5</span></label>
+            <input type="range" id="columns-range" min="2" max="10" value="5">
+        </div>
+        
+        <div class="control-stats">
+            Items encontrados: <strong id="count-display">0</strong>
+        </div>
+
+        <button id="download-btn" class="btn-download">
+            <i class="fas fa-download"></i> Descargar PNG
+        </button>
+    </aside>
+
+    <div class="collage-preview-area">
+        <div id="collage-canvas">
+            </div>
+    </div>
+
+</div>
+
+<style>
+    .collage-wrapper {
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+        max-width: 1400px;
+        margin: 80px auto 0; /* Margen superior para el header fijo */
+    }
+
+    /* Panel Izquierdo */
+    .collage-controls {
+        flex: 0 0 300px;
+        background: var(--bg-secondary); /* O usa #f5f5f5 */
+        padding: 20px;
+        border-radius: 12px;
+        height: fit-content;
+        position: sticky;
+        top: 100px;
+    }
+
+    .control-group { margin-bottom: 20px; }
+    .control-group label { display: block; font-weight: bold; margin-bottom: 8px; }
+    .checkbox-wrapper label { display: block; font-weight: normal; margin-bottom: 5px; cursor: pointer;}
+    
+    input[type="date"], input[type="range"] { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #ccc; }
+
+    .btn-download {
+        width: 100%;
+        padding: 15px;
+        background: var(--primary); /* O usa #3b82f6 */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .btn-download:hover { opacity: 0.9; }
+
+    /* Área Derecha */
+    .collage-preview-area {
+        flex: 1;
+        background: #333; /* Fondo oscuro para resaltar el canvas */
+        padding: 40px;
+        border-radius: 12px;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* El Canvas Real */
+    #collage-canvas {
+        background: black; /* Color de fondo del PNG final */
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Valor por defecto */
+        gap: 0; /* Sin espacio para efecto mosaico puro */
+        width: 100%;
+        max-width: 1200px; /* Ancho máximo de la imagen generada */
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .collage-item {
+        width: 100%;
+        aspect-ratio: 2/3;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .collage-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    /* Overlay opcional con título (oculto por defecto, visible en hover si quieres) */
+    .collage-overlay {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        font-size: 10px;
+        padding: 2px;
+        text-align: center;
+        opacity: 0;
+    }
+</style>
+
+<script>
+    let allMedia = [];
+
+    // Elementos del DOM
+    const canvas = document.getElementById('collage-canvas');
+    const startDateInput = document.getElementById('start-date');
+    const endDateInput = document.getElementById('end-date');
+    const columnsInput = document.getElementById('columns-range');
+    const colValDisplay = document.getElementById('col-val');
+    const countDisplay = document.getElementById('count-display');
+    const onlyFinishedCheckbox = document.getElementById('only-finished');
+    
+    // 1. Cargar Datos
+    fetch('{{ "index.json" | relURL }}')
+        .then(response => response.json())
+        .then(data => {
+            allMedia = data;
+            console.log("Datos cargados:", allMedia.length);
+            
+            // Establecer fechas por defecto (año actual)
+            const today = new Date();
+            const startOfYear = new Date(today.getFullYear(), 0, 1);
+            startDateInput.valueAsDate = startOfYear;
+            endDateInput.valueAsDate = today;
+
+            renderCollage();
+        });
+
+    // 2. Función Principal de Renderizado
+    function renderCollage() {
+        // Obtener valores de filtros
+        const start = new Date(startDateInput.value);
+        const end = new Date(endDateInput.value);
+        const columns = columnsInput.value;
+        const onlyFinished = onlyFinishedCheckbox.checked;
+        
+        // Tipos seleccionados
+        const checkedTypes = Array.from(document.querySelectorAll('.checkbox-wrapper input:checked')).map(cb => cb.value);
+
+        // Filtrar
+        const filtered = allMedia.filter(item => {
+            // Filtro Tipo
+            if (!checkedTypes.includes(item.type)) return false;
+            
+            // Filtro Estado
+            if (onlyFinished && item.status !== "Acabado") return false;
+
+            // Filtro Fecha (Si el item tiene fecha válida)
+            if (item.date) {
+                const itemDate = new Date(item.date);
+                // Ajustar end date al final del día
+                const endOfDay = new Date(end);
+                endOfDay.setHours(23,59,59);
+                
+                return itemDate >= start && itemDate <= endOfDay;
+            }
+            return false;
+        });
+
+        // Actualizar UI
+        countDisplay.innerText = filtered.length;
+        colValDisplay.innerText = columns;
+        canvas.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+        canvas.innerHTML = ''; // Limpiar canvas
+
+        // Generar HTML
+        filtered.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'collage-item';
+            
+            // Usamos crossOrigin="anonymous" para evitar problemas con html2canvas
+            div.innerHTML = `<img src="${item.image}" alt="${item.title}" crossorigin="anonymous">`;
+            canvas.appendChild(div);
+        });
+    }
+
+    // 3. Event Listeners
+    [startDateInput, endDateInput, columnsInput, onlyFinishedCheckbox].forEach(el => {
+        el.addEventListener('change', renderCollage);
+        el.addEventListener('input', renderCollage);
+    });
+
+    document.querySelectorAll('.checkbox-wrapper input').forEach(el => {
+        el.addEventListener('change', renderCollage);
+    });
+
+    // 4. Descargar
+    document.getElementById('download-btn').addEventListener('click', () => {
+        const btn = document.getElementById('download-btn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generando...';
+        
+        html2canvas(canvas, {
+            useCORS: true, // Importante para cargar imágenes
+            scale: 2, // Mejor calidad (Retina)
+            backgroundColor: "#000000" // Fondo negro si hay huecos
+        }).then(canvas => {
+            const link = document.createElement('a');
+            link.download = `MediaTracker_Collage_${new Date().toISOString().slice(0,10)}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+            
+            btn.innerHTML = originalText;
+        }).catch(err => {
+            console.error(err);
+            alert("Error al generar la imagen. Revisa la consola.");
+            btn.innerHTML = originalText;
+        });
+    });
+
+</script>
+{{ end }}
