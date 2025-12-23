@@ -4,6 +4,9 @@ languageCode = 'es-es'
 defaultContentLanguage = "es"
 enableEmoji = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [module]
   [[module.imports]]
     path = "github.com/hugo-sid/hugo-blog-awesome"

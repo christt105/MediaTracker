@@ -1,0 +1,8 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range where .Site.RegularPages "Params.type" "in" (slice "movie" "tv" "videogame" "season") -}}
+    {{- $date := .Date.Format "2006-01-02" -}}
+    {{- $image := .Params.image | default "/images/default-poster.png" | absURL -}}
+    {{- $item := dict "title" .Title "date" $date "type" .Params.type "image" $image "status" .Params.status -}}
+    {{- $.Scratch.Add "index" $item -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
