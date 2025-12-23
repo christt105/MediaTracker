@@ -5,9 +5,12 @@
             {{ if .Params.banner_image }}
             <div class="media-header">
                 {{/* Use absolute URL for the banner style */}}
-                <div class="media-banner type-{{ .Params.type | lower }}"
-                    style="background-image: url('{{ .Params.banner_image | absURL }}');">
-                    <div class="media-banner-overlay"></div>
+                <div class="banner-container">
+                    {{ if .Params.banner_image }}
+                    <img src="{{ .Params.banner_image | absURL }}" class="media-banner-img" alt="Banner">
+                    {{ end }}
+
+                    <div class="banner-gradient-mask"></div>
                 </div>
 
                 <div class="media-info-container">
@@ -76,29 +79,41 @@
                             {{ end }}
                         </div>
 
-                        {{/* Genres & Tags */}}
                         <div class="media-taxonomies">
-                            <!-- {{ if .Params.genres }}
-                            <div class="taxonomy-group">
-                                {{ range .Params.genres }}
-                                <span class="genre-tag">{{ . }}</span>
+
+                            {{ if .Params.platforms }}
+                            <div class="taxonomy-group platforms-list">
+                                {{ range .Params.platforms }}
+
+                                {{ $p := lower . }} {{ $icon := "fas fa-gamepad" }} {{ if or (eq $p "steam deck") (eq $p
+                                "steam") }}
+                                {{ $icon = "fa-brands fa-steam" }}
+                                {{ else if or (eq $p "pc") (eq $p "windows") }}
+                                {{ $icon = "fas fa-desktop" }}
+                                {{ else if eq $p "switch" }}
+                                {{ $icon = "fas fa-gamepad" }} {{ else if in $p "ps" }} {{ $icon = "fa-brands fa-playstation" }}
+                                {{ else if in $p "xbox" }}
+                                {{ $icon = "fa-brands fa-xbox" }}
+                                {{ end }}
+
+                                <span class="platform-badge" title="Jugado en {{ . }}">
+                                    <i class="{{ $icon }}"></i> {{ . }}
+                                </span>
                                 {{ end }}
                             </div>
-                            {{ end }} -->
+                            {{ end }}
 
                             {{ if .Params.tags }}
                             <div class="taxonomy-group tags-list">
                                 {{ $tags := .Params.tags }}
-                                {{ if not (reflect.IsSlice $tags) }}
-                                {{ $tags = slice $tags }}
-                                {{ end }}
+                                {{ if not (reflect.IsSlice $tags) }}{{ $tags = slice $tags }}{{ end }}
                                 {{ range $tags }}
                                 {{ $tagName := . | urlize }}
-                                {{ $tagPath := printf "tags/%s" $tagName }}
-                                <a href="{{ $tagPath | relLangURL }}" class="tag-link">#{{ . }}</a>
+                                <a href="{{ printf " tags/%s" $tagName | relLangURL }}" class="tag-link">#{{ . }}</a>
                                 {{ end }}
                             </div>
                             {{ end }}
+
                         </div>
 
                         {{/* Rewatches */}}
