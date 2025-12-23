@@ -27,6 +27,11 @@ enableEmoji = true
     name = 'Juegos'
     url = '/games/'
     weight = 30
+  [[menu.main]]
+    pageRef="collage"
+    name = 'Collage'
+    url = '/collage/'
+    weight = 50
 
 [params]
   sitename = "Media Tracker"
