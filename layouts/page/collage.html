@@ -30,6 +30,11 @@
             <input type="range" id="columns-range" min="2" max="10" value="5">
         </div>
 
+        <div class="control-group">
+            <label>Calidad: <span id="quality-val">5</span></label>
+            <input type="range" id="quality-range" min="1" max="10" value="5">
+        </div>
+
         <div class="control-stats">
             Items encontrados: <strong id="count-display">0</strong>
         </div>
@@ -142,7 +147,6 @@
         display: block;
     }
 
-    /* Overlay opcional con título (oculto por defecto, visible en hover si quieres) */
     .collage-overlay {
         position: absolute;
         bottom: 0;
@@ -166,6 +170,8 @@
     const columnsInput = document.getElementById('columns-range');
     const colValDisplay = document.getElementById('col-val');
     const countDisplay = document.getElementById('count-display');
+    const qualityInput = document.getElementById('quality-range');
+    const qualityValDisplay = document.getElementById('quality-val');
 
     // Load data
     fetch('{{ "index.json" | relURL }}')
@@ -188,6 +194,7 @@
         const end = new Date(endDateInput.value);
 
         let columns = parseInt(columnsInput.value);
+        const quality = parseInt(qualityInput.value);
 
         const checkedTypes = Array.from(document.querySelectorAll('.checkbox-wrapper input:checked')).map(cb => cb.value);
 
@@ -216,6 +223,10 @@
 
         countDisplay.innerText = filtered.length;
         colValDisplay.innerText = columnsInput.value;
+
+        qualityValDisplay.innerText = qualityInput.value;
+
+
         canvas.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
         canvas.innerHTML = '';
 
@@ -229,7 +240,7 @@
     }
 
     // Event Listeners
-    [startDateInput, endDateInput, columnsInput].forEach(el => {
+    [startDateInput, endDateInput, columnsInput, qualityInput].forEach(el => {
         el.addEventListener('change', renderCollage);
         el.addEventListener('input', renderCollage);
     });
@@ -245,8 +256,8 @@
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generando...';
 
         html2canvas(canvas, {
-            scale: 5,
-            backgroundColor: "#000000"
+            scale: qualityValDisplay.value,
+            backgroundColor: null
         }).then(canvas => {
             const link = document.createElement('a');
             link.download = `MediaTracker_Collage_${new Date().toISOString().slice(0, 10)}.png`;
