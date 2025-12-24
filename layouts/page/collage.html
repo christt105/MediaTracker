@@ -30,11 +30,6 @@
             <input type="range" id="columns-range" min="2" max="20" value="5">
         </div>
 
-        <div class="control-group">
-            <label>Calidad: <span id="quality-val">5</span></label>
-            <input type="range" id="quality-range" min="1" max="10" value="5">
-        </div>
-
         <div class="control-stats">
             Items encontrados: <strong id="count-display">0</strong>
         </div>
@@ -167,15 +162,12 @@
     const columnsInput = document.getElementById('columns-range');
     const colValDisplay = document.getElementById('col-val');
     const countDisplay = document.getElementById('count-display');
-    const qualityInput = document.getElementById('quality-range');
-    const qualityValDisplay = document.getElementById('quality-val');
 
-    // Load data
     fetch('{{ "index.json" | relURL }}')
         .then(response => response.json())
         .then(data => {
             allMedia = data;
-            console.log("Datos cargados:", allMedia.length);
+            console.log("Data loaded:", allMedia.length);
 
             const today = new Date();
             const startOfYear = new Date(today.getFullYear(), 0, 2);
@@ -192,11 +184,9 @@
         const end = new Date(endDateInput.value);
 
         let columns = parseInt(columnsInput.value);
-        const quality = parseInt(qualityInput.value);
 
         const checkedTypes = Array.from(document.querySelectorAll('.checkbox-wrapper input:checked')).map(cb => cb.value);
 
-        // Make Shows/Season the same filter
         if (checkedTypes.includes("tv")) {
             checkedTypes.push("season");
         }
@@ -219,7 +209,6 @@
 
         countDisplay.innerText = filtered.length;
         colValDisplay.innerText = columnsInput.value;
-        qualityValDisplay.innerText = qualityInput.value;
 
         canvas.style.gridTemplateColumns = `repeat(${columns}, 600px)`;
         canvas.innerHTML = '';
@@ -227,17 +216,17 @@
         filtered.forEach(item => {
             const div = document.createElement('div');
             div.className = 'collage-item';
-            div.innerHTML = `<img src="${item.image}" alt="${item.title}" crossorigin="anonymous">`;
+            div.innerHTML = `<img src="${item.image}" alt="${item.title}" crossorigin="anonymous" loading="eager">`;
             canvas.appendChild(div);
         });
 
-        setTimeout(fitPreviewToScreen, 50);
+        setTimeout(fitPreviewToScreen, 100);
     }
 
     function fitPreviewToScreen() {
         if (!canvas.firstChild) return;
 
-        const containerWidth = previewArea.clientWidth - 40;
+        const containerWidth = previewArea.clientWidth - 40; 
         const containerHeight = previewArea.clientHeight - 40;
         
         const contentWidth = canvas.scrollWidth;
@@ -253,8 +242,7 @@
         scaler.style.transform = `scale(${scale})`;
     }
 
-    // Event Listeners
-    [startDateInput, endDateInput, columnsInput, qualityInput].forEach(el => {
+    [startDateInput, endDateInput, columnsInput].forEach(el => {
         el.addEventListener('change', renderCollage);
         el.addEventListener('input', renderCollage);
     });
@@ -266,16 +254,19 @@
     document.getElementById('download-btn').addEventListener('click', () => {
         const btn = document.getElementById('download-btn');
         const originalText = btn.innerHTML;
+        const itemCount = parseInt(countDisplay.innerText);
+
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generando...';
         btn.disabled = true;
 
-        const SCALE = Math.max(2, window.devicePixelRatio || 1);
+        const SAFE_SCALE = 1; 
 
         html2canvas(canvas, {
             useCORS: true,
-            scale: SCALE,
+            allowTaint: true,
+            scale: SAFE_SCALE, 
             backgroundColor: null,
-            
+            logging: false,
             onclone: (clonedDoc) => {
                 const clonedCanvas = clonedDoc.getElementById('collage-canvas');
                 const clonedScaler = clonedDoc.querySelector('.canvas-scaler');
@@ -291,15 +282,30 @@
                 clonedCanvas.style.height = 'auto';
             }
         }).then(renderedCanvas => {
-            const link = document.createElement('a');
-            link.download = `MediaTracker_${new Date().toISOString().slice(0, 10)}.png`;
-            link.href = renderedCanvas.toDataURL('image/png');
-            link.click();
-            
-            btn.innerHTML = originalText;
-            btn.disabled = false;
+            renderedCanvas.toBlob(function(blob) {
+                if (!blob) {
+                    alert("Error: Image is too large for the browser.");
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    return;
+                }
+                
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.download = `MediaTracker_${new Date().toISOString().slice(0, 10)}.png`;
+                link.href = url;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                setTimeout(() => URL.revokeObjectURL(url), 1000);
+
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }, 'image/png');
+
         }).catch(err => {
-            console.error(err);
+            console.error("Canvas Error:", err);
             btn.innerHTML = 'Error :(';
             setTimeout(() => { 
                 btn.innerHTML = originalText; 
@@ -307,6 +313,5 @@
             }, 2000);
         });
     });
-
 </script>
 {{ end }}
