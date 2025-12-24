@@ -1,5 +1,5 @@
 {{ define "main" }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://unpkg.com/html2canvas-pro@1.6.2/dist/html2canvas-pro.min.js"></script>
 
 <div class="collage-wrapper">
 
@@ -126,15 +126,14 @@
         background: black;
         display: grid;
         gap: 0;
-        width: 100%;
-        max-width: 1200px;
+        width: fit-content;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         align-content: start;
         height: fit-content;
     }
 
     .collage-item {
-        width: 100%;
+        width: 600px;
         aspect-ratio: 2/3;
         overflow: hidden;
         position: relative;
@@ -227,7 +226,7 @@
         qualityValDisplay.innerText = qualityInput.value;
 
 
-        canvas.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+        canvas.style.gridTemplateColumns = `repeat(${columns}, 600px)`;
         canvas.innerHTML = '';
 
         filtered.forEach(item => {
@@ -255,20 +254,22 @@
         const originalText = btn.innerHTML;
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generando...';
 
-        html2canvas(canvas, {
-            scale: qualityValDisplay.value,
-            backgroundColor: null
-        }).then(canvas => {
-            const link = document.createElement('a');
-            link.download = `MediaTracker_Collage_${new Date().toISOString().slice(0, 10)}.png`;
-            link.href = canvas.toDataURL();
-            link.click();
+        const SCALE = Math.max(2, window.devicePixelRatio || 1);
 
-            btn.innerHTML = originalText;
-        }).catch(err => {
-            console.error(err);
-            alert("Error al generar la imagen. Revisa la consola.");
-            btn.innerHTML = originalText;
+        html2canvas(canvas, {
+            useCORS: true,
+            scale: SCALE,
+            backgroundColor: null,
+            onclone: doc => {
+                const c = doc.getElementById('collage-canvas');
+                c.style.overflow = 'visible';
+                c.style.maxWidth = 'none';
+            }
+        }).then(renderedCanvas => {
+            const link = document.createElement('a');
+            link.download = `MediaTracker_${new Date().toISOString().slice(0, 10)}.png`;
+            link.href = renderedCanvas.toDataURL('image/png');
+            link.click();
         });
     });
 
