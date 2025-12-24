@@ -27,7 +27,7 @@
 
         <div class="control-group">
             <label>Columnas: <span id="col-val">5</span></label>
-            <input type="range" id="columns-range" min="2" max="10" value="5">
+            <input type="range" id="columns-range" min="2" max="20" value="5">
         </div>
 
         <div class="control-group">
@@ -45,7 +45,9 @@
     </aside>
 
     <div class="collage-preview-area">
-        <div id="collage-canvas"></div>
+        <div class="canvas-scaler">
+            <div id="collage-canvas"></div>
+        </div>
     </div>
 
 </div>
@@ -55,8 +57,10 @@
         display: flex;
         gap: 30px;
         padding: 20px;
-        max-width: 1400px;
+        max-width: 100%;
         margin: 80px auto 0;
+        height: calc(100vh - 100px); 
+        box-sizing: border-box;
     }
 
     .collage-controls {
@@ -65,8 +69,8 @@
         padding: 20px;
         border-radius: 12px;
         height: fit-content;
-        position: sticky;
-        top: 100px;
+        overflow-y: auto;
+        max-height: 100%;
     }
 
     .control-group {
@@ -92,6 +96,7 @@
         padding: 8px;
         border-radius: 6px;
         border: 1px solid #ccc;
+        box-sizing: border-box;
     }
 
     .btn-download {
@@ -113,13 +118,18 @@
     .collage-preview-area {
         flex: 1;
         background: #333;
-        padding: 40px;
+        padding: 20px;
         border-radius: 12px;
-        overflow: auto;
+        overflow: hidden;
         display: flex;
+        align-items: center;
         justify-content: center;
+        position: relative;
+    }
 
-        align-items: start;
+    .canvas-scaler {
+        transform-origin: center center;
+        transition: transform 0.3s ease;
     }
 
     #collage-canvas {
@@ -127,9 +137,7 @@
         display: grid;
         gap: 0;
         width: fit-content;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        align-content: start;
-        height: fit-content;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
     }
 
     .collage-item {
@@ -145,25 +153,15 @@
         object-fit: cover;
         display: block;
     }
-
-    .collage-overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        font-size: 10px;
-        padding: 2px;
-        text-align: center;
-        opacity: 0;
-    }
 </style>
 
 <script>
     let allMedia = [];
 
     const canvas = document.getElementById('collage-canvas');
+    const scaler = document.querySelector('.canvas-scaler');
+    const previewArea = document.querySelector('.collage-preview-area');
+
     const startDateInput = document.getElementById('start-date');
     const endDateInput = document.getElementById('end-date');
     const columnsInput = document.getElementById('columns-range');
@@ -179,13 +177,14 @@
             allMedia = data;
             console.log("Datos cargados:", allMedia.length);
 
-            // Set current year range by default
             const today = new Date();
             const startOfYear = new Date(today.getFullYear(), 0, 2);
             startDateInput.valueAsDate = startOfYear;
             endDateInput.valueAsDate = today;
 
             renderCollage();
+            
+            window.addEventListener('resize', fitPreviewToScreen);
         });
 
     function renderCollage() {
@@ -207,10 +206,8 @@
 
             if (item.date) {
                 const itemDate = new Date(item.date);
-
                 const endOfDay = new Date(end);
                 endOfDay.setHours(23, 59, 59);
-
                 return itemDate >= start && itemDate <= endOfDay;
             }
             return false;
@@ -222,9 +219,7 @@
 
         countDisplay.innerText = filtered.length;
         colValDisplay.innerText = columnsInput.value;
-
         qualityValDisplay.innerText = qualityInput.value;
-
 
         canvas.style.gridTemplateColumns = `repeat(${columns}, 600px)`;
         canvas.innerHTML = '';
@@ -232,10 +227,30 @@
         filtered.forEach(item => {
             const div = document.createElement('div');
             div.className = 'collage-item';
-
             div.innerHTML = `<img src="${item.image}" alt="${item.title}" crossorigin="anonymous">`;
             canvas.appendChild(div);
         });
+
+        setTimeout(fitPreviewToScreen, 50);
+    }
+
+    function fitPreviewToScreen() {
+        if (!canvas.firstChild) return;
+
+        const containerWidth = previewArea.clientWidth - 40;
+        const containerHeight = previewArea.clientHeight - 40;
+        
+        const contentWidth = canvas.scrollWidth;
+        const contentHeight = canvas.scrollHeight;
+
+        const scaleX = containerWidth / contentWidth;
+        const scaleY = containerHeight / contentHeight;
+        
+        let scale = Math.min(scaleX, scaleY);
+        
+        if (scale > 1) scale = 1;
+
+        scaler.style.transform = `scale(${scale})`;
     }
 
     // Event Listeners
@@ -248,11 +263,11 @@
         el.addEventListener('change', renderCollage);
     });
 
-    // Download
     document.getElementById('download-btn').addEventListener('click', () => {
         const btn = document.getElementById('download-btn');
         const originalText = btn.innerHTML;
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generando...';
+        btn.disabled = true;
 
         const SCALE = Math.max(2, window.devicePixelRatio || 1);
 
@@ -260,16 +275,36 @@
             useCORS: true,
             scale: SCALE,
             backgroundColor: null,
-            onclone: doc => {
-                const c = doc.getElementById('collage-canvas');
-                c.style.overflow = 'visible';
-                c.style.maxWidth = 'none';
+            
+            onclone: (clonedDoc) => {
+                const clonedCanvas = clonedDoc.getElementById('collage-canvas');
+                const clonedScaler = clonedDoc.querySelector('.canvas-scaler');
+                
+                if(clonedScaler) {
+                    clonedScaler.style.transform = 'none';
+                    clonedScaler.style.margin = '0';
+                    clonedScaler.style.padding = '0';
+                }
+                
+                clonedCanvas.style.overflow = 'visible';
+                clonedCanvas.style.maxWidth = 'none';
+                clonedCanvas.style.height = 'auto';
             }
         }).then(renderedCanvas => {
             const link = document.createElement('a');
             link.download = `MediaTracker_${new Date().toISOString().slice(0, 10)}.png`;
             link.href = renderedCanvas.toDataURL('image/png');
             link.click();
+            
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+        }).catch(err => {
+            console.error(err);
+            btn.innerHTML = 'Error :(';
+            setTimeout(() => { 
+                btn.innerHTML = originalText; 
+                btn.disabled = false;
+            }, 2000);
         });
     });
 
