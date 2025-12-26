@@ -22,7 +22,8 @@ rewatches:
 - 2025-10-19
 status: Acabado
 steamgriddb_id: 1043
-tags: []
+tags:
+- completado100
 title: 'Hollow Knight: Silksong'
 type: videogame
 ---
@@ -31,3 +32,6 @@ El mejor juego que Team Cherry podía dar a los fans de [Hollow Knight]({{< ref 
 
 - Acto 2 superado el 2025-09-17
 - Acto 3 superado el 2025-10-19
+
+### Speedrun
+- Justo después de vencer a Lace
