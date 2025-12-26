@@ -18,7 +18,10 @@
                     <div class="media-cover">
                         <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
                         {{ if .Params.rating }}
-                        <div class="media-rating-badge">{{ .Params.rating }}</div>
+                        {{ $ratingKey := string .Params.rating }}
+                        {{ $theme := index .Site.Data.ratings $ratingKey | default .Site.Data.ratings.default }}
+                        <div class="media-rating-badge" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default
+                            " white" }}">{{ $theme.label }}</div>
                         {{ end }}
                     </div>
                     {{ end }}
