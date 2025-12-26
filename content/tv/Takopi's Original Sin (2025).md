@@ -23,5 +23,5 @@ tmdb_id: 284445
 type: tv
 ---
 
-Es un anime bastante crudo. Muestra la importancia de tener un núcleo familiar estable para que los niños se desarrollen bien. e
+Es un anime bastante crudo. Muestra la importancia de tener un núcleo familiar estable para que los niños se desarrollen bien.
 El tener una mala vida tampoco es excusa para tratar mal a otras personas. Cada persona tiene sus cosas buenas y cosas malas, pero siempre hay que intentar tratar a todos con respeto. La inocencia de los niños es algo que hay que cuidar. Por desgracia hay muchos niños sufriendo porque hay padres que nunca debieron serlo.
