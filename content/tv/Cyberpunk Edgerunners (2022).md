@@ -9,7 +9,7 @@ genres:
 image: images/covers/tmdb_7jSWOc6jWSw5hZ78HB8Hw3pJxuk.jpg
 overview: 'En una distopía plagada de corrupción e implantes cibernéticos, un chico
   prodigioso pero temerario trata de convertirse en un mercenario proscrito: un ‘edgerunner’.'
-rating: null
+rating: '6'
 release_date: 2022-09-13
 rewatches: []
 status: Acabado

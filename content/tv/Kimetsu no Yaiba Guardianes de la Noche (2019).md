@@ -14,7 +14,7 @@ overview: Tanjiro Kamado vive feliz con su madre y hermanos pequeños en la mont
   Matademonios y dar caza al demonio Muzan Kibutsuji, con la ayuda de Nezuko, que
   se resiste a perder del todo su humanidad. Juntos forman la nueva hornada de los
   guardianes de la noche.
-rating: null
+rating: '5'
 release_date: 2019-04-06
 rewatches: []
 status: Acabado

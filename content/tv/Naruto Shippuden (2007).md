@@ -17,7 +17,7 @@ overview: La historia transcurre en un mundo dominado por aldeas ninja. En las c
   un ser malvado, que antaño causo grandes males en su aldea (Konoha) y el cual irá
   poco a poco descubriendo y dominando. Por culpa de ese poder Naruto pasa una dura
   infancia con desprecio y negación por parte de los vecinos de su aldea...
-rating: null
+rating: '7'
 release_date: 2007-02-15
 rewatches: []
 status: Acabado

@@ -16,7 +16,7 @@ overview: La maga Frieren formaba parte del grupo del héroe Himmel, quienes der
   Cuando Himmel muere, Frieren se arrepiente de no haber pasado más tiempo a su lado
   conociéndolo, así que emprende un viaje para conocer mejor a sus antiguos compañeros,
   a las personas y descubrir más del mundo.
-rating: null
+rating: '7'
 release_date: 2023-09-29
 rewatches: []
 status: Acabado

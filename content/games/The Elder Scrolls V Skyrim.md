@@ -17,7 +17,7 @@ overview: The Empire of Tamriel is on the edge. The High King of Skyrim has been
 platforms:
 - PC
 - PS3
-rating: null
+rating: '7'
 related: []
 release_date: 2011-11-10
 rewatches: []
@@ -28,3 +28,5 @@ tags: []
 title: 'The Elder Scrolls V: Skyrim'
 type: videogame
 ---
+
+Puede que haya envejecido un poco mal mecánicamente, pero todo el conjunto de este juego es algo que me fascina y me ha marcado mucho desde que lo descubrí. Lo empecé mil veces y únicamente me he pasado la historia principal una vez.

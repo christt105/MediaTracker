@@ -10,7 +10,7 @@ image: images/covers/steamgriddb_505870c8848f2d550944bf64008c9472.png
 overview: ' '
 platforms:
 - Nintendo Switch
-rating: null
+rating: '7'
 related: []
 release_date: 2017-10-27
 rewatches: []

@@ -19,7 +19,7 @@ overview: 'Película recopilatoria para cines de los dos últimos episodios espe
   un terrorífico plan para erradicar a todo ser vivo del mundo. Con el destino del
   mundo pendiendo de un hilo, un variopinto grupo de antiguos camaradas y enemigos
   de Eren lucha por detener su letal misión. La única pregunta es: ¿lo conseguirán?'
-rating: null
+rating: '7'
 release_date: 2024-11-08
 rewatches: []
 status: Acabado

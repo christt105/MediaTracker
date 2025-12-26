@@ -10,7 +10,7 @@ igdb_id: 135400
 image: images/covers/steamgriddb_3f8e95182f3e7068a4772a1314160159.png
 overview: ''
 platforms: []
-rating: null
+rating: '7'
 related: []
 release_date: 2016-12-19
 rewatches: []

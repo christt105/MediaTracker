@@ -11,8 +11,8 @@ overview: Un misterioso personaje ha conseguido engañar a distintas personalida
   engañó a muchas personas. La investigación se intercala con los testimonios de las
   víctimas, además de con recreaciones dramáticas de los timos y eventos que nadie
   tiene claro si realmente llegaron a suceder.
-rating: null
-release_date: '2024-10-18'
+rating: '5'
+release_date: 2024-10-18
 rewatches: []
 status: Acabado
 tags: []

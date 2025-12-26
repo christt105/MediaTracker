@@ -16,7 +16,7 @@ overview: Shining stardust falls on the Mushroom Kingdom once every hundred year
   he got there, something unexpected was waiting for him…
 platforms:
 - Steam Deck
-rating: null
+rating: '7'
 related:
 - - - Media Tracker/Juegos/Super Mario Galaxy|Super Mario Galaxy
 release_date: 2010-05-23

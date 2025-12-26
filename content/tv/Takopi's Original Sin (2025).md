@@ -11,7 +11,7 @@ overview: 'Un alienígena feliz, Takopi, aterriza en la Tierra con una misión: 
   devolverle la sonrisa usando sus Artefactos de Felicidad mágicos. Pero mientras
   descubre el dolor que hay en su vida, Takopi aprende que para ser feliz quizás necesites
   algo más que artilugios.'
-rating: null
+rating: '6'
 release_date: 2025-06-28
 rewatches: []
 status: Acabado

@@ -12,7 +12,7 @@ overview: ' '
 platforms:
 - PC
 - Steam Deck
-rating: null
+rating: '7'
 related:
 - Hollow Knight Silksong
 release_date: 2017-02-24

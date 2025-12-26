@@ -11,7 +11,7 @@ overview: Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo,
   en una mazmorra de alto rango, Jinwoo regresó con el Sistema, un programa que solo
   él puede ver y que eleva su nivel en todos los sentidos. Ahora, está decidido a
   descubrir los secretos detrás de sus poderes y la mazmorra que los engendró.
-rating: null
+rating: '4'
 release_date: 2024-01-07
 rewatches: []
 status: Acabado

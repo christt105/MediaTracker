@@ -15,7 +15,7 @@ overview: ¡Sobrevivir a un apocalipsis zombi es mejor que ser un esclavo asalar
   asola su ciudad, le da el empujón que necesita para vivir por sí mismo. Ahora Akira
   tiene la misión de completar los 100 elementos de su lista de deseos antes de...
   bueno, patear el balde.
-rating: null
+rating: '4'
 release_date: 2023-07-09
 rewatches: []
 status: Acabado

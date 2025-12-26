@@ -12,9 +12,9 @@ overview: En la escarpada isla de Mema, donde vikingos y dragones han sido enemi
   cuando entabla amistad con Desdentao, un temido dragón Furia Nocturna. Su insólito
   vínculo revela la verdadera naturaleza de los dragones y desafía los cimientos de
   la sociedad vikinga.
-rating: null
-release_date: '2025-06-06'
-rewatches: []
+rating: '5'
+release_date: 2025-06-06
+rewatches: null
 status: Acabado
 tags: []
 title: Cómo entrenar a tu dragón

@@ -15,9 +15,9 @@ overview: Denji trabajaba como cazador de demonios para la yakuza, tratando de s
   secretos, una misteriosa chica llamada Reze irrumpe en su mundo y Denji se enfrenta
   a su batalla más mortífera, impulsado por el amor, en un mundo donde la supervivencia
   no conoce reglas.
-rating: null
-release_date: '2025-09-19'
-rewatches: []
+rating: '6'
+release_date: 2025-09-19
+rewatches: null
 status: Acabado
 tags:
 - anime

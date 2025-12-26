@@ -9,8 +9,8 @@ genres:
 image: images/covers/tmdb_aSe4aB8tiPQMoQt9B4SKFgIymwL.jpg
 overview: Peter Parker está destinado a ser un héroe, pero antes tendrá que recorrer
   un insólito camino.
-rating: null
-release_date: '2025-01-29'
+rating: '5'
+release_date: 2025-01-29
 rewatches: []
 status: Acabado
 tags: []

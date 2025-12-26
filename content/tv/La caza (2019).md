@@ -16,7 +16,7 @@ overview: 'Hace cinco años, dos niñas de once años, Ana y Lucía, desaparecie
   de las niñas atrapadas en sus secretos y mentiras, no se lo pondrán nada fácil a
   los investigadores. Algo tienen claro: el monstruo está entre ellos y los agentes
   iniciarán una caza que pondrá en peligro sus propias vidas.'
-rating: null
+rating: '5'
 release_date: 2019-03-25
 rewatches: []
 status: Sin Empezar

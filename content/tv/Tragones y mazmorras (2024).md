@@ -10,7 +10,7 @@ image: images/covers/tmdb_iPJtVqLSW9dBXRsUb42SKC3Ueys.jpg
 overview: Dragones, mazmorras... ¿y un rico guiso de monstruo? Nada se salva del apetito
   de estos aventureros que se adentran en un reino maldito para rescatar a uno de
   los suyos.
-rating: null
+rating: '5'
 release_date: 2024-01-04
 rewatches: []
 status: Acabado
