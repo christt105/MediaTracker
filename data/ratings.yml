@@ -1,0 +1,46 @@
+"7":
+  label: "Obra Maestra"
+  color: "#a855f7"
+  icon: "fa-solid fa-crown"
+  text_color: "white"
+
+"6":
+  label: "Increíble"
+  color: "#22c55e"
+  icon: "fa-solid fa-heart"
+  text_color: "white"
+
+"5":
+  label: "Bueno"
+  color: "#84cc16"
+  icon: "fa-solid fa-thumbs-up"
+  text_color: "white"
+
+"4":
+  label: "Normal"
+  color: "#eab308"
+  icon: "fa-solid fa-face-meh"
+  text_color: "black"
+
+"3":
+  label: "Malo"
+  color: "#f97316"
+  icon: "fa-solid fa-thumbs-down"
+  text_color: "white"
+
+"2":
+  label: "Terrible"
+  color: "#ef4444"
+  icon: "fa-solid fa-face-dizzy"
+  text_color: "white"
+
+"1":
+  label: "Abismal"
+  color: "#b91c1c"
+  icon: "fa-solid fa-skull"
+  text_color: "white"
+
+default:
+  color: "#cccccc"
+  icon: "fa-solid fa-star"
+  text_color: "white"
