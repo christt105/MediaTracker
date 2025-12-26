@@ -109,7 +109,7 @@
                                 {{ if not (reflect.IsSlice $tags) }}{{ $tags = slice $tags }}{{ end }}
                                 {{ range $tags }}
                                 {{ $tagName := . | urlize }}
-                                <a href="{{ printf " tags/%s" $tagName | relLangURL }}" class="tag-link">#{{ . }}</a>
+                                <a href="{{ printf "tags/%s" $tagName | relLangURL }}" class="tag-link">#{{ . }}</a>
                                 {{ end }}
                             </div>
                             {{ end }}

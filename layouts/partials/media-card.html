@@ -45,7 +45,11 @@
         <small>
             {{ if eq .Params.status "Acabado" }}
             {{ $configDateFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
+            {{ if .Date }}
             {{ time.Format $configDateFormat .Date }}
+            {{ else }}
+            {{ time.Format $configDateFormat .Params.release_date }}
+            {{ end }}
             {{ else }}
             {{ .Params.status | default "En curso" }}
             {{ end }}
