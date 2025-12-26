@@ -58,6 +58,20 @@
     font-weight: bold;
     font-size: 0.8rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.media-rating-badge {
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 0 0 6px 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 .media-grid {
