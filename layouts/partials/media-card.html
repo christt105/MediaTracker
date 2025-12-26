@@ -35,39 +35,15 @@
 
         {{ if and (eq .Params.status "Acabado") .Params.rating }}
 
-        {{ $rating := .Params.rating }}
-        {{ $color := "#cccccc" }}
-        {{ $icon := "fa-solid fa-star" }}
-        {{ $text := "white" }}
+        {{ $ratingKey := string .Params.rating }}
 
-        {{ if ge $rating 7 }}
-        {{ $color = "#a855f7" }}
-        {{ $icon = "fa-solid fa-crown" }}
-        {{ else if ge $rating 6 }}
-        {{ $color = "#22c55e" }}
-        {{ $icon = "fa-solid fa-heart" }}
-        {{ else if ge $rating 5 }}
-        {{ $color = "#84cc16" }}
-        {{ $icon = "fa-solid fa-thumbs-up" }}
-        {{ else if ge $rating 4 }}
-        {{ $color = "#eab308" }}
-        {{ $icon = "fa-solid fa-face-meh" }}
-        {{ $text = "black" }}
-        {{ else if ge $rating 3 }}
-        {{ $color = "#f97316" }}
-        {{ $icon = "fa-solid fa-thumbs-down" }}
-        {{ else if ge $rating 2 }}
-        {{ $color = "#ef4444" }}
-        {{ $icon = "fa-solid fa-face-dizzy" }}
-        {{ else }}
-        {{ $color = "#b91c1c" }}
-        {{ $icon = "fa-solid fa-skull" }}
-        {{ end }}
+        {{ $theme := index .Site.Data.ratings $ratingKey | default .Site.Data.ratings.default }}
 
-        <div class="margin-rating" style="background: {{ $color }};"></div>
+        <div class="margin-rating" style="background: {{ $theme.color }};"></div>
 
-        <div class="badge-rating" style="background: {{ $color }}; color: {{ $text }}">
-            <i class="{{ $icon }}"></i>
+        <div class="badge-rating" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default " white"
+            }}">
+            <i class="{{ $theme.icon }}"></i>
         </div>
 
         {{ end }}
