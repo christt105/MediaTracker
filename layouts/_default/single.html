@@ -91,7 +91,9 @@
                                 {{ else if or (eq $p "pc") (eq $p "windows") }}
                                 {{ $icon = "fas fa-desktop" }}
                                 {{ else if eq $p "switch" }}
-                                {{ $icon = "fas fa-gamepad" }} {{ else if in $p "ps" }} {{ $icon = "fa-brands fa-playstation" }}
+                                {{ $icon = "fas fa-gamepad" }}
+                                {{ else if in $p "ps" }}
+                                {{ $icon = "fa-brands fa-playstation" }}
                                 {{ else if in $p "xbox" }}
                                 {{ $icon = "fa-brands fa-xbox" }}
                                 {{ end }}
@@ -109,7 +111,8 @@
                                 {{ if not (reflect.IsSlice $tags) }}{{ $tags = slice $tags }}{{ end }}
                                 {{ range $tags }}
                                 {{ $tagName := . | urlize }}
-                                <a href="{{ printf "tags/%s" $tagName | relLangURL }}" class="tag-link">#{{ . }}</a>
+                                {{ $tags := printf "tags/%s" $tagName | relLangURL }}
+                                <a href="{{ $tags }}" class="tag-link">#{{ . }}</a>
                                 {{ end }}
                             </div>
                             {{ end }}
