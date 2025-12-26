@@ -10,7 +10,7 @@ overview: Año 2023, veinte años después del comienzo de una plaga mundial que
   mundo postapocalíptico en el nada va a ser fácil para los viajeros.  Joel todavía
   vive atormentado por el recuerdo de su única hija. Ellie es portadora de algo que
   podría cambiar el destino de la humanidad ¿Conseguirán sobrevivir los dos?
-rating: null
+rating: '6'
 release_date: 2023-01-15
 rewatches: []
 status: Acabado

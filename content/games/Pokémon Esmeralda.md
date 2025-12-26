@@ -16,7 +16,7 @@ overview: Both Team Magma and Team Aqua are featured as the villainous teams, ea
   to the Elite Four challenge, while still at the same place and at the same high
   level as in Ruby and Sapphire.
 platforms: []
-rating: null
+rating: '7'
 related: []
 release_date: 2004-09-16
 rewatches: []
@@ -24,6 +24,6 @@ status: Acabado
 steam_appid: null
 steamgriddb_id: 34971
 tags: []
-title: Pokémon Emerald Version
+title: Pokémon Esmeralda
 type: videogame
 ---

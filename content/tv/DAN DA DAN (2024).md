@@ -13,7 +13,7 @@ overview: 'Cuando Momo, una estudiante de instituto de una familia de médiums e
   pero no en los fantasmas. Cuando resulta que ambos fenómenos son reales, en Momo
   surge un poder oculto y en Okarun el poder de una maldición. Juntos, deberán desafiar
   a las fuerzas paranormales que amenazan su mundo.'
-rating: null
+rating: '6'
 release_date: 2024-10-04
 rewatches: []
 status: Sin Empezar

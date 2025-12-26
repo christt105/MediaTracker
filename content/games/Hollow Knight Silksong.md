@@ -14,7 +14,7 @@ overview: Play as Hornet, princess-protector of Hallownest, and adventure throug
   to the kingdom’s peak.
 platforms:
 - Steam Deck
-rating: null
+rating: '7'
 related:
 - Hollow Knight
 release_date: 2025-09-04

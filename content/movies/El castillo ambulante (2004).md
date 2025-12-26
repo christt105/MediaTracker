@@ -9,8 +9,8 @@ image: images/covers/tmdb_p8EARnEw8KPZzlZg3vkseYVMczu.jpg
 overview: Sophie, una joven sobre la que pesa una horrible maldición que le confiere
   el aspecto de una anciana, decide pedir ayuda al mago Howl, que vive en un castillo
   ambulante, pero tal vez sea Howl quien necesite la ayuda de Sophie.
-rating: null
-release_date: '2004-09-09'
+rating: '7'
+release_date: 2004-09-09
 rewatches: []
 status: Acabado
 tags:

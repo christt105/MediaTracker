@@ -9,7 +9,7 @@ image: images/covers/tmdb_hqRb1wyIVsaMukZElPBUXoJPqrR.jpg
 overview: Tras un siglo de aparente paz, un titán colosal rompe las murallas que protegían
   a la humanidad, desatando una nueva masacre. Eren Jaeger y el Cuerpo de Exploradores
   lucharán para recuperar su mundo y enfrentar la amenaza titán.
-rating: null
+rating: '7'
 release_date: 2013-04-07
 rewatches: []
 status: Acabado

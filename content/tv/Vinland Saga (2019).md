@@ -11,7 +11,7 @@ overview: Cuando Thors, un gran guerrero viking muere asesinado en batalla a man
   de Askeladd, un mercenario, su hijo, Thorfinn, jura vengarse. Para ello tendrá que
   demostrar su valía antes de ganarse el derecho a retar a un duelo al asesino de
   su padre.
-rating: null
+rating: '7'
 release_date: 2019-07-08
 rewatches: []
 status: Acabado

@@ -10,7 +10,7 @@ image: images/covers/tmdb_5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg
 overview: Remake de Fullmetal Alchemist. Edward y Alphonse rompieron la regla basica
   de la alquimia, la cual les trajo graves consecuencias. Para remediar esto, se embarcan
   en busca de alguna forma de solucionar sus males
-rating: null
+rating: '7'
 release_date: 2009-04-05
 rewatches: []
 status: Acabado

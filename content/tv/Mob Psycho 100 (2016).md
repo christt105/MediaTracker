@@ -13,7 +13,7 @@ overview: Kageyama Shigeo, más conocido por el apodo "Mob", parece un chico tí
   bajo control, tiene que reprimir constantemente sus emociones. Sin embargo, los
   problemas le persiguen, y vive rodeado por falsos Espers, espíritus malignos y misteriosas
   organizaciones.
-rating: null
+rating: '6'
 release_date: 2016-07-12
 rewatches: []
 status: Acabado

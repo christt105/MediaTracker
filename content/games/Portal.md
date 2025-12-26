@@ -10,7 +10,7 @@ igdb_id: 71
 image: images/covers/steamgriddb_dcb88e77b00e85321d39b4e4097c1107.png
 overview: ''
 platforms: []
-rating: null
+rating: '7'
 related: []
 release_date: 2007-10-10
 rewatches: []

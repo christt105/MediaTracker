@@ -11,7 +11,7 @@ overview: 'Dificultades, arrepentimiento, vergüenza… Los sentimientos negativ
   Las Maldiciones campan a sus anchas por todo el mundo, y pueden llevar a las personas
   a sufrir terribles desgracias e incluso dirigirlas a su muerte. Y lo que es peor:
   solo una Maldición puede exorcizar otra Maldición.'
-rating: null
+rating: '6'
 related:
 - Jujutsu Kaisen 0 (2021)
 - JUJUTSU KAISEN Ejecución (2025)

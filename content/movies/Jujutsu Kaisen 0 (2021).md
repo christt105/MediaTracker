@@ -13,7 +13,7 @@ overview: 'Yuta Okkotsu es un nervioso estudiante de instituto que sufre un grav
   noveles aprenden a combatir las maldiciones. Gojo convence a Yuta para que se matricule,
   pero ¿podrá aprender lo suficiente a tiempo para enfrentarse a la Maldición que
   le persigue?'
-rating: null
+rating: '6'
 release_date: 2021-12-24
 rewatches: []
 status: Acabado

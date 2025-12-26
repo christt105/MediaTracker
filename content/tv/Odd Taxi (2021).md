@@ -12,7 +12,7 @@ overview: '"¿A dónde le llevo?". La ciudad debería resultarle familiar a Odok
   amistades son su doctor, Goriki, y un antiguo compañero de clase, Kakibana. Sus
   clientes también son algo extraños... Sus conversaciones corrientes acabarán teniendo
   relación con el caso de una estudiante que ha desaparecido.'
-rating: null
+rating: '6'
 release_date: 2021-04-06
 rewatches: []
 status: Acabado
@@ -25,5 +25,3 @@ type: tv
 ---
 
 Me ha gustado mucho. Una buena trama con un buen desenlace. Los personajes son la parte principal del desarrollo de la historia. Odokawa es, aunque bastante serio, muy carismático. Cada nuevo personaje tiene su personalidad, sus problemas y formas de afrontar su vida.
-
-Recomendado.

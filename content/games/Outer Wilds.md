@@ -23,7 +23,7 @@ overview: Welcome to the Space Program! You're the newest recruit of Outer Wilds
   marshmallow.
 platforms:
 - Steam Deck
-rating: null
+rating: '7'
 related: []
 release_date: 2019-05-28
 rewatches: []

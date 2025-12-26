@@ -12,7 +12,7 @@ image: images/covers/steam_609490.jpg
 overview: ' '
 platforms:
 - PC
-rating: null
+rating: '6'
 related: []
 release_date: 2018-04-03
 rewatches: []
