@@ -99,7 +99,8 @@
 
             <h3 class="section-title">Completado</h3>
 
-            {{ $acabadosSorted := $acabados.ByDate.Reverse }}
+            {{ $acabadosSortedRelease := ($acabados.ByParam "release_date").Reverse }}
+            {{ $acabadosSorted := $acabadosSortedRelease.ByDate.Reverse }}
 
             {{ range $acabadosSorted.GroupByDate "2006" }}
 
