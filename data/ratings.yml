@@ -17,10 +17,10 @@
   text_color: "white"
 
 "4":
-  label: "Normal"
+  label: "Decente"
   color: "#eab308"
-  icon: "fa-solid fa-face-meh"
-  text_color: "black"
+  icon: "fa-solid fa-face-smile"
+  text_color: "white"
 
 "3":
   label: "Malo"
