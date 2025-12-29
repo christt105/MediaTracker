@@ -12,7 +12,7 @@ image: images/covers/steamgriddb_33ce538f76f7a4060a93caa7bfd6c8c3.png
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '6'
 related: []
 release_date: 2016-02-25
 rewatches: []
@@ -22,3 +22,5 @@ tags: []
 title: SuperHot
 type: videogame
 ---
+
+Muy buen juego. Es corto y exprimiendo bien la mecánica. Tengo curiosidad por la versión de VR.

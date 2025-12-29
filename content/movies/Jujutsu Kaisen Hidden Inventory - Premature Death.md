@@ -11,7 +11,7 @@ overview: Perseguidos por una secta religiosa y otros usuarios de maldiciones, c
   a Riko Amanai, una estudiante que ha sido designada para ser sacrificada como Recipiente
   de Plasma Estelar hasta que pueda cumplir con su deber, pero esta misión marcará
   sus destinos y desafiará a los dos hechiceros de formas inimaginables.
-rating: null
+rating: '6'
 related: []
 release_date: null
 rewatches: []

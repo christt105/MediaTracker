@@ -3,6 +3,7 @@ air_date: null
 banner_image: images/banners/tmdb_uNTrRKIOyKYISthoeizghtXPEOK.jpg
 date: 2025-11-09
 image: images/covers/tvdb_6867027607c12.jpg
+rating: '7'
 rewatches: []
 season_number: 2
 serie: DAN DA DAN (2024)

@@ -16,8 +16,8 @@ overview: '''Anglés: historia de una fuga'' relata la persecución a la desespe
   testimonio inédito de un testigo que ahora revela lo que vio la noche del 25 de
   marzo de 1993 en el muelle del puerto de Dublín. Una información que puede dar un
   vuelco a todo lo que se daba por hecho sobre los últimos pasos de Antonio Anglés.'
-rating: null
-release_date: '2023-02-09'
+rating: '5'
+release_date: 2023-02-09
 rewatches: []
 status: Acabado
 tags: []
