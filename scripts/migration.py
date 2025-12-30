@@ -230,6 +230,31 @@ def process_image(source_str, note_src, type="cover"):
 
     return None
 
+def convert_youtube_links(text):
+    """
+    Converts YouTube links in the content to Hugo shortcodes.
+    Example:
+    https://www.youtube.com/watch?v=VIDEO_ID
+    https://youtu.be/VIDEO_ID
+    Becomes:
+    {{< youtube VIDEO_ID >}}
+    """
+    def replacer(match):
+        url = match.group(0)
+        video_id = None
+        
+        if "youtube.com/watch?v=" in url:
+            video_id = url.split("v=")[1].split("&")[0]
+        elif "youtu.be/" in url:
+            video_id = url.split("youtu.be/")[1].split("?")[0]
+        
+        if video_id:
+            return f'{{{{< youtube {video_id} >}}}}'
+        return url 
+
+    youtube_pattern = r'(https?://(?:www\.)?youtube\.com/watch\?v=[\w-]+|https?://youtu\.be/[\w-]+)'
+    return re.sub(youtube_pattern, replacer, text)
+
 # ==========================================
 # MAIN MIGRATION LOGIC
 # ==========================================
@@ -350,6 +375,8 @@ def migrate():
                     
                     # B. Process Wikilinks
                     post.content = convert_wikilinks(post.content, known_files)
+
+                    post.content = convert_youtube_links(post.content)
 
                 # 6. WRITE FILE
                 with open(destination_file, 'w', encoding='utf-8') as f:

@@ -3,6 +3,7 @@ banner_image: images/banners/tmdb_zCcIvHeua3jaMNSALeNQd0FIyPn.jpg
 date: null
 genres:
 - Documental
+image: images/covers/tmdb_2B1IqPg97ZhpEov4Fg3si4hI1Kw.jpg
 overview: 'Indie Game: The Movie captura el proceso de sacar a la venta un videojuego
   independiente y la dedicación y esfuerzo que ello requiere. Lo hace retratando la
   vida de las personas detrás de tres juegos de gran relevancia en el mercado independiente:

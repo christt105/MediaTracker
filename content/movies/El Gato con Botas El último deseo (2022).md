@@ -23,4 +23,4 @@ type: movie
 
 Una obra maestra de DreamWorks. Me gustó mucho verla, pero después de ver el análisis de Jordi Maquiavello, me encantó.
 
-https://youtu.be/B9kjGxv2d7s
+{{< youtube B9kjGxv2d7s >}}
