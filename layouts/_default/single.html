@@ -15,7 +15,7 @@
 
                 <div class="media-info-container">
                     {{ if .Params.image }}
-                    <div class="media-cover">
+                    <div class="media-cover {{ if .Params.rating }}has-rating{{ end }}">
                         <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
                         {{ if .Params.rating }}
                         {{ $ratingKey := string .Params.rating }}
