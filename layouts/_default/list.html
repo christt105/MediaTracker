@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{{- $defaultColor := .Site.Params.defaultColor | default "auto" -}}
+
+{{- if eq $defaultColor "dark" -}}
+<html lang="{{ .Site.LanguageCode }}" class="dark">
+{{- else if eq $defaultColor "light" -}}
+<html lang="{{ .Site.LanguageCode }}" class="light">
+{{- else -}}
+<html lang="{{ .Site.LanguageCode }}">
+{{- end -}}
+
+{{- partial "head.html" . -}}
+
+<body data-theme="{{ $defaultColor }}" class="notransition">
+    {{- partial "scriptsBodyStart.html" . -}}
+    {{- partial "header.html" . -}}
+
+    <div class="wrapper list-page">
+        <header class="header">
+            <h1 class="header-title center">{{ .Title }}</h1>
+        </header>
+        <main class="page-content" aria-label="Content">
+
+            {{ $media := .Pages }} {{ $mediaClean := slice }}
+
+            {{ range $media }}
+            {{ $esPadreSinFecha := false }}
+            {{ if or (not (eq .Params.type "tv")) (not .Params.temporadas) (eq (len .Params.temporadas) 0) }}
+            {{ $mediaClean = $mediaClean | append . }}
+            {{ continue }}
+            {{ end }}
+            {{ if (eq .Date.Year 1) }}
+            {{ $esPadreSinFecha = true }}
+            {{ end }}
+            {{ if not $esPadreSinFecha }}
+            {{ $mediaClean = $mediaClean | append . }}
+            {{ end }}
+            {{ end }}
+
+            {{ $acabados := where $mediaClean "Params.status" "eq" "Acabado" }}
+
+            {{ $otros := where $mediaClean "Params.status" "in" (slice "Pausado" "Abandonado") }}
+
+            {{ $enCurso := where $mediaClean "Params.status" "not in" (slice "Acabado" "Pausado" "Abandonado" "Sin Empezar") }}
+
+            {{ if gt (len $enCurso) 0 }}
+            <div class="home-section" style="margin-bottom: 40px;">
+                <h3 class="section-title">En Curso ({{ len $enCurso }})</h3>
+                <div class="media-grid">
+                    {{ range $enCurso.ByLastmod.Reverse }}
+                    {{ partial "media-card.html" . }}
+                    {{ end }}
+                </div>
+            </div>
+            <hr class="section-divider">
+            {{ end }}
+
+            {{ if gt (len $acabados) 0 }}
+
+            {{ $acabadosSorted := $acabados.ByDate.Reverse }}
+
+            {{ range $acabadosSorted.GroupByDate "2006" }}
+
+            <div class="year-group">
+                <h2 class="year-title">
+                    {{ if eq .Key "0001" }}
+                    No recuerdo cuándo
+                    {{ else }}
+                    {{ .Key }}
+                    {{ end }}
+                </h2>
+
+                <div class="media-grid">
+                    {{ range .Pages }}
+                    {{ partial "media-card.html" . }}
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
+            {{ else }}
+            {{ if eq (len $enCurso) 0 }}
+            <p>No hay elementos completados en esta lista.</p>
+            {{ end }}
+            {{ end }}
+
+            {{ if gt (len $otros) 0 }}
+            <hr class="section-divider" style="margin-top: 40px;">
+            <div class="hidden-section-container" style="margin-top: 20px;">
+                <details>
+                    <summary style="cursor: pointer; opacity: 0.7; font-weight: bold; padding: 10px;">
+                        Ver Pausados y Abandonados ({{ len $otros }})
+                    </summary>
+
+                    <div class="media-grid" style="margin-top: 20px;">
+                        {{ range $otros.ByLastmod.Reverse }}
+                        {{ partial "media-card.html" . }}
+                        {{ end }}
+                    </div>
+                </details>
+            </div>
+            {{ end }}
+
+        </main>
+    </div>
+
+    {{- partial "footer.html" . -}}
+    {{- partial "scriptsBodyEnd.html" . -}}
+</body>
+
+</html>
