@@ -9,13 +9,16 @@ image: images/covers/steamgriddb_acb65fb1f52f4c174f1303f79f0db0cd.png
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '7'
 related: []
 release_date: 2023-03-23
 rewatches: []
 status: Acabado
 steamgriddb_id: 5404482
-tags: []
+tags:
+- pokemon
 title: Pokémon Añil
 type: videogame
 ---
+
+La mejor experiencia para jugar a la primera generación de Pokémon.

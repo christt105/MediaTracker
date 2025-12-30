@@ -10,7 +10,7 @@ igdb_id: 1557
 image: images/covers/img_26f8f1353e11579d415f3a48df41cc62.jpg
 overview: ' '
 platforms: []
-rating: null
+rating: '7'
 related: []
 release_date: null
 rewatches: []

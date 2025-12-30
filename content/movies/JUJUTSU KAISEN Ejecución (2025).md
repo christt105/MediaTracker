@@ -6,7 +6,7 @@ genres:
 - Acción
 image: images/covers/tmdb_c0gwM59dS7ZvX56SIP1FU5LHB9B.jpg
 overview: ''
-rating: null
+rating: '6'
 release_date: 2025-11-14
 rewatches: []
 status: Acabado

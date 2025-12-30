@@ -14,7 +14,7 @@ overview: Two years after the events of the original game, Sergeant James Heller
   virus.
 platforms:
 - PS3
-rating: null
+rating: '6'
 related: []
 release_date: 2012-04-24
 rewatches: []

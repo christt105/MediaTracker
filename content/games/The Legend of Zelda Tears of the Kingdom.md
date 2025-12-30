@@ -21,7 +21,7 @@ overview: While exploring the caves underneath Hyrule Castle to investigate the 
   of the Zonai.
 platforms:
 - Nintendo Switch
-rating: null
+rating: '7'
 related:
 - The Legend of Zelda Breath of the Wild
 release_date: 2023-05-12

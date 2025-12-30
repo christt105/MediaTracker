@@ -9,7 +9,7 @@ overview: Justin Kemp, un hombre de familia, mientras forma parte de un jurado e
   un juicio por asesinato, se encuentra luchando con un serio dilema moral... uno
   que podría utilizar para influir en el veredicto del jurado y potencialmente condenar
   (o liberar) al asesino acusado.
-rating: null
+rating: '6'
 release_date: 2024-10-30
 rewatches: []
 status: Acabado

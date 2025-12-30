@@ -12,7 +12,7 @@ image: images/covers/steamgriddb_a8b4e1711d6984d13cb9050939f14dc3.png
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '6'
 related:
 - Limbo
 release_date: 2016-06-29

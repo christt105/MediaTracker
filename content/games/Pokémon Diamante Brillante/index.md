@@ -11,7 +11,7 @@ image: images/covers/steamgriddb_fa92ff9fa650495c0797c21e8587551a.png
 overview: ' '
 platforms:
 - Nintendo Switch
-rating: null
+rating: '4'
 related: []
 release_date: 2021-11-19
 rewatches:

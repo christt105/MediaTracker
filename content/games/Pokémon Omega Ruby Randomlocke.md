@@ -12,7 +12,7 @@ image: images/covers/steamgriddb_b07b27053e3722d60e0d2d661b04d5da.png
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '6'
 related: []
 release_date: 2014-11-21
 rewatches: []

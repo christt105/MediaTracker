@@ -13,8 +13,8 @@ overview: La querida banda de los Guardianes se instala en Knowhere. Pero sus vi
   peligrosa misión para salvar la vida de Rocket, una misión que, si no se completa
   con éxito, podría muy posiblemente conducir al final de los Guardianes tal y como
   los conocemos.
-rating: null
-release_date: '2023-05-03'
+rating: '6'
+release_date: 2023-05-03
 rewatches: []
 status: Acabado
 tags: []

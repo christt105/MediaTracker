@@ -9,8 +9,8 @@ image: images/covers/tmdb_6Dc9mMl083cVpNknWzALCw7JYPH.jpg
 overview: Una decisión tomada en China en los años 60 trasciende el tiempo y el espacio,
   obligando a unos científicos a afrontar la peor amenaza para la humanidad en el
   presente.
-rating: null
-release_date: '2024-03-21'
+rating: '6'
+release_date: 2024-03-21
 rewatches: []
 status: Acabado
 tags: []

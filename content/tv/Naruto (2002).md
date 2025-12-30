@@ -11,7 +11,7 @@ overview: Naruto es un joven aprendiz de ninja marginado y temido en la Villa Oc
   sellado en su interior. Acompañado por el intenso Sasuke y la ingeniosa Sakura,
   Naruto comienza su aprendizaje decidido a convertirse en maestro Hokage, la más
   alta distinción entre los ninjas, para ganarse el reconocimiento de los suyos.
-rating: '6'
+rating: '7'
 release_date: 2002-10-03
 rewatches: []
 status: Acabado

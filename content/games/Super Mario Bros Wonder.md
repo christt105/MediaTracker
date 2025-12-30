@@ -9,7 +9,7 @@ image: images/covers/steamgriddb_66da3b21fe18692332284c64e08b8e02.png
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '7'
 related: []
 release_date: 2023-10-20
 rewatches: []
@@ -17,7 +17,6 @@ status: Acabado
 steamgriddb_id: 5409928
 tags:
 - completado100
-- platinado
 title: Super Mario Bros. Wonder
 type: videogame
 ---

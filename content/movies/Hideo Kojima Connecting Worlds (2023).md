@@ -9,8 +9,8 @@ overview: Un viaje a la mente creativa del diseñador de videojuegos más emblem
   Winding Refn, Grimes, George Miller, Norman Reedus, Woodkid, Chvrches, este documental
   visualmente cautivador ofrece una visión poco común del proceso creativo de Hideo
   Kojima mientras lanza su propio estudio independiente.
-rating: null
-release_date: '2023-06-17'
+rating: '5'
+release_date: 2023-06-17
 rewatches: []
 status: Acabado
 tags:

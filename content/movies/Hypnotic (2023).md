@@ -15,7 +15,7 @@ overview: Decidido a encontrar a su hija desaparecida, el detective Danny Rourke
   y, al mismo tiempo, es perseguido por un espectro letal, el único hombre que él
   cree que tiene la clave para encontrar a su hija. Pero acabará descubriendo mucho
   más de lo que esperaba.
-rating: null
+rating: '4'
 release_date: 2023-05-11
 rewatches: []
 status: Acabado

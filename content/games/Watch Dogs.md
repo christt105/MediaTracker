@@ -15,7 +15,7 @@ overview: You play as Aiden Pearce, a brilliant hacker and former thug, whose cr
   enemy... and more.
 platforms:
 - PS3
-rating: null
+rating: '5'
 related: []
 release_date: 2014-05-26
 rewatches: []

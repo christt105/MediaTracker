@@ -9,7 +9,7 @@ image: images/covers/steamgriddb_5d032420ce52894fa826e0fea5a60ac5.png
 overview: ' '
 platforms:
 - PS3
-rating: null
+rating: '6'
 related: []
 release_date: 2012-10-30
 rewatches: []

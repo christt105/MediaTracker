@@ -11,7 +11,7 @@ image: images/covers/steamgriddb_726f40702ffcf45fe0783e38b533dcda.jpg
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '5'
 related: []
 release_date: 2020-03-05
 rewatches: []

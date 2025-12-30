@@ -10,7 +10,7 @@ overview: Hace ya 10 años del primer vídeo publicado por el Rubius en YouTube.
   que causó el nacimiento de YouTube con una de las figuras pioneras en el sector
   y el influencer más popular en España e Hispanoamérica con más de 40 millones de
   seguidores.
-rating: null
+rating: '4'
 release_date: 2022-07-21
 rewatches: []
 status: Acabado

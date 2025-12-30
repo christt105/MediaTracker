@@ -14,8 +14,8 @@ overview: Lluís Gros, condenado a 23 años de prisión por abusos sexuales, pid
   otros crímenes de Gros que lo motivan a luchar para que se haga justicia. Es la
   historia de cómo el ego de un criminal acaba siendo su perdición y de la lucha de
   Carles Tamayo en busca de justicia.
-rating: null
-release_date: '2024-09-06'
+rating: '5'
+release_date: 2024-09-06
 rewatches: []
 status: Acabado
 tags: []

@@ -11,7 +11,7 @@ igdb_id: 1331
 image: images/covers/steamgriddb_691dc5b7272b343c9ea3ed9fa84b32f6.png
 overview: ' '
 platforms: []
-rating: null
+rating: '6'
 related:
 - Inside
 release_date: 2010-07-21
