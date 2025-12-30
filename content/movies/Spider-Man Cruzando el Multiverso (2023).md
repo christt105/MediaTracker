@@ -13,8 +13,8 @@ overview: Tras reencontrarse con Gwen Stacy, el amigable vecindario de Spider-Ma
   los héroes se enfrentan sobre cómo manejar una nueva amenaza, Miles se encuentra
   enfrentado a las otras Arañas y debe redefinir lo que significa ser un héroe para
   poder salvar a la gente que más quiere.
-rating: null
-release_date: '2023-05-31'
+rating: '7'
+release_date: 2023-05-31
 rewatches: []
 status: Acabado
 tags:
@@ -23,3 +23,5 @@ title: 'Spider-Man: Cruzando el Multiverso'
 tmdb_id: 569094
 type: movie
 ---
+
+Increíble. Superior a la anterior, y era difícil de superar.

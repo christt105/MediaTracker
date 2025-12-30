@@ -16,7 +16,7 @@ overview: Deacon St. John, a former outlaw and drifter, searches for purpose in 
   uncovering harsh truths about resilience and loss in a world on the edge.
 platforms:
 - Steam Deck
-rating: null
+rating: '5'
 related: []
 release_date: 2019-04-26
 rewatches: []
@@ -26,3 +26,5 @@ tags: []
 title: Days Gone
 type: videogame
 ---
+
+La premisa está muy bien. Es excesivamente largo para lo que estoy acostumbrado.

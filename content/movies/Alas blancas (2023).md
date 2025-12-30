@@ -12,7 +12,7 @@ overview: 'Julian lucha por pertenecer a un grupo desde que fue expulsado de su 
   ocupada por los nazis, un chico le protegió arriesgando su propia vida. Ambos encontrarán
   el primer amor en un asombroso y mágico mundo de su propia creación, mientras la
   madre del chico (Gillian Anderson) lo arriesgará todo para mantenerlos a salvo.'
-rating: null
+rating: '5'
 release_date: 2023-10-25
 rewatches: []
 status: Acabado

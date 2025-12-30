@@ -17,7 +17,7 @@ overview: A foul curse has fallen upon the land of Cvstodia and all its inhabita
   origin of your anguish.
 platforms:
 - Steam Deck
-rating: null
+rating: '5'
 related: []
 release_date: 2019-09-10
 rewatches: []

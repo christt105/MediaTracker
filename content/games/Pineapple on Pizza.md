@@ -9,7 +9,7 @@ image: images/covers/steam_2263010.jpg
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '7'
 related: []
 release_date: 2023-03-28
 rewatches: []

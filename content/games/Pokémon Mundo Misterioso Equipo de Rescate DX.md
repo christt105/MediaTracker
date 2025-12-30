@@ -10,7 +10,7 @@ image: images/covers/steamgriddb_b43e49b1fc20ff9f2658bfcc9bcd8586.png
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '5'
 related: []
 release_date: 2020-03-06
 rewatches: []
@@ -20,3 +20,5 @@ tags: []
 title: 'Pokémon Mundo Misterioso: Equipo de Rescate DX'
 type: videogame
 ---
+
+Buen remake, más accesible y con mecánicas actualizadas a los nuevos estándares.

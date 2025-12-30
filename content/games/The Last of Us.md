@@ -14,7 +14,7 @@ overview: Twenty years after the outbreak of a parasitic fungus which takes over
   hosts and other violent survivors.
 platforms:
 - PS3
-rating: null
+rating: '7'
 related:
 - The Last of Us Remastered
 - The Last of Us (2023)

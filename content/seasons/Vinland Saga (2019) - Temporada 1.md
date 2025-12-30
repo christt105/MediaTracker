@@ -3,6 +3,7 @@ air_date: null
 banner_image: images/banners/tmdb_8HM3NtsejczRKDz7agUVFdppicJ.jpg
 date: 2024-05-02
 image: images/covers/tmdb_9WZwylQ4VuLXaN45bMtxnztItUa.jpg
+rating: '7'
 rewatches: []
 season_number: 1
 serie: Vinland Saga (2019)

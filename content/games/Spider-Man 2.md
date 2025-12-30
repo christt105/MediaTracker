@@ -29,7 +29,7 @@ overview: While patrolling the city one day, Spider-Man spots several thugs atte
   his work at all costs.
 platforms:
 - PS2
-rating: null
+rating: '7'
 related: []
 release_date: 2005-03-23
 rewatches: []

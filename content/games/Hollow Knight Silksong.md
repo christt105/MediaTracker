@@ -34,4 +34,4 @@ El mejor juego que Team Cherry podía dar a los fans de [Hollow Knight]({{< ref 
 - Acto 3 superado el 2025-10-19
 
 ### Speedrun
-- Justo después de vencer a Lace
+- La Viuda me ha costado varios intentos. 1h 20 min hasta la Viuda.

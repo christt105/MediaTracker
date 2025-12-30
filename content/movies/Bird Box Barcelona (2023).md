@@ -11,8 +11,8 @@ overview: Tras la llegada de una misteriosa presencia que está destruyendo la p
   calles de Barcelona. Por el camino se encontrará con otros supervivientes con los
   que formará alianzas inciertas para intentar escapar de la ciudad. Pronto se darán
   cuenta de que hay una nueva e inesperada amenaza aún más peligrosa.
-rating: null
-release_date: '2023-07-14'
+rating: '5'
+release_date: 2023-07-14
 rewatches: []
 status: Acabado
 tags: []

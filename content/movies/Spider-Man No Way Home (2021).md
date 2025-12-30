@@ -10,7 +10,7 @@ overview: Peter Parker es desenmascarado y por tanto no es capaz de separar su v
   normal de los enormes riesgos que conlleva ser un súper héroe. Cuando pide ayuda
   a Doctor Strange, los riesgos pasan a ser aún más peligrosos, obligándole a descubrir
   lo que realmente significa ser Spider-Man.
-rating: null
+rating: '7'
 release_date: 2021-12-15
 rewatches: []
 status: Acabado

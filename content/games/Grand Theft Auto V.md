@@ -18,7 +18,7 @@ overview: 'Los Santos: a sprawling sun-soaked metropolis full of self-help gurus
   big score. Running out of options, the crew risks everything in a series of daring'
 platforms:
 - PS3
-rating: null
+rating: '7'
 related: []
 release_date: 2013-09-17
 rewatches: []

@@ -11,7 +11,7 @@ igdb_id: 6897
 image: images/covers/steamgriddb_b04a96eed2b73e02522d7611d0120c3c.png
 overview: ' '
 platforms: []
-rating: null
+rating: '6'
 related: []
 release_date: 2014-11-21
 rewatches: []

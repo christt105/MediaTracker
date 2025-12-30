@@ -10,7 +10,7 @@ image: images/covers/steamgriddb_1bc38477bc1f540837e39eb0b8dbb520.png
 overview: ' '
 platforms:
 - PS4
-rating: null
+rating: '7'
 related: []
 release_date: 2018-09-07
 rewatches:

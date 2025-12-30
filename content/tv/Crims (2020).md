@@ -13,8 +13,8 @@ overview: Serie 'true crime' que relata crímenes reales ocurridos hace pocos a�
   bien porque lo vivieron o bien porque lo investigaron. La serie tiene 25 capítulos
   que recrean secuencias y construyen personajes con los cuales el espectador vive
   un cóctel de tensión y emociones.
-rating: null
-release_date: '2020-02-03'
+rating: '6'
+release_date: 2020-02-03
 rewatches: []
 status: Acabado
 tags: []

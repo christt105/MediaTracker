@@ -15,7 +15,7 @@ overview: 'El temerario aventurero Peter Quill es objeto de un implacable cazarr
   Quill descubre el verdadero poder de la esfera, deberá hacer todo lo posible para
   derrotar a sus extravagantes rivales en un intento desesperado de salvar el destino
   de la galaxia.'
-rating: null
+rating: '6'
 release_date: 2014-07-30
 rewatches: []
 status: Acabado

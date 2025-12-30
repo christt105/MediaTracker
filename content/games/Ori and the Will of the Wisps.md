@@ -10,7 +10,7 @@ image: images/covers/steamgriddb_cf1d15ac3ce0255dd636fb020e51a23a.png
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '6'
 related: []
 release_date: 2020-03-10
 rewatches: []
@@ -20,3 +20,5 @@ tags: []
 title: Ori and the Will of the Wisps
 type: videogame
 ---
+
+Bastante bien. Es, en concepto, una evolución del primero. Mecánicas más modernas y pulidas y han añadido más cosas que hacer por el mapa.

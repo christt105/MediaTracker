@@ -11,7 +11,7 @@ overview: Ambientada en noviembre de 2019, un semisumergible de construcción ar
   acoso policial. Al frente de los mandos va Nando, un joven gallego campeón de España
   de boxeo amateur y marino experto sin recursos económicos, que se ve obligado a
   buscar otros medios para ganarse la vida.
-rating: null
+rating: '4'
 release_date: 2022-02-25
 rewatches: []
 status: Acabado

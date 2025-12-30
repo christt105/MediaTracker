@@ -13,7 +13,7 @@ overview: Denji es un adolescente que vive con un demonio motosierra llamado Poc
   vida siempre ha sido miserable. Cuando una traición provoca la muerte de Denji,
   Pochita hace un contrato con él y Denji revive como "Chainsaw Man", un ser humano
   con el corazón de un demonio.
-rating: '6'
+rating: '7'
 release_date: 2022-10-12
 rewatches: []
 status: Acabado

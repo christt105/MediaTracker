@@ -19,7 +19,7 @@ overview: Dishonored is set in Dunwall, an industrial whaling city where strange
   had is gone forever.
 platforms:
 - PC
-rating: null
+rating: '6'
 related: []
 release_date: 2012-10-09
 rewatches: []

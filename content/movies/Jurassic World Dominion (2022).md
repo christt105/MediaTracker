@@ -11,7 +11,7 @@ overview: Cuatro años después de la destrucción de Isla Nublar, los dinosauri
   el futuro y decidirá, de una vez por todas, si los seres humanos seguirán en la
   cúspide de los depredadores en un planeta que comparten con los animales más temibles
   de la creación.
-rating: null
+rating: '5'
 release_date: 2022-06-01
 rewatches: []
 status: Acabado

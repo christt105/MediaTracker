@@ -9,8 +9,8 @@ overview: Para enterrar sus demonios de una vez por todas, Josh Lambert y un ya 
   Dalton Lambert, deberán profundizar en El Mas Allá (The Further) más que nunca,
   enfrentándose al oscuro pasado familiar y a un huésped de nuevos horrores terroríficos
   que acechan tras la puerta roja.
-rating: null
-release_date: '2023-07-05'
+rating: '5'
+release_date: 2023-07-05
 rewatches: []
 status: Acabado
 tags: []

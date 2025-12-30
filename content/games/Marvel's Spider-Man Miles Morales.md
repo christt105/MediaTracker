@@ -11,7 +11,7 @@ overview: ' '
 platforms:
 - PC
 - Steam Deck
-rating: null
+rating: '7'
 related:
 - Marvel's Spider-Man 2
 release_date: 2020-11-12
@@ -26,3 +26,5 @@ type: videogame
 ---
 
 - Platinado el 2023-09-11
+
+Se nota que es un DLC pero igualmente es disfrutable. Visualmente se ve mejor que el primero.

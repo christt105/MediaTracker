@@ -13,7 +13,7 @@ overview: Far beyond the limits of civilization lies an island, a lawless place 
   right from wrong, a place where you must live by the principles of violence to survive.
 platforms:
 - PS3
-rating: null
+rating: '6'
 related: []
 release_date: 2012-11-28
 rewatches: []

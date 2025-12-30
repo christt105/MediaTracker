@@ -20,7 +20,7 @@ overview: 'Face off against unrelenting E.M.M.I. robots: once DNA-extracting res
   and destroy E.M.M.I. robots, and overcome the dread plaguing ZDR.'
 platforms:
 - Nintendo Switch
-rating: null
+rating: '5'
 related: []
 release_date: 2021-10-07
 rewatches: []

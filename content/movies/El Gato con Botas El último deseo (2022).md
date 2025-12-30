@@ -20,3 +20,7 @@ title: 'El Gato con Botas: El último deseo'
 tmdb_id: 315162
 type: movie
 ---
+
+Una obra maestra de DreamWorks. Me gustó mucho verla, pero después de ver el análisis de Jordi Maquiavello, me encantó.
+
+https://youtu.be/B9kjGxv2d7s

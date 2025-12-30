@@ -12,7 +12,7 @@ image: images/covers/steamgriddb_92b0c9b21ac174782996bb3ade4849a5.png
 overview: ' '
 platforms:
 - Steam Deck
-rating: null
+rating: '6'
 related: []
 release_date: 2019-06-04
 rewatches: []

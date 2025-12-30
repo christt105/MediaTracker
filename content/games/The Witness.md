@@ -14,7 +14,7 @@ overview: 'You wake up, alone, on a strange island full of puzzles that will cha
   clues, regaining your memory, and somehow finding your way home.'
 platforms:
 - Steam Deck
-rating: null
+rating: '6'
 related: []
 release_date: 2016-01-26
 rewatches: []

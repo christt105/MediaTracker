@@ -7,8 +7,8 @@ genres:
 image: images/covers/tmdb_6ATYTmTrDS6g9TlZmk0jTPipdto.jpg
 overview: Una investigación dedicada a la vida de trece mujeres, sin vínculos entre
   ellas, que pertenecieron en algún momento de sus vidas al Opus Dei.
-rating: null
-release_date: '2025-02-07'
+rating: '5'
+release_date: 2025-02-07
 rewatches: []
 status: Acabado
 tags: []

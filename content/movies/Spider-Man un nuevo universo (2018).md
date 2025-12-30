@@ -13,7 +13,7 @@ overview: 'En un universo paralelo donde Peter Parker ha muerto, un joven de sec
   Peter Parker que tratará de enseñar a Miles como ser un mejor Spider-Man. Pero no
   será el único Spider Man en entrar a este universo:  cuatro versiones alternativas
   buscan regresar a su universo antes de que toda la realidad se colapse.'
-rating: null
+rating: '7'
 release_date: 2018-12-06
 rewatches: []
 status: Acabado

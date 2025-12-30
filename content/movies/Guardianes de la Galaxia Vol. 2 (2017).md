@@ -12,8 +12,8 @@ overview: Continúan las aventuras del equipo en su travesía por los confines d
   convertirán en nuevos aliados, y queridos personajes de los cómics clásicos acudirán
   en ayuda de nuestros héroes a medida que el universo cinematográfico de Marvel continúa
   expandiéndose.
-rating: null
-release_date: '2017-04-19'
+rating: '6'
+release_date: 2017-04-19
 rewatches: []
 status: Acabado
 tags: []

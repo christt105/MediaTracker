@@ -12,8 +12,8 @@ overview: Dos chicas jóvenes, Mei y Satsuki, se mudan a una nueva casa cerca de
   desde el hospital de que su madre no puede venir a casa como había prometido, por
   lo que Mei (la más joven) se escapa para ir a visitarla. Satsuki tiene que recurrir
   a un Totoro para ayudar a encontrarla.
-rating: null
-release_date: '1988-04-16'
+rating: '6'
+release_date: 1988-04-16
 rewatches: []
 status: Acabado
 tags:

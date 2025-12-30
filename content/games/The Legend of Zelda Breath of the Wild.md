@@ -14,7 +14,7 @@ overview: Link is awakened in a room by a voice calling him and learns that he h
   with enough power to destroy the entire world. Link embarks on his quest to defeat
   Calamity Ganon and save Hyrule and Zelda.
 platforms: []
-rating: null
+rating: '7'
 related:
 - The Legend of Zelda Tears of the Kingdom
 release_date: 2017-03-03

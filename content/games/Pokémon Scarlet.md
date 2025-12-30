@@ -11,7 +11,7 @@ image: images/covers/steamgriddb_181426fbde5526374ea654b59c16577e.png
 overview: ' '
 platforms:
 - Nintendo Switch
-rating: null
+rating: '3'
 related: []
 release_date: 2022-11-18
 rewatches: []
@@ -22,3 +22,5 @@ tags:
 title: Pokémon Scarlet
 type: videogame
 ---
+
+Disfrutable pero carente de alma y esfuerzo. Lo más destacable es que está basado en España y la localización es muy buena.

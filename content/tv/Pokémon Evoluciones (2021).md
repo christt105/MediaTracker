@@ -8,8 +8,8 @@ genres:
 image: images/covers/tmdb_vXYT52x85sKp3pcGd6pSnvJGFg7.jpg
 overview: Ve esta miniserie para descubrir una nueva e interesante perspectiva de
   las personas y Pokémon que habitan las muchas regiones del mundo Pokémon.
-rating: null
-release_date: '2021-09-09'
+rating: '5'
+release_date: 2021-09-09
 rewatches: []
 status: Acabado
 tags:

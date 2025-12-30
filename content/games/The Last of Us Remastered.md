@@ -17,7 +17,7 @@ overview: Twenty years after a mutated fungus started turning people all over th
   of killing anyone who might have something useful in their backpacks.
 platforms:
 - PS4
-rating: null
+rating: '7'
 related: []
 release_date: 2014-07-26
 rewatches: []

@@ -14,7 +14,7 @@ overview: Ape Out es un smash 'em up estilizado, colorista y de una intensidad s
   sobre una huida primaria llena de violencia rítmica y jazz frenético.
 platforms:
 - PC
-rating: null
+rating: '6'
 related: []
 release_date: 2019-02-28
 rewatches: []
