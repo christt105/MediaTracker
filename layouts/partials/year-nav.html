@@ -1,12 +1,8 @@
-{{ $media := where .Site.RegularPages "Params.type" "in" (slice "movie" "tv" "videogame" "season") }}
-{{ $acabados := where $media "Params.status" "eq" "Acabado" }}
-{{ $acabadosSortedRelease := ($acabados.ByParam "release_date").Reverse }}
-{{ $acabadosSorted := $acabadosSortedRelease.ByDate.Reverse }}
-
-{{ if gt (len $acabadosSorted) 0 }}
+{{ $pages := . }}
+{{ if gt (len $pages) 0 }}
 <div class="year-nav-container">
     <div class="year-nav-scroll">
-        {{ range $acabadosSorted.GroupByDate "2006" }}
+        {{ range $pages.GroupByDate "2006" }}
         {{ $year := .Key }}
         {{ if eq (trim $year " ") "0001" }}
         <a href="#year-unknown" class="year-nav-link">?</a>

@@ -41,7 +41,8 @@
 
             {{ $otros := where $mediaClean "Params.status" "in" (slice "Pausado" "Abandonado") }}
 
-            {{ $enCurso := where $mediaClean "Params.status" "not in" (slice "Acabado" "Pausado" "Abandonado" "Sin Empezar") }}
+            {{ $statusFilter := slice "Acabado" "Pausado" "Abandonado" "Sin Empezar" }}
+            {{ $enCurso := where $mediaClean "Params.status" "not in" $statusFilter }}
 
             {{ if gt (len $enCurso) 0 }}
             <div class="home-section" style="margin-bottom: 40px;">
@@ -59,24 +60,30 @@
 
             {{ $acabadosSorted := $acabados.ByDate.Reverse }}
 
-            {{ range $acabadosSorted.GroupByDate "2006" }}
+            {{ partial "year-nav.html" $acabadosSorted }}
 
-            <div class="year-group">
-                <h2 class="year-title">
-                    {{ if eq .Key "0001" }}
-                    No recuerdo cuándo
-                    {{ else }}
-                    {{ .Key }}
-                    {{ end }}
-                </h2>
+            <div id="completed-section">
+                {{ range $acabadosSorted.GroupByDate "2006" }}
 
-                <div class="media-grid">
-                    {{ range .Pages }}
-                    {{ partial "media-card.html" . }}
-                    {{ end }}
+                <div class="year-group">
+                    {{ $yearKey := trim .Key " " }}
+                    {{ $unknownYear := eq $yearKey "0001" }}
+                    <h2 class="year-title" id="year-{{ if $unknownYear }}unknown{{ else }}{{ $yearKey }}{{ end }}">
+                        {{ if $unknownYear }}
+                        No recuerdo cuándo
+                        {{ else }}
+                        {{ $yearKey }}
+                        {{ end }}
+                    </h2>
+
+                    <div class="media-grid">
+                        {{ range .Pages }}
+                        {{ partial "media-card.html" . }}
+                        {{ end }}
+                    </div>
                 </div>
+                {{ end }}
             </div>
-            {{ end }}
 
             {{ else }}
             {{ if eq (len $enCurso) 0 }}
@@ -105,6 +112,7 @@
     </div>
 
     {{- partial "footer.html" . -}}
+    {{ partial "year-nav-script.html" . }}
     {{- partial "scriptsBodyEnd.html" . -}}
 </body>
 
