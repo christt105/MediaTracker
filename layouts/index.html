@@ -101,7 +101,7 @@
             <hr class="section-divider">
             {{ end }}
 
-            <h3 class="section-title">Completado</h3>
+            <h3 class="section-title" id="completed-section">Completado</h3>
 
             {{ partial "year-nav.html" . }}
 
@@ -133,6 +133,33 @@
     {{- partial "footer.html" . -}}
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Logic for Conditional Year Navigation Visibility
+            const yearNavContainer = document.querySelector('.year-nav-container');
+            const completedSection = document.getElementById('completed-section');
+
+            if (yearNavContainer && completedSection) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0
+                };
+
+                // Use a scroll listener for finer control or Observer
+                // Simple approach: When 'completed-section' passes the top of the viewport (or close to it)
+
+                window.addEventListener('scroll', () => {
+                    const sectionTop = completedSection.getBoundingClientRect().top;
+                    // Show when the section title is near the top of the screen or passed it
+                    if (sectionTop < 100) {
+                        yearNavContainer.classList.add('visible');
+                    } else {
+                        yearNavContainer.classList.remove('visible');
+                    }
+                });
+            }
+        });
+
         function toggleHiddenSection() {
             var content = document.getElementById("hidden-content");
             var btn = document.getElementById("toggle-hidden-btn");
