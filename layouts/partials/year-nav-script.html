@@ -1,0 +1,26 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Logic for Conditional Year Navigation Visibility
+        const yearNavContainer = document.querySelector('.year-nav-container');
+        const completedSection = document.getElementById('completed-section');
+
+        if (yearNavContainer && completedSection) {
+
+            // Initial check in case we load already scrolled down
+            checkVisibility();
+
+            window.addEventListener('scroll', checkVisibility);
+
+            function checkVisibility() {
+                const sectionTop = completedSection.getBoundingClientRect().top;
+                // Show when the section title is near the top of the screen or passed it
+                // Adjust threshold as preferred (e.g., 100px from top)
+                if (sectionTop < 100) {
+                    yearNavContainer.classList.add('visible');
+                } else {
+                    yearNavContainer.classList.remove('visible');
+                }
+            }
+        }
+    });
+</script>
