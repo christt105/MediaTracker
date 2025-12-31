@@ -205,7 +205,7 @@
     padding: 0;
     z-index: 2;
     pointer-events: none;
-    border-radius: 0; 
+    border-radius: 0;
 }
 
 .media-header {
@@ -463,18 +463,21 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 15px; /* Separación con los tags */
+    margin-bottom: 15px;
+    /* Separación con los tags */
 }
 
 .platform-badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* Espacio entre icono y texto */
-    
-    background-color: var(--bg-secondary); /* Usa variable de tu tema o un gris suave: #f0f0f0 */
+    gap: 8px;
+    /* Espacio entre icono y texto */
+
+    background-color: var(--bg-secondary);
+    /* Usa variable de tu tema o un gris suave: #f0f0f0 */
     border: 1px solid rgba(128, 128, 128, 0.3);
     color: var(--text-color);
-    
+
     padding: 6px 12px;
     border-radius: 6px;
     font-size: 0.9rem;
@@ -493,3 +496,5 @@
     color: white;
     border-color: var(--primary);
 }
+
+@import "year-nav-styles";

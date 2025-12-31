@@ -1,0 +1,144 @@
+/* Year Navigation Sticky Menu */
+.year-nav-container {
+    position: sticky;
+    top: 5px;
+    z-index: 90;
+    margin-bottom: 30px;
+    background: rgba(var(--bg-primary-rgb), 0.95);
+    backdrop-filter: blur(5px);
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.year-nav-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 5px 10px;
+    scrollbar-width: thin;
+    white-space: nowrap;
+    justify-content: flex-start;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.year-nav-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Fallback: hide scrollbar for IE, Edge and Firefox */
+.year-nav-scroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.year-nav-link {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.year-nav-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+
+@media (min-width: 900px) {
+    .year-nav-container {
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        width: auto;
+        max-height: 80vh;
+        overflow-y: auto;
+        background: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+        padding: 10px;
+        /* Custom scrollbar for the vertical panel */
+        scrollbar-width: thin;
+        scrollbar-color: var(--primary) transparent;
+    }
+
+    .year-nav-scroll {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding: 5px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        justify-content: flex-start;
+        align-items: flex-end;
+        /* Align texts to the right */
+        height: auto;
+    }
+
+    .year-nav-link {
+        width: auto;
+        padding: 4px 12px;
+        font-size: 0.85rem;
+        background: rgba(var(--bg-secondary-rgb), 0.8);
+        border: 1px solid transparent;
+        transition: all 0.2s ease;
+        text-align: right;
+        display: block;
+        /* Ensure block behavior in column */
+    }
+
+    .year-nav-link:hover {
+        transform: translateX(-5px);
+        /* Move slightly left on hover */
+        background: var(--primary);
+        border-color: var(--primary);
+    }
+}
+
+
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#back-to-top:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
