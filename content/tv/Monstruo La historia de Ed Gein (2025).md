@@ -18,3 +18,5 @@ title: 'Monstruo: La historia de Ed Gein'
 tmdb_id: 286801
 type: tv
 ---
+
+La he sentido como una crítica a su propia obra. No se enfoca tanto en los crímenes que cometió Ed Gein, como en su contexto personal y la figura pública que se creó en base a él.
