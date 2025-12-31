@@ -50,8 +50,13 @@
             {{ $pausados := where $media "Params.status" "eq" "Pausado" }}
             {{ $abandonados := where $media "Params.status" "eq" "Abandonado" }}
 
-            {{ $enCurso := where $media "Params.status" "not in" (slice "Acabado" "Pausado" "Abandonado" "Sin Empezar")
-            }}
+            {{ $status := (slice "Acabado" "Pausado" "Abandonado" "Sin Empezar") }}
+            {{ $enCurso := where $media "Params.status" "not in" $status }}
+
+
+            {{ $acabadosSortedRelease := ($acabados.ByParam "release_date").Reverse }}
+            {{ $acabadosSorted := $acabadosSortedRelease.ByDate.Reverse }}
+            {{ $yearGroups := $acabadosSorted.GroupByDate "2006" }}
 
             {{ if gt (len $enCurso) 0 }}
             <div class="home-section">
@@ -96,17 +101,16 @@
             <hr class="section-divider">
             {{ end }}
 
-
             <h3 class="section-title">Completado</h3>
 
-            {{ $acabadosSortedRelease := ($acabados.ByParam "release_date").Reverse }}
-            {{ $acabadosSorted := $acabadosSortedRelease.ByDate.Reverse }}
+            {{ partial "year-nav.html" . }}
 
             {{ range $acabadosSorted.GroupByDate "2006" }}
 
             <div class="year-group">
-                <h2 class="year-title">
-                    {{ if eq .Key "0001" }}
+                {{ $unknownYear := "0001" }}
+                <h2 class="year-title" id="year-{{ if eq .Key $unknownYear }}unknown{{ else }}{{ .Key }}{{ end }}">
+                    {{ if eq .Key $unknownYear }}
                     No recuerdo cuándo
                     {{ else }}
                     {{ .Key }}
