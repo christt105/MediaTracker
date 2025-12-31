@@ -10,4 +10,4 @@ Previamente usé Notion para hacerlo. Creé una plantilla y se podía generar un
 
 ### Generación
 
-Esta página web está generada a partir de mis notas de [Obsidian](https://obsidian.md/) usando [Hugo](https://gohugo.io/). 
+Esta página web está generada a partir de mis notas de [Obsidian](https://obsidian.md/) usando [Hugo](https://gohugo.io/). Es una página web estática, por lo que no requiere un servidor web ni base de datos. Todas las notas están en formato Markdown, las edito desde mi vault de Obsidian y se generan en HTML usando Hugo y un script de Python. Pronto quiero hacer una entrada sobre el proceso de generación de la página web en mi blog.
