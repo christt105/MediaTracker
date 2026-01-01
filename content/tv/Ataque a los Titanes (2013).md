@@ -22,3 +22,7 @@ title: Ataque a los Titanes
 tmdb_id: 1429
 type: tv
 ---
+
+La mejor obra audiovisual que he visto. La empecé con mis hermanos en la pandemia y desde entonces la llevé al día hasta que acabó, para convertirse en mi serie favorita.
+
+La trama, los personajes, la ambientación y la animación son espectaculares. Es una serie para dejarse sorprender en cada temporada.
