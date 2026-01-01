@@ -52,7 +52,7 @@ enableEmoji = true
   avatar = "avatar.webp"
   intro = "Media Tracker"
   name = "christt105"
-  description = "Este es mi rincón personal donde guardo un registro de todas las películas, series y videojuegos que consumo. Generado con Obsidian y Hugo."
+  description = "Este es mi rincón personal donde guardo un registro de todas las películas, series y videojuegos que consumo."
 
 [[params.socialIcons]]
 name = "github"
