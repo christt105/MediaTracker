@@ -4,9 +4,10 @@ date: 2026-01-01
 genres:
 - Terror
 - Suspense
+image: images/covers/tmdb_1pr4u9wnRs8b5ZgJ4hEiSg5nVHG.jpg
 overview: Un ladrón irrumpe en un todoterreno de lujo y se da cuenta de que ha tropezado
   con una trampa compleja y mortal tendida por una misteriosa figura.
-rating: '4'
+rating: '3'
 release_date: 2025-03-20
 rewatches: []
 status: Acabado
