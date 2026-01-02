@@ -13,7 +13,7 @@ rating: null
 related: []
 release_date: 2009-04-18
 rewatches: []
-status: Sin Empezar
+status: Acabado
 steam_appid: null
 steamgriddb_id: 5245282
 tags: []

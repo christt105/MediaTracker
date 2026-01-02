@@ -4,7 +4,6 @@ date: 2026-01-01
 genres:
 - Terror
 - Suspense
-image: images/covers/tmdb_xIyIiJCss0HpychoUKFQYKiZiBH.jpg
 overview: Un ladrón irrumpe en un todoterreno de lujo y se da cuenta de que ha tropezado
   con una trampa compleja y mortal tendida por una misteriosa figura.
 rating: '4'
