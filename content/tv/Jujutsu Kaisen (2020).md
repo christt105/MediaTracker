@@ -15,6 +15,7 @@ rating: '6'
 related:
 - Jujutsu Kaisen 0 (2021)
 - JUJUTSU KAISEN Ejecución (2025)
+- Jujutsu Kaisen Hidden Inventory - Premature Death
 release_date: 2020-10-03
 rewatches: []
 status: Sin Empezar

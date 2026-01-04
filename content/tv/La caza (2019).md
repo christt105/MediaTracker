@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_qnG9IB7MbO50jHTPzGRE4EdV5yr.jpg
-date: null
+date: 2025-09-14
 genres:
 - Drama
 image: images/covers/tmdb_fYvvFLf4CGtHforXYfChCGmlUBy.jpg
@@ -19,7 +19,7 @@ overview: 'Hace cinco años, dos niñas de once años, Ana y Lucía, desaparecie
 rating: '6'
 release_date: 2019-03-25
 rewatches: []
-status: Sin Empezar
+status: Acabado
 tags: []
 temporadas:
 - La caza (2019) - Temporada 1

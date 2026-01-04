@@ -1,9 +1,9 @@
 ---
-air_date: null
 banner_image: images/banners/tmdb_q3UGWifvIpdey1T2efX4dSmbZpU.jpg
 date: 2023-07-08
 image: images/covers/tmdb_wPWA8JkdkJPsObwfqVveWtt2UD3.jpg
 rating: '5'
+release_date: null
 rewatches: []
 season_number: 2
 serie: FROM (2022)
