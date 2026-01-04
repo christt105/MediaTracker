@@ -16,6 +16,7 @@ overview: Denji trabajaba como cazador de demonios para la yakuza, tratando de s
   a su batalla más mortífera, impulsado por el amor, en un mundo donde la supervivencia
   no conoce reglas.
 rating: '7'
+related: null
 release_date: 2025-09-19
 rewatches: null
 status: Acabado

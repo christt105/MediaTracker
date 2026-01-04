@@ -12,7 +12,8 @@ overview: The incredible power of the symbiote forces Peter and Miles to face th
   lives, friendships and their duty to protect those in need.
 platforms: []
 rating: null
-related: []
+related:
+- Marvel's Spider-Man
 release_date: 2023-10-20
 rewatches: []
 status: Sin Empezar

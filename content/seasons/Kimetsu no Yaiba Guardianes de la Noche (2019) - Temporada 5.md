@@ -1,9 +1,9 @@
 ---
-air_date: null
 banner_image: images/banners/tmdb_3GQKYh6Trm8pxd2AypovoYQf4Ay.jpg
 date: 2024-07-01
 image: images/covers/tmdb_aCOAxzsPSYTiCrC6K5bhUyFHQZL.jpg
 rating: '5'
+release_date: null
 rewatches: []
 season_number: 5
 serie: Kimetsu no Yaiba Guardianes de la Noche (2019)
