@@ -14,7 +14,9 @@
 <body data-theme="{{ $defaultColor }}" class="notransition">
     {{- partial "scriptsBodyStart.html" . -}}
     {{- partial "header.html" . -}}
-
+    
+    {{ partial "random-hero-banner.html" . }}
+    
     <div class="wrapper">
         <div class="profile-header">
             {{ partial "bio" . }}

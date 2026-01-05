@@ -498,3 +498,28 @@
 }
 
 @import "year-nav-styles";
+
+/* Random background index.html */
+
+// _custom.scss
+
+#random-hero-banner {
+    width: 100%;
+    height: 550px;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    // The gradient overlay
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(to top, $dark-black, transparent);
+    }
+}

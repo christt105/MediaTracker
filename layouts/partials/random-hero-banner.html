@@ -1,0 +1,15 @@
+<script>
+    fetch('{{ "index.json" | relURL }}')
+        .then(response => response.json())
+        .then(data => {
+            data = data.filter(item => item.banner && item.type !== "season");
+
+            // Select a random banner
+            if (data.length > 0) {
+                const randomBanner = data[Math.floor(Math.random() * data.length)].banner;
+                document.getElementById("random-hero-banner").style.backgroundImage = `url('${randomBanner}')`;
+            }
+        });
+</script>
+
+<div id="random-hero-banner"></div>
