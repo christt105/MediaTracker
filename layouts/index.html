@@ -22,7 +22,7 @@
 
         <main aria-label="Content">
 
-            {{ $media := where .Site.RegularPages "Params.type" "in" (slice "movie" "tv" "videogame" "season") }}
+            {{ $media := where .Site.RegularPages "Params.type" "in" (slice "season" "movie" "tv" "videogame") }}
 
             {{ $mediaClean := slice }}
 
@@ -54,8 +54,25 @@
             {{ $enCurso := where $media "Params.status" "not in" $status }}
 
 
-            {{ $acabadosSortedRelease := ($acabados.ByParam "release_date").Reverse }}
-            {{ $acabadosSorted := $acabadosSortedRelease.ByDate.Reverse }}
+            {{ $acabadosWithDate := slice }}
+            {{ $acabadosNoDate := slice }}
+
+            {{ range $acabados }}
+                {{ if eq .Date.Year 1 }}
+                    {{ $acabadosNoDate = $acabadosNoDate | append . }}
+                {{ else }}
+                    {{ $acabadosWithDate = $acabadosWithDate | append . }}
+                {{ end }}
+            {{ end }}
+
+            {{ $sortedByType := ($acabadosWithDate.ByParam "type").Reverse }}
+
+            {{ $sortedByDate := $sortedByType.ByDate.Reverse }}
+
+            {{ $sortedNoDate := $acabadosNoDate.ByParam "release_date" }}
+
+            {{ $acabadosSorted := $sortedByDate | append $sortedNoDate }}
+
             {{ $yearGroups := $acabadosSorted.GroupByDate "2006" }}
 
             {{ if gt (len $enCurso) 0 }}
@@ -105,7 +122,7 @@
 
             {{ partial "year-nav.html" $acabadosSorted }}
 
-            {{ range $acabadosSorted.GroupByDate "2006" }}
+            {{ range $yearGroups }}
 
             <div class="year-group">
                 {{ $unknownYear := "0001" }}
