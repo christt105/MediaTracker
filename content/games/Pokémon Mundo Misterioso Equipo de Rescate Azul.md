@@ -17,7 +17,8 @@ rewatches: []
 status: Acabado
 steam_appid: null
 steamgriddb_id: 5245280
-tags: []
+tags:
+- pokemon
 title: 'Pokémon Mundo Misterioso: Equipo de Rescate Azul'
 type: videogame
 ---

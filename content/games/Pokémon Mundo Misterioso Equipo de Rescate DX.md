@@ -16,7 +16,8 @@ release_date: 2020-03-06
 rewatches: []
 status: Acabado
 steamgriddb_id: 5254467
-tags: []
+tags:
+- pokemon
 title: 'Pokémon Mundo Misterioso: Equipo de Rescate DX'
 type: videogame
 ---

@@ -76,7 +76,7 @@ related: []
 release_date: 2015-01-26
 rewatches: []
 status: Acabado
-steam_appid: null
+steam_appid: 239140
 steamgriddb_id: 2716
 tags: []
 title: Dying Light

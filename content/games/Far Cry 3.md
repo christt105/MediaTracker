@@ -18,7 +18,7 @@ related: []
 release_date: 2012-11-28
 rewatches: []
 status: Acabado
-steam_appid: null
+steam_appid: 220240
 steamgriddb_id: 2262
 tags: []
 title: Far Cry 3

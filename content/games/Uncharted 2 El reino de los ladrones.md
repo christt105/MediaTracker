@@ -29,10 +29,11 @@ platforms:
 - PS3
 rating: null
 related: []
-release_date: '2009-10-13'
+release_date: 2009-10-13
 rewatches: []
 status: Acabado
 steam_appid: null
+steamgriddb_id: 5245365
 tags: []
 title: 'Uncharted 2: El reino de los ladrones'
 type: videogame

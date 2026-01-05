@@ -15,6 +15,7 @@ related: []
 release_date: 2020-03-10
 rewatches: []
 status: Acabado
+steam_appid: 1057090
 steamgriddb_id: 5253486
 tags: []
 title: Ori and the Will of the Wisps

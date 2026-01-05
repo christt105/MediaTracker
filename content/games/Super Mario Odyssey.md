@@ -18,7 +18,6 @@ status: Acabado
 steamgriddb_id: 5245268
 tags:
 - completado100
-- platinado
 title: Super Mario Odyssey
 type: videogame
 ---

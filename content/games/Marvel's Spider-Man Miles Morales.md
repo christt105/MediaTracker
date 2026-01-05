@@ -17,6 +17,7 @@ related:
 release_date: 2020-11-12
 rewatches: []
 status: Acabado
+steam_appid: 1817190
 steamgriddb_id: 5354206
 tags:
 - platinado

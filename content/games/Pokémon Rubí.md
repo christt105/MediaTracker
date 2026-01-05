@@ -17,7 +17,8 @@ rewatches: []
 status: Acabado
 steam_appid: null
 steamgriddb_id: 34103
-tags: []
+tags:
+- pokemon
 title: Pokémon Rubí
 type: videogame
 ---

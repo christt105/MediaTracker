@@ -16,6 +16,7 @@ related: []
 release_date: 2020-03-05
 rewatches: []
 status: Acabado
+steam_appid: 612390
 steamgriddb_id: 17535
 tags: []
 title: 'Dandara: Trials of Fear Edition'

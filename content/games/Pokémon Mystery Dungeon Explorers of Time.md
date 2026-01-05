@@ -17,7 +17,8 @@ rewatches: []
 status: Acabado
 steam_appid: null
 steamgriddb_id: 34607
-tags: []
+tags:
+- pokemon
 title: 'Pokémon Mystery Dungeon: Explorers of Time'
 type: videogame
 ---

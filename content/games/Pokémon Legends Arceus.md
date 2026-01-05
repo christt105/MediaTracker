@@ -19,7 +19,8 @@ release_date: 2022-01-28
 rewatches: []
 status: Pausado
 steamgriddb_id: 5286404
-tags: []
+tags:
+- pokemon
 title: 'Pokémon Legends: Arceus'
 type: videogame
 ---

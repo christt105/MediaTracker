@@ -22,6 +22,7 @@ related: []
 release_date: 2019-09-10
 rewatches: []
 status: Acabado
+steam_appid: 774361
 steamgriddb_id: 4878706
 tags: []
 title: Blasphemous

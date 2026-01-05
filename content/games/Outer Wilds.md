@@ -28,6 +28,7 @@ related: []
 release_date: 2019-05-28
 rewatches: []
 status: Acabado
+steam_appid: 753640
 steamgriddb_id: 23535
 tags: []
 title: Outer Wilds

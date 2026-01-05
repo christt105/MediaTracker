@@ -15,7 +15,8 @@ release_date: 2013-10-12
 rewatches: []
 status: En Curso
 steamgriddb_id: 5245290
-tags: null
+tags:
+- pokemon
 title: Pokémon X Monotype Dragon
 type: videogame
 ---

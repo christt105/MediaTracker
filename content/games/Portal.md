@@ -15,6 +15,7 @@ related: []
 release_date: 2007-10-10
 rewatches: []
 status: Acabado
+steam_appid: 400
 steamgriddb_id: 9022
 tags: []
 title: Portal

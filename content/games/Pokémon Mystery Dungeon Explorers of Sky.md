@@ -16,7 +16,8 @@ rewatches: []
 status: Acabado
 steam_appid: null
 steamgriddb_id: 5245282
-tags: []
+tags:
+- pokemon
 title: 'Pokémon Mystery Dungeon: Explorers of Sky'
 type: videogame
 ---

@@ -21,6 +21,7 @@ release_date: 2025-09-04
 rewatches:
 - 2025-10-19
 status: Acabado
+steam_appid: 1030300
 steamgriddb_id: 1043
 tags:
 - completado100
@@ -30,7 +31,7 @@ type: videogame
 
 El mejor juego que Team Cherry podía dar a los fans de [Hollow Knight]({{< ref "Hollow Knight" >}}).
 
-- Acto 2 superado el 2025-09-17
+- Acto 2 superado el 2025-09-17 en 29h 40m 56s
 - Acto 3 superado el 2025-10-19
 
 ### Speedrun

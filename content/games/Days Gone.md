@@ -21,6 +21,7 @@ related: []
 release_date: 2019-04-26
 rewatches: []
 status: Acabado
+steam_appid: 1259420
 steamgriddb_id: 5255989
 tags: []
 title: Days Gone

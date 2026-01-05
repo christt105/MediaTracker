@@ -23,7 +23,8 @@ rewatches: []
 status: Acabado
 steam_appid: null
 steamgriddb_id: 34971
-tags: []
+tags:
+- pokemon
 title: Pokémon Esmeralda
 type: videogame
 ---

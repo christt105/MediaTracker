@@ -18,6 +18,7 @@ related:
 release_date: 2016-06-29
 rewatches: []
 status: Acabado
+steam_appid: 304430
 steamgriddb_id: 4799
 tags: []
 title: Inside

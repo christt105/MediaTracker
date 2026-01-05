@@ -17,6 +17,7 @@ related: []
 release_date: 2016-02-25
 rewatches: []
 status: Acabado
+steam_appid: 322500
 steamgriddb_id: 5437
 tags: []
 title: SuperHot

@@ -22,7 +22,7 @@ related: []
 release_date: 2011-11-10
 rewatches: []
 status: Acabado
-steam_appid: null
+steam_appid: 489830
 steamgriddb_id: 22493
 tags: []
 title: 'The Elder Scrolls V: Skyrim'

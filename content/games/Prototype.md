@@ -25,7 +25,7 @@ related: []
 release_date: 2009-06-09
 rewatches: []
 status: Acabado
-steam_appid: null
+steam_appid: 10150
 steamgriddb_id: 631
 tags: []
 title: Prototype
