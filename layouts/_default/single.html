@@ -32,7 +32,7 @@
                         <div class="media-meta">
                             {{/* Type Badge */}}
                             {{ if .Params.type }}
-                            <span class="meta-item status-badge type-{{ .Params.type | lower }}">{{ .Params.type |
+                            <span class="meta-item status-badge type-{{ .Params.type | lower }}">{{ T .Params.type |
                                 humanize }}</span>
                             {{ end }}
 

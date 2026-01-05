@@ -1,0 +1,14 @@
+- id: movie
+  translation: Película
+- id: tv
+  translation: Serie
+- id: season
+  translation: Temporada
+- id: videogame
+  translation: Videojuego
+- id: Movies
+  translation: Películas
+- id: Tvs
+  translation: Series
+- id: Videogames
+  translation: Videojuegos
