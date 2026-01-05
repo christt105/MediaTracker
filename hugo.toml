@@ -21,12 +21,12 @@ enableEmoji = true
     pageRef="tv"
     name = 'Series'
     url = '/tv/'
-    weight = 40
+    weight = 30
   [[menu.main]]
     pageRef="games"
     name = 'Juegos'
     url = '/games/'
-    weight = 30
+    weight = 40
   [[menu.main]]
     pageRef="collage"
     name = 'Collage'
