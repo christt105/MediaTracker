@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_gmECX1DvFgdUPjtio2zaL8BPYPu.jpg
-date: null
+date: 2025-11-15
 genres:
 - Animación
 - Action & Adventure
@@ -18,7 +18,7 @@ related:
 - Jujutsu Kaisen Hidden Inventory - Premature Death
 release_date: 2020-10-03
 rewatches: []
-status: Sin Empezar
+status: Acabado
 tags:
 - anime
 temporadas:

@@ -19,6 +19,6 @@ steam_appid: null
 steamgriddb_id: 34607
 tags:
 - pokemon
-title: 'Pokémon Mystery Dungeon: Explorers of Time'
+title: 'Pokémon Mundo Misterioso: Exploradores del Tiempo'
 type: videogame
 ---

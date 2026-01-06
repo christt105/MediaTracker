@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_8mnXR9rey5uQ08rZAvzojKWbDQS.jpg
-date: null
+date: 2018-12-06
 genres:
 - Animación
 - Acción

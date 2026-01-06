@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/steamgriddb_2f416c20e3384093da2b617829e8bab6.png
-date: null
+date: 2021-04-16
 developer: Chunsoft
 genres:
 - Role-playing (RPG)
@@ -18,6 +18,6 @@ steam_appid: null
 steamgriddb_id: 5245282
 tags:
 - pokemon
-title: 'Pokémon Mystery Dungeon: Explorers of Sky'
+title: 'Pokémon Mundo Misterioso: Exploradores del Cielo'
 type: videogame
 ---

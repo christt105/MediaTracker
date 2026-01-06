@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_6zpqAdAmOktVVcQXhy85Y1oBu5e.jpg
-date: null
+date: 2025-01-11
 genres:
 - Action & Adventure
 - Misterio

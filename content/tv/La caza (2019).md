@@ -22,10 +22,10 @@ rewatches: []
 status: Acabado
 tags: []
 temporadas:
-- La caza (2019) - Temporada 1
-- La caza (2019) - Temporada 2
-- La caza (2019) - Temporada 3
-- La caza (2019) - Temporada 4
+- Media Tracker/Seasons/La caza (2019) - Monteperdido
+- Media Tracker/Seasons/La caza (2019) - Tramuntana
+- Media Tracker/Seasons/La caza (2019) - Guadiana
+- Media Tracker/Seasons/La caza (2019) - Irati
 title: La caza
 tmdb_id: 87919
 type: tv

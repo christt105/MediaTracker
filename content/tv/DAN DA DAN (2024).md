@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_vExnxa9AvhXXjuYja9980U4Mem0.jpg
-date: null
+date: 2025-11-09
 genres:
 - Animación
 - Action & Adventure
@@ -13,10 +13,10 @@ overview: 'Cuando Momo, una estudiante de instituto de una familia de médiums e
   pero no en los fantasmas. Cuando resulta que ambos fenómenos son reales, en Momo
   surge un poder oculto y en Okarun el poder de una maldición. Juntos, deberán desafiar
   a las fuerzas paranormales que amenazan su mundo.'
-rating: '6'
+rating: '7'
 release_date: 2024-10-04
 rewatches: []
-status: Sin Empezar
+status: Acabado
 tags:
 - anime
 temporadas:

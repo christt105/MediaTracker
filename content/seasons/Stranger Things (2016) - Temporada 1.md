@@ -3,7 +3,7 @@ banner_image: images/banners/tmdb_56v2KjBlU4XaOv9rVYEQypROD7P.jpg
 date: null
 image: images/covers/tmdb_hb4KmdA4F1XMnf0vVjevPKKBEjV.jpg
 rating: '6'
-release_date: null
+release_date: 2016-07-15
 rewatches: []
 season_number: 1
 serie: Stranger Things (2016)
