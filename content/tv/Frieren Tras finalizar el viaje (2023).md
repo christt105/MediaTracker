@@ -1,4 +1,6 @@
 ---
+aliases:
+- Frieren
 banner_image: images/banners/tmdb_emGCHnRPru5LLWcKbSFzUEUisac.jpg
 date: 2024-06-15
 genres:

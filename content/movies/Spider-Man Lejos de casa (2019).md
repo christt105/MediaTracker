@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_vamhMTvh9m9zFHDoR0v1nRtf6T4.jpg
-date: null
+date: 2019-07-10
 genres:
 - Acción
 - Aventura
@@ -16,7 +16,8 @@ rating: null
 release_date: 2019-06-28
 rewatches: []
 status: Acabado
-tags: []
+tags:
+- cine
 title: 'Spider-Man: Lejos de casa'
 tmdb_id: 429617
 type: movie

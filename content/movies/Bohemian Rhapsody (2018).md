@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_7mmXWuBeNJiBO0NIOUWOuFve4Tb.jpg
-date: 2019-01-19
+date: 2018-12-07
 genres:
 - Música
 - Drama

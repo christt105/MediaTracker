@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_Bwh7Lol5k3hSqYOtqXWxbbJVMx.jpg
-date: 2021-12-18
+date: 2021-12-02
 genres:
 - Acción
 - Aventura
