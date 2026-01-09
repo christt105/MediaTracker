@@ -505,21 +505,85 @@
 
 #random-hero-banner {
     width: 100%;
-    height: 550px;
+    height: 450px; // Desktop height
     min-height: 250px;
     background-size: cover;
-    background-position: center;
+    background-position: center 30%; // Focuses slightly higher on the image
     background-repeat: no-repeat;
     position: relative;
 
-    // The gradient overlay
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 250px;
-        background: linear-gradient(to top, $dark-black, transparent);
+    // MOBILE ADJUSTMENT
+    @media (max-width: 768px) {
+        height: 200px; // Much shorter on phone
+        min-height: 200px;
     }
+
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 250px;
+    //     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); // Darker base for text readability
+
+    //     @media (max-width: 768px) {
+    //         height: 150px; // Adjust gradient for shorter banner
+    //     }
+    // }
+}
+
+.author {
+  // Desktop: Keep your original spacing
+  margin-top: 3.3rem; 
+  margin-bottom: 7.2rem;
+  text-align: center;
+
+  // MOBILE ADJUSTMENT
+  @include media-query($on-mobile) {
+    // CRITICAL CHANGE: Negative margin pulls it up over the banner
+    margin-top: -45px; 
+    
+    // Reduce bottom spacing so content starts sooner
+    margin-bottom: 2em; 
+    
+    // Ensure it sits on top of the banner
+    position: relative; 
+    z-index: 10;
+  }
+
+  .author-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    
+    // Standard animations
+    user-select: none;
+    -webkit-user-select: none;
+    animation: 0.5s ease-in forwards fadein;
+    opacity: 1;
+    object-fit: cover;
+
+    // OPTIONAL: Add a border to separate avatar from the banner image
+    // Replace 'var(--bg-color)' with your actual background color variable (e.g., #1a1a1a or #fff)
+    border: 3px solid var(--bg-color, #121212); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .author-name {
+    font-size: 1.7em;
+    margin-bottom: 5px;
+    font-weight: bold; // Makes it pop more
+  }
+
+  .author-bio {
+    margin: 0 auto;
+    opacity: 0.9;
+    max-width: 393px;
+    line-height: 1.5; // Slightly tighter line height for mobile
+    
+    // Prevent bio from being too wide on small screens
+    padding: 0 15px; 
+    font-size: 0.95rem; // Slightly smaller font for mobile readability
+  }
 }
