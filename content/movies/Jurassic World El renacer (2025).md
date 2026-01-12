@@ -1,6 +1,6 @@
 ---
 banner_image: images/banners/tmdb_fQOV47FHTJdaSuSUNlzP3zXUZWE.jpg
-date: 2026-01-11
+date: 2026-01-10
 genres:
 - Ciencia ficción
 - Aventura
