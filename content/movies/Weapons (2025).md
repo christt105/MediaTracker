@@ -17,3 +17,5 @@ title: Weapons
 tmdb_id: 1078605
 type: movie
 ---
+
+La premisa es increíble, luego se desinfla bastante.
