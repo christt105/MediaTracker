@@ -15,7 +15,8 @@ overview: 'En un universo paralelo donde Peter Parker ha muerto, un joven de sec
   buscan regresar a su universo antes de que toda la realidad se colapse.'
 rating: '7'
 release_date: 2018-12-06
-rewatches: []
+rewatches:
+- 2020-11-06
 status: Acabado
 tags: []
 title: 'Spider-Man: un nuevo universo'

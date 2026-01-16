@@ -9,6 +9,8 @@ genres:
 igdb_id: 2286
 image: images/covers/steamgriddb_db5b8809adfe08d1a09022ef03516cf0.png
 overview: ' '
+platforms:
+- Steam Deck
 rating: null
 related: []
 release_date: 2013-10-12

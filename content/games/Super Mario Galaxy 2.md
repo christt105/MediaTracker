@@ -16,6 +16,7 @@ overview: Shining stardust falls on the Mushroom Kingdom once every hundred year
   he got there, something unexpected was waiting for him…
 platforms:
 - Steam Deck
+- Wii
 rating: '7'
 related: null
 release_date: 2010-05-23

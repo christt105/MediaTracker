@@ -7,7 +7,8 @@ genres:
 igdb_id: 340210
 image: images/covers/img_2466131d83d0885288c93a7c05e15a59.jpg
 overview: ' '
-platforms: []
+platforms:
+- Steam Deck
 rating: '5'
 related: []
 release_date: 2023-11-03

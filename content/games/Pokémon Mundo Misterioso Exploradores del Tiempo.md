@@ -9,7 +9,9 @@ genres:
 igdb_id: 2321
 image: images/covers/steamgriddb_f23999b14a6bc6f14f9b6aafdb5fa996.png
 overview: ' '
-platforms: []
+platforms:
+- NDS
+- 3DS
 rating: null
 related: []
 release_date: 2007-09-13

@@ -15,7 +15,9 @@ overview: Both Team Magma and Team Aqua are featured as the villainous teams, ea
   Kyogre. It is now the one out of the three ancient Pokémon that can be caught prior
   to the Elite Four challenge, while still at the same place and at the same high
   level as in Ruby and Sapphire.
-platforms: []
+platforms:
+- Game Boy Advance
+- Móvil
 rating: '7'
 related: []
 release_date: 2004-09-16

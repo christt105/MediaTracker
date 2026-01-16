@@ -1,5 +1,5 @@
 ---
-banner_image: images/banners/tmdb_fQOV47FHTJdaSuSUNlzP3zXUZWE.jpg
+banner_image: images/banners/tmdb_iglK831Mirc1qcrEk4LAFsV2vwU.jpg
 date: 2026-01-10
 genres:
 - Ciencia ficción

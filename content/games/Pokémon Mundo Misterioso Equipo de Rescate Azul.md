@@ -9,7 +9,8 @@ genres:
 igdb_id: 2320
 image: images/covers/steamgriddb_31c1c7d3bb80f660b6cd5d365f981b5f.png
 overview: ' '
-platforms: []
+platforms:
+- NDS
 rating: null
 related: []
 release_date: 2005-11-17

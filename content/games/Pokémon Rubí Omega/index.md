@@ -10,7 +10,8 @@ genres:
 igdb_id: 6897
 image: images/covers/steamgriddb_b04a96eed2b73e02522d7611d0120c3c.png
 overview: ' '
-platforms: []
+platforms:
+- 3DS
 rating: '6'
 related: []
 release_date: 2014-11-21
@@ -28,5 +29,6 @@ Lo compré junto a la 2DS y, aunque no recuerdo cuando me lo pasé, lo debí com
 
 Un buen remake, bastante bonito y me hizo recordar jugando al rubí cuando era pequeño.
 
-No recuerdo de cuando es esta imagen, ni del equipo, ni de si era del Rubí o del Zafiro, pero estaba en Twitter, así que la guardo en mi vault.
+## 2019-01-30
+No recuerdo de cuando es esta imagen, ni del equipo, ni de si era del Rubí o del Zafiro, pero estaba en Twitter, así que la guardo en mi vault. Por lo que veo en el equipo debió de ser alguna especie de reto eligiendo Pokémon que no suelo usar, porque el equipo es bastante raruno.
 ![HallOfFamePokemonRubiOmega.png|500](images/img_0c05c928088874cb0fb56e37cbce688c.jpg)

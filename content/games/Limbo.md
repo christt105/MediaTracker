@@ -10,7 +10,8 @@ genres:
 igdb_id: 1331
 image: images/covers/steamgriddb_691dc5b7272b343c9ea3ed9fa84b32f6.png
 overview: ' '
-platforms: []
+platforms:
+- PC
 rating: '6'
 related:
 - Inside

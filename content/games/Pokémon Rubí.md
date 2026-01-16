@@ -9,7 +9,8 @@ genres:
 igdb_id: 1557
 image: images/covers/steamgriddb_496ebdc49192930a71a477a6c31f110a.png
 overview: ' '
-platforms: []
+platforms:
+- Game Boy Advance
 rating: null
 related: []
 release_date: 2002-11-21

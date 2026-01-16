@@ -12,7 +12,9 @@ overview: The story starts with the main character getting sent back in time by 
   to the Hisui region, the Sinnoh region of ancient times, with one task in hand—to
   seek out all Pokemon. From the same day onward, strange lightning from the rift
   starts striking the Noble Pokemon, causing them to enter a frenzied state.
-platforms: []
+platforms:
+- Nintendo Switch
+- Steam Deck
 rating: null
 related: []
 release_date: 2022-01-28

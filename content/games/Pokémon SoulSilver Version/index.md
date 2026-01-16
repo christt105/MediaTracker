@@ -9,7 +9,8 @@ genres:
 igdb_id: 1520
 image: images/covers/steamgriddb_924386c0f19fd05b90b53a5d4c2e65c5.png
 overview: ' '
-platforms: []
+platforms:
+- 3DS
 rating: '7'
 related: []
 release_date: 2009-09-12

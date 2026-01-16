@@ -19,6 +19,7 @@ overview: Every hundred years, a huge comet flies by in the skies above the Mush
   But then, something happened...
 platforms:
 - Steam Deck
+- Wii
 rating: '7'
 related: []
 release_date: 2007-11-01
