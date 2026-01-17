@@ -30,3 +30,7 @@ tags:
 title: Pokémon Esmeralda
 type: videogame
 ---
+
+Probablemente el videojuego que define mi infancia. Recuerdo verlo jugar a otros niños cuando era muy pequeño. También recuerdo mi madre regalándomelo con una sonrisa junto a una GameBoy Advance SP gris, en una bolsa negra. Cada canción, cada imagen de la ruta que veo, me da esa sensación de nostalgia tan reconfortante.
+
+Obviamente, jugablemente no tiene las últimas mejoras de calidad de vida, pero se sigue viendo muy bien para todos los años que han pasado. Tiene eventos muy característicos que nunca se me van a olvidar.

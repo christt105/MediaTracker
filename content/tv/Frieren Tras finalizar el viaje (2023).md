@@ -8,7 +8,7 @@ genres:
 - Action & Adventure
 - Drama
 - Sci-Fi & Fantasy
-image: images/covers/tmdb_dqZENchTd7lp5zht7BdlqM7RBhD.jpg
+image: images/covers/tmdb_v7i3yNKxsDwB5IG9ElWgOGPieE8.jpg
 overview: La maga Frieren formaba parte del grupo del héroe Himmel, quienes derrotaron
   al Rey Demonio tras un viaje de 10 años y devolvieron la paz al reino. Frieren es
   una elfa de más de mil años de vida, así que al despedirse de Himmel y sus compañeros
@@ -24,7 +24,9 @@ rewatches: []
 status: Acabado
 tags:
 - anime
-temporadas: []
+temporadas:
+- Frieren Tras finalizar el viaje (2023) - Temporada 1
+- Frieren Tras finalizar el viaje (2023) - Temporada 2
 title: 'Frieren: Tras finalizar el viaje'
 tmdb_id: 209867
 type: tv
