@@ -27,8 +27,12 @@ SOURCE_COVERS_DIR = SOURCE_PATH / "Portadas"
 # Destination Directories (Hugo)
 CONTENT_DIR = BASE_DIR / "content"
 IMAGES_DIR = BASE_DIR / "static" / "images"
+CACHE_DIR = BASE_DIR / "static" / "images_cache"
 COVERS_DIR = IMAGES_DIR / "covers"
 BANNERS_DIR = IMAGES_DIR / "banners"
+
+# Ensure cache directory exists
+CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Mappings: Obsidian Type -> Hugo Section (Folder)
 SECTION_MAP = {
@@ -154,79 +158,82 @@ def get_image_filename(source_str):
 def process_image(source_str, note_src, type="cover"):
     """
     Downloads URL or Copies Local File. 
+    1. Checks/Saves to CACHE_DIR.
+    2. Copies from CACHE_DIR to valid destination (bundle or static).
     Returns the relative path for Hugo frontmatter.
     """
     if not source_str:
         return None
 
-    # Determine target filename
-    if type == "cover":
-        folder = "covers"
-    elif type == "banner":
-        folder = "banners"
-    elif type == "content":
-        folder = "content"
-
     filename = get_image_filename(source_str)
-
-    if type == "content" and note_src:
-        # note_src in this context will be the destination bundle directory when type="content"
-        # We want to save to bundle_dir/images
-        folder_dir = note_src / "images"
-        folder_dir.mkdir(parents=True, exist_ok=True)
-        dest_path = folder_dir / filename
-        return_path = f"images/{filename}"
-    else:
-        dest_path = IMAGES_DIR / folder / filename
-        return_path = f"images/{folder}/{filename}"
     
+    # 1. DEFINE DESTINATIONS
+    # Cache location (Always shared)
+    cache_path = CACHE_DIR / filename
+    
+    # Final Destination
+    if type == "content" or type == "cover" or type == "banner":
+        # Ensure we are in a bundle structure: note_src should be the bundle directory
+        if note_src:
+            dest_dir = note_src # e.g. content/movies/avatar/
+            dest_path = dest_dir / filename
+            # Return relative path for Page Resources (just filename)
+            return_path = filename 
+        else:
+             # Fallback if for some reason not in a bundle (shouldn't happen with new logic)
+            dest_dir = IMAGES_DIR / "covers" 
+            dest_path = dest_dir / filename
+            return_path = f"/images/covers/{filename}"
+    else:
+        # Fallback
+        dest_path = IMAGES_DIR / "misc" / filename
+        return_path = f"/images/misc/{filename}"
+
+    dest_path.parent.mkdir(parents=True, exist_ok=True)
+
     is_local_image = "[[" in source_str
     
-    # CHECK CACHE: If file exists, skip download.
-    if not is_local_image and dest_path.exists():
-        # print(f"  [Cache Hit] {filename}")
+    # 2. POPULATE CACHE (If missing)
+    if not cache_path.exists():
+        # CASE A: Web URL (TMDB/TVDB)
+        if str(source_str).startswith("http"):
+            try:
+                print(f"  [Downloading] {source_str} -> {filename}")
+                headers = {'User-Agent': 'Mozilla/5.0'}
+                response = requests.get(source_str, stream=True, timeout=10, headers=headers)
+                if response.status_code == 200:
+                    with open(cache_path, 'wb') as f:
+                        shutil.copyfileobj(response.raw, f)
+            except Exception as e:
+                print(f"  [Error] Failed to download {source_str}: {e}")
+                return None
+
+        # CASE B: Local Obsidian Link [[...]]
+        elif is_local_image:
+            # Extract the clean path from the wikilink
+            raw_path = re.search(r'\[\[(.*?)(\|.*)?\]\]', source_str)
+            if raw_path:
+                clean_path = raw_path.group(1)
+                
+                # Resolve the path
+                local_file = BASE_DIR / clean_path
+                if not local_file.exists():
+                    local_file = SOURCE_COVERS_DIR / os.path.basename(clean_path)
+                if not local_file.exists():
+                    local_file = SOURCE_ROOT / clean_path
+
+                if local_file.exists():
+                    print(f"  [Caching] {local_file.name}")
+                    shutil.copy(local_file, cache_path)
+                else:
+                    print(f"  [Warning] Local image not found: {clean_path}")
+                    return None
+    
+    # 3. COPY FROM CACHE TO DESTINATION
+    if cache_path.exists():
+        if not dest_path.exists():
+             shutil.copy(cache_path, dest_path)
         return return_path
-
-    # CASE A: Web URL (TMDB/TVDB)
-    if str(source_str).startswith("http"):
-        try:
-            print(f"  [Downloading] {source_str} -> {filename}")
-            headers = {'User-Agent': 'Mozilla/5.0'}
-            response = requests.get(source_str, stream=True, timeout=10, headers=headers)
-            if response.status_code == 200:
-                with open(dest_path, 'wb') as f:
-                    shutil.copyfileobj(response.raw, f)
-                return return_path
-        except Exception as e:
-            print(f"  [Error] Failed to download {source_str}: {e}")
-            return None
-
-    # CASE B: Local Obsidian Link [[...]]
-    elif is_local_image:
-        # Extract the clean path from the wikilink
-        # Example: "[[Media Tracker/Portadas/Img.png]]" -> "Media Tracker/Portadas/Img.png"
-        raw_path = re.search(r'\[\[(.*?)(\|.*)?\]\]', source_str)
-        if raw_path:
-            clean_path = raw_path.group(1)
-            
-            # Resolve the path. It might be relative to Vault root or just a filename in "Portadas"
-            # 1. Try absolute path from Vault Root
-            local_file = BASE_DIR / clean_path
-            
-            # 2. If not found, try looking inside the "Portadas" folder directly
-            if not local_file.exists():
-                local_file = SOURCE_COVERS_DIR / os.path.basename(clean_path)
-            
-            # 3. If not found, try looking inside the root of the vault
-            if not local_file.exists():
-                local_file = SOURCE_ROOT / clean_path
-
-            if local_file.exists():
-                print(f"  [Copying] {local_file.name} -> {filename}")
-                shutil.copy(local_file, dest_path)
-                return return_path
-            else:
-                print(f"  [Warning] Local image not found: {clean_path}")
 
     return None
 
@@ -302,28 +309,7 @@ def migrate():
 
                 print(f"Processing: {file_path.name}")
 
-                # 1. PROCESS IMAGES (Cover & Banner)
-                if post.get('cover'):
-                    new_cover = process_image(post['cover'], file_path, type="cover")
-                    if new_cover:
-                        post['image'] = new_cover
-                        cover_name = new_cover.split("/")[-1]
-                        if cover_name in covers:
-                            covers.remove(cover_name)
-                    # Remove original obsidian field to keep frontmatter clean
-                    del post['cover']
-
-                if post.get('banner'):
-                    new_banner = process_image(post['banner'], file_path, type="banner")
-                    if new_banner:
-                        post['banner_image'] = new_banner
-                        banner_name = new_banner.split("/")[-1]
-                        if banner_name in banners:
-                            banners.remove(banner_name)
-                    del post['banner']
-
-                # 2. PROCESS RELATIONS (WikiLinks)
-                
+                # 1. PROCESS RELATIONS (WikiLinks)
                 # Handle 'serie' (Single link)
                 if post.get('serie'):
                     post['serie'] = clean_wikilink(post['serie'])
@@ -342,7 +328,7 @@ def migrate():
                         clean_related.append(clean_wikilink(rel))
                     post['related'] = clean_related
 
-                # 3. DETECT CONTENT IMAGES
+                # 2. DETECT CONTENT IMAGES
                 has_content_images = False
                 content_images = []
                 if post.content:
@@ -350,24 +336,33 @@ def migrate():
                     if content_images:
                         has_content_images = True
 
-                # 4. PREPARE DESTINATION
+                # 3. PREPARE DESTINATION (Force Leaf Bundle)
                 slug = file_path.stem
                 
-                if has_content_images:
-                    # Leaf Bundle: folder/index.md
-                    post_dir = target_dir / slug
-                    post_dir.mkdir(parents=True, exist_ok=True)
-                    destination_file = post_dir / "index.md"
-                    image_target_dir = post_dir 
-                else:
-                    # Simple Page: filename.md
-                    destination_file = target_dir / f"{slug}.md"
-                    image_target_dir = None
+                # Always create a leaf bundle for consistent image resources
+                post_dir = target_dir / slug
+                post_dir.mkdir(parents=True, exist_ok=True)
+                destination_file = post_dir / "index.md"
+                image_target_dir = post_dir
+                
+                # 4. PROCESS IMAGES (Cover & Banner)
+                if post.get('cover'):
+                    new_cover = process_image(post['cover'], image_target_dir, type="cover")
+                    if new_cover:
+                        # For Page Resources, we just use the filename relative to the page bundle
+                        post['image'] = new_cover
+                    del post['cover']
+
+                if post.get('banner'):
+                    new_banner = process_image(post['banner'], image_target_dir, type="banner")
+                    if new_banner:
+                        post['banner_image'] = new_banner
+                    del post['banner']
 
                 # 5. PROCESS CONTENT
                 if post.content:
-                    # A. Process Images
-                    if has_content_images:
+                    # A. Process Content Images
+                    if has_content_images and content_images:
                         for image in content_images:
                             new_image = process_image(f"[[{image}]]", image_target_dir, type="content")
                             if new_image:

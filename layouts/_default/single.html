@@ -7,7 +7,13 @@
                 {{/* Use absolute URL for the banner style */}}
                 <div class="banner-container">
                     {{ if .Params.banner_image }}
+                    {{ $banner := .Resources.GetMatch .Params.banner_image }}
+                    {{ if $banner }}
+                    {{ $banner = $banner.Resize "1920x webp" }}
+                    <img src="{{ $banner.RelPermalink }}" class="media-banner-img" alt="Banner" loading="lazy">
+                    {{ else }}
                     <img src="{{ .Params.banner_image | absURL }}" class="media-banner-img" alt="Banner">
+                    {{ end }}
                     {{ end }}
 
                     <div class="banner-gradient-mask"></div>
@@ -16,12 +22,18 @@
                 <div class="media-info-container">
                     {{ if .Params.image }}
                     <div class="media-cover {{ if .Params.rating }}has-rating{{ end }}">
+                        {{ $cover := .Resources.GetMatch .Params.image }}
+                        {{ if $cover }}
+                        {{ $cover = $cover.Resize "500x webp" }}
+                        <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }}" width="{{ $cover.Width }}"
+                            height="{{ $cover.Height }}">
+                        {{ else }}
                         <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+                        {{ end }}
                         {{ if .Params.rating }}
                         {{ $ratingKey := string .Params.rating }}
                         {{ $theme := index .Site.Data.ratings $ratingKey | default .Site.Data.ratings.default }}
-                        <div class="media-rating-badge" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default
-                            " white" }}">{{ $theme.label }}</div>
+                        <div class="media-rating-badge" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default " white" }}">{{ $theme.label }}</div>
                         {{ end }}
                     </div>
                     {{ end }}

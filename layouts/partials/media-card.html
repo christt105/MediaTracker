@@ -2,8 +2,14 @@
 
     <div class="media-poster">
         <a href="{{ .Permalink }}">
-            {{ $img := .Params.image | default "/images/default-poster.png" }}
-            <img src="{{ $img | absURL }}" alt="{{ .Title }}" loading="lazy">
+            {{ $img := .Resources.GetMatch .Params.image }}
+            {{ if $img }}
+                {{ $img = $img.Resize "300x450 webp" }}
+                <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" loading="lazy" width="{{ $img.Width }}" height="{{ $img.Height }}">
+            {{ else }}
+                {{ $imgStr := .Params.image | default "/images/default-poster.png" }}
+                <img src="{{ $imgStr | absURL }}" alt="{{ .Title }}" loading="lazy">
+            {{ end }}
         </a>
 
         {{ $icon := .Params.fa_icon }}
@@ -41,8 +47,7 @@
 
         <div class="margin-rating" style="background: {{ $theme.color }};"></div>
 
-        <div class="badge-rating" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default " white"
-            }}">
+        <div class="badge-rating" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default " white" }}">
             <i class="{{ $theme.icon }}"></i>
         </div>
 
