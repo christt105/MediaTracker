@@ -5,7 +5,14 @@ defaultContentLanguage = "es"
 enableEmoji = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "RSS_ACABADO"]
+
+[outputFormats]
+[outputFormats.RSS_ACABADO]
+  mediaType = "application/rss+xml"
+  baseName = "acabados"
+  isPlainText = true
+  notAlternative = true
 
 [module]
   [[module.imports]]
