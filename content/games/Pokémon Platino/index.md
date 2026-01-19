@@ -1,5 +1,5 @@
 ---
-banner_image: images/banners/steamgriddb_4b6876f4110063d9211108001b833e9b.jpg
+banner_image: steamgriddb_4b6876f4110063d9211108001b833e9b.jpg
 date: 2020-04-06
 developer: Game Freak
 genres:
@@ -7,7 +7,7 @@ genres:
 - Turn-based strategy (TBS)
 - Adventure
 igdb_id: 1519
-image: images/covers/steamgriddb_50cad8b124bde64d87002f0df798a23a.png
+image: steamgriddb_50cad8b124bde64d87002f0df798a23a.png
 overview: ' '
 platforms:
 - 3DS
@@ -29,6 +29,6 @@ Un juego muy completo. Mejora muchísimo a las entregas base, haciendo el juego 
 
 He encontrado un [tuit](https://x.com/christt105/status/1247131517610070017) en el que publiqué el Hall of Fame con una foto directamente a la 2DS. Algo recuerdo, pero no mucho. Menos el Abomasnow, los demás son literalmente equipo heteronormativo.
 
-![Pasted image 20260116112443.png|500](images/img_fb76f918d0e5de136e12771702cd2042.jpg) ![Pasted image 20260116112509.png|500](images/img_e35c33a8f695f38eba19c96273bf793a.jpg)!
+![CynthiaPokemonPlatinum.png|500](img_2da96e2baa2e85cb34aa1ba5a9f3da24.jpg) ![HallOfFamePokemonPlatinum.png|500](img_d7095ab52e71d840496f205f59e15e76.jpg)!
 
-![Christian-card-2026-01-16T10-41-41-719Z.png](images/img_09332c72249999e34f9fee4d8f0a392a.jpg)
+![Christian-card-2026-01-16T10-41-41-719Z.png](img_09332c72249999e34f9fee4d8f0a392a.jpg)

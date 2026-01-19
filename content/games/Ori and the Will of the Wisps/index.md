@@ -1,0 +1,25 @@
+---
+banner_image: steamgriddb_0bdd128ea21d481cddf93a54815802dc.png
+date: 2024-06-16
+developer: Moon Studios
+genres:
+- Platform
+- Adventure
+igdb_id: 37001
+image: steamgriddb_cf1d15ac3ce0255dd636fb020e51a23a.png
+overview: ' '
+platforms:
+- Steam Deck
+rating: '6'
+related: []
+release_date: 2020-03-10
+rewatches: []
+status: Acabado
+steam_appid: 1057090
+steamgriddb_id: 5253486
+tags: []
+title: Ori and the Will of the Wisps
+type: videogame
+---
+
+Bastante bien. Es, en concepto, una evolución del primero. Mecánicas más modernas y pulidas y han añadido más cosas que hacer por el mapa.

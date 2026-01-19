@@ -1,5 +1,5 @@
 ---
-banner_image: images/banners/steamgriddb_9b3c2148ce85c4124006e10631e77b28.png
+banner_image: steamgriddb_9b3c2148ce85c4124006e10631e77b28.png
 date: 2018-03-01
 developer: Game Freak
 genres:
@@ -8,7 +8,7 @@ genres:
 - Turn-based strategy (TBS)
 - Adventure
 igdb_id: 6897
-image: images/covers/steamgriddb_b04a96eed2b73e02522d7611d0120c3c.png
+image: steamgriddb_b04a96eed2b73e02522d7611d0120c3c.png
 overview: ' '
 platforms:
 - 3DS
@@ -31,4 +31,4 @@ Un buen remake, bastante bonito y me hizo recordar jugando al rubí cuando era p
 
 ## 2019-01-30
 No recuerdo de cuando es esta imagen, ni del equipo, ni de si era del Rubí o del Zafiro, pero estaba en Twitter, así que la guardo en mi vault. Por lo que veo en el equipo debió de ser alguna especie de reto eligiendo Pokémon que no suelo usar, porque el equipo es bastante raruno.
-![HallOfFamePokemonRubiOmega.png|500](images/img_0c05c928088874cb0fb56e37cbce688c.jpg)
+![HallOfFamePokemonRubiOmega.png|500](img_0c05c928088874cb0fb56e37cbce688c.jpg)

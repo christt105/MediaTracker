@@ -1,9 +1,30 @@
 {{- $.Scratch.Add "index" slice -}}
 {{- range where .Site.RegularPages "Params.type" "in" (slice "movie" "tv" "videogame" "season") -}}
     {{- $date := .Date.Format "2006-01-02" -}}
-    {{- $image := .Params.image | default "/images/default-poster.png" | absURL -}}
-    {{- $banner := .Params.banner_image | absURL -}}
-    {{- $item := dict "title" .Title "date" $date "type" .Params.type "image" $image "banner" $banner "status" .Params.status -}}
+    
+    {{/* Image Logic */}}
+    {{- $imgSrc := "" -}}
+    {{- $resImg := .Resources.GetMatch .Params.image -}}
+    {{- if $resImg -}}
+        {{- $resImg = $resImg.Resize "600x webp" -}}
+        {{- $imgSrc = $resImg.Permalink -}}
+    {{- else -}}
+        {{- $imgSrc = .Params.image | default "/images/default-poster.png" | absURL -}}
+    {{- end -}}
+
+    {{/* Banner Logic */}}
+    {{- $bannerSrc := "" -}}
+    {{- if .Params.banner_image -}}
+        {{- $resBanner := .Resources.GetMatch .Params.banner_image -}}
+        {{- if $resBanner -}}
+            {{- $resBanner = $resBanner.Resize "1920x webp" -}}
+            {{- $bannerSrc = $resBanner.Permalink -}}
+        {{- else -}}
+             {{- $bannerSrc = .Params.banner_image | absURL -}}
+        {{- end -}}
+    {{- end -}}
+
+    {{- $item := dict "title" .Title "date" $date "type" .Params.type "image" $imgSrc "banner" $bannerSrc "status" .Params.status -}}
     {{- $.Scratch.Add "index" $item -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}

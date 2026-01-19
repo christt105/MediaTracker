@@ -1,0 +1,30 @@
+---
+banner_image: tmdb_gmECX1DvFgdUPjtio2zaL8BPYPu.jpg
+date: 2025-11-15
+genres:
+- Animación
+- Action & Adventure
+- Sci-Fi & Fantasy
+image: tmdb_fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg
+overview: 'Dificultades, arrepentimiento, vergüenza… Los sentimientos negativos de
+  los humanos se convierten en Maldiciones que nos acechan en nuestra vida diaria.
+  Las Maldiciones campan a sus anchas por todo el mundo, y pueden llevar a las personas
+  a sufrir terribles desgracias e incluso dirigirlas a su muerte. Y lo que es peor:
+  solo una Maldición puede exorcizar otra Maldición.'
+rating: '6'
+related:
+- Jujutsu Kaisen 0 (2021)
+- JUJUTSU KAISEN Ejecución (2025)
+- Jujutsu Kaisen Hidden Inventory - Premature Death
+release_date: 2020-10-03
+rewatches: []
+status: Acabado
+tags:
+- anime
+temporadas:
+- Jujutsu Kaisen (2020) - Temporada 1
+- Jujutsu Kaisen (2020) - Temporada 2
+title: Jujutsu Kaisen
+tmdb_id: 95479
+type: tv
+---

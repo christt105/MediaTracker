@@ -1,0 +1,16 @@
+---
+banner_image: tmdb_qnG9IB7MbO50jHTPzGRE4EdV5yr.jpg
+date: 2025-09-14
+image: tmdb_1w2hZSHA1xm1Hw3J6hWUzUyHvbf.jpg
+rating: '6'
+release_date: null
+rewatches: []
+season_number: 4
+serie: La caza (2019)
+status: Acabado
+tags: null
+title: La caza - Irati
+type: season
+---
+
+Bastante bien. Me gustaron más las anteriores temporadas, pero es bastante entretenida.
