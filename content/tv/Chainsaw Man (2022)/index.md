@@ -15,7 +15,8 @@ overview: Denji es un adolescente que vive con un demonio motosierra llamado Poc
   con el corazón de un demonio.
 rating: '7'
 release_date: 2022-10-12
-rewatches: []
+rewatches:
+- 2026-01-21
 status: Acabado
 tags:
 - anime
