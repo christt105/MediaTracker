@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_ecd122037c0fd785861279d853231ccc.jpg
+category: '[[Juegos]]'
 date: 2019-01-23
 developer: Valve
 genres:

@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_e57174548ea87569040afe197a881803.png
+category: '[[Juegos]]'
 date: 2022-06-17
 developer: Kitty Calis
 genres:

@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_a19744e268754fb0148b017647355b7b.png
+category: '[[Juegos]]'
 date: 2025-08-24
 developer: SUPERHOT Team
 genres:

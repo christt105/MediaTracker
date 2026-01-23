@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_ecd812da02543c0269cfc2c56ab3c3c0.png
+category: '[[Juegos]]'
 date: null
 developer: Mojang Studios
 genres:

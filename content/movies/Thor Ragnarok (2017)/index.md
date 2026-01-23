@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_6G2fLCVm9fiLyHvBrccq6GSe2ih.jpg
+category: '[[Películas]]'
 date: 2017-11-01
 genres:
 - Acción

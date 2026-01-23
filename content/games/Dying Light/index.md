@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_189e3f782cbb3f4cc1ae9702adca884e.png
+category: '[[Juegos]]'
 date: null
 developer: Techland
 genres:

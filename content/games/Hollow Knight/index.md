@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_2a23698064df1354a4ba703528ef20e9.png
+category: '[[Juegos]]'
 date: 2018-08-27
 developer: Team Cherry
 genres:

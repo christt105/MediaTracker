@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_4c58556a4800c5f18316dcfbe00480bd.png
+category: '[[Juegos]]'
 date: 2020-04-30
 developer: Game Freak
 genres:

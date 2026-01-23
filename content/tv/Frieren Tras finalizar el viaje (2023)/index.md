@@ -2,6 +2,7 @@
 aliases:
 - Frieren
 banner_image: tmdb_emGCHnRPru5LLWcKbSFzUEUisac.jpg
+category: '[[Series]]'
 date: 2024-06-15
 genres:
 - Animación

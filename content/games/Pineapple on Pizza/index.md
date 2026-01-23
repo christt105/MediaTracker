@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_2a96a89492d19ee42749b5169c87c720.jpg
+category: '[[Juegos]]'
 date: 2023-05-05
 developer: Majorariatto
 genres:

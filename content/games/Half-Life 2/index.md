@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_251c5ffd6b62cc21c446c963c76cf214.png
+category: '[[Juegos]]'
 date: null
 developer: Valve
 genres:

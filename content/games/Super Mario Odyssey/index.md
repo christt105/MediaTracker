@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_c4f3d709fb9f0df27c833911dac733eb.png
+category: '[[Juegos]]'
 date: 2022-03-18
 developer: Nintendo EPD Production Group No. 8
 genres:

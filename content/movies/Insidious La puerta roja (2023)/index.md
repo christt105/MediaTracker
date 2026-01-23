@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_i2GVEvltEu3BXn5crBSxgKuTaca.jpg
+category: '[[Películas]]'
 date: 2025-08-10
 genres:
 - Terror

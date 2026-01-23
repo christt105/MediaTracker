@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_vQ5T84t8h4N2xAswNFW9fkVIyZq.jpg
+category: '[[Películas]]'
 date: 2024-01-20
 genres:
 - Misterio

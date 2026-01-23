@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_f037f3c3ae59cd2f7d5e4f1afef1e95e.png
+category: '[[Juegos]]'
 date: 2023-09-22
 developer: Pixelatto
 genres:

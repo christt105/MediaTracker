@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_dc70227a7d9df5f27f0e78c82ad7099d.png
+category: '[[Juegos]]'
 date: 2018-04-02
 developer: Arkane Studios
 genres:

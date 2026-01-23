@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_3700c6648c0df5c6f04713e555721cf3.png
+category: '[[Juegos]]'
 date: 2023-12-04
 developer: Nintendo EPD
 genres:

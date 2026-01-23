@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_0d5a4a5a748611231b945d28436b8ece.png
+category: '[[Juegos]]'
 date: 2023-12-13
 developer: The Game Kitchen
 genres:

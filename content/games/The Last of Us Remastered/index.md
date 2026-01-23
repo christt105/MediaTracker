@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_d6a1499555c182d0fa8919c666fa4710.png
+category: '[[Juegos]]'
 date: 2023-02-19
 developer: Naughty Dog
 genres:

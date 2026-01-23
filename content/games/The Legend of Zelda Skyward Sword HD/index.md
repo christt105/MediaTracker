@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_3373132329d411c7012395eec16b8f28.png
+category: '[[Juegos]]'
 date: null
 developer: Nintendo EAD Software Development Group No.3
 genres:

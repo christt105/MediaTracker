@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_Bwh7Lol5k3hSqYOtqXWxbbJVMx.jpg
+category: '[[Películas]]'
 date: 2021-12-02
 genres:
 - Acción

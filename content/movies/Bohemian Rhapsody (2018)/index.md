@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_7mmXWuBeNJiBO0NIOUWOuFve4Tb.jpg
+category: '[[Películas]]'
 date: 2018-12-07
 genres:
 - Música

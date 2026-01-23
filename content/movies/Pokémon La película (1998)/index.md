@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_xCtx4pHkA7qOOoWa4eJljTwKfj3.jpg
+category: '[[Películas]]'
 date: 2026-01-18
 genres:
 - Animación

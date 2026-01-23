@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_t2sT9VGe6kwbKtNYUSaYcFX5JQn.jpg
+category: '[[Películas]]'
 date: 2019-04-06
 genres:
 - Terror

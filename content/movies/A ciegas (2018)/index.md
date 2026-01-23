@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_5EBEo1snvnTnrZVChSja0cjKolx.jpg
+category: '[[Películas]]'
 date: null
 genres:
 - Terror

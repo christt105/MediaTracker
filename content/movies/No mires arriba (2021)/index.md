@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_xMJvffWIaW9MtlY9aIXKViUNeIO.jpg
+category: '[[Películas]]'
 date: 2025-12-11
 genres:
 - Comedia

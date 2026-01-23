@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_6N7hSnmZkEXszld37sSeG4CSIdR.jpg
+category: '[[Series]]'
 date: 2023-09-15
 genres:
 - Animación

@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_8mnXR9rey5uQ08rZAvzojKWbDQS.jpg
+category: '[[Películas]]'
 date: 2018-12-06
 genres:
 - Animación

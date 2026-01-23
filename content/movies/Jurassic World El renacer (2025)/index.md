@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_iglK831Mirc1qcrEk4LAFsV2vwU.jpg
+category: '[[Películas]]'
 date: 2026-01-10
 genres:
 - Ciencia ficción

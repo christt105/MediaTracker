@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_56v2KjBlU4XaOv9rVYEQypROD7P.jpg
+category: '[[Series]]'
 date: 2026-01-02
 genres:
 - Sci-Fi & Fantasy

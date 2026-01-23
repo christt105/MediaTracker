@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg
+category: '[[Películas]]'
 date: 2023-09-30
 genres:
 - Ciencia ficción

@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_c263e540e76c57607b5e1b613fbc8732.jpg
+category: '[[Juegos]]'
 date: 2024-08-08
 developer: Bend Studio
 genres:

@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_91f9fec9b080c74297a55c392b5f40a4.png
+category: '[[Juegos]]'
 date: 2012-05-22
 developer: Radical Entertainment
 genres:

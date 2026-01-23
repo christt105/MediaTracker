@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_7tu0bQi8Tw2BrOB5vFyUjVtWma0.jpg
+category: '[[Películas]]'
 date: 2023-07-16
 genres:
 - Terror

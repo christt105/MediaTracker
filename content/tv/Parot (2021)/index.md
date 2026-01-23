@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_3CBoVqMolsvdIYqhuegvJHhiQKb.jpg
+category: '[[Series]]'
 date: 2023-04-10
 genres:
 - Misterio

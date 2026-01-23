@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_q3UGWifvIpdey1T2efX4dSmbZpU.jpg
+category: '[[Series]]'
 date: null
 genres:
 - Misterio

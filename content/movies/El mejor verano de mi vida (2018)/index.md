@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_jaeZDZG3gav9G7wURL6xw7CGHmt.jpg
+category: '[[Películas]]'
 date: 2018-07-26
 genres:
 - Comedia

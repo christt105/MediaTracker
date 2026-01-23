@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_pOR4Aye28KLZ5Jogu8zc3yiqBpT.jpg
+category: '[[Películas]]'
 date: 2025-07-03
 genres:
 - Suspense

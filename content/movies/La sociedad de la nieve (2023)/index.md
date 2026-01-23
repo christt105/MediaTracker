@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_md848EEPm3dHZOqwGxxTVwH2vu5.jpg
+category: '[[Películas]]'
 date: 2024-01-14
 genres:
 - Drama

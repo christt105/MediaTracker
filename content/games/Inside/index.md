@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_d6c625ffc79cd2e7e1668ff078053911.jpg
+category: '[[Juegos]]'
 date: 2024-07-13
 developer: Playdead
 genres:

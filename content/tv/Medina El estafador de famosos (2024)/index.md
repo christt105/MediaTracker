@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_umx1TWqeQCR2e0dsn7eCH016lyv.jpg
+category: '[[Series]]'
 date: 2024-10-20
 genres:
 - Documental

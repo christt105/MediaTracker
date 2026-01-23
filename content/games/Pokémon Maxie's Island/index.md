@@ -1,5 +1,6 @@
 ---
 banner_image: img_1515b636cc992cb69653922f793cd262.jpg
+category: '[[Juegos]]'
 date: 2025-07-07
 developer: wiz1989
 genres:

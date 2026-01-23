@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_7AkBITRHCMrDtjRSEwfH3ThqXaC.jpg
+category: '[[Series]]'
 date: 2026-01-11
 genres:
 - Documental

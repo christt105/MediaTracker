@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_3157af1a70015446ab7a3e92d4ae7582.png
+category: '[[Juegos]]'
 date: 2025-08-20
 developer: Tyler Glaiel
 genres:

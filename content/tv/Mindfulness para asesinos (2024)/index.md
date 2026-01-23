@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_rsLZK4xAw1Oun0T5UWfG213qalP.jpg
+category: '[[Series]]'
 date: 2026-01-11
 genres:
 - Comedia

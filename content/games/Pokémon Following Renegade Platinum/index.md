@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_7da6279d738fdaef64d4c7f08d6c1e92.png
+category: '[[Juegos]]'
 date: 2023-08-12
 developer: Drayano60
 genres:

@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_2cf48a149caf6a7f6331511988d4174e.png
+category: '[[Juegos]]'
 date: 2012-03-16
 developer: Naughty Dog
 genres:

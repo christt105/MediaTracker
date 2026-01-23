@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_zCcIvHeua3jaMNSALeNQd0FIyPn.jpg
+category: '[[Películas]]'
 date: null
 genres:
 - Documental

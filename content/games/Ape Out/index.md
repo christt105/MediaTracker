@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_7ce7fe98a64dd1ef509fedb677fcea5a.png
+category: '[[Juegos]]'
 date: 2022-06-14
 developer: Gabe Cuzzillo
 genres:
@@ -15,7 +16,7 @@ overview: Ape Out es un smash 'em up estilizado, colorista y de una intensidad s
 platforms:
 - PC
 rating: '6'
-related: []
+related: null
 release_date: 2019-02-28
 rewatches: []
 status: Acabado

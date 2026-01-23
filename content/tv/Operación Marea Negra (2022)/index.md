@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_9JkWP8cFeEF5eUTragMhLX9It4c.jpg
+category: '[[Series]]'
 date: 2023-03-06
 genres:
 - Crimen

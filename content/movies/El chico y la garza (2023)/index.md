@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_a0GM57AnJtNi7lMOCamniiyV10W.jpg
+category: '[[Películas]]'
 date: 2024-07-23
 genres:
 - Animación

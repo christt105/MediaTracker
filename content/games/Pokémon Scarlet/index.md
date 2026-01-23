@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_de98be2c4c6a599dc862cac42b8e0566.png
+category: '[[Juegos]]'
 date: 2023-01-09
 developer: Game Freak
 genres:

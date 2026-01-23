@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_8e50134dc2d9e291fde5c0a5563fca18.jpg
+category: '[[Juegos]]'
 date: 2013-03-28
 developer: Ubisoft Montreal
 genres:

@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_5b685c54b72bac34e7b56feb9f7be2c5.png
+category: '[[Juegos]]'
 date: 2011-10-25
 developer: Treyarch
 genres:

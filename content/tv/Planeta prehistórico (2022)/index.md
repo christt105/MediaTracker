@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_6342n1ojL6RDUg7kgIBlrq200zZ.jpg
+category: '[[Series]]'
 date: null
 genres:
 - Documental

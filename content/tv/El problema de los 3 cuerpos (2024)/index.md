@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_ciizJ9Okzt9tBBGK7Q3T14LFT2j.jpg
+category: '[[Series]]'
 date: 2024-07-21
 genres:
 - Sci-Fi & Fantasy

@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_7uxQQUnHvPKc2LmvDXRszgfBka8.jpg
+category: '[[Películas]]'
 date: 2023-11-19
 genres:
 - Animación

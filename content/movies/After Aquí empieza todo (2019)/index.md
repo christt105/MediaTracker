@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_997ToEZvF2Obp9zNZbY5ELVnmrW.jpg
+category: '[[Películas]]'
 date: 2019-04-20
 genres:
 - Romance

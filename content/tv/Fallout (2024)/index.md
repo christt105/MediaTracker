@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_coaPCIqQBPUZsOnJcWZxhaORcDT.jpg
+category: '[[Series]]'
 date: 2024-04-29
 genres:
 - Action & Adventure

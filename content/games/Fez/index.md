@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_e5cb9cf7a3b66aed15faba79d226a332.png
+category: '[[Juegos]]'
 date: 2023-04-08
 developer: Polytron Corporation
 genres:

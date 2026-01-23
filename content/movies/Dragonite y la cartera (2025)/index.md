@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_llOyL1z37gLNVPSinh7FKmrA6U7.jpg
+category: '[[Películas]]'
 date: null
 genres:
 - Animación
@@ -15,7 +16,7 @@ overview: Hana, una joven de la región de Paldea que admira al cartero Dragonit
   destinado solo en la región de Kanto. Sin embargo, el día del cumpleaños de su padre
   ya ha llegado...
 rating: null
-release_date: '2025-02-27'
+release_date: 2025-02-27
 rewatches: []
 status: Sin Empezar
 tags:

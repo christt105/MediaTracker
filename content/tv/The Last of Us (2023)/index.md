@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg
+category: '[[Series]]'
 date: null
 genres:
 - Drama

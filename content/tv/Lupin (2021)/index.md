@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg
+category: '[[Series]]'
 date: null
 genres:
 - Crimen

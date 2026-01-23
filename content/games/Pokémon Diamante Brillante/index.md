@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_19c552afb2174ff2d58aff1b589b28c1.png
+category: '[[Juegos]]'
 date: 2021-12-13
 developer: ILCA
 genres:

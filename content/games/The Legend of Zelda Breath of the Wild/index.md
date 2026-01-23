@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_e089b3b5750148e7f7fcc282635fb2d4.png
+category: '[[Juegos]]'
 date: 2021-01-20
 developer: Nintendo EPD Production Group No. 3
 genres:

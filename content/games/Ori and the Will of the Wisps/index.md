@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_0bdd128ea21d481cddf93a54815802dc.png
+category: '[[Juegos]]'
 date: 2024-06-16
 developer: Moon Studios
 genres:

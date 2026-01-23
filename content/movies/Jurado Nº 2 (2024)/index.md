@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_wHXyGLjYPm4bHNKFQPCfYWiTeSH.jpg
+category: '[[Películas]]'
 date: 2025-06-25
 genres:
 - Drama

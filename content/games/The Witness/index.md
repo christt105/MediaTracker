@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_17d23e54aab31807fc9060d0d191161b.jpg
+category: '[[Juegos]]'
 date: 2024-04-06
 developer: Thekla, Inc
 genres:

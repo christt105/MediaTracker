@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_79ee9d25b9de58d3a33b3cdb9338dc23.png
+category: '[[Juegos]]'
 date: null
 developer: Vicarious Visions
 genres:

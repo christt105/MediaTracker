@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_05b575c0cad185ef015663356767b7b3.jpg
+category: '[[Juegos]]'
 date: 2024-07-09
 developer: Eric Lost
 genres:

@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_rzsMWXQ7GaN60wIpg3yf01iBmXy.jpg
+category: '[[Películas]]'
 date: 2019-01-28
 genres:
 - Suspense

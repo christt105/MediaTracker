@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_nB6IR9XfdRpVRKCz85uT97EjgwB.jpg
+category: '[[Películas]]'
 date: 2025-02-13
 genres:
 - Animación

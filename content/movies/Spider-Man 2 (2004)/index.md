@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_faV0HuR6WnQoLrVq3r6mhjaABL9.jpg
+category: '[[Películas]]'
 date: null
 genres:
 - Acción

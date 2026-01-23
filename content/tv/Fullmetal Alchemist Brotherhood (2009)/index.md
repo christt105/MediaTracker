@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg
+category: '[[Series]]'
 date: 2024-11-06
 genres:
 - Animación

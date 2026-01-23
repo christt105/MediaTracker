@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_95ozIP0A2fKaAXxwDxUEVn74Iux.jpg
+category: '[[Películas]]'
 date: 2023-12-29
 genres:
 - Fantasía

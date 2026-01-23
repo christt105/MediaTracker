@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_9k6dWJws6iAxZTG5Nz4Ow1gamB1.jpg
+category: '[[Películas]]'
 date: 2022-07-29
 genres:
 - Documental

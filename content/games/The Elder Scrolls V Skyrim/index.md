@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_9d2a94578afaf9d49c96a8251a313683.png
+category: '[[Juegos]]'
 date: null
 developer: Bethesda Game Studios
 genres:

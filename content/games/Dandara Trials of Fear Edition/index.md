@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_4ba675e15cfed4f021f1704da440ca81.jpg
+category: '[[Juegos]]'
 date: 2024-02-10
 developer: Long Hat House
 genres:

@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_r4X2xRrWleVgx0kahP27xRmm3ia.jpg
+category: '[[Películas]]'
 date: 2026-01-01
 genres:
 - Terror

@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_qL6BW5QMgVoYk8AlnMXPY4bivpW.jpg
+category: '[[Series]]'
 date: 2022-07-22
 genres:
 - Drama

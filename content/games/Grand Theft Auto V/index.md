@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_bad5f33780c42f2588878a9d07405083.png
+category: '[[Juegos]]'
 date: 2013-10-07
 developer: Rockstar North
 genres:

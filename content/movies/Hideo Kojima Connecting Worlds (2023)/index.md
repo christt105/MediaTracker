@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_5TuYFn7ghjqyUYILiTCTqj1z1qp.jpg
+category: '[[Películas]]'
 date: 2024-02-03
 genres:
 - Documental

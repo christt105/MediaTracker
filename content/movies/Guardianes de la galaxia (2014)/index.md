@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_vmBSlRZYKfNdaDZ7wGkrSNbmdMI.jpg
+category: '[[Películas]]'
 date: 2023-09-21
 genres:
 - Acción

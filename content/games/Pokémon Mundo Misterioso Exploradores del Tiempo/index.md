@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_03f531381ff5a3b07ce178e101398b8a.png
+category: '[[Juegos]]'
 date: null
 developer: Chunsoft
 genres:

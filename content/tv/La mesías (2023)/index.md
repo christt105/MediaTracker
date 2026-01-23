@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_7EamCWAoQtgtjJKDfa0bqg9av5N.jpg
+category: '[[Series]]'
 date: 2024-06-23
 genres:
 - Drama

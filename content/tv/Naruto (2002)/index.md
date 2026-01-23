@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_6sHC954QPhrrLsT6WPkSie9hVmI.jpg
+category: '[[Series]]'
 date: 2022-04-19
 genres:
 - Animación

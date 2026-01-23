@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_vMTlir2E9mJN5PbM1DPran0LWjG.jpg
+category: '[[Películas]]'
 date: 2022-02-13
 genres:
 - Acción

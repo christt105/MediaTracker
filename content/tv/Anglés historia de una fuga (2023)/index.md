@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_nlxnCXywWJE2aH3CjznNN1FMr0V.jpg
+category: '[[Series]]'
 date: 2025-10-19
 genres:
 - Documental

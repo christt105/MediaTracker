@@ -1,5 +1,6 @@
 ---
 banner_image: steam_2880460.jpg
+category: '[[Juegos]]'
 date: 2024-10-12
 developer: ' '
 genres:

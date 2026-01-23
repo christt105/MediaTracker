@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_qth56RA3rkUlhbDRDKGeMJEssdi.jpg
+category: '[[Películas]]'
 date: 2026-01-11
 genres:
 - Romance

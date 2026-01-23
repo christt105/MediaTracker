@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_6d9db76db0c25306e60862762d4ce57f.png
+category: '[[Juegos]]'
 date: null
 developer: The Cobblemon Team
 genres:

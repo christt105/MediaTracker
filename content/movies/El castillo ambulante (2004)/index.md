@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_nv5wwZou159v5OC61i4ElR7OqyY.jpg
+category: '[[Películas]]'
 date: 2024-07-16
 genres:
 - Fantasía

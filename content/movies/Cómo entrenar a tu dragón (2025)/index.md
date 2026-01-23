@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_vHTFrcqJoCi1is3XN0PZe2LSnI2.jpg
+category: '[[Películas]]'
 date: 2025-11-02
 genres:
 - Fantasía

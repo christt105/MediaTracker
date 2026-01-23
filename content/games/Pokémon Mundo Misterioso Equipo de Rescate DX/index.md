@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_97c81649fa58303996aaf556b17043ca.png
+category: '[[Juegos]]'
 date: 2024-09-06
 developer: Spike Chunsoft
 genres:

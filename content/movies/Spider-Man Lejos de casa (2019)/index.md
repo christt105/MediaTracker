@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_vamhMTvh9m9zFHDoR0v1nRtf6T4.jpg
+category: '[[Películas]]'
 date: 2019-07-10
 genres:
 - Acción

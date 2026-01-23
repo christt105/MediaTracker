@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_1cdbe1bd17b0d6788eaaf07c01e0899f.png
+category: '[[Juegos]]'
 date: 2023-02-21
 developer: Insomniac Games
 genres:

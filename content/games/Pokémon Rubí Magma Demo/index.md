@@ -1,5 +1,6 @@
 ---
 banner_image: img_84b417d25a2e50d62544c8c9b87f5350.jpg
+category: '[[Juegos]]'
 date: 2023-11-03
 developer: Game Freak
 genres:

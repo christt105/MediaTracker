@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_jqZb8jhyo45jvP7VxZCuHLj4oVK.jpg
+category: '[[Series]]'
 date: 2025-10-28
 genres:
 - Drama

@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_b5141428fc38a8f2a5229286449727f1.png
+category: '[[Juegos]]'
 date: 2024-10-06
 developer: Nintendo EAD
 genres:

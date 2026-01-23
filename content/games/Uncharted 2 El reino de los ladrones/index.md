@@ -1,5 +1,6 @@
 ---
 banner_image: img_a920f83e662800dfd4a998925522279c.jpg
+category: '[[Juegos]]'
 date: 2011-10-01
 developer: Naughty Dog
 genres:

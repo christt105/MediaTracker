@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_1166db2e6b57e62146edee2f05a5c885.png
+category: '[[Juegos]]'
 date: 2025-10-30
 developer: Mobius Digital
 genres:

@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_53cdd4182f8d7e4b71e9b598f46f814b.jpg
+category: '[[Juegos]]'
 date: 2013-07-10
 developer: SCE Santa Monica Studio
 genres:
