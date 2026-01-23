@@ -68,3 +68,7 @@ url = "https://github.com/christt105"
 [[params.socialIcons]]
 name = "rss"
 url = "/MediaTracker/index.xml"
+
+[params.footer]
+since = 2025
+customText = ""

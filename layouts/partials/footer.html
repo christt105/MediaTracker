@@ -1,0 +1,22 @@
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+        {{- partial "socialIcons.html" site.Params.socialIcons -}}
+    </div>
+    <small class="footer_copyright">
+        ©
+        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+        {{ .Site.Params.footer.since }} -
+        {{ end }}
+        {{ now.Format "2006" }} {{ .Site.Params.author.name }}.
+        {{ T "footer.disclaimer" | safeHTML }}
+    </small>
+</footer>
+
+{{- if .Site.Params.goToTop -}}
+<a href="#" title="{{ T " footer.go_to_top" }}" id="totop">
+    {{ partial "svgs/arrowUp.svg" (dict "height" 48 "width" 48) . }}
+</a>
+{{- end -}}
