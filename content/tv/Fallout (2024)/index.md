@@ -17,9 +17,10 @@ overview: Basado en una de las sagas de videojuegos más importantes de todos lo
 rating: '6'
 release_date: 2024-04-10
 rewatches: []
+seasons:
+- '[[Media Tracker/Seasons/Fallout (2024) - Temporada 1]]'
 status: Acabado
 tags: []
-temporadas: []
 title: Fallout
 tmdb_id: 106379
 type: tv

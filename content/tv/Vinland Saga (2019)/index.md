@@ -15,12 +15,12 @@ overview: Cuando Thors, un gran guerrero viking muere asesinado en batalla a man
 rating: '7'
 release_date: 2019-07-08
 rewatches: []
+seasons:
+- '[[Vinland Saga (2019) - Temporada 1]]'
+- '[[Vinland Saga (2019) - Temporada 2]]'
 status: Acabado
 tags:
 - anime
-temporadas:
-- Vinland Saga (2019) - Temporada 1
-- Vinland Saga (2019) - Temporada 2
 title: Vinland Saga
 tmdb_id: 88803
 type: tv

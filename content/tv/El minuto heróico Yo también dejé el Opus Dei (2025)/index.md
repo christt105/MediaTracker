@@ -11,9 +11,9 @@ overview: Una investigación dedicada a la vida de trece mujeres, sin vínculos 
 rating: '5'
 release_date: 2025-02-07
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: 'El minuto heróico: Yo también dejé el Opus Dei'
 tmdb_id: 271311
 type: tv

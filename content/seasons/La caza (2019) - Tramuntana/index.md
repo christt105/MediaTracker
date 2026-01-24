@@ -6,7 +6,7 @@ rating: '5'
 release_date: null
 rewatches: []
 season_number: 2
-serie: La caza (2019)
+series: '[[La caza (2019)]]'
 status: Acabado
 tags: null
 title: La caza - Tramuntana

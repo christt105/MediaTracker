@@ -13,10 +13,10 @@ overview: Cientos de personas con problemas de dinero aceptan una invitación ra
 rating: null
 release_date: 2021-09-17
 rewatches: []
+seasons:
+- '[[El juego del calamar (2021) - Temporada 2]]'
 status: Acabado
 tags: []
-temporadas:
-- El juego del calamar (2021) - Temporada 2
 title: El juego del calamar
 tmdb_id: 93405
 type: tv

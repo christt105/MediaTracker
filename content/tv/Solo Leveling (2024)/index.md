@@ -15,10 +15,10 @@ overview: Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo,
 rating: '4'
 release_date: 2024-01-07
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Solo Leveling
 tmdb_id: 127532
 type: tv

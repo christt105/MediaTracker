@@ -18,10 +18,10 @@ rating: null
 related: []
 release_date: 2023-10-22
 rewatches: []
+seasons: []
 status: En Curso
 tags:
 - anime
-temporadas: []
 title: Los diarios de la boticaria
 tmdb_id: 220542
 type: tv

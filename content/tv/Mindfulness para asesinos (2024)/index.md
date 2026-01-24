@@ -13,9 +13,9 @@ overview: En una clase de 'mindfulness' para compaginar trabajo y vida personal,
 rating: '5'
 release_date: 2024-10-31
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: Mindfulness para asesinos
 tmdb_id: 252372
 type: tv

@@ -6,7 +6,7 @@ rating: '6'
 release_date: null
 rewatches: []
 season_number: 2
-serie: The Last of Us (2023)
+series: '[[The Last of Us (2023)]]'
 status: Acabado
 tags: null
 title: The Last of Us - Temporada 2

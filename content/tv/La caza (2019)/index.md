@@ -20,13 +20,13 @@ overview: 'Hace cinco años, dos niñas de once años, Ana y Lucía, desaparecie
 rating: '6'
 release_date: 2019-03-25
 rewatches: []
+seasons:
+- '[[Media Tracker/Seasons/La caza (2019) - Monteperdido]]'
+- '[[Media Tracker/Seasons/La caza (2019) - Tramuntana]]'
+- '[[Media Tracker/Seasons/La caza (2019) - Guadiana]]'
+- '[[Media Tracker/Seasons/La caza (2019) - Irati]]'
 status: Acabado
 tags: []
-temporadas:
-- Media Tracker/Seasons/La caza (2019) - Monteperdido
-- Media Tracker/Seasons/La caza (2019) - Tramuntana
-- Media Tracker/Seasons/La caza (2019) - Guadiana
-- Media Tracker/Seasons/La caza (2019) - Irati
 title: La caza
 tmdb_id: 87919
 type: tv

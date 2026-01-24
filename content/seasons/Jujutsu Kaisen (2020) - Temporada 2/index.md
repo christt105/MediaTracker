@@ -6,7 +6,7 @@ rating: '7'
 release_date: null
 rewatches: []
 season_number: 2
-serie: Jujutsu Kaisen (2020)
+series: '[[Jujutsu Kaisen (2020)]]'
 status: Acabado
 tags:
 - anime

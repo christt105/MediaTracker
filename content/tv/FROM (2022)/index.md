@@ -15,12 +15,12 @@ overview: Desvela el misterio de un pueblo de pesadilla en el centro de Norteam√
 rating: null
 release_date: 2022-02-20
 rewatches: []
+seasons:
+- '[[FROM (2022) - Temporada 3]]'
+- '[[FROM (2022) - Temporada 2]]'
+- '[[FROM (2022) - Temporada 1]]'
 status: Acabado
 tags: []
-temporadas:
-- FROM (2022) - Temporada 3
-- FROM (2022) - Temporada 2
-- FROM (2022) - Temporada 1
 title: FROM
 tmdb_id: 124364
 type: tv

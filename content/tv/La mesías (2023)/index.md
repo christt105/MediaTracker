@@ -11,9 +11,9 @@ overview: 'El vídeo viral de un grupo de música pop cristiana compuesto por va
 rating: '6'
 release_date: 2023-10-11
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: La mesías
 tmdb_id: 201420
 type: tv

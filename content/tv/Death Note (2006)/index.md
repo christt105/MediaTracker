@@ -13,10 +13,10 @@ overview: Light Yagami, un estudiante japonés, encuentra un cuaderno llamado De
 rating: '6'
 release_date: 2006-10-04
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Death Note
 tmdb_id: 13916
 type: tv

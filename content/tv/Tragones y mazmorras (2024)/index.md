@@ -14,10 +14,10 @@ overview: Dragones, mazmorras... ¿y un rico guiso de monstruo? Nada se salva de
 rating: '5'
 release_date: 2024-01-04
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Tragones y mazmorras
 tmdb_id: 207784
 type: tv

@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_llOyL1z37gLNVPSinh7FKmrA6U7.jpg
 category: '[[Películas]]'
-date: null
+date: 2026-01-23
 genres:
 - Animación
 - Fantasía
@@ -18,7 +18,7 @@ overview: Hana, una joven de la región de Paldea que admira al cartero Dragonit
 rating: null
 release_date: 2025-02-27
 rewatches: []
-status: Sin Empezar
+status: Acabado
 tags:
 - anime
 - corto

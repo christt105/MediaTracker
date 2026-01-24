@@ -15,9 +15,9 @@ rating: '4'
 related: []
 release_date: 2025-11-07
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: Expediente Vallecas
 tmdb_id: 305107
 type: tv

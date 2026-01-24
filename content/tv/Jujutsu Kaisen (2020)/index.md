@@ -19,12 +19,12 @@ related:
 - Jujutsu Kaisen Hidden Inventory - Premature Death
 release_date: 2020-10-03
 rewatches: []
+seasons:
+- '[[Jujutsu Kaisen (2020) - Temporada 1]]'
+- '[[Jujutsu Kaisen (2020) - Temporada 2]]'
 status: Acabado
 tags:
 - anime
-temporadas:
-- Jujutsu Kaisen (2020) - Temporada 1
-- Jujutsu Kaisen (2020) - Temporada 2
 title: Jujutsu Kaisen
 tmdb_id: 95479
 type: tv

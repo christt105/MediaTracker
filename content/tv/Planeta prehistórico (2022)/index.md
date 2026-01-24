@@ -12,11 +12,11 @@ overview: Experimenta las maravillas del mundo como nunca antes en esta épica d
 rating: null
 release_date: 2022-05-23
 rewatches: []
+seasons:
+- '[[Planeta prehistórico (2022) - Temporada 1]]'
+- '[[Planeta prehistórico (2022) - Temporada 2]]'
 status: Sin Empezar
 tags: []
-temporadas:
-- Planeta prehistórico (2022) - Temporada 1
-- Planeta prehistórico (2022) - Temporada 2
 title: Planeta prehistórico
 tmdb_id: 95171
 type: tv

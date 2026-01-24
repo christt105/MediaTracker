@@ -13,11 +13,11 @@ overview: Inspirado por las aventuras de Arsène Lupin, el ladrón de guante bla
 rating: '6'
 release_date: 2021-01-08
 rewatches: []
+seasons:
+- '[[Lupin (2021) - Temporada 1]]'
+- '[[Lupin (2021) - Temporada 2]]'
 status: Acabado
 tags: []
-temporadas:
-- Lupin (2021) - Temporada 1
-- Lupin (2021) - Temporada 2
 title: Lupin
 tmdb_id: 96677
 type: tv

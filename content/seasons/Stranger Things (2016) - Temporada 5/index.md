@@ -6,7 +6,7 @@ rating: '5'
 release_date: null
 rewatches: []
 season_number: 5
-serie: Stranger Things (2016)
+series: '[[Stranger Things (2016)]]'
 status: Acabado
 tags: null
 title: Stranger Things - Temporada 5

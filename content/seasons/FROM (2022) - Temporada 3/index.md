@@ -6,7 +6,7 @@ rating: '5'
 release_date: null
 rewatches: []
 season_number: 3
-serie: FROM (2022)
+series: '[[FROM (2022)]]'
 status: Acabado
 tags: null
 title: FROM - Temporada 3

@@ -14,9 +14,9 @@ overview: 'El 30 de julio del 1995, Josep Montané, conocido como ''Sansa'', apa
 rating: null
 release_date: 2024-04-29
 rewatches: []
+seasons: []
 status: Pausado
 tags: []
-temporadas: []
 title: Tor
 tmdb_id: 252626
 type: tv

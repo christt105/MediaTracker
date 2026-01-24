@@ -22,12 +22,12 @@ overview: La maga Frieren formaba parte del grupo del héroe Himmel, quienes der
 rating: '7'
 release_date: 2023-09-29
 rewatches: []
+seasons:
+- '[[Frieren Tras finalizar el viaje (2023) - Temporada 1]]'
+- '[[Frieren Tras finalizar el viaje (2023) - Temporada 2]]'
 status: Acabado
 tags:
 - anime
-temporadas:
-- Frieren Tras finalizar el viaje (2023) - Temporada 1
-- Frieren Tras finalizar el viaje (2023) - Temporada 2
 title: 'Frieren: Tras finalizar el viaje'
 tmdb_id: 209867
 type: tv

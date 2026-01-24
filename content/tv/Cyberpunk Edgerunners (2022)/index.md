@@ -13,10 +13,10 @@ overview: 'En una distopía plagada de corrupción e implantes cibernéticos, un
 rating: '7'
 release_date: 2022-09-13
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: 'Cyberpunk: Edgerunners'
 tmdb_id: 105248
 type: tv

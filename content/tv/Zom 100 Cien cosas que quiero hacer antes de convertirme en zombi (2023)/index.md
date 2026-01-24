@@ -19,10 +19,10 @@ overview: ¡Sobrevivir a un apocalipsis zombi es mejor que ser un esclavo asalar
 rating: '4'
 release_date: 2023-07-09
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: 'Zom 100: Cien cosas que quiero hacer antes de convertirme en zombi'
 tmdb_id: 217766
 type: tv

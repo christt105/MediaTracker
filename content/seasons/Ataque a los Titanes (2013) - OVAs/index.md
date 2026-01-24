@@ -6,7 +6,7 @@ rating: '7'
 release_date: null
 rewatches: []
 season_number: 0
-serie: Ataque a los Titanes (2013)
+series: '[[Ataque a los Titanes (2013)]]'
 status: Acabado
 tags:
 - anime

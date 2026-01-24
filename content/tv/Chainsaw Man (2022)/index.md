@@ -18,10 +18,10 @@ rating: '7'
 release_date: 2022-10-12
 rewatches:
 - 2026-01-21
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Chainsaw Man
 tmdb_id: 114410
 type: tv

@@ -15,7 +15,7 @@ rating: null
 related: []
 release_date: 2022-11-12
 rewatches: []
-status: Sin Empezar
+status: En Curso
 steam_appid: null
 steamgriddb_id: 5440211
 tags: []

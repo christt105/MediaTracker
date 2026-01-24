@@ -13,12 +13,13 @@ overview: Tras un siglo de aparente paz, un titán colosal rompe las murallas qu
 rating: '7'
 release_date: 2013-04-07
 rewatches: []
+seasons:
+- '[[Media Tracker/Seasons/Ataque a los Titanes (2013) - OVAs]]'
+- '[[Media Tracker/Seasons/Ataque a los Titanes (2013) - Final Season|Ataque a los
+  Titanes (2013) - Final Season]]'
 status: Acabado
 tags:
 - anime
-temporadas:
-- Media Tracker/Seasons/Ataque a los Titanes (2013) - Final Season
-- Media Tracker/Seasons/Ataque a los Titanes (2013) - OVAs
 title: Ataque a los Titanes
 tmdb_id: 1429
 type: tv

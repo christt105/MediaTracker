@@ -15,9 +15,9 @@ overview: Ambientada en noviembre de 2019, un semisumergible de construcción ar
 rating: '4'
 release_date: 2022-02-25
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: Operación Marea Negra
 tmdb_id: 128676
 type: tv

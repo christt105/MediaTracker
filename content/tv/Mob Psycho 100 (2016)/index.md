@@ -17,10 +17,10 @@ overview: Kageyama Shigeo, más conocido por el apodo "Mob", parece un chico tí
 rating: '6'
 release_date: 2016-07-12
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Mob Psycho 100
 tmdb_id: 67075
 type: tv

@@ -12,9 +12,9 @@ overview: La impactante historia real de Ed Gein, el infame asesino y profanador
 rating: '5'
 release_date: 2025-10-03
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: 'Monstruo: La historia de Ed Gein'
 tmdb_id: 286801
 type: tv

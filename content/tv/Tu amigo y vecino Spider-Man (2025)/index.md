@@ -13,9 +13,9 @@ overview: Peter Parker está destinado a ser un héroe, pero antes tendrá que r
 rating: '5'
 release_date: 2025-01-29
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: Tu amigo y vecino Spider-Man
 tmdb_id: 138503
 type: tv

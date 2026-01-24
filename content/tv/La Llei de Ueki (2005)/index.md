@@ -17,10 +17,10 @@ overview: 'Ueki Kosuke un estudiante de secundaria tiene una extraña habilidad:
 rating: null
 release_date: 2005-04-04
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: La Llei de Ueki
 tmdb_id: 34852
 type: tv

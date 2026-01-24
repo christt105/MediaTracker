@@ -18,11 +18,11 @@ overview: Tanjiro Kamado vive feliz con su madre y hermanos pequeños en la mont
 rating: '5'
 release_date: 2019-04-06
 rewatches: []
+seasons:
+- '[[Kimetsu no Yaiba Guardianes de la Noche (2019) - Temporada 5]]'
 status: Acabado
 tags:
 - anime
-temporadas:
-- Kimetsu no Yaiba Guardianes de la Noche (2019) - Temporada 5
 title: 'Kimetsu no Yaiba: Guardianes de la Noche'
 tmdb_id: 85937
 type: tv

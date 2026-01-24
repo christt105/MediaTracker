@@ -15,10 +15,10 @@ overview: Naruto es un joven aprendiz de ninja marginado y temido en la Villa Oc
 rating: '7'
 release_date: 2002-10-03
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Naruto
 tmdb_id: 46260
 type: tv

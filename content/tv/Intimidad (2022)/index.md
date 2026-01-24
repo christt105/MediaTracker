@@ -14,9 +14,9 @@ overview: Un video sexual de una política con futuro prometedor, filtrado a la 
 rating: '5'
 release_date: 2022-06-10
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: Intimidad
 tmdb_id: 123534
 type: tv

@@ -11,9 +11,9 @@ overview: Cuando la pequeña Amaya desaparece durante la cabalgata de los Reyes 
 rating: '5'
 release_date: 2023-01-27
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: La chica de nieve
 tmdb_id: 215333
 type: tv

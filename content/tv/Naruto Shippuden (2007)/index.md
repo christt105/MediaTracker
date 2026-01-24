@@ -21,10 +21,10 @@ overview: La historia transcurre en un mundo dominado por aldeas ninja. En las c
 rating: '7'
 release_date: 2007-02-15
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Naruto Shippuden
 tmdb_id: 31910
 type: tv

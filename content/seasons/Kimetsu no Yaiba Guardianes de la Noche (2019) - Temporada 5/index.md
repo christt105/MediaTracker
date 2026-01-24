@@ -6,7 +6,7 @@ rating: '5'
 release_date: null
 rewatches: []
 season_number: 4
-serie: Kimetsu no Yaiba Guardianes de la Noche (2019)
+series: '[[Kimetsu no Yaiba Guardianes de la Noche (2019)]]'
 status: Acabado
 tags: anime
 title: 'Kimetsu no Yaiba: Guardianes de la Noche - Arco del Entrenamiento Pilar'

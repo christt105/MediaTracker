@@ -17,9 +17,9 @@ overview: Serie 'true crime' que relata cr√≠menes reales ocurridos hace pocos a√
 rating: '6'
 release_date: 2020-02-03
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: Crims
 tmdb_id: 117180
 type: tv

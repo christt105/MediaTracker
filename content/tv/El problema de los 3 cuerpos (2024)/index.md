@@ -13,9 +13,9 @@ overview: Una decisión tomada en China en los años 60 trasciende el tiempo y e
 rating: '6'
 release_date: 2024-03-21
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: El problema de los 3 cuerpos
 tmdb_id: 108545
 type: tv

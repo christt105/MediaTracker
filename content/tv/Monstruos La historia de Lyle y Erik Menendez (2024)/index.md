@@ -11,9 +11,9 @@ overview: Este estremecedor drama de crímenes reales investiga la vida de los h
 rating: '5'
 release_date: 2024-09-19
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: 'Monstruos: La historia de Lyle y Erik Menendez'
 tmdb_id: 225634
 type: tv

@@ -14,10 +14,10 @@ overview: Remake de Fullmetal Alchemist. Edward y Alphonse rompieron la regla ba
 rating: '7'
 release_date: 2009-04-05
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: 'Fullmetal Alchemist: Brotherhood'
 tmdb_id: 31911
 type: tv

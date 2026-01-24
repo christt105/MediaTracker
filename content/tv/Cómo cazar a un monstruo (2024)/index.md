@@ -18,9 +18,9 @@ overview: Lluís Gros, condenado a 23 años de prisión por abusos sexuales, pid
 rating: '5'
 release_date: 2024-09-06
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: Cómo cazar a un monstruo
 tmdb_id: 258847
 type: tv

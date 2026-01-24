@@ -12,10 +12,10 @@ overview: Ve esta miniserie para descubrir una nueva e interesante perspectiva d
 rating: '5'
 release_date: 2021-09-09
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: 'Pokémon: Evoluciones'
 tmdb_id: 132636
 type: tv

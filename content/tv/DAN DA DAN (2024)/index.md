@@ -17,12 +17,13 @@ overview: 'Cuando Momo, una estudiante de instituto de una familia de médiums e
 rating: '7'
 release_date: 2024-10-04
 rewatches: []
+seasons:
+- '[[DAN DA DAN (2024) - Temporada 1]]'
+- '[[Media Tracker/Seasons/DAN DA DAN (2024) - Temporada 2|DAN DA DAN (2024) - Temporada
+  2]]'
 status: Acabado
 tags:
 - anime
-temporadas:
-- DAN DA DAN (2024) - Temporada 1
-- DAN DA DAN (2024) - Temporada 2
 title: DAN DA DAN
 tmdb_id: 240411
 type: tv

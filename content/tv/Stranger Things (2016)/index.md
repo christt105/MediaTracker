@@ -12,11 +12,11 @@ overview: A raíz de la desaparición de un niño, un pueblo desvela un misterio
 rating: '6'
 release_date: 2016-07-15
 rewatches: []
+seasons:
+- '[[Stranger Things (2016) - Temporada 5]]'
+- '[[Stranger Things (2016) - Temporada 1]]'
 status: Acabado
 tags: []
-temporadas:
-- Stranger Things (2016) - Temporada 5
-- Stranger Things (2016) - Temporada 1
 title: Stranger Things
 tmdb_id: 66732
 type: tv

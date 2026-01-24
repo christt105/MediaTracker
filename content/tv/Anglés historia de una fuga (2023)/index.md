@@ -20,9 +20,9 @@ overview: '''Anglés: historia de una fuga'' relata la persecución a la desespe
 rating: '5'
 release_date: 2023-02-09
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: 'Anglés: historia de una fuga'
 tmdb_id: 220094
 type: tv

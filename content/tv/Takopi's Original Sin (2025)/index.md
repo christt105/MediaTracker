@@ -15,10 +15,10 @@ overview: 'Un alienígena feliz, Takopi, aterriza en la Tierra con una misión: 
 rating: '6'
 release_date: 2025-06-28
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Takopi's Original Sin
 tmdb_id: 284445
 type: tv

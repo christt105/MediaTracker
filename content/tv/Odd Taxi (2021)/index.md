@@ -16,10 +16,10 @@ overview: '"¿A dónde le llevo?". La ciudad debería resultarle familiar a Odok
 rating: '6'
 release_date: 2021-04-06
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Odd Taxi
 tmdb_id: 116727
 type: tv

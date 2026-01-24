@@ -15,9 +15,9 @@ overview: Un misterioso personaje ha conseguido engañar a distintas personalida
 rating: '5'
 release_date: 2024-10-18
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: 'Medina: El estafador de famosos'
 tmdb_id: 259425
 type: tv

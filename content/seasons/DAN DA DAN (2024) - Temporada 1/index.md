@@ -6,7 +6,7 @@ rating: '7'
 release_date: null
 rewatches: []
 season_number: 1
-serie: DAN DA DAN (2024)
+series: '[[Media Tracker/TVs/DAN DA DAN (2024)|DAN DA DAN (2024)]]'
 status: Acabado
 tags:
 - anime

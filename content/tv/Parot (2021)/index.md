@@ -14,9 +14,9 @@ overview: Thriller centrado en la denominada doctrina Parot, que entró en vigor
 rating: '6'
 release_date: 2021-05-28
 rewatches: []
+seasons: []
 status: Acabado
 tags: []
-temporadas: []
 title: Parot
 tmdb_id: 121898
 type: tv

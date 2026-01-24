@@ -12,10 +12,10 @@ overview: Taro Sakamoto, el mejor de los sicarios, se retiró en nombre del amor
 rating: '5'
 release_date: 2025-01-11
 rewatches: []
+seasons: []
 status: Acabado
 tags:
 - anime
-temporadas: []
 title: Sakamoto Days
 tmdb_id: 207332
 type: tv
