@@ -15,7 +15,7 @@ overview: Hana, una joven de la región de Paldea que admira al cartero Dragonit
   Rio escribió la carta para celebrar el cumpleaños de su padre, quien se encuentra
   destinado solo en la región de Kanto. Sin embargo, el día del cumpleaños de su padre
   ya ha llegado...
-rating: null
+rating: '6'
 release_date: 2025-02-27
 rewatches: []
 status: Acabado
@@ -26,3 +26,9 @@ title: Dragonite y la cartera
 tmdb_id: 1430394
 type: movie
 ---
+
+Un corto bastante colorido y entretenido de ver.
+
+Visto con un doblaje fan en castellano.
+
+{{< youtube 2svgMQcF9rU >}}
