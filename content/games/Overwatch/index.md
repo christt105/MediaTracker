@@ -1,5 +1,6 @@
 ---
 banner_image: steamgriddb_34f9a343f945196b66f807e0eb6249fd.jpg
+category: '[[Juegos]]'
 date: null
 developer: Blizzard Entertainment
 genres:

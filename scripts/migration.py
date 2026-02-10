@@ -10,41 +10,65 @@ from pathlib import Path
 # CONFIGURATION
 # ==========================================
 
-# Paths are relative to the script location (assuming scripts/migration.py)
+# Base directory (Project Root), relative to this script
 BASE_DIR = Path(__file__).parent.parent.absolute()
 
-# Source Directories (Obsidian Vault)
-SOURCE_ROOT = Path("/home/christian/syncthing/Obsidian/Atlas")
-SOURCE_PATH = SOURCE_ROOT / "Media Tracker"
-SOURCE_DIRS = {
-    "movie": SOURCE_PATH / "Movies",
-    "tv": SOURCE_PATH / "TVs",
-    "season": SOURCE_PATH / "Seasons",
-    "videogame": SOURCE_PATH / "Juegos"
-}
-SOURCE_COVERS_DIR = SOURCE_PATH / "Portadas"
-
-# Destination Directories (Hugo)
-CONTENT_DIR = BASE_DIR / "content"
-IMAGES_DIR = BASE_DIR / "static" / "images"
-CACHE_DIR = BASE_DIR / "static" / "images_cache"
-COVERS_DIR = IMAGES_DIR / "covers"
-BANNERS_DIR = IMAGES_DIR / "banners"
-
-# Ensure cache directory exists
-CACHE_DIR.mkdir(parents=True, exist_ok=True)
-
-# Mappings: Obsidian Type -> Hugo Section (Folder)
-SECTION_MAP = {
-    "movie": "movies",
-    "tv": "tv",
-    "season": "seasons",
-    "videogame": "games"
+# Source Configuration (Obsidian Vault)
+SOURCE_CONFIG = {
+    # Root path to your Obsidian vault or specific sync folder
+    "root": Path("/home/christian/syncthing/Obsidian/Atlas"),
+    
+    # Subdirectories within the root to scan
+    # Key: Valid 'type' in frontmatter or internal identifier
+    # Value: Folder name relative to 'root'
+    "folders": {
+        "movie": "Media Tracker/Movies",
+        "tv": "Media Tracker/TVs",
+        "season": "Media Tracker/Seasons",
+        "videogame": "Media Tracker/Juegos"
+    },
+    
+    # Path to covers folder (if centralized)
+    "covers_dir": "Media Tracker/Portadas"
 }
 
-# Ensure destination directories exist
+# Destination Configuration (Hugo)
+DEST_CONFIG = {
+    "content_dir": BASE_DIR / "content",
+    "static_images_dir": BASE_DIR / "static" / "images",
+    "cache_dir": BASE_DIR / "static" / "images_cache",
+    
+    # Mapping Obsidian types to Hugo content sections
+    "section_map": {
+        "movie": "movies",
+        "tv": "tv",
+        "season": "seasons",
+        "videogame": "games"
+    }
+}
+
+# Frontmatter Fields to Clean/Process
+# These keys contain wikilinks that need to be cleaned up
+FRONTMATTER_LINKS = ["serie", "temporadas", "related"]
+
+# ==========================================
+# INITIALIZATION
+# ==========================================
+
+# Define full source paths
+SOURCE_ROOT = SOURCE_CONFIG["root"]
+SOURCE_DIRS = {k: SOURCE_ROOT / v for k, v in SOURCE_CONFIG["folders"].items()}
+SOURCE_COVERS_DIR = SOURCE_ROOT / SOURCE_CONFIG["covers_dir"]
+
+# Define full destination paths
+COVERS_DIR = DEST_CONFIG["static_images_dir"] / "covers"
+BANNERS_DIR = DEST_CONFIG["static_images_dir"] / "banners"
+
+# Ensure directories exist
+DEST_CONFIG["cache_dir"].mkdir(parents=True, exist_ok=True)
 COVERS_DIR.mkdir(parents=True, exist_ok=True)
 BANNERS_DIR.mkdir(parents=True, exist_ok=True)
+
 
 # ==========================================
 # HELPER FUNCTIONS
@@ -95,14 +119,14 @@ def convert_wikilinks(text, known_files):
 
 def get_image_filename(source_str):
     """
-    Genera un nombre de archivo único.
-    PRIORIDAD 1: ID de la imagen extraído de la URL (TMDB/TVDB) para permitir cambios de portada.
-    PRIORIDAD 2: Hash MD5 del string completo (para local files o URLs raras).
+    Generates a unique filename.
+    PRIORITY 1: Image ID extracted from URL (TMDB/TVDB) to allow cover updates.
+    PRIORITY 2: MD5 Hash of the full string (for local files or rare URLs).
     """
     source_str = str(source_str)
     
-    # 1. Caso TMDB (Extraer ID único de la imagen)
-    # URL ej: https://image.tmdb.org/t/p/original/1CfZCb56vWjq37uXtbKNMevMzwG.jpg
+    # 1. TMDB Case (Extract unique Image ID)
+    # URL ex: https://image.tmdb.org/t/p/original/1CfZCb56vWjq37uXtbKNMevMzwG.jpg
     if "tmdb.org" in source_str:
         try:
             filename_with_ext = source_str.split('/')[-1] # 1CfZCb56vWjq37uXtbKNMevMzwG.jpg
@@ -110,10 +134,10 @@ def get_image_filename(source_str):
             ext = filename_with_ext.split('.')[1]         # jpg
             return f"tmdb_{image_id}.{ext}"
         except:
-            pass # Si falla el parseo, saltamos al hash
+            pass # If parse fails, fallback to hash
 
-    # 2. Caso TheTVDB (Extraer nombre de archivo)
-    # URL ej: https://artworks.thetvdb.com/banners/movies/1234/posters/1234.jpg
+    # 2. TheTVDB Case (Extract filename)
+    # URL ex: https://artworks.thetvdb.com/banners/movies/1234/posters/1234.jpg
     if "thetvdb.com" in source_str:
         try:
             filename_with_ext = source_str.split('/')[-1]
@@ -123,6 +147,7 @@ def get_image_filename(source_str):
         except:
             pass
 
+    # 3. SteamGridDB Case
     if "steamgriddb" in source_str:
         try:
             filename_with_ext = source_str.split('/')[-1]
@@ -132,6 +157,7 @@ def get_image_filename(source_str):
         except:
             pass
     
+    # 4. Steam Static Case
     if "steamstatic.com" in source_str:
         try:
             filename_with_ext = source_str.split('/')[-2]
@@ -141,21 +167,21 @@ def get_image_filename(source_str):
         except:
             pass
 
-    # 3. Caso Genérico / Archivos Locales / Steam / IGDB
-    # Usamos MD5 del string.
-    # - Si es local: "[[Cover1.png]]" da un hash distinto a "[[Cover2.png]]".
+    # 5. Generic Case / Local Files / IGDB
+    # Use MD5 of the string.
+    # - Local: "[[Cover1.png]]" gives different hash than "[[Cover2.png]]".
     
-    # Intentar adivinar extensión (útil para png locales)
+    # Try to guess extension (useful for local pngs)
     ext = ".jpg"
     if "." in source_str:
-        possible_ext = source_str.split(".")[-1].split("?")[0] # quitar query params
-        if len(possible_ext) <= 4: # evitar errores si no es extensión
+        possible_ext = source_str.split(".")[-1].split("?")[0] # remove query params
+        if len(possible_ext) <= 4: # avoid errors if not really an extension
             ext = "." + possible_ext
 
     hash_object = hashlib.md5(source_str.encode())
     return f"img_{hash_object.hexdigest()}{ext}"
 
-def process_image(source_str, note_src, type="cover"):
+def process_image(source_str, note_dest_dir, type="cover"):
     """
     Downloads URL or Copies Local File. 
     1. Checks/Saves to CACHE_DIR.
@@ -169,24 +195,24 @@ def process_image(source_str, note_src, type="cover"):
     
     # 1. DEFINE DESTINATIONS
     # Cache location (Always shared)
-    cache_path = CACHE_DIR / filename
+    cache_path = DEST_CONFIG["cache_dir"] / filename
     
     # Final Destination
     if type == "content" or type == "cover" or type == "banner":
-        # Ensure we are in a bundle structure: note_src should be the bundle directory
-        if note_src:
-            dest_dir = note_src # e.g. content/movies/avatar/
+        # Ensure we are in a bundle structure: note_dest_dir should be the bundle directory
+        if note_dest_dir:
+            dest_dir = note_dest_dir # e.g. content/movies/avatar/
             dest_path = dest_dir / filename
             # Return relative path for Page Resources (just filename)
             return_path = filename 
         else:
-             # Fallback if for some reason not in a bundle (shouldn't happen with new logic)
-            dest_dir = IMAGES_DIR / "covers" 
+            # Fallback (shouldn't happen with new logic)
+            dest_dir = COVERS_DIR 
             dest_path = dest_dir / filename
             return_path = f"/images/covers/{filename}"
     else:
-        # Fallback
-        dest_path = IMAGES_DIR / "misc" / filename
+        # Fallback for misc types
+        dest_path = DEST_CONFIG["static_images_dir"] / "misc" / filename
         return_path = f"/images/misc/{filename}"
 
     dest_path.parent.mkdir(parents=True, exist_ok=True)
@@ -195,7 +221,7 @@ def process_image(source_str, note_src, type="cover"):
     
     # 2. POPULATE CACHE (If missing)
     if not cache_path.exists():
-        # CASE A: Web URL (TMDB/TVDB)
+        # CASE A: Web URL (TMDB/TVDB/Etc)
         if str(source_str).startswith("http"):
             try:
                 print(f"  [Downloading] {source_str} -> {filename}")
@@ -217,6 +243,7 @@ def process_image(source_str, note_src, type="cover"):
                 
                 # Resolve the path
                 local_file = BASE_DIR / clean_path
+                # Search strategies
                 if not local_file.exists():
                     local_file = SOURCE_COVERS_DIR / os.path.basename(clean_path)
                 if not local_file.exists():
@@ -269,7 +296,7 @@ def convert_youtube_links(text):
 def migrate():
     print("--- STARTING MIGRATION ---")
 
-    # Get all covers and banners
+    # Tracking old covers/banners to clean up if needed (optional)
     covers = []
     banners = []
 
@@ -291,8 +318,10 @@ def migrate():
             print(f"Skipping {obsidian_type}: Directory not found ({source_dir})")
             continue
 
-        hugo_section = SECTION_MAP.get(obsidian_type, "others")
-        target_dir = CONTENT_DIR / hugo_section
+        hugo_section = DEST_CONFIG["section_map"].get(obsidian_type, "others")
+        target_dir = DEST_CONFIG["content_dir"] / hugo_section
+        
+        # Clean destination section (Danger: Removes existing files!)
         shutil.rmtree(target_dir, ignore_errors=True)
         target_dir.mkdir(parents=True, exist_ok=True)
         
@@ -304,34 +333,27 @@ def migrate():
                 
                 # Verify type matches the folder (sanity check)
                 if post.get('type') != obsidian_type:
-                    print(f"  [Warning] Type mismatch: {file_path.name}")
-                    pass
+                    print(f"  [Warning] Type mismatch: {file_path.name} (Expected {obsidian_type}, got {post.get('type')})")
+                    # We continue anyway, trusting folder structure over metadata for placement
 
                 print(f"Processing: {file_path.name}")
 
                 # 1. PROCESS RELATIONS (WikiLinks)
-                # Handle 'serie' (Single link)
-                if post.get('serie'):
-                    post['serie'] = clean_wikilink(post['serie'])
-
-                # Handle 'temporadas' (List of links)
-                if post.get('temporadas') and isinstance(post['temporadas'], list):
-                    clean_list = []
-                    for temp in post['temporadas']:
-                        clean_list.append(clean_wikilink(temp))
-                    post['temporadas'] = clean_list
-
-                # Handle 'related' (List of links)
-                if post.get('related') and isinstance(post['related'], list):
-                    clean_related = []
-                    for rel in post['related']:
-                        clean_related.append(clean_wikilink(rel))
-                    post['related'] = clean_related
+                for key in FRONTMATTER_LINKS:
+                    if post.get(key):
+                        if isinstance(post[key], list):
+                            clean_list = []
+                            for item in post[key]:
+                                clean_list.append(clean_wikilink(item))
+                            post[key] = clean_list
+                        else:
+                            post[key] = clean_wikilink(post[key])
 
                 # 2. DETECT CONTENT IMAGES
                 has_content_images = False
                 content_images = []
                 if post.content:
+                    # Regex to find embedded images ![[image.png]]
                     content_images = re.findall(r'!\[\[(.*?)\]\]', post.content)
                     if content_images:
                         has_content_images = True
@@ -349,7 +371,6 @@ def migrate():
                 if post.get('cover'):
                     new_cover = process_image(post['cover'], image_target_dir, type="cover")
                     if new_cover:
-                        # For Page Resources, we just use the filename relative to the page bundle
                         post['image'] = new_cover
                     del post['cover']
 
@@ -364,6 +385,7 @@ def migrate():
                     # A. Process Content Images
                     if has_content_images and content_images:
                         for image in content_images:
+                            # Replicate wikilink format for handler
                             new_image = process_image(f"[[{image}]]", image_target_dir, type="content")
                             if new_image:
                                 post.content = post.content.replace(f'![[{image}]]', f'![{os.path.basename(image)}]({new_image})')
@@ -371,6 +393,7 @@ def migrate():
                     # B. Process Wikilinks
                     post.content = convert_wikilinks(post.content, known_files)
 
+                    # C. Process YouTube Links
                     post.content = convert_youtube_links(post.content)
 
                 # 6. WRITE FILE
@@ -382,13 +405,11 @@ def migrate():
 
     print("\n--- MIGRATION FINISHED ---")
 
-    # Remove unused covers
-    for cover in covers:
-        os.remove(COVERS_DIR / cover)
-
-    # Remove unused banners
-    for banner in banners:
-        os.remove(BANNERS_DIR / banner)
+    # Cleanup unused covers/banners if desired
+    # (Commented out safety measure, enable if you want strict cleanup)
+    # for cover in covers:
+    #     if os.path.exists(COVERS_DIR / cover):
+    #         os.remove(COVERS_DIR / cover)
 
 if __name__ == "__main__":
     migrate()
