@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_rLchzndbDRy41J9X363pMePbV5x.jpg
+category: '[[Películas]]'
 date: 2026-02-06
 genres:
 - Suspense

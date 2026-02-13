@@ -1,5 +1,6 @@
 ---
 banner: ''
+category: '[[Series]]'
 date: 2026-02-07
 genres:
 - Documental

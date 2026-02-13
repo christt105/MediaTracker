@@ -1,5 +1,6 @@
 ---
 banner_image: tmdb_A4PHx94G7mvM3b8vsDJ5HEaQ6uv.jpg
+category: '[[Series]]'
 date: null
 genres:
 - Animación
