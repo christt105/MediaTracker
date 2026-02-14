@@ -24,28 +24,28 @@
             {{ $media := .Pages }} {{ $mediaClean := slice }}
 
             {{ range $media }}
-            {{ $esPadreSinFecha := false }}
+            {{ $isParentWithoutDate := false }}
             {{ if or (not (eq .Params.type "tv")) (not .Params.temporadas) (eq (len .Params.temporadas) 0) }}
             {{ $mediaClean = $mediaClean | append . }}
             {{ continue }}
             {{ end }}
             {{ if (eq .Date.Year 1) }}
-            {{ $esPadreSinFecha = true }}
+            {{ $isParentWithoutDate = true }}
             {{ end }}
-            {{ if not $esPadreSinFecha }}
+            {{ if not $isParentWithoutDate }}
             {{ $mediaClean = $mediaClean | append . }}
             {{ end }}
             {{ end }}
 
-            {{ $acabados := where $mediaClean "Params.status" "eq" "Acabado" }}
+            {{ $finished := where $mediaClean "Params.status" "eq" "Acabado" }}
 
             {{/* build entries that include rewatches dates */}}
-            {{ $acabadosEntries := slice }}
-            {{ range $p := $acabados }}
-            {{ $acabadosEntries = $acabadosEntries | append (dict "Page" $p "Date" $p.Date) }}
+            {{ $finishedEntries := slice }}
+            {{ range $p := $finished }}
+            {{ $finishedEntries = $finishedEntries | append (dict "Page" $p "Date" $p.Date) }}
             {{ with $p.Params.rewatches }}
             {{ range $r := . }}
-            {{ $acabadosEntries = $acabadosEntries | append (dict "Page" $p "Date" (time $r)) }}
+            {{ $finishedEntries = $finishedEntries | append (dict "Page" $p "Date" (time $r)) }}
             {{ end }}
             {{ end }}
             {{ end }}
@@ -53,7 +53,7 @@
             {{/* separate and sort the entries */}}
             {{ $withDate := slice }}
             {{ $noDate := slice }}
-            {{ range $e := $acabadosEntries }}
+            {{ range $e := $finishedEntries }}
             {{ if eq $e.Date.Year 1 }}
             {{ $noDate = $noDate | append $e }}
             {{ else }}
@@ -62,26 +62,26 @@
             {{ end }}
             {{ $withDate = sort $withDate "Date" "desc" }}
             {{ $noDate = sort $noDate "Page.Params.release_date" "asc" }}
-            {{ $acabadosSortedEntries := $withDate | append $noDate }}
+            {{ $finishedSortedEntries := $withDate | append $noDate }}
 
             {{/* create year groups */}}
             {{ $yearScratch := newScratch }}
-            {{ range $e := $acabadosSortedEntries }}
+            {{ range $e := $finishedSortedEntries }}
             {{ $yr := dateFormat "2006" $e.Date }}
             {{ $yearScratch.Add $yr (slice $e) }}
             {{ end }}
             {{ $yearGroups := $yearScratch.Values }}
 
-            {{ $otros := where $mediaClean "Params.status" "in" (slice "Pausado" "Abandonado") }}
+            {{ $others := where $mediaClean "Params.status" "in" (slice "Pausado" "Abandonado") }}
 
             {{ $statusFilter := slice "Acabado" "Pausado" "Abandonado" "Sin Empezar" }}
-            {{ $enCurso := where $mediaClean "Params.status" "not in" $statusFilter }}
+            {{ $inProgress := where $mediaClean "Params.status" "not in" $statusFilter }}
 
-            {{ if gt (len $enCurso) 0 }}
+            {{ if gt (len $inProgress) 0 }}
             <div class="home-section" style="margin-bottom: 40px;">
-                <h3 class="section-title">En Curso ({{ len $enCurso }})</h3>
+                <h3 class="section-title">En Curso ({{ len $inProgress }})</h3>
                 <div class="media-grid">
-                    {{ range $enCurso.ByLastmod.Reverse }}
+                    {{ range $inProgress.ByLastmod.Reverse }}
                     {{ partial "media-card.html" . }}
                     {{ end }}
                 </div>
@@ -89,9 +89,9 @@
             <hr class="section-divider">
             {{ end }}
 
-            {{ if gt (len $acabadosSortedEntries) 0 }}
+            {{ if gt (len $finishedSortedEntries) 0 }}
 
-            {{ partial "year-nav.html" $acabadosSortedEntries }}
+            {{ partial "year-nav.html" $finishedSortedEntries }}
 
             <div id="completed-section">
                 {{ $yearKeys := slice }}
@@ -121,21 +121,21 @@
             </div>
 
             {{ else }}
-            {{ if eq (len $enCurso) 0 }}
+            {{ if eq (len $inProgress) 0 }}
             <p>No hay elementos completados en esta lista.</p>
             {{ end }}
             {{ end }}
 
-            {{ if gt (len $otros) 0 }}
+            {{ if gt (len $others) 0 }}
             <hr class="section-divider" style="margin-top: 40px;">
             <div class="hidden-section-container" style="margin-top: 20px;">
                 <details>
                     <summary style="cursor: pointer; opacity: 0.7; font-weight: bold; padding: 10px;">
-                        Ver Pausados y Abandonados ({{ len $otros }})
+                        Ver Pausados y Abandonados ({{ len $others }})
                     </summary>
 
                     <div class="media-grid" style="margin-top: 20px;">
-                        {{ range $otros.ByLastmod.Reverse }}
+                        {{ range $others.ByLastmod.Reverse }}
                         {{ partial "media-card.html" . }}
                         {{ end }}
                     </div>
