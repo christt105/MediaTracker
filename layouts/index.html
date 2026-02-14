@@ -14,9 +14,9 @@
 <body data-theme="{{ $defaultColor }}" class="notransition">
     {{- partial "scriptsBodyStart.html" . -}}
     {{- partial "header.html" . -}}
-    
+
     {{ partial "random-hero-banner.html" . }}
-    
+
     <div class="wrapper">
         <div class="profile-header">
             {{ partial "bio" . }}
@@ -56,26 +56,46 @@
             {{ $enCurso := where $media "Params.status" "not in" $status }}
 
 
-            {{ $acabadosWithDate := slice }}
-            {{ $acabadosNoDate := slice }}
-
-            {{ range $acabados }}
-                {{ if eq .Date.Year 1 }}
-                    {{ $acabadosNoDate = $acabadosNoDate | append . }}
-                {{ else }}
-                    {{ $acabadosWithDate = $acabadosWithDate | append . }}
-                {{ end }}
+            {{/* build entries that include rewatches dates */}}
+            {{ $acabadosEntries := slice }}
+            {{ range $p := $acabados }}
+            {{ $acabadosEntries = $acabadosEntries | append (dict "Page" $p "Date" $p.Date) }}
+            {{ with $p.Params.rewatches }}
+            {{ range $r := . }}
+            {{ $acabadosEntries = $acabadosEntries | append (dict "Page" $p "Date" (time $r)) }}
+            {{ end }}
+            {{ end }}
             {{ end }}
 
-            {{ $sortedByType := ($acabadosWithDate.ByParam "type").Reverse }}
+            {{/* separate and sort the entries */}}
+            {{ $withDate := slice }}
+            {{ $noDate := slice }}
+            {{ range $e := $acabadosEntries }}
+            {{ if eq $e.Date.Year 1 }}
+            {{ $noDate = $noDate | append $e }}
+            {{ else }}
+            {{ $withDate = $withDate | append $e }}
+            {{ end }}
+            {{ end }}
 
-            {{ $sortedByDate := $sortedByType.ByDate.Reverse }}
+            {{/* Bubblesort for $withDate because sort function might not work well with maps of time */}}
+            {{/* Actually, let's try sort first. If .Date is time.Time, sort should work if we pass the key */}}
+            {{ $withDate = sort $withDate "Date" "desc" }}
 
-            {{ $sortedNoDate := $acabadosNoDate.ByParam "release_date" }}
+            {{ $noDate = sort $noDate "Page.Params.release_date" "asc" }}
 
-            {{ $acabadosSorted := $sortedByDate | append $sortedNoDate }}
+            {{ $acabadosSortedEntries := $withDate | append $noDate }}
 
-            {{ $yearGroups := $acabadosSorted.GroupByDate "2006" }}
+            {{/* create year groups */}}
+            {{ $yearScratch := newScratch }}
+            {{ range $e := $acabadosSortedEntries }}
+            {{ $yr := "0001" }}
+            {{ if ne $e.Date.Year 1 }}
+            {{ $yr = dateFormat "2006" $e.Date }}
+            {{ end }}
+            {{ $yearScratch.Add $yr (slice $e) }}
+            {{ end }}
+            {{ $yearGroups := $yearScratch.Values }}
 
             {{ if gt (len $enCurso) 0 }}
             <div class="home-section">
@@ -122,27 +142,35 @@
 
             <h3 class="section-title" id="completed-section">Completado</h3>
 
-            {{ partial "year-nav.html" $acabadosSorted }}
+            {{ partial "year-nav.html" $acabadosSortedEntries }}
 
-            {{ range $yearGroups }}
+            {{ $yearKeys := slice }}
+            {{ range $k, $v := $yearGroups }}
+            {{ $yearKeys = $yearKeys | append $k }}
+            {{ end }}
+            {{ $yearKeys := sort $yearKeys "value" "desc" }}
+
+            {{ range $yr := $yearKeys }}
+            {{ $group := index $yearGroups $yr }}
 
             <div class="year-group">
                 {{ $unknownYear := "0001" }}
-                <h2 class="year-title" id="year-{{ if eq .Key $unknownYear }}unknown{{ else }}{{ .Key }}{{ end }}">
-                    {{ if eq .Key $unknownYear }}
+                <h2 class="year-title" id="year-{{ if eq $yr $unknownYear }}unknown{{ else }}{{ $yr }}{{ end }}">
+                    {{ if eq $yr $unknownYear }}
                     No recuerdo cuándo
                     {{ else }}
-                    {{ .Key }}
+                    {{ $yr }}
                     {{ end }}
                 </h2>
                 <div class="media-grid">
-                    {{ range .Pages }}
+                    {{ range $group }}
                     {{ partial "media-card.html" . }}
                     {{ end }}
                 </div>
             </div>
+            {{ end }}
 
-            {{ else }}
+            {{ if eq (len $yearKeys) 0 }}
             <p>Aún no hay elementos completados.</p>
             {{ end }}
 

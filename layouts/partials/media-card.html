@@ -1,53 +1,63 @@
-<div class="media-card" data-title="{{ lower .Title }}" data-year="{{ .Params.year }}" data-type="{{ .Params.type }}">
+{{ $page := . }}
+{{ $date := .Date }}
+{{ if reflect.IsMap . }}
+{{ $page = .Page }}
+{{ $date = .Date }}
+{{ end }}
+
+<div class="media-card" data-title="{{ lower $page.Title }}" data-year="{{ $page.Params.year }}"
+    data-type="{{ $page.Params.type }}">
 
     <div class="media-poster">
-        <a href="{{ .Permalink }}">
-            {{ $img := .Resources.GetMatch .Params.image }}
+        <a href="{{ $page.Permalink }}">
+            {{ $img := $page.Resources.GetMatch $page.Params.image }}
             {{ if $img }}
-                {{ $img = $img.Resize "300x450 webp" }}
-                <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" loading="lazy" width="{{ $img.Width }}" height="{{ $img.Height }}">
+            {{ $img = $img.Resize "300x450 webp" }}
+            <img src="{{ $img.RelPermalink }}" alt="{{ $page.Title }}" loading="lazy" width="{{ $img.Width }}"
+                height="{{ $img.Height }}">
             {{ else }}
-                {{ $imgStr := .Params.image | default "/images/default-poster.png" }}
-                <img src="{{ $imgStr | absURL }}" alt="{{ .Title }}" loading="lazy">
+            {{ $imgStr := $page.Params.image | default "/images/default-poster.png" }}
+            <img src="{{ $imgStr | absURL }}" alt="{{ $page.Title }}" loading="lazy">
             {{ end }}
         </a>
 
-        {{ $icon := .Params.fa_icon }}
+        {{ $icon := $page.Params.fa_icon }}
 
         {{/* Si no hay icono explícito, asignamos uno por defecto según el tipo */}}
         {{ if not $icon }}
-        {{ if eq .Params.type "movie" }}
+        {{ if eq $page.Params.type "movie" }}
         {{ $icon = "fas fa-film" }}
-        {{ else if eq .Params.type "tv" }}
+        {{ else if eq $page.Params.type "tv" }}
         {{ $icon = "fas fa-tv" }}
-        {{ else if eq .Params.type "season" }}
+        {{ else if eq $page.Params.type "season" }}
         {{ $icon = "fas fa-tv" }}
-        {{ else if eq .Params.type "videogame" }}
+        {{ else if eq $page.Params.type "videogame" }}
         {{ $icon = "fas fa-gamepad" }}
         {{ end }}
         {{ end }}
 
         {{ if $icon }}
-        <div class="badge-type {{ .Params.type }}" title="{{ .Params.type }}">
+        <div class="badge-type {{ $page.Params.type }}" title="{{ $page.Params.type }}">
             <i class="{{ $icon }}"></i>
         </div>
         {{ end }}
 
-        {{ if gt (len (strings.TrimSpace .Content)) 0 }}
+        {{ if gt (len (strings.TrimSpace $page.Content)) 0 }}
         <div class="badge-content" title="Contiene reseña/notas personales">
             <i class="fas fa-file-alt"></i>
         </div>
         {{ end }}
 
-        {{ if and (eq .Params.status "Acabado") .Params.rating }}
+        {{ if and (eq $page.Params.status "Acabado") $page.Params.rating }}
 
-        {{ $ratingKey := string .Params.rating }}
+        {{ $ratingKey := string $page.Params.rating }}
 
-        {{ $theme := index .Site.Data.ratings $ratingKey | default .Site.Data.ratings.default }}
+        {{ $theme := index $page.Site.Data.ratings $ratingKey | default $page.Site.Data.ratings.default }}
 
         <div class="margin-rating" style="background: {{ $theme.color }};"></div>
 
-        <div class="badge-rating" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default " white" }}">
+        <div class="badge-rating" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default " white"
+            }}">
             <i class="{{ $theme.icon }}"></i>
         </div>
 
@@ -55,17 +65,17 @@
     </div>
 
     <div class="media-info">
-        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <h3><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></h3>
         <small>
-            {{ if eq .Params.status "Acabado" }}
-            {{ $configDateFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
-            {{ if .Date }}
-            {{ time.Format $configDateFormat .Date }}
+            {{ if eq $page.Params.status "Acabado" }}
+            {{ $configDateFormat := $page.Site.Params.dateFormat | default "2 Jan 2006" }}
+            {{ if $date }}
+            {{ time.Format $configDateFormat $date }}
             {{ else }}
-            {{ time.Format $configDateFormat .Params.release_date }}
+            {{ time.Format $configDateFormat $page.Params.release_date }}
             {{ end }}
             {{ else }}
-            {{ .Params.status | default "En curso" }}
+            {{ $page.Params.status | default "En curso" }}
             {{ end }}
         </small>
     </div>

@@ -1,13 +1,36 @@
-{{ $pages := . }}
-{{ if gt (len $pages) 0 }}
+{{ $input := . }}
+{{ if gt (len $input) 0 }}
 <div class="year-nav-container">
     <div class="year-nav-scroll">
-        {{ range $pages.GroupByDate "2006" }}
+        {{/* Determine whether we received a slice of pages or the custom entries we build
+        in index/list. An entry has both "page" and "date" keys. */}}
+        {{ $first := index $input 0 }}
+        {{ if and (isset $first "Page") (isset $first "Date") }}
+        {{/* build a list of unique years from the entry dates */}}
+        {{ $years := slice }}
+        {{ range $input }}
+        {{ $yr := dateFormat "2006" .Date }}
+        {{ if not (in $years $yr) }}
+        {{ $years = $years | append $yr }}
+        {{ end }}
+        {{ end }}
+        {{ $years = sort $years "value" "desc" }}
+        {{ range $years }}
+        {{ if eq (trim . " ") "0001" }}
+        <a href="#year-unknown" class="year-nav-link">?</a>
+        {{ else }}
+        <a href="#year-{{ . }}" class="year-nav-link">{{ . }}</a>
+        {{ end }}
+        {{ end }}
+        {{ else }}
+        {{/* fall back to grouping pages by date */}}
+        {{ range $input.GroupByDate "2006" }}
         {{ $year := .Key }}
         {{ if eq (trim $year " ") "0001" }}
         <a href="#year-unknown" class="year-nav-link">?</a>
         {{ else }}
         <a href="#year-{{ $year }}" class="year-nav-link">{{ $year }}</a>
+        {{ end }}
         {{ end }}
         {{ end }}
     </div>

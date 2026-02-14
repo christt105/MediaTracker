@@ -39,6 +39,39 @@
 
             {{ $acabados := where $mediaClean "Params.status" "eq" "Acabado" }}
 
+            {{/* build entries that include rewatches dates */}}
+            {{ $acabadosEntries := slice }}
+            {{ range $p := $acabados }}
+            {{ $acabadosEntries = $acabadosEntries | append (dict "Page" $p "Date" $p.Date) }}
+            {{ with $p.Params.rewatches }}
+            {{ range $r := . }}
+            {{ $acabadosEntries = $acabadosEntries | append (dict "Page" $p "Date" (time $r)) }}
+            {{ end }}
+            {{ end }}
+            {{ end }}
+
+            {{/* separate and sort the entries */}}
+            {{ $withDate := slice }}
+            {{ $noDate := slice }}
+            {{ range $e := $acabadosEntries }}
+            {{ if eq $e.Date.Year 1 }}
+            {{ $noDate = $noDate | append $e }}
+            {{ else }}
+            {{ $withDate = $withDate | append $e }}
+            {{ end }}
+            {{ end }}
+            {{ $withDate = sort $withDate "Date" "desc" }}
+            {{ $noDate = sort $noDate "Page.Params.release_date" "asc" }}
+            {{ $acabadosSortedEntries := $withDate | append $noDate }}
+
+            {{/* create year groups */}}
+            {{ $yearScratch := newScratch }}
+            {{ range $e := $acabadosSortedEntries }}
+            {{ $yr := dateFormat "2006" $e.Date }}
+            {{ $yearScratch.Add $yr (slice $e) }}
+            {{ end }}
+            {{ $yearGroups := $yearScratch.Values }}
+
             {{ $otros := where $mediaClean "Params.status" "in" (slice "Pausado" "Abandonado") }}
 
             {{ $statusFilter := slice "Acabado" "Pausado" "Abandonado" "Sin Empezar" }}
@@ -56,28 +89,30 @@
             <hr class="section-divider">
             {{ end }}
 
-            {{ if gt (len $acabados) 0 }}
+            {{ if gt (len $acabadosSortedEntries) 0 }}
 
-            {{ $acabadosSorted := $acabados.ByDate.Reverse }}
-
-            {{ partial "year-nav.html" $acabadosSorted }}
+            {{ partial "year-nav.html" $acabadosSortedEntries }}
 
             <div id="completed-section">
-                {{ range $acabadosSorted.GroupByDate "2006" }}
-
+                {{ $yearKeys := slice }}
+                {{ range $k, $v := $yearGroups }}
+                {{ $yearKeys = $yearKeys | append $k }}
+                {{ end }}
+                {{ $yearKeys := sort $yearKeys "value" "desc" }}
+                {{ range $yr := $yearKeys }}
+                {{ $group := index $yearGroups $yr }}
                 <div class="year-group">
-                    {{ $yearKey := trim .Key " " }}
-                    {{ $unknownYear := eq $yearKey "0001" }}
-                    <h2 class="year-title" id="year-{{ if $unknownYear }}unknown{{ else }}{{ $yearKey }}{{ end }}">
+                    {{ $unknownYear := eq $yr "0001" }}
+                    <h2 class="year-title" id="year-{{ if $unknownYear }}unknown{{ else }}{{ $yr }}{{ end }}">
                         {{ if $unknownYear }}
                         No recuerdo cuándo
                         {{ else }}
-                        {{ $yearKey }}
+                        {{ $yr }}
                         {{ end }}
                     </h2>
 
                     <div class="media-grid">
-                        {{ range .Pages }}
+                        {{ range $group }}
                         {{ partial "media-card.html" . }}
                         {{ end }}
                     </div>
