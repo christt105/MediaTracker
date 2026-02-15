@@ -19,7 +19,8 @@ overview: Denji trabajaba como cazador de demonios para la yakuza, tratando de s
 rating: '7'
 related: null
 release_date: 2025-09-19
-rewatches: null
+rewatches:
+- 2026-01-21
 status: Acabado
 tags:
 - anime
