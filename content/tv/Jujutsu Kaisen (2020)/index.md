@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_gmECX1DvFgdUPjtio2zaL8BPYPu.jpg
 category: '[[Series]]'
-date: 2025-11-15
+date: null
 genres:
 - Animación
 - Action & Adventure

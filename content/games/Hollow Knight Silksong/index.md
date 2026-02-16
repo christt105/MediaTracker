@@ -19,8 +19,7 @@ rating: '7'
 related:
 - Hollow Knight
 release_date: 2025-09-04
-rewatches:
-- 2025-10-19
+rewatches: null
 status: Acabado
 steam_appid: 1030300
 steamgriddb_id: 1043
@@ -37,3 +36,4 @@ El mejor juego que Team Cherry podía dar a los fans de [Hollow Knight]({{< ref 
 
 ### Speedrun
 - La Viuda me ha costado varios intentos. 1h 20 min hasta la Viuda.
+- Speedrun dropeado antes de conseguir la última canción.

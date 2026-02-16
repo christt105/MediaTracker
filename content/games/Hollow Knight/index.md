@@ -18,12 +18,9 @@ related:
 - Hollow Knight Silksong
 release_date: 2017-02-24
 rewatches:
-- 2018-09-06
 - 2019-05-07
-- 2020-02-14
 - 2020-03-01
 - 2020-09-23
-- 2020-10-28
 - 2020-10-31
 - 2022-06-29
 status: Acabado
