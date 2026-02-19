@@ -32,3 +32,5 @@ title: 'Frieren: Tras finalizar el viaje'
 tmdb_id: 209867
 type: tv
 ---
+
+Una obra maravillosa. Se ha convertido en mi segunda serie favorita. Sí, es lenta y está bien así. Si, pasan cosas aunque no lo parezca, va se eso la serie. Cada episodio hay un aprendizaje de los personajes y avanzan en sus relaciones. Es muy bonita.
