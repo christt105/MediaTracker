@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_iREgT7QU8Dfrjh0nzZpN8IspMTQ.jpg
 category: '[[Series]]'
-date: null
+date: 2026-03-05
 genres:
 - Drama
 - Misterio
@@ -10,12 +10,12 @@ overview: Durante un enfrentamiento violento pactado entre los aficionados radic
   de dos clubes de fútbol, Salvador Aguirre, conductor de ambulancias, rescata herida
   a su hija Milena, miembro del grupo ultra, que defiende valores racistas, violentos
   y homófobos, totalmente opuestos a los que él le inculcó.
-rating: null
+rating: '5'
 related: []
-release_date: '2026-02-06'
+release_date: 2026-02-06
 rewatches: []
 seasons: []
-status: En Curso
+status: Acabado
 tags: []
 title: Salvador
 tmdb_id: 259856
