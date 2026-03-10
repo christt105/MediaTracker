@@ -29,6 +29,8 @@ Me lo pasé con un equipo predefinido desde antes de empezar la aventura.
 
 ![PokemonSoulSilverEquipoDestinyLock.jpeg](img_9cbf3967c9a7279ef2fd6d7d572e8465.jpg)
 
+Hall of Fame: 2020-05-21
+
 Tuve un Tentacool de inicial y recuerdo vencer a Rojo. No tengo captura del Hall of Fame, solo unas cuantas fotos hechas con el móvil a la 2DS.
 
 ![CapturaPokemonSoulSilverPueblo.jpeg](img_1288299c1a6e8f215413237471fe1d1c.jpg)
