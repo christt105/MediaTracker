@@ -27,8 +27,8 @@ type: videogame
 ---
 
 ## Living Dex 2023-11-19
-![FichaEntrenador.jpg](img_49f3e161a66186fbe0ced7e51728e5ea.jpg)
+![FichaEntrenador.jpg](img_6e50f6da678a0efb76f7c630fc539210.jpg)
 
-![LivingDex.png](img_349a0fb89a8445fb0ec1fc1f14790d24.jpg)
+![LivingDex.png](img_c7ef575729ffd102f9a98bceea91b63a.jpg)
 
-![NationalDex.png](img_17e098c01e8a887c5462dd015a461572.jpg)
+![NationalDex.png](img_69f3276a559c01089fed42385ff809e2.jpg)

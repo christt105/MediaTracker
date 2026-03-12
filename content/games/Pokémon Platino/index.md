@@ -30,6 +30,6 @@ Un juego muy completo. Mejora muchísimo a las entregas base, haciendo el juego 
 
 He encontrado un [tuit](https://x.com/christt105/status/1247131517610070017) en el que publiqué el Hall of Fame con una foto directamente a la 2DS. Algo recuerdo, pero no mucho. Menos el Abomasnow, los demás son literalmente equipo heteronormativo.
 
-![CynthiaPokemonPlatinum.png|500](img_2da96e2baa2e85cb34aa1ba5a9f3da24.jpg) ![HallOfFamePokemonPlatinum.png|500](img_d7095ab52e71d840496f205f59e15e76.jpg)!
+![CynthiaPokemonPlatinum.png|500](img_43273b98659b2f63ee4138323697a7fb.jpg) ![HallOfFamePokemonPlatinum.png|500](img_b94cd615cd000af9550eb81f37ce9369.jpg)!
 
-![Christian-card-2026-01-16T10-41-41-719Z.png](img_09332c72249999e34f9fee4d8f0a392a.jpg)
+![Christian-card-2026-01-16T10-41-41-719Z.png](img_17e4962ffa8212b01c103ff73f681767.jpg)

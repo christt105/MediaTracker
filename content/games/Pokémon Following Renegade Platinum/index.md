@@ -26,4 +26,4 @@ type: videogame
 
 Fue un monotype de tipo Psíquico. También fue la primera vez que lo jugaba completamente después de haberlo traducido.
 
-![PokemonFollowingRenegadePlatinumMonotypeHallOfFame.png](img_178a3c0f35cec92d708848c8d15b156b.jpg)
+![PokemonFollowingRenegadePlatinumMonotypeHallOfFame.png](img_0ad7afc2671a26d075b8505b48cd4a4d.jpg)
