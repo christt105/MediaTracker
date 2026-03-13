@@ -31,10 +31,10 @@ Lo compré junto a la 2DS y me pasé la liga en poco más de una semana. He cons
 
 ![HallOfFamePokemonRubiomega.bmp](img_f1035172ce92f6999d8a47f681946816.jpg)
 ![PokedexCompletaOmegaRubi.bmp](img_a9a945f58289df9013b96ff42c328391.jpg)
-![PokedexOmegaRubi.bmp](img_3c1c39abf480214d176f99b6f7a389b6.jpg)
-![DiplomaPokedexRegionalRubiOmega.bmp](img_9f408422b52d34b55376976428f360d0.jpg)
+![PokedexOmegaRubi.bmp|323](img_f10dc2c22b9a46fdc40f096e5454bc8e.jpg)
+![DiplomaPokedexRegionalRubiOmega.bmp|324](img_548ec374caafe0682dc5b3db5ef882ba.jpg)
 
-Un buen remake, bastante bonito y me hizo recordar jugando al rubí cuando era pequeño.
+Un buen remake, bastante bonito y me hizo recordar buenos recuerdos jugando al rubí cuando era pequeño.
 
 ## 2019-01-30
 No recuerdo de cuando es esta imagen, ni del equipo, ni de si era del Rubí o del Zafiro, pero estaba en Twitter, así que la guardo en mi vault. Por lo que veo en el equipo debió de ser alguna especie de reto eligiendo Pokémon que no suelo usar, porque el equipo es bastante raruno.
