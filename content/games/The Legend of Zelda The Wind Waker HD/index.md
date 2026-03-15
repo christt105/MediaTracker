@@ -28,3 +28,5 @@ tags: []
 title: 'The Legend of Zelda: The Wind Waker HD'
 type: videogame
 ---
+
+Diario Zelda Wind Waker

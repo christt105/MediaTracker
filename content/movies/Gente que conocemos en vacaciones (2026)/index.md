@@ -6,7 +6,7 @@ genres:
 - Romance
 - Comedia
 - Drama
-image: tmdb_9SUEbyc5OUaNkGPLK3f1w3Ryoyo.jpg
+image: tmdb_lCbXqv2NOFoV8L0dYjcSz64zlUs.jpg
 overview: Poppy es un espíritu libre y a Alex le gusta planificarlo todo. Tras muchas
   vacaciones juntos, estos amigos tan diferentes se preguntan si serán la pareja perfecta.
 rating: '5'
