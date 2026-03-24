@@ -22,4 +22,9 @@ title: Pokémon Añil
 type: videogame
 ---
 
-La mejor experiencia para jugar a la primera generación de Pokémon.
+La mejor experiencia para jugar a la primera generación de Pokémon. Jugado un monotype de hielo.
+
+
+![[Archivos/-5911128885393296702_121.jpg]]
+
+![[Archivos/-5911128885393296703_121.jpg]]

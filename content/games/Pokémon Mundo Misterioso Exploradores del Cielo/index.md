@@ -1,7 +1,7 @@
 ---
 banner_image: steamgriddb_2f416c20e3384093da2b617829e8bab6.png
 category: '[[Juegos]]'
-date: 2020-05-01
+date: 2020-03-20
 developer: Chunsoft
 genres:
 - Role-playing (RPG)
