@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_9eAn20y26wtB3aet7w9lHjuSgZ3.jpg
 category: '[[Películas]]'
-date: 2022-07-29
+date: 2022-06-11
 genres:
 - Aventura
 - Acción
