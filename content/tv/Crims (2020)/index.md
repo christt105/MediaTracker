@@ -17,7 +17,8 @@ overview: Serie 'true crime' que relata cr√≠menes reales ocurridos hace pocos a√
 rating: '6'
 release_date: 2020-02-03
 rewatches: []
-seasons: []
+seasons:
+- '[[Crims (2020) - Temporada 6]]'
 status: Acabado
 tags: []
 title: Crims
