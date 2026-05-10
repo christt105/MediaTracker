@@ -1,6 +1,6 @@
 ---
 banner_image: tmdb_fBZEtFwjvdmp1oOQb1SOnqV8LCm.jpg
-date: null
+date: 2026-05-06
 image: tmdb_g6gR5rAIiGtWa7JzYIeDduB4df6.jpg
 rating: null
 release_date: null
