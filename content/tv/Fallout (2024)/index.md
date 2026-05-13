@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_coaPCIqQBPUZsOnJcWZxhaORcDT.jpg
 category: '[[Series]]'
-date: 2024-04-29
+date: null
 genres:
 - Action & Adventure
 - Drama
@@ -19,7 +19,8 @@ release_date: 2024-04-10
 rewatches: []
 seasons:
 - '[[Media Tracker/Seasons/Fallout (2024) - Temporada 1]]'
-status: Acabado
+- '[[Fallout (2024) - Temporada 2]]'
+status: Sin Empezar
 tags: []
 title: Fallout
 tmdb_id: 106379
