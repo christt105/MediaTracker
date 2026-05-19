@@ -26,3 +26,7 @@ title: Fallout
 tmdb_id: 106379
 type: tv
 ---
+
+Siempre me gustó más de [Skyrim]({{< ref "The Elder Scrolls V Skyrim" >}}), aunque para una serie el universo de Fallout es mucho más interesante. 
+
+Una serie entretenida con ese estilo tan característico retrofuturista en un mundo post apocalíptico nuclear con unos toques de humor.
