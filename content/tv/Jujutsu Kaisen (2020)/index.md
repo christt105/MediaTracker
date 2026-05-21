@@ -22,6 +22,7 @@ rewatches: []
 seasons:
 - '[[Jujutsu Kaisen (2020) - Temporada 1]]'
 - '[[Jujutsu Kaisen (2020) - Temporada 2]]'
+- '[[Jujutsu Kaisen (2020) - Temporada 3]]'
 status: Acabado
 tags:
 - anime
