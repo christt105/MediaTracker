@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_gmECX1DvFgdUPjtio2zaL8BPYPu.jpg
 date: null
-image: tmdb_fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg
+image: tmdb_3Lgonmng80a7BpEHdQ2TIhuvMBv.jpg
 rating: null
 release_date: null
 rewatches: []
