@@ -1,10 +1,12 @@
 ---
+banner_image: tmdb_gMItMzDOyrfQGZsMWRM9tdxq5cV.jpg
 category: '[[Películas]]'
 date: 2026-05-31
 genres:
 - Ciencia ficción
 - Acción
 - Terror
+image: tmdb_ahj1JU8r0uJv7QII5Uj7tKzbEsC.jpg
 overview: 2030. Una biotoxina ha destrozado la civilización, transformando a los humanos
   en bestias letales conocidas como "devoradores". Para asegurar su seguridad, un
   hombre (Luke Evans) busca refugio en una isla desierta con su hija. Pero la llegada
