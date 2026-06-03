@@ -1,7 +1,9 @@
 ---
+banner_image: tmdb_eNtK2gFgnuG8er3bYZ7OA8gwPEV.jpg
 category: '[[Series]]'
 date: null
 genres: null
+image: tmdb_x7PIDqFeGknNRYqYHWEbdeVYhUh.jpg
 overview: '4 episodios. Serie documental sobre uno de los episodios más desconcertantes
   de la crónica española: el 22 de abril de 1984, tres niños aparecieron abandonados
   en una estación de tren de la ciudad de Barcelona. No sabían explicar quiénes eran,
