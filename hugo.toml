@@ -40,6 +40,11 @@ enableEmoji = true
     url = '/collage/'
     weight = 50
   [[menu.main]]
+    pageRef="stats"
+    name = 'Estadísticas'
+    url = '/stats/'
+    weight = 55
+  [[menu.main]]
     pageRef="about"
     name = 'Acerca de'
     url = '/about/'
