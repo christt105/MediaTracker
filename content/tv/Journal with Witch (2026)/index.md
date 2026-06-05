@@ -1,6 +1,9 @@
 ---
 banner_image: tmdb_5efa5XSoWuKktIL0e0SANtrYqOv.jpg
 category: '[[Series]]'
+cssclasses:
+- cover-right
+- cover-vertical-contain
 date: null
 genres:
 - Animación
