@@ -1,3 +1,30 @@
+{{- /*
+  Media type sections (movies, tv, seasons, games) no longer have their own list
+  page: they redirect to the home page filtered by that type. Other list pages
+  (e.g. tag terms) keep rendering the normal grouped listing.
+*/ -}}
+{{- $type := "" -}}
+{{- range $key, $def := .Site.Data.media_types -}}
+  {{- if eq $def.section $.Section -}}{{- $type = $key -}}{{- end -}}
+{{- end -}}
+
+{{- if $type -}}
+{{- $target := printf "%s?type=%s" .Site.Home.RelPermalink $type -}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="utf-8">
+    <title>{{ T .Title }}</title>
+    <link rel="canonical" href="{{ $target }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ $target }}">
+    <script>window.location.replace({{ $target }});</script>
+</head>
+<body>
+    <p>{{ T .Title }} → <a href="{{ $target }}">{{ .Site.Title }}</a></p>
+</body>
+</html>
+{{- else -}}
 <!DOCTYPE html>
 {{- $defaultColor := .Site.Params.defaultColor | default "auto" -}}
 
@@ -30,3 +57,4 @@
 </body>
 
 </html>
+{{- end -}}
