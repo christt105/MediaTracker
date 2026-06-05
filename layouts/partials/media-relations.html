@@ -1,0 +1,44 @@
+{{- /*
+  Renders series/season relations as cover cards (reusing media-card):
+  - on a season page: the show it belongs to (from its `series` field)
+  - on a show/tv page: its seasons (reverse-lookup of seasons whose `series`
+    points back to this show)
+
+  The relation is matched on the bundle folder name (ContentBaseName), which is
+  what the Obsidian wikilink target resolves to.
+*/ -}}
+{{- $page := . -}}
+
+{{- if eq $page.Params.type "season" -}}
+  {{- with $page.Params.series -}}
+    {{- $target := partial "series-target.html" . -}}
+    {{- $show := false -}}
+    {{- range where $page.Site.RegularPages "Params.type" "eq" "tv" -}}
+      {{- if eq .File.ContentBaseName $target -}}{{- $show = . -}}{{- end -}}
+    {{- end -}}
+    {{- with $show }}
+    <section class="media-relations">
+        <h3 class="media-relations-title">{{ T "relation_series" }}</h3>
+        <div class="media-grid media-grid-relations">
+            {{ partial "media-card.html" . }}
+        </div>
+    </section>
+    {{- end -}}
+  {{- end -}}
+{{- else if eq $page.Params.type "tv" -}}
+  {{- $self := $page.File.ContentBaseName -}}
+  {{- $seasons := slice -}}
+  {{- range where $page.Site.RegularPages "Params.type" "eq" "season" -}}
+    {{- $target := partial "series-target.html" .Params.series -}}
+    {{- if eq $target $self -}}{{- $seasons = $seasons | append . -}}{{- end -}}
+  {{- end -}}
+  {{- if gt (len $seasons) 0 -}}
+    {{- $seasons = sort $seasons "Params.season_number" -}}
+    <section class="media-relations">
+        <h3 class="media-relations-title">{{ T "relation_seasons" }}</h3>
+        <div class="media-grid media-grid-relations">
+            {{ range $seasons }}{{ partial "media-card.html" . }}{{ end }}
+        </div>
+    </section>
+  {{- end -}}
+{{- end -}}

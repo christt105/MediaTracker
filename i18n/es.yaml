@@ -46,6 +46,10 @@
   translation: No recuerdo cuándo
 - id: see_paused_dropped
   translation: Ver Pausados y Abandonados
+- id: relation_series
+  translation: Serie
+- id: relation_seasons
+  translation: Temporadas
 
 # Search and filters
 - id: search_placeholder

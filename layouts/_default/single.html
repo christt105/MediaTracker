@@ -74,13 +74,6 @@
                             {{ end }}
                         </div>
 
-                        {{/* Series Link (for Seasons) */}}
-                        {{ if .Params.serie }}
-                        <div class="media-relation">
-                            <strong>Serie:</strong>
-                            <a href="{{ ref . .Params.serie }}">{{ .Params.serie }}</a>
-                        </div>
-                        {{ end }}
 
                         {{/* Overview */}}
                         {{/* External Links */}}
@@ -152,24 +145,6 @@
                         </div>
                         {{ end }}
 
-                        {{/* Seasons List (for Series) */}}
-                        {{ if .Params.temporadas }}
-                        <div class="media-seasons">
-                            <h3>Temporadas</h3>
-                            <ul>
-                                {{ range .Params.temporadas }}
-                                {{ $seasonPath := . | replaceRE "^Media Tracker/" "" }}
-                                {{ if not (findRE "/" $seasonPath) }}
-                                {{ $seasonPath = printf "seasons/%s" $seasonPath }}
-                                {{ end }}
-                                <li>
-                                    <a href="{{ ref $ $seasonPath }}">{{ $seasonPath | path.Base | replaceRE ".md$" ""
-                                        }}</a>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                        {{ end }}
 
                     </div>
                 </div>
@@ -226,6 +201,9 @@
                 <p>{{ . }}</p>
             </div>
             {{ end }}
+
+            {{/* Series/season relations as cover cards */}}
+            {{ partial "media-relations.html" . }}
 
             {{/* Content */}}
             <div class="page-content">
