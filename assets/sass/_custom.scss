@@ -598,3 +598,112 @@
     font-size: 0.95rem; // Slightly smaller font for mobile readability
   }
 }
+
+/* ============================ Stats / dashboard page ============================ */
+.stats-page {
+
+  .stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin: 30px 0 50px;
+  }
+
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 18px 12px;
+    border-radius: 14px;
+    background: var(--card-background, rgba(128, 128, 128, 0.08));
+    border: 1px solid rgba(128, 128, 128, 0.18);
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1;
+
+    i {
+      font-size: 1.1rem;
+      opacity: 0.7;
+      margin-right: 4px;
+    }
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .stats-section {
+    margin-bottom: 48px;
+  }
+
+  .section-title {
+    margin-bottom: 18px;
+  }
+
+  .stat-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stat-bar-row {
+    display: grid;
+    grid-template-columns: 160px 1fr 40px;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .stat-bar-name {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    i {
+      margin-right: 4px;
+    }
+  }
+
+  .stat-bar-track {
+    position: relative;
+    height: 14px;
+    border-radius: 7px;
+    background: rgba(128, 128, 128, 0.15);
+    overflow: hidden;
+  }
+
+  .stat-bar-fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    border-radius: 7px;
+    background: var(--primary-color, #4f8cff);
+    min-width: 2px;
+    transition: width 0.4s ease;
+  }
+
+  .stat-bar-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: right;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 600px) {
+    .stat-bar-row {
+      grid-template-columns: 110px 1fr 32px;
+      gap: 8px;
+    }
+    .stat-bar-name {
+      font-size: 0.8rem;
+    }
+  }
+}

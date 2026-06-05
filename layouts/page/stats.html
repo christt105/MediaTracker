@@ -1,0 +1,190 @@
+{{ define "main" }}
+{{/*
+  Stats / dashboard page. Everything is computed server-side from the existing
+  frontmatter so there is no JS chart dependency.
+*/}}
+
+{{ $media := where .Site.RegularPages "Params.type" "in" (slice "movie" "tv" "season" "videogame") }}
+{{ $finished := where $media "Params.status" "eq" "Acabado" }}
+
+{{ $movies := where $media "Params.type" "eq" "movie" }}
+{{ $series := where $media "Params.type" "eq" "tv" }}
+{{ $seasons := where $media "Params.type" "eq" "season" }}
+{{ $games := where $media "Params.type" "eq" "videogame" }}
+
+{{/* Average rating across finished items that have a rating */}}
+{{ $sum := 0 }}
+{{ $n := 0 }}
+{{ range $finished }}
+  {{ with .Params.rating }}
+    {{ $sum = add $sum (int .) }}
+    {{ $n = add $n 1 }}
+  {{ end }}
+{{ end }}
+{{ $avg := 0.0 }}
+{{ if gt $n 0 }}{{ $avg = div (float $sum) $n }}{{ end }}
+
+<div class="wrapper stats-page">
+    <header class="header">
+        <h1 class="header-title center">{{ .Title }}</h1>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+
+        {{/* ---------- Summary cards ---------- */}}
+        <section class="stats-cards">
+            <div class="stat-card">
+                <span class="stat-number">{{ len $media }}</span>
+                <span class="stat-label">Total</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">{{ len $finished }}</span>
+                <span class="stat-label">Acabados</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number"><i class="fas fa-film"></i> {{ len $movies }}</span>
+                <span class="stat-label">Películas</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number"><i class="fas fa-tv"></i> {{ len $series }}</span>
+                <span class="stat-label">Series</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number"><i class="fas fa-list-ol"></i> {{ len $seasons }}</span>
+                <span class="stat-label">Temporadas</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number"><i class="fas fa-gamepad"></i> {{ len $games }}</span>
+                <span class="stat-label">Juegos</span>
+            </div>
+            {{ if gt $n 0 }}
+            <div class="stat-card">
+                <span class="stat-number">{{ lang.FormatNumber 1 $avg }}</span>
+                <span class="stat-label">Nota media</span>
+            </div>
+            {{ end }}
+        </section>
+
+        {{/* ---------- Ratings distribution ---------- */}}
+        {{ $ratingOrder := slice "7" "6" "5" "4" "3" "2" "1" }}
+        {{ $maxRating := 1 }}
+        {{ range $ratingOrder }}
+            {{ $c := len (where $finished "Params.rating" "eq" .) }}
+            {{ if gt $c $maxRating }}{{ $maxRating = $c }}{{ end }}
+        {{ end }}
+
+        <section class="stats-section">
+            <h2 class="section-title">Distribución de notas</h2>
+            <div class="stat-bars">
+                {{ range $ratingOrder }}
+                {{ $theme := index $.Site.Data.ratings . }}
+                {{ $c := len (where $finished "Params.rating" "eq" .) }}
+                <div class="stat-bar-row">
+                    <span class="stat-bar-name">
+                        <i class="{{ $theme.icon }}" style="color: {{ $theme.color }}"></i>
+                        {{ $theme.label }}
+                    </span>
+                    <span class="stat-bar-track">
+                        <span class="stat-bar-fill" style="width: {{ if gt $maxRating 0 }}{{ math.Round (mul (div (float $c) $maxRating) 100) }}{{ else }}0{{ end }}%; background: {{ $theme.color }};"></span>
+                    </span>
+                    <span class="stat-bar-value">{{ $c }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </section>
+
+        {{/* ---------- Finished per year ---------- */}}
+        {{ $byYear := $finished.GroupByDate "2006" }}
+        {{ $maxYear := 1 }}
+        {{ range $byYear }}
+            {{ if and (ne .Key "0001") (gt (len .Pages) $maxYear) }}{{ $maxYear = len .Pages }}{{ end }}
+        {{ end }}
+
+        <section class="stats-section">
+            <h2 class="section-title">Acabados por año</h2>
+            <div class="stat-bars">
+                {{ range $byYear }}
+                {{ $label := .Key }}
+                {{ if eq .Key "0001" }}{{ $label = "?" }}{{ end }}
+                <div class="stat-bar-row">
+                    <span class="stat-bar-name">{{ $label }}</span>
+                    <span class="stat-bar-track">
+                        <span class="stat-bar-fill" style="width: {{ math.Round (mul (div (float (len .Pages)) $maxYear) 100) }}%;"></span>
+                    </span>
+                    <span class="stat-bar-value">{{ len .Pages }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </section>
+
+        {{/* ---------- Top genres ---------- */}}
+        {{ $genres := dict }}
+        {{ range $media }}
+            {{ range .Params.genres }}
+                {{ if . }}
+                {{ $cur := index $genres . | default 0 }}
+                {{ $genres = merge $genres (dict . (add $cur 1)) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ $genreList := slice }}
+        {{ range $k, $v := $genres }}
+            {{ $genreList = $genreList | append (dict "name" $k "count" $v) }}
+        {{ end }}
+        {{ $genreList = sort $genreList "count" "desc" }}
+
+        {{ if gt (len $genreList) 0 }}
+        {{ $maxGenre := (index $genreList 0).count }}
+        <section class="stats-section">
+            <h2 class="section-title">Géneros más frecuentes</h2>
+            <div class="stat-bars">
+                {{ range first 12 $genreList }}
+                <div class="stat-bar-row">
+                    <span class="stat-bar-name">{{ .name }}</span>
+                    <span class="stat-bar-track">
+                        <span class="stat-bar-fill" style="width: {{ math.Round (mul (div (float .count) $maxGenre) 100) }}%;"></span>
+                    </span>
+                    <span class="stat-bar-value">{{ .count }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+
+        {{/* ---------- Top platforms (games) ---------- */}}
+        {{ $platforms := dict }}
+        {{ range $games }}
+            {{ range .Params.platforms }}
+                {{ if . }}
+                {{ $cur := index $platforms . | default 0 }}
+                {{ $platforms = merge $platforms (dict . (add $cur 1)) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ $platformList := slice }}
+        {{ range $k, $v := $platforms }}
+            {{ $platformList = $platformList | append (dict "name" $k "count" $v) }}
+        {{ end }}
+        {{ $platformList = sort $platformList "count" "desc" }}
+
+        {{ if gt (len $platformList) 0 }}
+        {{ $maxPlatform := (index $platformList 0).count }}
+        <section class="stats-section">
+            <h2 class="section-title">Plataformas de juego</h2>
+            <div class="stat-bars">
+                {{ range $platformList }}
+                <div class="stat-bar-row">
+                    <span class="stat-bar-name">{{ .name }}</span>
+                    <span class="stat-bar-track">
+                        <span class="stat-bar-fill" style="width: {{ math.Round (mul (div (float .count) $maxPlatform) 100) }}%;"></span>
+                    </span>
+                    <span class="stat-bar-value">{{ .count }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+
+    </main>
+</div>
+{{ end }}
