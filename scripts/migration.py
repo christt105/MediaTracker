@@ -25,7 +25,8 @@ SOURCE_CONFIG = {
         "movie": "Media Tracker/Movies",
         "tv": "Media Tracker/TVs",
         "season": "Media Tracker/Seasons",
-        "videogame": "Media Tracker/Juegos"
+        "videogame": "Media Tracker/Juegos",
+        "book": "Media Tracker/Books"
     },
     
     # Path to covers folder (if centralized)
@@ -43,13 +44,24 @@ DEST_CONFIG = {
         "movie": "movies",
         "tv": "tv",
         "season": "seasons",
-        "videogame": "games"
+        "videogame": "games",
+        "book": "books"
     }
 }
 
 # Frontmatter Fields to Clean/Process
 # These keys contain wikilinks that need to be cleaned up
 FRONTMATTER_LINKS = ["serie", "temporadas", "related"]
+
+# Map raw (Spanish) status values to the canonical keys used by the site
+# (see data/statuses.yml). Values not listed are written unchanged.
+STATUS_MAP = {
+    "Acabado": "finished",
+    "En Curso": "in_progress",
+    "Pausado": "paused",
+    "Abandonado": "dropped",
+    "Sin Empezar": "not_started",
+}
 
 # ==========================================
 # INITIALIZATION
@@ -337,6 +349,10 @@ def migrate():
                     # We continue anyway, trusting folder structure over metadata for placement
 
                 print(f"Processing: {file_path.name}")
+
+                # 0. NORMALIZE STATUS to canonical keys (see data/statuses.yml)
+                if post.get('status') in STATUS_MAP:
+                    post['status'] = STATUS_MAP[post['status']]
 
                 # 1. PROCESS RELATIONS (WikiLinks)
                 for key in FRONTMATTER_LINKS:

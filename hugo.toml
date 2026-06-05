@@ -35,6 +35,11 @@ enableEmoji = true
     url = '/games/'
     weight = 40
   [[menu.main]]
+    pageRef="books"
+    name = 'Libros'
+    url = '/books/'
+    weight = 45
+  [[menu.main]]
     pageRef="collage"
     name = 'Collage'
     url = '/collage/'
