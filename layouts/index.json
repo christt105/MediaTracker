@@ -1,5 +1,6 @@
 {{- $.Scratch.Add "index" slice -}}
-{{- range where .Site.RegularPages "Params.type" "in" (slice "movie" "tv" "videogame" "season") -}}
+{{- $types := partial "media-type-keys.html" . -}}
+{{- range where .Site.RegularPages "Params.type" "in" $types -}}
     {{- $date := .Date.Format "2006-01-02" -}}
     
     {{/* Image Logic */}}
