@@ -1,0 +1,137 @@
+{{- /*
+  Shared listing used by the home page and every section list page, so the
+  grouping/sorting logic lives in one place instead of being duplicated.
+
+  Input: a dict with
+    pages: a slice of media RegularPages to render
+    ctx:   the current page (for site/translation access)
+
+  Sections rendered: In progress, Completed (grouped by year, with rewatches
+  expanded into their own dated entries) and a collapsed Paused/Dropped block.
+*/ -}}
+{{- $pages := .pages -}}
+{{- $ctx := .ctx -}}
+
+{{- /* Status aliases from data/statuses.yml */ -}}
+{{- $finishedAliases := (index site.Data.statuses "finished").aliases -}}
+{{- $pausedAliases := (index site.Data.statuses "paused").aliases -}}
+{{- $droppedAliases := (index site.Data.statuses "dropped").aliases -}}
+{{- $notStartedAliases := (index site.Data.statuses "not_started").aliases -}}
+{{- $knownAliases := union (union $finishedAliases $pausedAliases) (union $droppedAliases $notStartedAliases) -}}
+
+{{- /* Hide a TV parent that has dated seasons (preserves prior behavior) */ -}}
+{{- $mediaClean := slice -}}
+{{- range $pages -}}
+  {{- if or (not (eq .Params.type "tv")) (not .Params.temporadas) (eq (len .Params.temporadas) 0) -}}
+    {{- $mediaClean = $mediaClean | append . -}}
+  {{- else if ne .Date.Year 1 -}}
+    {{- $mediaClean = $mediaClean | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $finished := where $mediaClean "Params.status" "in" $finishedAliases -}}
+{{- $paused := where $mediaClean "Params.status" "in" $pausedAliases -}}
+{{- $dropped := where $mediaClean "Params.status" "in" $droppedAliases -}}
+{{- $inProgress := where $mediaClean "Params.status" "not in" $knownAliases -}}
+
+{{- /* Expand each finished entry plus any rewatch dates into dated entries */ -}}
+{{- $finishedEntries := slice -}}
+{{- range $p := $finished -}}
+  {{- $finishedEntries = $finishedEntries | append (dict "Page" $p "Date" $p.Date) -}}
+  {{- with $p.Params.rewatches -}}
+    {{- range $r := . -}}
+      {{- $finishedEntries = $finishedEntries | append (dict "Page" $p "Date" (time $r)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $withDate := slice -}}
+{{- $noDate := slice -}}
+{{- range $e := $finishedEntries -}}
+  {{- if eq $e.Date.Year 1 -}}
+    {{- $noDate = $noDate | append $e -}}
+  {{- else -}}
+    {{- $withDate = $withDate | append $e -}}
+  {{- end -}}
+{{- end -}}
+{{- $withDate = sort $withDate "Date" "desc" -}}
+{{- $noDate = sort $noDate "Page.Params.release_date" "asc" -}}
+{{- $finishedSortedEntries := $withDate | append $noDate -}}
+
+{{- /* Group entries by year */ -}}
+{{- $yearScratch := newScratch -}}
+{{- range $e := $finishedSortedEntries -}}
+  {{- $yr := "0001" -}}
+  {{- if ne $e.Date.Year 1 -}}{{- $yr = dateFormat "2006" $e.Date -}}{{- end -}}
+  {{- $yearScratch.Add $yr (slice $e) -}}
+{{- end -}}
+{{- $yearGroups := $yearScratch.Values -}}
+
+{{ if gt (len $inProgress) 0 }}
+<div class="home-section">
+    <h3 class="section-title">{{ T "status_in_progress" }} ({{ len $inProgress }})</h3>
+    <div class="media-grid">
+        {{ range $inProgress.ByLastmod.Reverse }}
+        {{ partial "media-card.html" . }}
+        {{ end }}
+    </div>
+</div>
+<hr class="section-divider">
+{{ end }}
+
+{{ if gt (len $finishedSortedEntries) 0 }}
+<h3 class="section-title" id="completed-section">{{ T "completed" }}</h3>
+
+{{ partial "year-nav.html" $finishedSortedEntries }}
+
+{{ $yearKeys := slice }}
+{{ range $k, $v := $yearGroups }}
+{{ $yearKeys = $yearKeys | append $k }}
+{{ end }}
+{{ $yearKeys = sort $yearKeys "value" "desc" }}
+
+{{ range $yr := $yearKeys }}
+{{ $group := index $yearGroups $yr }}
+<div class="year-group">
+    {{ $unknownYear := eq $yr "0001" }}
+    <h2 class="year-title" id="year-{{ if $unknownYear }}unknown{{ else }}{{ $yr }}{{ end }}">
+        {{ if $unknownYear }}{{ T "unknown_year" }}{{ else }}{{ $yr }}{{ end }}
+    </h2>
+    <div class="media-grid">
+        {{ range $group }}
+        {{ partial "media-card.html" . }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+{{ else }}
+{{ if eq (len $inProgress) 0 }}
+<p>{{ T "no_completed" }}</p>
+{{ end }}
+{{ end }}
+
+{{ $hiddenCount := add (len $paused) (len $dropped) }}
+{{ if gt $hiddenCount 0 }}
+<hr class="section-divider" style="margin-top: 40px;">
+<details class="hidden-section-container" style="margin-top: 20px;">
+    <summary style="cursor: pointer; opacity: 0.7; font-weight: bold; padding: 10px;">
+        {{ T "see_paused_dropped" }} ({{ $hiddenCount }})
+    </summary>
+    {{ if gt (len $paused) 0 }}
+    <h4 class="subsection-title">{{ T "status_paused" }}</h4>
+    <div class="media-grid">
+        {{ range $paused.ByLastmod.Reverse }}
+        {{ partial "media-card.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ if gt (len $dropped) 0 }}
+    <h4 class="subsection-title">{{ T "status_dropped" }}</h4>
+    <div class="media-grid">
+        {{ range $dropped.ByLastmod.Reverse }}
+        {{ partial "media-card.html" . }}
+        {{ end }}
+    </div>
+    {{ end }}
+</details>
+{{ end }}

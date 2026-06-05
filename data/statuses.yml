@@ -1,0 +1,20 @@
+# Canonical status keys with the raw values that map onto them. Templates compare
+# against these keys so the Spanish literals live in exactly one place, which
+# makes the site translatable and robust to either old or new content.
+#
+# Any status value not listed here is treated as "in_progress".
+
+finished:
+  aliases: ["finished", "Acabado"]
+
+in_progress:
+  aliases: ["in_progress", "En Curso"]
+
+paused:
+  aliases: ["paused", "Pausado"]
+
+dropped:
+  aliases: ["dropped", "Abandonado"]
+
+not_started:
+  aliases: ["not_started", "Sin Empezar"]

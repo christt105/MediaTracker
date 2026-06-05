@@ -6,11 +6,43 @@
   translation: Temporada
 - id: videogame
   translation: Videojuego
+- id: book
+  translation: Libro
 - id: Movies
   translation: Películas
 - id: Tvs
   translation: Series
 - id: Games
   translation: Juegos
+- id: Books
+  translation: Libros
 - id: synopsis
   translation: Sinopsis
+
+# Status labels (keys from data/statuses.yml)
+- id: status_finished
+  translation: Acabado
+- id: status_in_progress
+  translation: En curso
+- id: status_paused
+  translation: Pausado
+- id: status_dropped
+  translation: Abandonado
+- id: status_not_started
+  translation: Sin Empezar
+
+# Extra type fields (keys from data/media_types.yml fields)
+- id: field_developer
+  translation: Desarrollador
+- id: field_author
+  translation: Autor
+
+# Listing sections
+- id: completed
+  translation: Completado
+- id: no_completed
+  translation: Aún no hay elementos completados.
+- id: unknown_year
+  translation: No recuerdo cuándo
+- id: see_paused_dropped
+  translation: Ver Pausados y Abandonados

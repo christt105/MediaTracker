@@ -4,6 +4,7 @@
 {{ $page = .Page }}
 {{ $date = .Date }}
 {{ end }}
+{{ $statusKey := partial "status-key.html" $page.Params.status }}
 
 <div class="media-card" data-title="{{ lower $page.Title }}" data-year="{{ $page.Params.year }}"
     data-type="{{ $page.Params.type }}">
@@ -23,16 +24,10 @@
 
         {{ $icon := $page.Params.fa_icon }}
 
-        {{/* Si no hay icono explícito, asignamos uno por defecto según el tipo */}}
+        {{/* Si no hay icono explícito, lo tomamos de data/media_types.yml */}}
         {{ if not $icon }}
-        {{ if eq $page.Params.type "movie" }}
-        {{ $icon = "fas fa-film" }}
-        {{ else if eq $page.Params.type "tv" }}
-        {{ $icon = "fas fa-tv" }}
-        {{ else if eq $page.Params.type "season" }}
-        {{ $icon = "fas fa-tv" }}
-        {{ else if eq $page.Params.type "videogame" }}
-        {{ $icon = "fas fa-gamepad" }}
+        {{ with index $page.Site.Data.media_types $page.Params.type }}
+        {{ $icon = .icon }}
         {{ end }}
         {{ end }}
 
@@ -48,7 +43,7 @@
         </div>
         {{ end }}
 
-        {{ if and (eq $page.Params.status "Acabado") $page.Params.rating }}
+        {{ if and (eq $statusKey "finished") $page.Params.rating }}
 
         {{ $ratingKey := string $page.Params.rating }}
 
@@ -67,7 +62,7 @@
     <div class="media-info">
         <h3><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></h3>
         <small>
-            {{ if eq $page.Params.status "Acabado" }}
+            {{ if eq $statusKey "finished" }}
             {{ $configDateFormat := $page.Site.Params.dateFormat | default "2 Jan 2006" }}
             {{ if $date }}
             {{ time.Format $configDateFormat $date }}
@@ -75,7 +70,7 @@
             {{ time.Format $configDateFormat $page.Params.release_date }}
             {{ end }}
             {{ else }}
-            {{ $page.Params.status | default "En curso" }}
+            {{ T (printf "status_%s" $statusKey) }}
             {{ end }}
         </small>
     </div>

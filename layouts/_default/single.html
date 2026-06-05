@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $statusKey := partial "status-key.html" .Params.status }}
 <div class="wrapper post">
     <main class="page-content" aria-label="Content">
         <article>
@@ -56,15 +57,20 @@
                             </span>
                             {{ end }}
 
-                            {{/* Developer (Games) */}}
-                            <!-- {{ if .Params.developer }}
-                            <span class="meta-item"><span class="icon">💻</span> {{ .Params.developer }}</span>
-                            {{ end }} -->
+                            {{/* Extra type-specific fields from data/media_types.yml */}}
+                            {{ with index .Site.Data.media_types (.Params.type | default "") }}
+                            {{ range $field := .fields }}
+                            {{ with index $.Params $field }}
+                            <span class="meta-item">
+                                <strong>{{ T (printf "field_%s" $field) }}:</strong> {{ . }}
+                            </span>
+                            {{ end }}
+                            {{ end }}
+                            {{ end }}
 
                             {{/* Status */}}
                             {{ if .Params.status }}
-                            <span class="meta-item status-badge {{ .Params.status | lower }}">{{ .Params.status
-                                }}</span>
+                            <span class="meta-item status-badge {{ $statusKey }}">{{ T (printf "status_%s" $statusKey) }}</span>
                             {{ end }}
                         </div>
 
@@ -169,17 +175,47 @@
                 </div>
             </div>
             {{ else }}
-            <header class="header">
-                {{/* Fallback Default Layout for text-only posts */}}
-                <h1 class="header-title">{{ .Title }}</h1>
-                {{ $configDateFormat := .Site.Params.dateFormat | default ":date_medium" }}
-                {{ with .Date }}
-                {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
-                <div class="post-meta">
-                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format $configDateFormat }}
-                    </time>
+            {{/* Fallback layout for entries without a banner (e.g. books) */}}
+            <header class="header media-simple-header">
+                {{ if .Params.image }}
+                <div class="media-simple-cover {{ if .Params.rating }}has-rating{{ end }}">
+                    {{ $cover := .Resources.GetMatch .Params.image }}
+                    {{ if $cover }}
+                    {{ $cover = $cover.Resize "400x webp" }}
+                    <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }}" width="{{ $cover.Width }}"
+                        height="{{ $cover.Height }}">
+                    {{ else }}
+                    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+                    {{ end }}
+                    {{ if .Params.rating }}
+                    {{ $ratingKey := string .Params.rating }}
+                    {{ $theme := index .Site.Data.ratings $ratingKey | default .Site.Data.ratings.default }}
+                    <div class="media-rating-badge" style="background: {{ $theme.color }}; color: {{ $theme.text_color | default " white" }}">{{ $theme.label }}</div>
+                    {{ end }}
                 </div>
                 {{ end }}
+                <div class="media-simple-details">
+                    <h1 class="header-title">{{ .Title }}</h1>
+                    <div class="media-meta">
+                        {{ if .Params.type }}
+                        <span class="meta-item status-badge type-{{ .Params.type | lower }}">{{ T .Params.type | humanize }}</span>
+                        {{ end }}
+                        {{ $dateDisplay := .Params.date | default .Date }}
+                        {{ if and $dateDisplay (ne $dateDisplay.Year 1) }}
+                        <span class="meta-item"><span class="icon">📅</span> {{ $dateDisplay | time.Format ":date_medium" }}</span>
+                        {{ end }}
+                        {{ with index .Site.Data.media_types (.Params.type | default "") }}
+                        {{ range $field := .fields }}
+                        {{ with index $.Params $field }}
+                        <span class="meta-item"><strong>{{ T (printf "field_%s" $field) }}:</strong> {{ . }}</span>
+                        {{ end }}
+                        {{ end }}
+                        {{ end }}
+                        {{ if .Params.status }}
+                        <span class="meta-item status-badge {{ $statusKey }}">{{ T (printf "status_%s" $statusKey) }}</span>
+                        {{ end }}
+                    </div>
+                </div>
             </header>
             {{ end }}
 
