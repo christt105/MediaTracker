@@ -15,7 +15,7 @@ rating: null
 release_date: 2024-04-29
 rewatches: []
 seasons: []
-status: Pausado
+status: Abandonado
 tags: []
 title: Tor
 tmdb_id: 252626
