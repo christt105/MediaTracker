@@ -1,0 +1,10 @@
+{{- /*
+  Returns the slice of media type keys defined in data/media_types.yml, so
+  templates never hardcode the list of types.
+  Usage: {{ $types := partial "media-type-keys.html" . }}
+*/ -}}
+{{- $keys := slice -}}
+{{- range $key, $def := site.Data.media_types -}}
+  {{- $keys = $keys | append $key -}}
+{{- end -}}
+{{- return $keys -}}

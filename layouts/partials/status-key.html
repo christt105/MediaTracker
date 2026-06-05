@@ -1,0 +1,11 @@
+{{- /*
+  Resolves a raw status value (e.g. "Acabado" or "finished") to its canonical
+  key from data/statuses.yml. Unknown values fall back to "in_progress".
+  Usage: {{ $key := partial "status-key.html" .Params.status }}
+*/ -}}
+{{- $raw := . -}}
+{{- $result := "in_progress" -}}
+{{- range $key, $def := site.Data.statuses -}}
+  {{- if in $def.aliases $raw -}}{{- $result = $key -}}{{- end -}}
+{{- end -}}
+{{- return $result -}}

@@ -442,23 +442,23 @@
     /* Purple */
 }
 
-/* Statuses */
-.status-badge.acabado {
+/* Statuses (canonical keys from data/statuses.yml) */
+.status-badge.finished {
     background-color: #2ecc71;
     /* Green */
 }
 
-.status-badge.en.curso {
+.status-badge.in_progress {
     background-color: #f39c12;
     /* Orange */
 }
 
-.status-badge.pausado {
+.status-badge.paused {
     background-color: #34495e;
     /* Dark Blue-Gray */
 }
 
-.status-badge.abandonado {
+.status-badge.dropped {
     background-color: #c0392b;
     /* Dark Red */
 }
@@ -706,4 +706,47 @@
       font-size: 0.8rem;
     }
   }
+}
+
+/* Simple header for entries without a banner (e.g. books) */
+.media-simple-header {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.media-simple-cover {
+    flex-shrink: 0;
+    width: 180px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+    }
+
+    &.has-rating img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.media-simple-details {
+    flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+    .media-simple-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }

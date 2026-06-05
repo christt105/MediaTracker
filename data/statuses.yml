@@ -1,0 +1,22 @@
+# Canonical status keys. Templates compare against these keys; Spanish display
+# labels live in i18n. The non-canonical aliases are a transitional shim for
+# content that has not been re-migrated yet: the migration now writes the
+# canonical keys, so once content is regenerated the Spanish aliases can be
+# dropped, leaving only the keys.
+#
+# Any status value not listed here is treated as "in_progress".
+
+finished:
+  aliases: ["finished", "Acabado"]
+
+in_progress:
+  aliases: ["in_progress", "En Curso"]
+
+paused:
+  aliases: ["paused", "Pausado"]
+
+dropped:
+  aliases: ["dropped", "Abandonado"]
+
+not_started:
+  aliases: ["not_started", "Sin Empezar"]

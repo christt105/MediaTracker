@@ -12,7 +12,8 @@
     {{- with .OutputFormats.Get "RSS_ACABADO" -}}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
-    {{- $finished := where .Site.RegularPages "Params.status" "eq" "Acabado" -}}
+    {{- $finishedAliases := (index .Site.Data.statuses "finished").aliases -}}
+    {{- $finished := where .Site.RegularPages "Params.status" "in" $finishedAliases -}}
     {{- $finished = sort $finished "Date" "desc" -}}
     {{- $limit := .Site.Config.Services.RSS.Limit -}}
     {{- if ge $limit 1 -}}{{ $finished = $finished | first $limit }}{{- end -}}
