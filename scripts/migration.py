@@ -25,8 +25,7 @@ SOURCE_CONFIG = {
         "movie": "Media Tracker/Movies",
         "tv": "Media Tracker/TVs",
         "season": "Media Tracker/Seasons",
-        "videogame": "Media Tracker/Juegos",
-        "book": "Media Tracker/Books"
+        "videogame": "Media Tracker/Juegos"
     },
     
     # Path to covers folder (if centralized)
@@ -44,8 +43,7 @@ DEST_CONFIG = {
         "movie": "movies",
         "tv": "tv",
         "season": "seasons",
-        "videogame": "games",
-        "book": "books"
+        "videogame": "games"
     }
 }
 

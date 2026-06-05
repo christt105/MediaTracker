@@ -29,8 +29,10 @@ videogame:
   fields:
     - developer
 
-book:
-  section: books
-  icon: "fas fa-book"
-  fields:
-    - author
+# Example of how to add a new type. Uncomment, add a matching menu entry in
+# hugo.toml and content under content/books/ (or wire it in the migration).
+# book:
+#   section: books
+#   icon: "fas fa-book"
+#   fields:
+#     - author
