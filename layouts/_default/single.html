@@ -183,6 +183,14 @@
             </header>
             {{ end }}
 
+            {{/* Synopsis from frontmatter (separate from the personal review below) */}}
+            {{ with .Params.overview }}
+            <div class="media-overview">
+                <h3 class="media-overview-title">{{ T "synopsis" | default "Sinopsis" }}</h3>
+                <p>{{ . }}</p>
+            </div>
+            {{ end }}
+
             {{/* Content */}}
             <div class="page-content">
                 {{ .Content }}
