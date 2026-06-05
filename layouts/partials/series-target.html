@@ -1,0 +1,11 @@
+{{- /*
+  Cleans a season's `series` value into the show's bundle folder name.
+  Handles leftover Obsidian [[wikilink|alias]] syntax and path prefixes.
+  Usage: {{ $target := partial "series-target.html" .Params.series }}
+*/ -}}
+{{- $v := . | default "" -}}
+{{- $v = $v | replaceRE "^\\[\\[" "" | replaceRE "\\]\\]$" "" -}}
+{{- if strings.Contains $v "|" -}}{{- $v = index (split $v "|") 0 -}}{{- end -}}
+{{- $v = $v | replaceRE "^Media Tracker/" "" -}}
+{{- $v = path.Base $v -}}
+{{- return $v -}}

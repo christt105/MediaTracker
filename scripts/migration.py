@@ -49,7 +49,7 @@ DEST_CONFIG = {
 
 # Frontmatter Fields to Clean/Process
 # These keys contain wikilinks that need to be cleaned up
-FRONTMATTER_LINKS = ["serie", "temporadas", "related"]
+FRONTMATTER_LINKS = ["serie", "series", "temporadas", "seasons", "related"]
 
 # Map raw (Spanish) status values to the canonical keys used by the site
 # (see data/statuses.yml). Values not listed are written unchanged.
