@@ -23,6 +23,7 @@
         </div>
 
         <main aria-label="Content">
+            {{ partial "filter-bar.html" . }}
             {{ $types := partial "media-type-keys.html" . }}
             {{ $media := where .Site.RegularPages "Params.type" "in" $types }}
             {{ partial "media-collection.html" (dict "pages" $media "ctx" .) }}
@@ -32,6 +33,7 @@
     {{- partial "footer.html" . -}}
 
     {{ partial "year-nav-script.html" . }}
+    {{ partial "filter-script.html" . }}
 
     {{- partial "scriptsBodyEnd.html" . -}}
 </body>

@@ -5,9 +5,18 @@
 {{ $date = .Date }}
 {{ end }}
 {{ $statusKey := partial "status-key.html" $page.Params.status }}
+{{ $cardYear := "" }}
+{{ if and $date (ne $date.Year 1) }}
+{{ $cardYear = dateFormat "2006" $date }}
+{{ else if $page.Params.release_date }}
+{{ $cardYear = dateFormat "2006" (time $page.Params.release_date) }}
+{{ end }}
+{{ $genres := $page.Params.genres }}
+{{ if not (reflect.IsSlice $genres) }}{{ $genres = slice }}{{ end }}
 
-<div class="media-card" data-title="{{ lower $page.Title }}" data-year="{{ $page.Params.year }}"
-    data-type="{{ $page.Params.type }}">
+<div class="media-card" data-title="{{ lower $page.Title }}" data-year="{{ $cardYear }}"
+    data-type="{{ $page.Params.type }}" data-status="{{ $statusKey }}"
+    data-rating="{{ $page.Params.rating }}" data-genres="{{ delimit $genres "|" | lower }}">
 
     <div class="media-poster">
         <a href="{{ $page.Permalink }}">
