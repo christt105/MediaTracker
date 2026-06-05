@@ -14,13 +14,13 @@
             <ul class="trigger-container">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                <li>
+                <li class="{{ if .HasChildren }}has-submenu{{ end }}">
                     <a class="menu-link {{ if or ($currentPage.IsMenuCurrent "main" .)
                         ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}">
-                        {{ .Name }}
+                        {{ .Name }}{{ if .HasChildren }} <i class="fas fa-chevron-down submenu-caret" aria-hidden="true"></i>{{ end }}
                     </a>
                     {{ if .HasChildren }}
-                    <ul>
+                    <ul class="submenu">
                         {{ range .Children }}
                         <li>
                             <a class="menu-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
