@@ -12,7 +12,7 @@
 {{- end -}}
 {{- $rssFeedDescription := .Site.Params.rssFeedDescription | default "summary" -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
@@ -26,31 +26,9 @@
     {{- with .OutputFormats.Get "RSS" -}}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
+    {{- $full := eq $rssFeedDescription "full" -}}
     {{ range $pages }}
-    <item>
-      <title>{{ .Title }}</title>
-      <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
-      <guid>{{ .Permalink }}</guid>
-      {{ if eq $rssFeedDescription "summary"}}
-      <description>{{ .Summary | html }}</description>
-      {{ else if (eq $rssFeedDescription "full")}}
-      <description>{{ .Content | html }}</description>
-      {{ else }} {{ errorf "Error in RSS feed generation %q" .Path }}
-      {{ end }}
-      {{ if .Params.status }}<status>{{ .Params.status }}</status>{{ end }}
-      {{ if .Params.image }}
-        {{ $img := .Resources.GetMatch .Params.image }}
-        {{ if $img }}
-          {{ $img = $img.Resize "600x webp" }}
-          <enclosure url="{{ $img.Permalink }}" length="{{ len $img.Content }}" type="image/webp" />
-        {{ else }}
-          {{ $imgUrl := .Params.image | absURL }}
-          <enclosure url="{{ $imgUrl }}" type="image/jpeg" />
-        {{ end }}
-      {{ end }}
-    </item>
+    {{ partial "rss-item.html" (dict "page" . "full" $full) }}
     {{ end }}
   </channel>
 </rss>

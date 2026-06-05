@@ -1,0 +1,43 @@
+{{/*
+  Shared RSS <item> renderer for the site feeds.
+  Input: a dict with
+    page: the Page
+    full: bool (true => full content in <description>, else summary)
+  Covers are page bundle resources, so they are resized and emitted as both an
+  <enclosure> (podcatcher-style readers) and <media:*> (rich feed readers).
+*/}}
+{{- $p := .page -}}
+{{- $full := .full -}}
+<item>
+  <title>{{ $p.Title }}</title>
+  <link>{{ $p.Permalink }}</link>
+  <pubDate>{{ $p.Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+  {{- with $p.Site.Author.email }}
+  <author>{{ . }}{{ with $p.Site.Author.name }} ({{ . }}){{ end }}</author>
+  {{- end }}
+  <guid>{{ $p.Permalink }}</guid>
+  {{- if $full }}
+  <description>{{ $p.Content | html }}</description>
+  {{- else }}
+  <description>{{ $p.Summary | html }}</description>
+  {{- end }}
+  {{- with $p.Params.status }}
+  <category domain="status">{{ . }}</category>
+  {{- end }}
+  {{- with $p.Params.type }}
+  <category domain="type">{{ . }}</category>
+  {{- end }}
+  {{- with $p.Params.image }}
+    {{- $img := $p.Resources.GetMatch . -}}
+    {{- if $img -}}
+      {{- $img = $img.Resize "600x webp" }}
+  <enclosure url="{{ $img.Permalink }}" length="{{ len $img.Content }}" type="image/webp" />
+  <media:thumbnail url="{{ $img.Permalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" />
+  <media:content url="{{ $img.Permalink }}" medium="image" type="image/webp" width="{{ $img.Width }}" height="{{ $img.Height }}" />
+    {{- else }}
+      {{- $imgUrl := . | absURL }}
+  <enclosure url="{{ $imgUrl }}" type="image/jpeg" />
+  <media:thumbnail url="{{ $imgUrl }}" />
+    {{- end }}
+  {{- end }}
+</item>
