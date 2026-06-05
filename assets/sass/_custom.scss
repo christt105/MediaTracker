@@ -301,6 +301,17 @@
     line-height: 1.6;
     opacity: 0.9;
     max-width: 800px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.media-overview-title {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    opacity: 0.75;
 }
 
 .media-taxonomies {
