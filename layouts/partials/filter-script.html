@@ -1,0 +1,131 @@
+<script>
+(function () {
+    var bar = document.getElementById('filter-bar');
+    if (!bar) return;
+
+    var search = document.getElementById('media-search');
+    var noResults = document.getElementById('filter-noresults');
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.media-card'));
+    var yearNav = document.querySelector('.year-nav-container');
+    var completedHeading = document.getElementById('completed-section');
+
+    var state = { q: '', type: '', status: '', rating: '' };
+
+    function norm(s) {
+        return (s || '').toString().toLowerCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function anyActive() {
+        return state.q !== '' || state.type !== '' || state.status !== '' || state.rating !== '';
+    }
+
+    function cardMatches(card) {
+        if (state.type && card.getAttribute('data-type') !== state.type) return false;
+        if (state.status && card.getAttribute('data-status') !== state.status) return false;
+        if (state.rating && card.getAttribute('data-rating') !== state.rating) return false;
+        if (state.q) {
+            var hay = norm(card.getAttribute('data-title')) + ' ' + norm(card.getAttribute('data-genres'));
+            if (hay.indexOf(state.q) === -1) return false;
+        }
+        return true;
+    }
+
+    function apply() {
+        var filtering = anyActive();
+        var visible = 0;
+
+        cards.forEach(function (card) {
+            var show = !filtering || cardMatches(card);
+            card.classList.toggle('is-hidden', !show);
+            if (show && filtering) visible++;
+        });
+
+        // Hide containers that have no visible cards while filtering
+        document.querySelectorAll('.home-section, .year-group').forEach(function (group) {
+            if (!filtering) { group.classList.remove('is-hidden'); return; }
+            var hasVisible = group.querySelector('.media-card:not(.is-hidden)');
+            group.classList.toggle('is-hidden', !hasVisible);
+        });
+
+        var details = document.querySelector('.hidden-section-container');
+        if (details) {
+            if (filtering) {
+                var hasVisible = details.querySelector('.media-card:not(.is-hidden)');
+                details.classList.toggle('is-hidden', !hasVisible);
+                if (hasVisible && details.tagName === 'DETAILS') details.open = true;
+            } else {
+                details.classList.remove('is-hidden');
+                if (details.tagName === 'DETAILS') details.open = false;
+            }
+        }
+
+        if (yearNav) yearNav.classList.toggle('is-hidden', filtering);
+        if (completedHeading) {
+            var anyYear = document.querySelector('.year-group:not(.is-hidden)');
+            completedHeading.classList.toggle('is-hidden', filtering && !anyYear);
+        }
+
+        bar.classList.toggle('is-filtering', filtering);
+        if (noResults) noResults.hidden = !(filtering && visible === 0);
+    }
+
+    function syncUrl() {
+        if (!window.history || !history.replaceState) return;
+        var params = new URLSearchParams();
+        ['q', 'type', 'status', 'rating'].forEach(function (k) {
+            if (state[k]) params.set(k, state[k]);
+        });
+        var qs = params.toString();
+        history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+    }
+
+    function selectChip(group, value) {
+        var groupEl = bar.querySelector('.filter-chips[data-filter-group="' + group + '"]');
+        if (!groupEl) return;
+        var matched = false;
+        groupEl.querySelectorAll('.filter-chip').forEach(function (c) {
+            var on = c.getAttribute('data-value') === value;
+            if (on) matched = true;
+            c.classList.toggle('active', on);
+        });
+        state[group] = matched ? value : '';
+    }
+
+    function initFromUrl() {
+        var params = new URLSearchParams(location.search);
+        ['type', 'status', 'rating'].forEach(function (k) {
+            if (params.has(k)) selectChip(k, params.get(k));
+        });
+        if (params.has('q') && search) {
+            state.q = norm(params.get('q').trim());
+            search.value = params.get('q');
+        }
+    }
+
+    if (search) {
+        search.addEventListener('input', function () {
+            state.q = norm(search.value.trim());
+            apply();
+            syncUrl();
+        });
+    }
+
+    bar.querySelectorAll('.filter-chips').forEach(function (groupEl) {
+        var group = groupEl.getAttribute('data-filter-group');
+        groupEl.addEventListener('click', function (e) {
+            var chip = e.target.closest('.filter-chip');
+            if (!chip) return;
+            state[group] = chip.getAttribute('data-value');
+            groupEl.querySelectorAll('.filter-chip').forEach(function (c) {
+                c.classList.toggle('active', c === chip);
+            });
+            apply();
+            syncUrl();
+        });
+    });
+
+    initFromUrl();
+    apply();
+})();
+</script>

@@ -1,0 +1,47 @@
+{{- /*
+  Search + filter controls for the home listing. Operates client-side over the
+  already-rendered media cards (see filter-script.html), so no extra data file
+  or JS dependency is needed.
+*/ -}}
+{{ $types := partial "media-type-keys.html" . }}
+{{ $statuses := slice "finished" "in_progress" "paused" "dropped" "not_started" }}
+
+<div class="filter-bar" id="filter-bar">
+    <div class="filter-search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input type="search" id="media-search" autocomplete="off"
+            placeholder="{{ T "search_placeholder" }}" aria-label="{{ T "search_placeholder" }}">
+    </div>
+
+    <div class="filter-row">
+        <div class="filter-chips" data-filter-group="type">
+            <button type="button" class="filter-chip active" data-value="">{{ T "filter_all" }}</button>
+            {{ range $t := $types }}
+            {{ $def := index $.Site.Data.media_types $t }}
+            <button type="button" class="filter-chip" data-value="{{ $t }}">
+                <i class="{{ $def.icon }}" aria-hidden="true"></i> {{ T $t | humanize }}
+            </button>
+            {{ end }}
+        </div>
+
+        <div class="filter-chips" data-filter-group="status">
+            <button type="button" class="filter-chip active" data-value="">{{ T "filter_all" }}</button>
+            {{ range $s := $statuses }}
+            <button type="button" class="filter-chip" data-value="{{ $s }}">{{ T (printf "status_%s" $s) }}</button>
+            {{ end }}
+        </div>
+
+        <div class="filter-chips filter-ratings" data-filter-group="rating">
+            <button type="button" class="filter-chip active" data-value="">{{ T "filter_all" }}</button>
+            {{ range $r := slice "7" "6" "5" "4" "3" "2" "1" }}
+            {{ $theme := index $.Site.Data.ratings $r }}
+            <button type="button" class="filter-chip" data-value="{{ $r }}" title="{{ $theme.label }}"
+                style="--chip-accent: {{ $theme.color }}">
+                <i class="{{ $theme.icon }}" aria-hidden="true"></i>
+            </button>
+            {{ end }}
+        </div>
+    </div>
+
+    <p class="filter-noresults" id="filter-noresults" hidden>{{ T "no_results" }}</p>
+</div>

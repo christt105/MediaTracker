@@ -46,3 +46,11 @@
   translation: No recuerdo cuándo
 - id: see_paused_dropped
   translation: Ver Pausados y Abandonados
+
+# Search and filters
+- id: search_placeholder
+  translation: Buscar por título o género...
+- id: filter_all
+  translation: Todos
+- id: no_results
+  translation: No hay resultados.
