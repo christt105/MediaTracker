@@ -1,0 +1,38 @@
+# Single source of truth for media types.
+# Adding a new type (e.g. a book) means adding a block here plus a menu entry in
+# hugo.toml and content under the matching section. Templates read this file
+# instead of hardcoding the type list.
+#
+#   section: content section / folder the type lives in
+#   icon:    Font Awesome icon used on cards and badges
+#   fields:  extra frontmatter fields to show on the entry page (label via i18n)
+#   parent:  this type is a child of another type (e.g. season -> tv)
+#   children: this type owns children of the given type (e.g. tv -> season)
+
+movie:
+  section: movies
+  icon: "fas fa-film"
+
+tv:
+  section: tv
+  icon: "fas fa-tv"
+  children: season
+
+season:
+  section: seasons
+  icon: "fas fa-tv"
+  parent: tv
+
+videogame:
+  section: games
+  icon: "fas fa-gamepad"
+  fields:
+    - developer
+
+# Example of how to add a new type. Uncomment, add a matching menu entry in
+# hugo.toml and content under content/books/ (or wire it in the migration).
+# book:
+#   section: books
+#   icon: "fas fa-book"
+#   fields:
+#     - author
