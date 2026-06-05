@@ -902,3 +902,21 @@
         min-width: 0;
     }
 }
+
+/* ============================ Series/season relations ============================ */
+.media-relations {
+    margin: 36px 0;
+}
+
+.media-relations-title {
+    margin: 0 0 16px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    padding-bottom: 8px;
+}
+
+.media-grid-relations {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 16px;
+}
