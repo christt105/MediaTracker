@@ -16,7 +16,7 @@ enableEmoji = true
 
 [module]
   [[module.imports]]
-    path = "github.com/hugo-sid/hugo-blog-awesome"
+    path = "github.com/christt105/hugo-mediatracker-theme"
 
 # The type sections (movies/tv/games) redirect to the home page filtered by
 # that type, so the Biblioteca dropdown links to them via pageRef and the
