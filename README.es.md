@@ -2,37 +2,57 @@
 
 [Read in English](README.md)
 
-**Media Tracker** es una colección personal de películas, series y videojuegos que he consumido. Sirve como un registro digital para rastrear y reseñar mi historial de entretenimiento.
+**Media Tracker** es mi registro personal de películas, series y videojuegos — un
+sitio Hugo generado a partir de mi bóveda de Obsidian.
 
-## 🚀 Tecnologías
+> **¿Quieres crear el tuyo?**
+> Este repositorio es mi contenido privado, no una plantilla.
+> Usa [**mediatracker-starter**](https://github.com/christt105/mediatracker-starter)
+> para crear tu propio sitio en un clic, o consulta la documentación del
+> [**hugo-mediatracker-theme**](https://github.com/christt105/hugo-mediatracker-theme)
+> para todas las opciones de configuración.
 
-Este proyecto está construido utilizando:
-- **[Hugo](https://gohugo.io/):** Un generador de sitios estáticos rápido y flexible.
-- **[hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome):** Un tema limpio y minimalista para Hugo.
-- **[Obsidian](https://obsidian.md/):** Utilizado para crear y editar notas de manera conveniente.
+## Cómo funciona
 
-## 🛠️ Configuración y Uso
+El contenido vive en Obsidian. Un script de migración (`scripts/migration.py`)
+convierte las notas de Obsidian en page bundles de Hugo bajo `content/`. El
+directorio `content/` es por tanto **generado** — los cambios manuales se
+sobreescriben en la próxima ejecución.
 
-Para ejecutar este proyecto localmente, asegúrate de tener Hugo instalado.
+```
+Bóveda de Obsidian
+      │
+      ▼
+scripts/migration.py
+      │
+      ▼
+content/  ←── generado, no editar a mano
+      │
+      ▼
+hugo build → GitHub Actions → GitHub Pages
+```
 
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone <repository-url>
-    cd MediaTracker
-    ```
+## Stack
 
-2.  **Iniciar el servidor de desarrollo:**
-    ```bash
-    hugo server -D
-    ```
-    El sitio estará disponible en `http://localhost:1313/`.
+| Herramienta | Función |
+|-------------|---------|
+| [Hugo](https://gohugo.io/) | Generador de sitio estático |
+| [hugo-mediatracker-theme](https://github.com/christt105/hugo-mediatracker-theme) | Tema (Hugo Module) |
+| [Obsidian](https://obsidian.md/) | Edición de notas / fuente de verdad |
+| GitHub Actions | Build y despliegue a Pages |
 
-3.  **Construir para producción:**
-    ```bash
-    hugo
-    ```
-    Los archivos estáticos se generarán en el directorio `public/`.
+## Ejecución local
 
-## 📝 Gestión de Contenido
+```bash
+hugo server
+```
 
-El contenido se gestiona mediante archivos Markdown ubicados en el directorio `content/`. Puedes usar Obsidian para editar estos archivos directamente para una experiencia de escritura fluida.
+Requiere Hugo extended + Go (para módulos). El tema se descarga automáticamente
+via `go.mod`.
+
+## Feeds RSS
+
+| Feed | URL |
+|------|-----|
+| Todo el contenido | `/index.xml` |
+| Elementos acabados | `/finished.xml` |
