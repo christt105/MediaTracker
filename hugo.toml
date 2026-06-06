@@ -16,31 +16,48 @@ enableEmoji = true
 
 [module]
   [[module.imports]]
-    path = "github.com/hugo-sid/hugo-blog-awesome"
+    path = "github.com/christt105/hugo-mediatracker-theme"
 
+# The type sections (movies/tv/games) redirect to the home page filtered by
+# that type, so the Biblioteca dropdown links to them via pageRef and the
+# redirect lands on /?type=<type>.
 [menu]
   [[menu.main]]
-    pageRef="movies"
-    name = 'Películas'
-    url = '/movies/'
+    identifier = 'library'
+    pageRef = '/'
+    name = 'Biblioteca'
+    url = '/'
     weight = 20
   [[menu.main]]
-    pageRef="tv"
+    parent = 'library'
+    pageRef = 'movies'
+    name = 'Películas'
+    url = '/movies/'
+    weight = 1
+  [[menu.main]]
+    parent = 'library'
+    pageRef = 'tv'
     name = 'Series'
     url = '/tv/'
-    weight = 30
+    weight = 2
   [[menu.main]]
-    pageRef="games"
+    parent = 'library'
+    pageRef = 'games'
     name = 'Juegos'
     url = '/games/'
-    weight = 40
+    weight = 3
   [[menu.main]]
-    pageRef="collage"
+    pageRef = 'collage'
     name = 'Collage'
     url = '/collage/'
     weight = 50
   [[menu.main]]
-    pageRef="about"
+    pageRef = 'stats'
+    name = 'Estadísticas'
+    url = '/stats/'
+    weight = 55
+  [[menu.main]]
+    pageRef = 'about'
     name = 'Acerca de'
     url = '/about/'
     weight = 60
