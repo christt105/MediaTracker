@@ -20,10 +20,10 @@ related:
 release_date: 2020-10-03
 rewatches: []
 seasons:
-- '[[Jujutsu Kaisen (2020) - Temporada 1]]'
-- '[[Jujutsu Kaisen (2020) - Temporada 2]]'
-- '[[Jujutsu Kaisen (2020) - Temporada 3]]'
-status: Acabado
+- Jujutsu Kaisen (2020) - Temporada 1
+- Jujutsu Kaisen (2020) - Temporada 2
+- Jujutsu Kaisen (2020) - Temporada 3
+status: finished
 tags:
 - anime
 title: Jujutsu Kaisen

@@ -13,9 +13,9 @@ rating: '6'
 release_date: 2016-07-15
 rewatches: []
 seasons:
-- '[[Stranger Things (2016) - Temporada 5]]'
-- '[[Stranger Things (2016) - Temporada 1]]'
-status: Acabado
+- Stranger Things (2016) - Temporada 5
+- Stranger Things (2016) - Temporada 1
+status: finished
 tags: []
 title: Stranger Things
 tmdb_id: 66732

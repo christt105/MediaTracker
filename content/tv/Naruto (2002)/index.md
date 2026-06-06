@@ -16,7 +16,7 @@ rating: '7'
 release_date: 2002-10-03
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Naruto

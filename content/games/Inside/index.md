@@ -18,7 +18,7 @@ related:
 - Limbo
 release_date: 2016-06-29
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: 304430
 steamgriddb_id: 4799
 tags: []

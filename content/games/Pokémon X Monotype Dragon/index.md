@@ -16,7 +16,7 @@ rating: null
 related: []
 release_date: 2013-10-12
 rewatches: []
-status: Abandonado
+status: dropped
 steamgriddb_id: 5245290
 tags:
 - pokemon

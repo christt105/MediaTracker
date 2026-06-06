@@ -14,9 +14,9 @@ rating: '6'
 release_date: 2021-01-08
 rewatches: []
 seasons:
-- '[[Lupin (2021) - Temporada 1]]'
-- '[[Lupin (2021) - Temporada 2]]'
-status: Acabado
+- Lupin (2021) - Temporada 1
+- Lupin (2021) - Temporada 2
+status: finished
 tags: []
 title: Lupin
 tmdb_id: 96677

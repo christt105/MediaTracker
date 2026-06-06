@@ -22,7 +22,7 @@ rating: '7'
 related: []
 release_date: 2014-07-26
 rewatches: []
-status: Acabado
+status: finished
 steamgriddb_id: 5246747
 tags: []
 title: The Last of Us Remastered

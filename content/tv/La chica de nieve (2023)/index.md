@@ -12,7 +12,7 @@ rating: '5'
 release_date: 2023-01-27
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: La chica de nieve
 tmdb_id: 215333

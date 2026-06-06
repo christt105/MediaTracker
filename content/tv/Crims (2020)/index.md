@@ -18,8 +18,8 @@ rating: '6'
 release_date: 2020-02-03
 rewatches: []
 seasons:
-- '[[Crims (2020) - Temporada 6]]'
-status: Acabado
+- Crims (2020) - Temporada 6
+status: finished
 tags: []
 title: Crims
 tmdb_id: 117180

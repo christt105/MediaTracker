@@ -18,9 +18,9 @@ rating: '6'
 release_date: 2024-04-10
 rewatches: []
 seasons:
-- '[[Media Tracker/Seasons/Fallout (2024) - Temporada 1]]'
-- '[[Fallout (2024) - Temporada 2]]'
-status: Sin Empezar
+- Media Tracker/Seasons/Fallout (2024) - Temporada 1
+- Fallout (2024) - Temporada 2
+status: not_started
 tags: []
 title: Fallout
 tmdb_id: 106379

@@ -16,7 +16,7 @@ rating: '6'
 related: []
 release_date: null
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 - cine

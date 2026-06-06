@@ -6,8 +6,8 @@ rating: '6'
 release_date: null
 rewatches: []
 season_number: 4
-series: '[[La caza (2019)]]'
-status: Acabado
+series: La caza (2019)
+status: finished
 tags: null
 title: La caza - Irati
 type: season

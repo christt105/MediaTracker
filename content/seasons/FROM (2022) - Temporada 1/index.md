@@ -6,8 +6,8 @@ rating: '6'
 release_date: null
 rewatches: []
 season_number: 1
-series: '[[FROM (2022)]]'
-status: Acabado
+series: FROM (2022)
+status: finished
 tags:
 - temporada
 title: FROM - Temporada 1

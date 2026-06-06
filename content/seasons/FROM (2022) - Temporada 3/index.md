@@ -6,8 +6,8 @@ rating: '5'
 release_date: null
 rewatches: []
 season_number: 3
-series: '[[FROM (2022)]]'
-status: Acabado
+series: FROM (2022)
+status: finished
 tags: null
 title: FROM - Temporada 3
 type: season

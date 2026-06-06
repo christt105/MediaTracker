@@ -22,7 +22,7 @@ rating: '7'
 release_date: 2007-02-15
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Naruto Shippuden

@@ -21,7 +21,7 @@ related:
 - The Legend of Zelda Tears of the Kingdom
 release_date: 2017-03-03
 rewatches: []
-status: Acabado
+status: finished
 steamgriddb_id: 35744
 tags: []
 title: 'The Legend of Zelda: Breath of the Wild'

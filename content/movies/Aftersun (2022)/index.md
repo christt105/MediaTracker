@@ -13,7 +13,7 @@ rating: '6'
 related: []
 release_date: 2022-10-21
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Aftersun
 tmdb_id: 965150

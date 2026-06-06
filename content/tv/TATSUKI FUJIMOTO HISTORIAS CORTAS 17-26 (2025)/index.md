@@ -18,7 +18,7 @@ related: []
 release_date: 2025-11-08
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: TATSUKI FUJIMOTO HISTORIAS CORTAS 17-26

@@ -6,8 +6,8 @@ rating: null
 release_date: null
 rewatches: []
 season_number: '6'
-series: '[[Crims (2020)]]'
-status: Acabado
+series: Crims (2020)
+status: finished
 tags: null
 title: Crims - Temporada 6
 type: season

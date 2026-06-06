@@ -16,7 +16,7 @@ rating: '6'
 related: []
 release_date: 2022-03-24
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Todo a la vez en todas partes
 tmdb_id: 545611

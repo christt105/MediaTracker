@@ -16,7 +16,7 @@ related: []
 release_date: 2026-02-09
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: 'Crims: Bellvitge'
 tmdb_id: 313616

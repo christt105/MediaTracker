@@ -6,8 +6,8 @@ rating: '6'
 release_date: null
 rewatches: []
 season_number: 1
-series: '[[Planeta prehistórico (2022)]]'
-status: Acabado
+series: Planeta prehistórico (2022)
+status: finished
 tags: null
 title: Planeta prehistórico - Temporada 1
 type: season

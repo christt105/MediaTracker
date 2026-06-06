@@ -6,8 +6,8 @@ rating: '7'
 release_date: null
 rewatches: []
 season_number: 1
-series: '[[The Last of Us (2023)]]'
-status: Acabado
+series: The Last of Us (2023)
+status: finished
 tags:
 - temporada
 title: The Last of Us - Temporada 1

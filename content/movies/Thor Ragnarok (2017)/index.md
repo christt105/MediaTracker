@@ -18,7 +18,7 @@ rating: null
 related: []
 release_date: 2017-10-02
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: 'Thor: Ragnarok'

@@ -15,7 +15,7 @@ rating: '5'
 related: []
 release_date: 2020-03-06
 rewatches: []
-status: Acabado
+status: finished
 steamgriddb_id: 5254467
 tags:
 - pokemon

@@ -23,7 +23,7 @@ overview: 'Película recopilatoria para cines de los dos últimos episodios espe
 rating: '7'
 release_date: 2024-11-08
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 - cine

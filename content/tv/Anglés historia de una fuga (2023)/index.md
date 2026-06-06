@@ -21,7 +21,7 @@ rating: '5'
 release_date: 2023-02-09
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: 'Anglés: historia de una fuga'
 tmdb_id: 220094

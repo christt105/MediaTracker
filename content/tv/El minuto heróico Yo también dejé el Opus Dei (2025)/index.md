@@ -12,7 +12,7 @@ rating: '5'
 release_date: 2025-02-07
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: 'El minuto heróico: Yo también dejé el Opus Dei'
 tmdb_id: 271311

@@ -14,7 +14,7 @@ rating: null
 related: []
 release_date: 2019-04-04
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: Cementerio de animales

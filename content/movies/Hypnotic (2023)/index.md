@@ -19,7 +19,7 @@ overview: Decidido a encontrar a su hija desaparecida, el detective Danny Rourke
 rating: '4'
 release_date: 2023-05-11
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Hypnotic
 tmdb_id: 536437

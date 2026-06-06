@@ -23,9 +23,9 @@ rating: '7'
 release_date: 2023-09-29
 rewatches: []
 seasons:
-- '[[Frieren Tras finalizar el viaje (2023) - Temporada 1]]'
-- '[[Frieren Tras finalizar el viaje (2023) - Temporada 2]]'
-status: Acabado
+- Frieren Tras finalizar el viaje (2023) - Temporada 1
+- Frieren Tras finalizar el viaje (2023) - Temporada 2
+status: finished
 tags:
 - anime
 title: 'Frieren: Tras finalizar el viaje'

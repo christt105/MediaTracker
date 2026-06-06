@@ -18,7 +18,7 @@ overview: 'Parece que Parker ha conseguido por fin el equilibrio entre su devoci
 rating: null
 release_date: 2007-05-01
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Spider-Man 3
 tmdb_id: 559

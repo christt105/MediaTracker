@@ -17,7 +17,7 @@ rating: '6'
 related: []
 release_date: 2018-04-03
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: 609490
 steamgriddb_id: 17408
 tags: []

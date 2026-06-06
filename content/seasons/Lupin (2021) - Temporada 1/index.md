@@ -6,8 +6,8 @@ rating: '7'
 release_date: null
 rewatches: []
 season_number: 1
-series: '[[Lupin (2021)]]'
-status: Acabado
+series: Lupin (2021)
+status: finished
 tags: null
 title: Lupin - Temporada 1
 type: season

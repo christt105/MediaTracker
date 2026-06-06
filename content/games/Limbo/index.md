@@ -18,7 +18,7 @@ related:
 - Inside
 release_date: 2010-07-21
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: 48000
 steamgriddb_id: 12128
 tags: []

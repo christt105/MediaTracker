@@ -18,7 +18,7 @@ rating: '7'
 related: []
 release_date: 2014-04-03
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 steamgriddb_id: 5255137
 tags: []

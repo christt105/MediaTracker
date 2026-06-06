@@ -18,7 +18,7 @@ overview: Hana, una joven de la región de Paldea que admira al cartero Dragonit
 rating: '6'
 release_date: 2025-02-27
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 - corto

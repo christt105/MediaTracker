@@ -12,7 +12,7 @@ rating: null
 related: []
 release_date: 2022-01-26
 rewatches: []
-status: Sin Empezar
+status: not_started
 steam_appid: null
 tags:
 - pokemon

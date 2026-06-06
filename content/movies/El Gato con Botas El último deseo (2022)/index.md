@@ -15,7 +15,7 @@ rating: '7'
 release_date: 2022-12-07
 rewatches:
 - 2024-08-03
-status: Acabado
+status: finished
 tags: []
 title: 'El Gato con Botas: El último deseo'
 tmdb_id: 315162

@@ -12,7 +12,7 @@ overview: El 13 de octubre de 1972, el vuelo 571 de la Fuerza Aérea Uruguaya, f
 rating: '6'
 release_date: 2023-12-15
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: La sociedad de la nieve
 tmdb_id: 906126

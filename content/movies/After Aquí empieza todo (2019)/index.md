@@ -17,7 +17,7 @@ rating: null
 related: []
 release_date: 2019-04-11
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: 'After: Aquí empieza todo'

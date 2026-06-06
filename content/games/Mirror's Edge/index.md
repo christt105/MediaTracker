@@ -15,7 +15,7 @@ rating: '6'
 related: []
 release_date: 2008-11-11
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: 17410
 steamgriddb_id: 1553
 tags: []

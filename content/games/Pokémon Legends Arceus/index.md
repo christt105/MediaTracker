@@ -20,7 +20,7 @@ rating: null
 related: []
 release_date: 2022-01-28
 rewatches: []
-status: Pausado
+status: paused
 steamgriddb_id: 5286404
 tags:
 - pokemon

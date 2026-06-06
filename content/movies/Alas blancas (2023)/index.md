@@ -16,7 +16,7 @@ overview: 'Julian lucha por pertenecer a un grupo desde que fue expulsado de su 
 rating: '5'
 release_date: 2023-10-25
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Alas blancas
 tmdb_id: 779816

@@ -28,7 +28,7 @@ rating: null
 related: []
 release_date: 1998-11-19
 rewatches: []
-status: Pausado
+status: paused
 steam_appid: 70
 steamgriddb_id: 21207
 tags: []

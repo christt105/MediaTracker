@@ -15,7 +15,7 @@ rating: '5'
 related: []
 release_date: 2011-09-01
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 tags: []
 title: Jetpack Joyride

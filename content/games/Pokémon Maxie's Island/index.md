@@ -14,7 +14,7 @@ rating: '6'
 related: []
 release_date: 2024-09-26
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - pokemon
 title: 'Pokémon: Maxie''s Island'

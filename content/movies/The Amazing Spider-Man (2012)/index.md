@@ -14,7 +14,7 @@ overview: Como la mayoría de los adolescentes de su edad, Peter está intentand
 rating: null
 release_date: 2012-06-23
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: The Amazing Spider-Man
 tmdb_id: 1930

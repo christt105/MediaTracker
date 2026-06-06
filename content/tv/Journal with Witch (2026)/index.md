@@ -21,7 +21,7 @@ related: []
 release_date: 2026-01-04
 rewatches: []
 seasons: []
-status: En Curso
+status: in_progress
 tags: []
 title: Journal with Witch
 tmdb_id: 253476

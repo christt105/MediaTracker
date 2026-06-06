@@ -15,7 +15,7 @@ overview: Tras la llegada de una misteriosa presencia que está destruyendo la p
 rating: '5'
 release_date: 2023-07-14
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Bird Box Barcelona
 tmdb_id: 805320

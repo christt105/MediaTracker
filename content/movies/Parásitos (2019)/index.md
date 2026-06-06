@@ -15,7 +15,7 @@ rating: '6'
 related: []
 release_date: 2019-05-30
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Parásitos
 tmdb_id: 496243

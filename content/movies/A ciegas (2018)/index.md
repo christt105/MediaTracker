@@ -17,7 +17,7 @@ overview: 'Thriller posapocalíptico en el que una mujer y sus dos hijos, estos 
 rating: null
 release_date: 2018-12-13
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: A ciegas
 tmdb_id: 405774

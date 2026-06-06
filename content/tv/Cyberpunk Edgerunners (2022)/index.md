@@ -14,7 +14,7 @@ rating: '7'
 release_date: 2022-09-13
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: 'Cyberpunk: Edgerunners'

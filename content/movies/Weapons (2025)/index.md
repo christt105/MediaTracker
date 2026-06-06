@@ -12,7 +12,7 @@ overview: Cuando todos los alumnos de una misma clase, salvo uno, desaparecen mi
 rating: '5'
 release_date: 2025-08-04
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Weapons
 tmdb_id: 1078605

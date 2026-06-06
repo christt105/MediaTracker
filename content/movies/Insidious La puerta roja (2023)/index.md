@@ -13,7 +13,7 @@ overview: Para enterrar sus demonios de una vez por todas, Josh Lambert y un ya 
 rating: '5'
 release_date: 2023-07-05
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: 'Insidious: La puerta roja'
 tmdb_id: 614479

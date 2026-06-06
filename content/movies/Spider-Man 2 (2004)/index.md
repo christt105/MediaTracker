@@ -17,7 +17,7 @@ overview: 'Han pasado dos años desde que el tranquilo Peter Parker dejó a Mary
 rating: '7'
 release_date: 2004-06-25
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Spider-Man 2
 tmdb_id: 558

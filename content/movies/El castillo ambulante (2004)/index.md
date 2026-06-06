@@ -13,7 +13,7 @@ overview: Sophie, una joven sobre la que pesa una horrible maldición que le con
 rating: '7'
 release_date: 2004-09-09
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 - cine

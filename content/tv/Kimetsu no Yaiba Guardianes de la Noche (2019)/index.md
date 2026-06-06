@@ -19,8 +19,8 @@ rating: '5'
 release_date: 2019-04-06
 rewatches: []
 seasons:
-- '[[Kimetsu no Yaiba Guardianes de la Noche (2019) - Temporada 5]]'
-status: Acabado
+- Kimetsu no Yaiba Guardianes de la Noche (2019) - Temporada 5
+status: finished
 tags:
 - anime
 title: 'Kimetsu no Yaiba: Guardianes de la Noche'

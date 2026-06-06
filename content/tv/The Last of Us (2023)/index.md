@@ -15,9 +15,9 @@ rating: '6'
 release_date: 2023-01-15
 rewatches: []
 seasons:
-- '[[The Last of Us (2023) - Temporada 2]]'
-- '[[The Last of Us (2023) - Temporada 1]]'
-status: Acabado
+- The Last of Us (2023) - Temporada 2
+- The Last of Us (2023) - Temporada 1
+status: finished
 tags: []
 title: The Last of Us
 tmdb_id: 100088

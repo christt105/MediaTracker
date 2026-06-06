@@ -16,7 +16,7 @@ related: []
 release_date: 2018-09-07
 rewatches:
 - 2019-07-15
-status: Acabado
+status: finished
 steam_appid: null
 steamgriddb_id: 5258558
 tags:

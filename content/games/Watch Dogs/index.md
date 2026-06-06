@@ -20,7 +20,7 @@ rating: '5'
 related: []
 release_date: 2014-05-26
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: 243470
 steamgriddb_id: 2823
 tags: []

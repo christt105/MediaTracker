@@ -24,7 +24,7 @@ rating: '6'
 related: []
 release_date: 2012-10-09
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: 205100
 steamgriddb_id: 1839
 tags: []

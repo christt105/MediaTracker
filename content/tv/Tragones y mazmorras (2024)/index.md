@@ -15,7 +15,7 @@ rating: '5'
 release_date: 2024-01-04
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Tragones y mazmorras

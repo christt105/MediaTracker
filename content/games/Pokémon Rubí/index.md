@@ -16,7 +16,7 @@ rating: null
 related: []
 release_date: 2002-11-21
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 steamgriddb_id: 34103
 tags:

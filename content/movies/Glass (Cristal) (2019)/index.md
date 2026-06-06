@@ -14,7 +14,7 @@ rating: null
 related: []
 release_date: 2019-01-16
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: Glass (Cristal)

@@ -20,7 +20,7 @@ rating: '4'
 related: []
 release_date: 2025-07-01
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: 'Jurassic World: El renacer'
 tmdb_id: 1234821

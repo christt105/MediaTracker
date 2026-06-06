@@ -15,7 +15,7 @@ overview: La película muestra el crecimiento psicológico de un adolescente a t
 rating: '5'
 release_date: 2023-07-14
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: El chico y la garza

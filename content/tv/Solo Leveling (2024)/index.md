@@ -16,7 +16,7 @@ rating: '4'
 release_date: 2024-01-07
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Solo Leveling

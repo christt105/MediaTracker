@@ -23,7 +23,7 @@ rewatches:
 - 2020-09-23
 - 2020-10-31
 - 2022-06-29
-status: Acabado
+status: finished
 steam_appid: 367520
 steamgriddb_id: 7545
 tags:

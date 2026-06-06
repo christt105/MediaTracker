@@ -16,7 +16,7 @@ related: []
 release_date: 2026-05-25
 rewatches: []
 seasons: []
-status: En Curso
+status: in_progress
 tags: []
 title: Spider-Noir
 tmdb_id: 220102

@@ -16,7 +16,7 @@ overview: Cosas extrañas comienzan a suceder en casa de los Graham tras la muer
 rating: null
 release_date: 2018-06-07
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Hereditary
 tmdb_id: 493922

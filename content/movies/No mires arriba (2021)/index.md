@@ -11,7 +11,7 @@ overview: Dos astrónomos emprenden una gira mediática para avisar a la humanid
 rating: '5'
 release_date: 2021-12-08
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: No mires arriba
 tmdb_id: 646380

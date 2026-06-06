@@ -20,7 +20,7 @@ rating: null
 related: []
 release_date: '2016-03-11'
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: 387290
 tags: []
 title: 'Ori and the Blind Forest: Definitive Edition'

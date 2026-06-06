@@ -12,7 +12,7 @@ rating: '5'
 release_date: 2024-09-19
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: 'Monstruos: La historia de Lyle y Erik Menendez'
 tmdb_id: 225634

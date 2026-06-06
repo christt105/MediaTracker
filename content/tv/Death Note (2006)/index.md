@@ -14,7 +14,7 @@ rating: '6'
 release_date: 2006-10-04
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Death Note

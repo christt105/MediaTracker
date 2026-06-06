@@ -16,7 +16,7 @@ rating: '3'
 related: []
 release_date: 2022-11-18
 rewatches: []
-status: Acabado
+status: finished
 steamgriddb_id: 5331702
 tags:
 - pokemon

@@ -21,7 +21,7 @@ rating: null
 related: []
 release_date: 2010-11-09
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 steamgriddb_id: 10034
 tags: []

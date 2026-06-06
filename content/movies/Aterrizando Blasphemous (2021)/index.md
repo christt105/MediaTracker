@@ -10,7 +10,7 @@ rating: '6'
 related: []
 release_date: 2021-04-09
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - documental
 title: Aterrizando Blasphemous

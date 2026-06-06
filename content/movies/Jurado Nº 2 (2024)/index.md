@@ -13,7 +13,7 @@ overview: Justin Kemp, un hombre de familia, mientras forma parte de un jurado e
 rating: '6'
 release_date: 2024-10-30
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Jurado Nº 2
 tmdb_id: 1106739

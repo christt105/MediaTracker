@@ -15,7 +15,7 @@ rating: '5'
 release_date: 2022-06-10
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: Intimidad
 tmdb_id: 123534

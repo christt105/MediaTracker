@@ -20,7 +20,7 @@ rating: '4'
 release_date: 2023-07-09
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: 'Zom 100: Cien cosas que quiero hacer antes de convertirme en zombi'

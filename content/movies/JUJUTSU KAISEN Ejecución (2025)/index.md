@@ -10,7 +10,7 @@ overview: ''
 rating: '6'
 release_date: 2025-11-14
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 - cine

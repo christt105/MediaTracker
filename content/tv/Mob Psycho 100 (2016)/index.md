@@ -18,7 +18,7 @@ rating: '6'
 release_date: 2016-07-12
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Mob Psycho 100

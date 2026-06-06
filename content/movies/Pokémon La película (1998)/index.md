@@ -20,7 +20,7 @@ rating: '6'
 related: []
 release_date: 1998-07-18
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - pokemon
 title: 'Pokémon: La película'

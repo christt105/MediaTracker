@@ -13,7 +13,7 @@ rating: '5'
 related: []
 release_date: 2026-01-06
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Gente que conocemos en vacaciones
 tmdb_id: 1034716

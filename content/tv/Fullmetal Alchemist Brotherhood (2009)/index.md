@@ -15,7 +15,7 @@ rating: '7'
 release_date: 2009-04-05
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: 'Fullmetal Alchemist: Brotherhood'

@@ -14,8 +14,8 @@ rating: null
 release_date: 2021-09-17
 rewatches: []
 seasons:
-- '[[El juego del calamar (2021) - Temporada 2]]'
-status: Acabado
+- El juego del calamar (2021) - Temporada 2
+status: finished
 tags: []
 title: El juego del calamar
 tmdb_id: 93405
