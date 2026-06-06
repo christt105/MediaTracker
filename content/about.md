@@ -14,17 +14,29 @@ Toda la página está en castellano por el simple motivo que es un espacio perso
 
 ## Cómo está hecha esta web
 
-Esta página web está generada a partir de mis notas de [Obsidian](https://obsidian.md/) usando [Hugo](https://gohugo.io/). Es una página web estática, por lo que no requiere un servidor web ni base de datos.
+Esta página web está generada a partir de mis notas de [Obsidian](https://obsidian.md/) usando [Hugo](https://gohugo.io/). Es una página estática, sin servidor ni base de datos, publicada en GitHub Pages.
 
-Todas las notas están en formato Markdown, las edito desde mi vault de [Obsidian](https://obsidian.md/) y se generan en HTML usando [Hugo](https://gohugo.io/) y un script de Python. Al hacer commit se genera la web y se sube a GitHub Pages, se puede ver todo el contenido de la web en [este repositorio](https://github.com/christt105/MediaTracker). Pronto quiero hacer una entrada sobre el proceso de generación de la página web en mi blog.
+Tengo un script de Python que convierte las notas de mi vault de Obsidian al frontmatter de Hugo. Al hacer commit se genera la web automáticamente y se despliega. El contenido completo está en [este repositorio](https://github.com/christt105/MediaTracker).
 
-Estoy usando el tema de [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome) como base de la web. Es un tema muy simple y limpio.
+Con el tiempo el proyecto ha crecido bastante. Empecé usando [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome) como base, pero acabé desarrollando mi propio tema de Hugo: [hugo-mediatracker-theme](https://github.com/christt105/hugo-mediatracker-theme). Es un módulo de Hugo reutilizable, y hay un [repositorio plantilla](https://github.com/christt105/mediatracker-starter) para que cualquiera pueda montar algo parecido sin partir de cero.
 
-## Funcionalidades y Futuro
+He escrito una serie de entradas en mi blog explicando todo el proceso:
 
-La página también contiene una sección para [crear collages](../collage) con todas las portadas. Todo ejecutado en el propio navegador.
+- [Media Tracker: Orígenes](https://christt105.github.io/blog/media-tracker-origins/) — de Notion a Obsidian
+- [Media Tracker: Obsidian](https://christt105.github.io/blog/media-tracker-obsidian/) — cómo organizo las notas y el script de conversión
+- [Media Tracker: Hugo](https://christt105.github.io/blog/media-tracker-hugo/) — el tema, la arquitectura y el despliegue
 
-Es un proyecto que voy a ir mejorando a medida que lo vaya necesitando. Si lo ves útil o tienes cualquier comentario, hay una sección justo debajo y en cada elemento para poder comentar lo que sea.
+## Funcionalidades
+
+La página tiene bastante más de lo que parece a primera vista:
+
+- **Filtros**: búsqueda por texto, tipo de contenido, estado, puntuación, plataforma y etiquetas. Los filtros se encadenan y la URL se actualiza para poder compartir una búsqueda concreta.
+- **Estadísticas**: página de [stats](../stats) con distribución de puntuaciones, completadas por año (incluyendo repeticiones), géneros más vistos, y gráficos de plataformas, anime y cine vs. streaming. Se puede filtrar por año.
+- **Collage**: generador de [collages](../collage) con las portadas de lo completado en un rango de fechas, exportable como PNG.
+- **RSS**: feed de lo que voy terminando, para quien quiera seguirlo.
+- **Repeticiones**: el campo `rewatches` registra cada vez que vuelvo a ver o jugar algo, y las stats lo tienen en cuenta.
+
+Es un proyecto vivo que voy mejorando cuando tengo ganas o cuando algo me molesta. Si te parece útil o tienes algún comentario, hay una sección justo debajo y en cada elemento para ello.
 
 ## Sistema de puntuación
 
