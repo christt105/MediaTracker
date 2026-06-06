@@ -15,7 +15,7 @@ related: []
 release_date: 1998-04-03
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Cowboy Bebop

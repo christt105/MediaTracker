@@ -11,7 +11,7 @@ related: []
 release_date: 2026-04-24
 rewatches: []
 seasons: []
-status: En Curso
+status: in_progress
 tags: []
 title: Se nos ha ido de las manos
 tmdb_id: null

@@ -16,7 +16,7 @@ rating: '7'
 related: []
 release_date: 2009-09-12
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 steamgriddb_id: 5245279
 tags:

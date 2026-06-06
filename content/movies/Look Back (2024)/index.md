@@ -15,7 +15,7 @@ rating: '6'
 related: []
 release_date: 2024-06-28
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Look Back

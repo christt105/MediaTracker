@@ -23,7 +23,7 @@ rating: '7'
 related: []
 release_date: 2004-09-16
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 steamgriddb_id: 34971
 tags:

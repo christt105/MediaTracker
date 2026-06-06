@@ -20,7 +20,7 @@ related:
 - Hollow Knight
 release_date: 2025-09-04
 rewatches: null
-status: Acabado
+status: finished
 steam_appid: 1030300
 steamgriddb_id: 1043
 tags:

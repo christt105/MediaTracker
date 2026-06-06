@@ -18,7 +18,7 @@ rating: null
 release_date: 2005-04-04
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: La Llei de Ueki

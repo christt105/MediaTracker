@@ -15,7 +15,7 @@ related: []
 release_date: 2026-02-06
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: Salvador
 tmdb_id: 259856

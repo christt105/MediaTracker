@@ -12,7 +12,7 @@ overview: Una mujer atraviesa las tumultuosas etapas de una relación abusiva. T
 rating: '5'
 release_date: 2024-08-07
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: Romper el círculo

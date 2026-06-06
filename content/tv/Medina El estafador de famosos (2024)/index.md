@@ -16,7 +16,7 @@ rating: '5'
 release_date: 2024-10-18
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: 'Medina: El estafador de famosos'
 tmdb_id: 259425

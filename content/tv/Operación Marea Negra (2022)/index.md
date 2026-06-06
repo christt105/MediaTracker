@@ -16,7 +16,7 @@ rating: '4'
 release_date: 2022-02-25
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: Operación Marea Negra
 tmdb_id: 128676

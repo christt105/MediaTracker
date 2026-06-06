@@ -15,7 +15,7 @@ rating: '4'
 related: []
 release_date: 2022-08-03
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: Bullet Train

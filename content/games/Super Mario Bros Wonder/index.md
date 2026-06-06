@@ -14,7 +14,7 @@ rating: '7'
 related: []
 release_date: 2023-10-20
 rewatches: []
-status: Acabado
+status: finished
 steamgriddb_id: 5409928
 tags:
 - completado100

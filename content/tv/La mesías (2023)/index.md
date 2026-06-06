@@ -12,7 +12,7 @@ rating: '6'
 release_date: 2023-10-11
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: La mesías
 tmdb_id: 201420

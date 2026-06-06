@@ -16,7 +16,7 @@ overview: Dos chicas jóvenes, Mei y Satsuki, se mudan a una nueva casa cerca de
 rating: '6'
 release_date: 1988-04-16
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Mi vecino Totoro

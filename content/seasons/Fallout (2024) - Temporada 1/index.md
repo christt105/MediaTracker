@@ -6,8 +6,8 @@ rating: '6'
 release_date: null
 rewatches: []
 season_number: '1'
-series: '[[Fallout (2024)]]'
-status: Acabado
+series: Fallout (2024)
+status: finished
 tags: null
 title: Fallout - Temporada 1
 type: season

@@ -22,7 +22,7 @@ rating: '5'
 related: []
 release_date: 2008-06-20
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Camp Rock
 tmdb_id: 13655

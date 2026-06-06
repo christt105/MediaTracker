@@ -17,7 +17,7 @@ rating: null
 related: []
 release_date: 1994-06-23
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Forrest Gump
 tmdb_id: 13

@@ -17,7 +17,7 @@ overview: Armado con la asombrosa capacidad de reducir su tamaño a la dimension
 rating: null
 release_date: 2015-07-14
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Ant-Man
 tmdb_id: 102899

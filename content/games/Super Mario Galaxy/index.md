@@ -25,7 +25,7 @@ rating: '7'
 related: []
 release_date: 2007-11-01
 rewatches: []
-status: Acabado
+status: finished
 steamgriddb_id: 36389
 tags: []
 title: Super Mario Galaxy

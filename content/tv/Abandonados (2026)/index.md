@@ -18,7 +18,7 @@ related: []
 release_date: '2026-05-29'
 rewatches: []
 seasons: []
-status: En Curso
+status: in_progress
 tags: []
 title: Abandonados
 tmdb_id: 324050

@@ -14,7 +14,7 @@ rating: '5'
 release_date: 2025-01-29
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: Tu amigo y vecino Spider-Man
 tmdb_id: 138503

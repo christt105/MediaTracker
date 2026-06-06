@@ -17,7 +17,7 @@ related:
 - Marvel's Spider-Man 2
 release_date: 2020-11-12
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: 1817190
 steamgriddb_id: 5354206
 tags:

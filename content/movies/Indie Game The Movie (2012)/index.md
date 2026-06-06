@@ -15,7 +15,7 @@ overview: 'Indie Game: The Movie captura el proceso de sacar a la venta un video
 rating: null
 release_date: 2012-05-18
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: 'Indie Game: The Movie'
 tmdb_id: 80215

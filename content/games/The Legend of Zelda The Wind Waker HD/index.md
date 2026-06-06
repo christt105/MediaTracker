@@ -21,7 +21,7 @@ rating: null
 related: []
 release_date: 2013-09-26
 rewatches: []
-status: En Curso
+status: in_progress
 steam_appid: null
 steamgriddb_id: 35048
 tags: []

@@ -17,7 +17,7 @@ rating: '6'
 release_date: 2021-04-06
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Odd Taxi

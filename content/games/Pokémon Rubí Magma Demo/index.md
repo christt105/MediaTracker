@@ -16,7 +16,7 @@ rating: '7'
 related: []
 release_date: null
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 tags:
 - pokemon

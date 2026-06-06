@@ -15,7 +15,7 @@ overview: Cuatro años después de la destrucción de Isla Nublar, los dinosauri
 rating: '5'
 release_date: 2022-06-01
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: 'Jurassic World: Dominion'

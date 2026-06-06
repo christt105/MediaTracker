@@ -17,7 +17,7 @@ rating: null
 related: []
 release_date: 2019-06-26
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: 'Annabelle: Vuelve a casa'

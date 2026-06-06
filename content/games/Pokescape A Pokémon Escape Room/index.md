@@ -14,7 +14,7 @@ rating: '5'
 related: []
 release_date: 2023-11-03
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 tags:
 - pokemon

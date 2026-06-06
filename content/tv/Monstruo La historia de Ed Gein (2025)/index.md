@@ -13,7 +13,7 @@ rating: '5'
 release_date: 2025-10-03
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: 'Monstruo: La historia de Ed Gein'
 tmdb_id: 286801

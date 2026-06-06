@@ -22,7 +22,7 @@ rating: '7'
 related: null
 release_date: 2010-05-23
 rewatches: []
-status: Acabado
+status: finished
 steamgriddb_id: 1690
 tags: []
 title: Super Mario Galaxy 2

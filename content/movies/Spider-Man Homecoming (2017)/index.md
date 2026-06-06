@@ -16,7 +16,7 @@ overview: Peter Parker comienza a experimentar su recién descubierta identidad 
 rating: null
 release_date: 2017-07-05
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: 'Spider-Man: Homecoming'

@@ -20,7 +20,7 @@ rating: null
 related: []
 release_date: 2025-04-03
 rewatches: []
-status: Pausado
+status: paused
 steam_appid: 2531310
 steamgriddb_id: 5436765
 tags: []

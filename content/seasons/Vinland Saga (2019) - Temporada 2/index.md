@@ -6,8 +6,8 @@ rating: '7'
 release_date: null
 rewatches: []
 season_number: 2
-series: '[[Vinland Saga (2019)]]'
-status: Acabado
+series: Vinland Saga (2019)
+status: finished
 tags:
 - anime
 title: Vinland Saga - Temporada 2

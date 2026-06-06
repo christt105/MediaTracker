@@ -11,7 +11,7 @@ overview: Un ladrón irrumpe en un todoterreno de lujo y se da cuenta de que ha 
 rating: '3'
 release_date: 2025-03-20
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Blindado
 tmdb_id: 1083968

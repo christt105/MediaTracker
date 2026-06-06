@@ -13,7 +13,7 @@ rating: '5'
 release_date: 2025-01-11
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Sakamoto Days

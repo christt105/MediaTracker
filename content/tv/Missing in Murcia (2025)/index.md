@@ -15,7 +15,7 @@ related: []
 release_date: 2025-11-13
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: Missing in Murcia
 tmdb_id: 305586

@@ -18,7 +18,7 @@ rating: '7'
 release_date: 2022-10-12
 rewatches: null
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Chainsaw Man

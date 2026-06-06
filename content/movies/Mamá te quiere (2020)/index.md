@@ -16,7 +16,7 @@ rating: '5'
 related: []
 release_date: 2020-11-20
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Mamá te quiere
 tmdb_id: 546121

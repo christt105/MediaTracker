@@ -15,7 +15,7 @@ rating: '6'
 related: []
 release_date: 2018-10-24
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: Bohemian Rhapsody

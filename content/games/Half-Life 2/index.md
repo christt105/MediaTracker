@@ -13,7 +13,7 @@ rating: null
 related: []
 release_date: 2004-11-16
 rewatches: []
-status: Sin Empezar
+status: not_started
 steam_appid: 220
 steamgriddb_id: 2254
 tags: []

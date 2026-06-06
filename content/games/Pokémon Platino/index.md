@@ -17,7 +17,7 @@ related:
 - Media Tracker/Juegos/Pokémon Following Renegade Platinum
 release_date: 2008-09-13
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 steamgriddb_id: 38536
 tags:

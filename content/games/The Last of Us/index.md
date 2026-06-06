@@ -22,7 +22,7 @@ related:
 - The Last of Us Part II
 release_date: 2013-06-14
 rewatches: []
-status: Acabado
+status: finished
 steam_appid: null
 steamgriddb_id: 5103049
 tags: []

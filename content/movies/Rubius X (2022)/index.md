@@ -14,7 +14,7 @@ overview: Hace ya 10 años del primer vídeo publicado por el Rubius en YouTube.
 rating: '4'
 release_date: 2022-07-21
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Rubius X
 tmdb_id: 912826

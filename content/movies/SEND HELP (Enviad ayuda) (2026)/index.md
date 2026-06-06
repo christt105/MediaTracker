@@ -14,7 +14,7 @@ rating: '3'
 related: []
 release_date: 2026-01-22
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: SEND HELP (Enviad ayuda)
 tmdb_id: 1198994

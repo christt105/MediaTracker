@@ -18,7 +18,7 @@ rating: '7'
 release_date: 2018-12-06
 rewatches:
 - 2020-11-06
-status: Acabado
+status: finished
 tags: []
 title: 'Spider-Man: un nuevo universo'
 tmdb_id: 324857

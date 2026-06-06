@@ -16,7 +16,7 @@ rating: '6'
 release_date: 2025-06-28
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Takopi's Original Sin

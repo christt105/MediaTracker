@@ -14,7 +14,7 @@ rating: null
 related: []
 release_date: '2003-05-23'
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Como Dios
 tmdb_id: 310

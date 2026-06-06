@@ -14,7 +14,7 @@ overview: Descubre la primera aventura de Nathan Drake, un joven, astuto y caris
 rating: '4'
 release_date: 2022-02-10
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: Uncharted

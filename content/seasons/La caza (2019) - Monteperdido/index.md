@@ -6,8 +6,8 @@ rating: '6'
 release_date: null
 rewatches: []
 season_number: 1
-series: '[[La caza (2019)]]'
-status: Acabado
+series: La caza (2019)
+status: finished
 tags: null
 title: La caza - Monteperdido
 type: season

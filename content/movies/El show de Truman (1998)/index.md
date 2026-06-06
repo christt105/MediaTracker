@@ -15,7 +15,7 @@ rating: null
 related: []
 release_date: '1998-06-04'
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: El show de Truman
 tmdb_id: 37165

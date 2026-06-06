@@ -21,11 +21,11 @@ rating: '6'
 release_date: 2019-03-25
 rewatches: []
 seasons:
-- '[[Media Tracker/Seasons/La caza (2019) - Monteperdido]]'
-- '[[Media Tracker/Seasons/La caza (2019) - Tramuntana]]'
-- '[[Media Tracker/Seasons/La caza (2019) - Guadiana]]'
-- '[[Media Tracker/Seasons/La caza (2019) - Irati]]'
-status: Acabado
+- Media Tracker/Seasons/La caza (2019) - Monteperdido
+- Media Tracker/Seasons/La caza (2019) - Tramuntana
+- Media Tracker/Seasons/La caza (2019) - Guadiana
+- Media Tracker/Seasons/La caza (2019) - Irati
+status: finished
 tags: []
 title: La caza
 tmdb_id: 87919

@@ -17,7 +17,7 @@ overview: 'Yuta Okkotsu es un nervioso estudiante de instituto que sufre un grav
 rating: '6'
 release_date: 2021-12-24
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: Jujutsu Kaisen 0

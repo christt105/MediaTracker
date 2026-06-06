@@ -17,7 +17,7 @@ related:
 - Marvel's Spider-Man
 release_date: 2023-10-20
 rewatches: []
-status: Sin Empezar
+status: not_started
 steam_appid: 2651280
 steamgriddb_id: 5295908
 tags: []

@@ -16,7 +16,7 @@ rating: '4'
 related: []
 release_date: 2025-10-30
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Worldbreaker
 tmdb_id: 1196067

@@ -13,7 +13,7 @@ rating: '5'
 release_date: 2021-09-09
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags:
 - anime
 title: 'Pokémon: Evoluciones'

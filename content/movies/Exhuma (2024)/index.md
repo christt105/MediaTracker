@@ -19,7 +19,7 @@ rating: '5'
 related: []
 release_date: 2024-02-22
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Exhuma
 tmdb_id: 838209

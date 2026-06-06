@@ -16,10 +16,10 @@ rating: null
 release_date: 2022-02-20
 rewatches: []
 seasons:
-- '[[FROM (2022) - Temporada 3]]'
-- '[[FROM (2022) - Temporada 2]]'
-- '[[FROM (2022) - Temporada 1]]'
-status: Acabado
+- FROM (2022) - Temporada 3
+- FROM (2022) - Temporada 2
+- FROM (2022) - Temporada 1
+status: finished
 tags: []
 title: FROM
 tmdb_id: 124364

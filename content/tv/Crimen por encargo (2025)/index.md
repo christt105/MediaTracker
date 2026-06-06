@@ -15,7 +15,7 @@ related: []
 release_date: 2025-11-27
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: Crimen por encargo
 tmdb_id: 306068

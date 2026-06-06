@@ -12,7 +12,7 @@ overview: Cuando un hombre aparece muerto, la investigación del caso desbarata 
 rating: '5'
 release_date: 2025-05-29
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: La viuda negra
 tmdb_id: 1397832

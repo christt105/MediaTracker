@@ -25,7 +25,7 @@ rating: '5'
 related: []
 release_date: 2021-10-07
 rewatches: []
-status: Acabado
+status: finished
 steamgriddb_id: 5257930
 tags: []
 title: Metroid Dread

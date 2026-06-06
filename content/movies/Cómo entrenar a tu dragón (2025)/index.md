@@ -16,7 +16,7 @@ overview: En la escarpada isla de Mema, donde vikingos y dragones han sido enemi
 rating: '5'
 release_date: 2025-06-06
 rewatches: null
-status: Acabado
+status: finished
 tags: []
 title: Cómo entrenar a tu dragón
 tmdb_id: 1087192

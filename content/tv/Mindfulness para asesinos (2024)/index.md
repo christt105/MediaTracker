@@ -14,7 +14,7 @@ rating: '5'
 release_date: 2024-10-31
 rewatches: []
 seasons: []
-status: Acabado
+status: finished
 tags: []
 title: Mindfulness para asesinos
 tmdb_id: 252372

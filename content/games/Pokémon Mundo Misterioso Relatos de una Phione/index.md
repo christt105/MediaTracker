@@ -15,7 +15,7 @@ rating: '6'
 related: []
 release_date: 2023-03-10
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - pokemon
 title: 'Pokémon Mundo Misterioso: Relatos de una Phione'

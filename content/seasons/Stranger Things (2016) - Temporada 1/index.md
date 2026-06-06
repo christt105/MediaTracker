@@ -6,8 +6,8 @@ rating: '6'
 release_date: 2016-07-15
 rewatches: []
 season_number: 1
-series: '[[Stranger Things (2016)]]'
-status: Acabado
+series: Stranger Things (2016)
+status: finished
 tags: null
 title: Stranger Things - Temporada 1
 type: season

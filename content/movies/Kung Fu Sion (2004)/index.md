@@ -23,7 +23,7 @@ rating: '5'
 related: []
 release_date: 2004-02-10
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: Kung Fu Sion
 tmdb_id: 9470

@@ -16,7 +16,7 @@ overview: Will Rodman es un joven científico que está investigando con monos p
 rating: null
 release_date: 2011-08-03
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: El origen del planeta de los simios
 tmdb_id: 61791

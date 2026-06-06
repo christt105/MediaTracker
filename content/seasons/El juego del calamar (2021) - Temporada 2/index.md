@@ -6,8 +6,8 @@ rating: '5'
 release_date: null
 rewatches: []
 season_number: 2
-series: '[[El juego del calamar (2021)]]'
-status: Acabado
+series: El juego del calamar (2021)
+status: finished
 tags: null
 title: El juego del calamar - Temporada 2
 type: season

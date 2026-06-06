@@ -13,7 +13,7 @@ overview: Un viaje a la mente creativa del diseñador de videojuegos más emblem
 rating: '5'
 release_date: 2023-06-17
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - documental
 title: 'Hideo Kojima: Connecting Worlds'

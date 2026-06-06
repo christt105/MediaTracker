@@ -17,7 +17,7 @@ rating: null
 related: []
 release_date: 2021-07-16
 rewatches: []
-status: Pausado
+status: paused
 steamgriddb_id: 5278377
 tags: []
 title: 'The Legend of Zelda: Skyward Sword HD'

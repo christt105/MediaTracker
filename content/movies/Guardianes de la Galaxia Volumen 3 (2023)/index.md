@@ -17,7 +17,7 @@ overview: La querida banda de los Guardianes se instala en Knowhere. Pero sus vi
 rating: '6'
 release_date: 2023-05-03
 rewatches: []
-status: Acabado
+status: finished
 tags: []
 title: 'Guardianes de la Galaxia: Volumen 3'
 tmdb_id: 447365

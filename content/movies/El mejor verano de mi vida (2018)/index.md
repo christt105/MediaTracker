@@ -16,7 +16,7 @@ rating: null
 related: []
 release_date: 2018-07-12
 rewatches: []
-status: Acabado
+status: finished
 tags:
 - cine
 title: El mejor verano de mi vida
