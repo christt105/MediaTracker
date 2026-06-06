@@ -10,5 +10,7 @@ github.com/christt105/hugo-mediatracker-theme v0.4.1 h1:fVbJDNhpSuJ8KK0J73F/UWc7
 github.com/christt105/hugo-mediatracker-theme v0.4.1/go.mod h1:DjcfVdJafvj2CfwRrJ072sWjf5uV4XNWUdCV6gFXzQA=
 github.com/christt105/hugo-mediatracker-theme v0.4.2 h1:7+TjABm56OcEERveIx5871HPxv6QRtHYAXJ0m9jhmak=
 github.com/christt105/hugo-mediatracker-theme v0.4.2/go.mod h1:DjcfVdJafvj2CfwRrJ072sWjf5uV4XNWUdCV6gFXzQA=
+github.com/christt105/hugo-mediatracker-theme v0.4.3 h1:urm98LYK8w8oquxsiOwPdTBYBa3FUmHoL9EJ0GEWuJE=
+github.com/christt105/hugo-mediatracker-theme v0.4.3/go.mod h1:DjcfVdJafvj2CfwRrJ072sWjf5uV4XNWUdCV6gFXzQA=
 github.com/hugo-sid/hugo-blog-awesome v1.21.0 h1:cxoeQgJePACmvPKqodDCLyme3iVAeGHm/l+iqyntGL4=
 github.com/hugo-sid/hugo-blog-awesome v1.21.0/go.mod h1:3XVERF66wgQpTsruOajS5Swr+uvyTzov1acafNaqm1E=
