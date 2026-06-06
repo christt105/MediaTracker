@@ -1,5 +1,5 @@
 ---
-banner_image: steam_751780.jpg
+banner_image: steam_751780_library_hero.jpg
 date: 2020-08-23
 developer: Hop Frog
 genres:
@@ -10,7 +10,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 25580
-image: steam_751780.jpg
+image: steam_751780_library_600x900_2x.jpg
 overview: ' '
 platforms:
 - PC

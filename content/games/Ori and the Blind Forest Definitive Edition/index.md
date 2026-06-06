@@ -1,12 +1,12 @@
 ---
-banner_image: steam_387290.jpg
+banner_image: steam_387290_library_hero.jpg
 date: 2020-10-05
 developer: Moon Studios
 genres:
 - Platform
 - Adventure
 igdb_id: 19456
-image: steam_387290.jpg
+image: steam_387290_library_600x900_2x.jpg
 overview: The forest of Nibel is dying. After a powerful storm sets a series of devastating
   events in motion, Ori must journey to find courage and confront a dark nemesis to
   save the forest of Nibel. “Ori and the Blind Forest” tells the tale of a young orphan

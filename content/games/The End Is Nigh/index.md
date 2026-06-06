@@ -8,7 +8,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 36846
-image: steam_583470.jpg
+image: steam_583470_library_600x900_2x.jpg
 overview: ' '
 platforms:
 - Steam Deck

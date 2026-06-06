@@ -7,7 +7,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 26226
-image: steam_504230.jpg
+image: steam_504230_library_600x900_2x.jpg
 overview: Set on a fictional version of Mount Celeste, it follows a young woman named
   Madeline who attempts to climb the mountain, and must face her inner demons in her
   quest to reach the summit.

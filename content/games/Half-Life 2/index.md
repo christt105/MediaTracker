@@ -6,7 +6,7 @@ developer: Valve
 genres:
 - Shooter
 igdb_id: 233
-image: steam_220.jpg
+image: steam_220_library_600x900_2x.jpg
 overview: ''
 platforms: []
 rating: null

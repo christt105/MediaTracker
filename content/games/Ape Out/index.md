@@ -10,7 +10,7 @@ genres:
 - Indie
 - Arcade
 igdb_id: 27719
-image: steam_447150.jpg
+image: steam_447150_library_600x900_2x.jpg
 overview: Ape Out es un smash 'em up estilizado, colorista y de una intensidad salvaje,
   sobre una huida primaria llena de violencia rítmica y jazz frenético.
 platforms:

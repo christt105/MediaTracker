@@ -6,7 +6,7 @@ developer: Majorariatto
 genres:
 - Indie
 igdb_id: 240496
-image: steam_2263010.jpg
+image: steam_2263010_library_600x900_2x.jpg
 overview: ' '
 platforms:
 - Steam Deck
