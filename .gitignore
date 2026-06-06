@@ -21,3 +21,6 @@ hugo.linux
 venv/
 
 __pycache__/
+# Local module workspace (theme dev)
+go.work
+go.work.sum

@@ -26,6 +26,10 @@ defaults:
   run:
     shell: bash
 
+# Run the JavaScript actions on Node.js 24 (they ship on the deprecated Node 20)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   # Build job
   build:
