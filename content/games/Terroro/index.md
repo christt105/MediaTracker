@@ -1,12 +1,12 @@
 ---
-banner_image: steam_2880460.jpg
+banner_image: steam_2880460_library_hero.jpg
 category: '[[Juegos]]'
 date: 2024-10-12
 developer: ' '
 genres:
 - Indie
 igdb_id: 318493
-image: steam_2880460.jpg
+image: steam_2880460_library_600x900_2x.jpg
 overview: ' '
 platforms:
 - Steam Deck

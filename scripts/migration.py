@@ -168,12 +168,15 @@ def get_image_filename(source_str):
             pass
     
     # 4. Steam Static Case
+    # URL ex: https://cdn.cloudflare.steamstatic.com/steam/apps/751780/library_hero.jpg
     if "steamstatic.com" in source_str:
         try:
-            filename_with_ext = source_str.split('/')[-2]
-            image_id = filename_with_ext.split('.')[0]
-            ext = "jpg"
-            return f"steam_{image_id}.{ext}"
+            parts = source_str.split('/')
+            app_id = parts[-2]          # 751780
+            filename_with_ext = parts[-1]  # library_hero.jpg
+            image_name = filename_with_ext.split('.')[0]  # library_hero
+            ext = filename_with_ext.split('.')[-1].split('?')[0]  # jpg (strip query params)
+            return f"steam_{app_id}_{image_name}.{ext}"
         except:
             pass
 

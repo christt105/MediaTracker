@@ -9,7 +9,7 @@ genres:
 - Adventure
 - Indie
 igdb_id: 26970
-image: steam_609490.jpg
+image: steam_609490_library_600x900_2x.jpg
 overview: ' '
 platforms:
 - PC

@@ -1,5 +1,5 @@
 ---
-banner_image: steam_620.jpg
+banner_image: steam_620_library_hero.jpg
 date: 2016-03-30
 developer: Valve
 genres:
@@ -7,7 +7,7 @@ genres:
 - Puzzle
 - Adventure
 igdb_id: 72
-image: steam_620.jpg
+image: steam_620_library_600x900_2x.jpg
 overview: You lost your memory, you are alone in a world full of danger, and your
   mission is survive using your mind. The only way to get out from this hell is.....Hi
   i'm GLAdOS, and welcome to the amazing world of portal 2, here i will expose you

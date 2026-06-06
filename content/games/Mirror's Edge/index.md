@@ -7,7 +7,7 @@ genres:
 - Puzzle
 - Adventure
 igdb_id: 1051
-image: steam_17410.jpg
+image: steam_17410_library_600x900_2x.jpg
 overview: ' '
 platforms:
 - PC

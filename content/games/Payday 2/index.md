@@ -7,7 +7,7 @@ genres:
 - Role-playing (RPG)
 - Tactical
 igdb_id: 2058
-image: steam_218620.jpg
+image: steam_218620_library_600x900_2x.jpg
 overview: ' '
 platforms:
 - PC
