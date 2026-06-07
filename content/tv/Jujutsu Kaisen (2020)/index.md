@@ -23,7 +23,7 @@ seasons:
 - Jujutsu Kaisen (2020) - Temporada 1
 - Jujutsu Kaisen (2020) - Temporada 2
 - Jujutsu Kaisen (2020) - Temporada 3
-status: finished
+status: not_started
 tags:
 - anime
 title: Jujutsu Kaisen

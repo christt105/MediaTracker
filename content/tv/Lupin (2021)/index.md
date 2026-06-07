@@ -16,7 +16,7 @@ rewatches: []
 seasons:
 - Lupin (2021) - Temporada 1
 - Lupin (2021) - Temporada 2
-status: finished
+status: not_started
 tags: []
 title: Lupin
 tmdb_id: 96677
