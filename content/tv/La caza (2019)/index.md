@@ -25,7 +25,7 @@ seasons:
 - Media Tracker/Seasons/La caza (2019) - Tramuntana
 - Media Tracker/Seasons/La caza (2019) - Guadiana
 - Media Tracker/Seasons/La caza (2019) - Irati
-status: finished
+status: not_started
 tags: []
 title: La caza
 tmdb_id: 87919

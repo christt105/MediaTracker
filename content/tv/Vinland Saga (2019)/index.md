@@ -18,7 +18,7 @@ rewatches: []
 seasons:
 - Vinland Saga (2019) - Temporada 1
 - Vinland Saga (2019) - Temporada 2
-status: finished
+status: not_started
 tags:
 - anime
 title: Vinland Saga

@@ -24,7 +24,6 @@ type: videogame
 
 La mejor experiencia para jugar a la primera generación de Pokémon. Jugado un monotype de hielo.
 
+![Pasted image 20260606170353.jpg](img_4a04687b0c8ab9791e72af7abc4c5179.jpg)
 
-![[Archivos/-5911128885393296702_121.jpg]]
-
-![[Archivos/-5911128885393296703_121.jpg]]
+![Pasted image 20260606170413.jpg](img_3083f2c2749e836ac3e63941f7502699.jpg)

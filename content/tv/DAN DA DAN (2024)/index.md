@@ -20,7 +20,7 @@ rewatches: []
 seasons:
 - DAN DA DAN (2024) - Temporada 1
 - DAN DA DAN (2024) - Temporada 2
-status: finished
+status: not_started
 tags:
 - anime
 title: DAN DA DAN

@@ -15,7 +15,7 @@ rewatches: []
 seasons:
 - Stranger Things (2016) - Temporada 5
 - Stranger Things (2016) - Temporada 1
-status: finished
+status: not_started
 tags: []
 title: Stranger Things
 tmdb_id: 66732

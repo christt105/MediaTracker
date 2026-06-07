@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_xXXTwD1jGBj66Acs6cfNgha00jC.jpg
 category: '[[Series]]'
-date: null
+date: 2017-08-17
 genres:
 - Animación
 - Action & Adventure
