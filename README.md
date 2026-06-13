@@ -14,12 +14,15 @@ Hugo site built from my Obsidian vault.
 
 ## How it works
 
-Content lives in Obsidian. A migration script (`scripts/migration.py`) converts
-Obsidian notes into Hugo page bundles under `content/`. The `content/` directory
-is therefore **generated** — manual edits will be overwritten on the next run.
+Content lives in Obsidian. Entries are created with my
+[hugo-mediatracker-plugin](https://github.com/christt105/hugo-mediatracker-plugin),
+which pulls metadata and artwork from TMDB, TheTVDB, IGDB, Steam and SteamGridDB.
+A migration script (`scripts/migration.py`) then converts those Obsidian notes
+into Hugo page bundles under `content/`. The `content/` directory is therefore
+**generated** — manual edits will be overwritten on the next run.
 
 ```
-Obsidian vault
+Obsidian vault  ←── notes created by hugo-mediatracker-plugin
       │
       ▼
 scripts/migration.py
@@ -38,6 +41,7 @@ hugo build → GitHub Actions → GitHub Pages
 | [Hugo](https://gohugo.io/) | Static site generator |
 | [hugo-mediatracker-theme](https://github.com/christt105/hugo-mediatracker-theme) | Theme (Hugo Module) |
 | [Obsidian](https://obsidian.md/) | Note editing / source of truth |
+| [hugo-mediatracker-plugin](https://github.com/christt105/hugo-mediatracker-plugin) | Creates entries in Obsidian (TMDB / TheTVDB / IGDB / Steam / SteamGridDB) |
 | GitHub Actions | Build & deploy to Pages |
 
 ## Running locally
