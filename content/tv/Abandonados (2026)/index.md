@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_eNtK2gFgnuG8er3bYZ7OA8gwPEV.jpg
 category: '[[Series]]'
-date: null
+date: 2026-06-12
 genres: null
 image: tmdb_x7PIDqFeGknNRYqYHWEbdeVYhUh.jpg
 overview: '4 episodios. Serie documental sobre uno de los episodios más desconcertantes
@@ -15,10 +15,10 @@ overview: '4 episodios. Serie documental sobre uno de los episodios más desconc
   Ramón Moral y Ricard Moral.'
 rating: null
 related: []
-release_date: '2026-05-29'
+release_date: 2026-05-29
 rewatches: []
 seasons: []
-status: in_progress
+status: finished
 tags: []
 title: Abandonados
 tmdb_id: 324050
