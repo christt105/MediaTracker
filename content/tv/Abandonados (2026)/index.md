@@ -13,7 +13,7 @@ overview: '4 episodios. Serie documental sobre uno de los episodios más desconc
   saber quiénes son sus padres y por qué fueron abandonados. Abandonados está protagonizada
   por los tres hermanos cuyos testimonios impulsan la investigación: Elvira Moral,
   Ramón Moral y Ricard Moral.'
-rating: null
+rating: '5'
 related: []
 release_date: 2026-05-29
 rewatches: []
