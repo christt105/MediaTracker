@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_mkwVoyP9bFSmfVqU8FJyem52hVR.jpg
 category: '[[Series]]'
-date: null
+date: 2026-06-14
 genres:
 - Crimen
 - Drama
@@ -11,14 +11,16 @@ overview: El detective privado Ben Reilly trabaja en un par de casos sencillos, 
   que unos mafiosos, unos monstruos y una misteriosa mujer fatal tejen una telaraña
   a su alrededor, obligándolo a enfrentarse a su antigua vida, cuando era La Araña,
   el único superhéroe de Nueva York.
-rating: null
+rating: '5'
 related: []
 release_date: 2026-05-25
 rewatches: []
 seasons: []
-status: in_progress
+status: finished
 tags: []
 title: Spider-Noir
 tmdb_id: 220102
 type: tv
 ---
+
+Está entretenida. Verla en blanco y negro tiene su gracia.
