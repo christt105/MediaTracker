@@ -4,7 +4,7 @@ category: '[[Series]]'
 cssclasses:
 - cover-right
 - cover-vertical-contain
-date: null
+date: 2026-06-17
 genres:
 - Animación
 - Drama
@@ -16,14 +16,17 @@ overview: La novelista Makio Kodai lleva años refugiada en la soledad de su cas
   diferencias de carácter y la convivencia forzada—, ambas comienzan poco a poco a
   derribar sus propias barreras. En ese proceso descubren el calor que creían perdido,
   la complicidad inesperada y una nueva forma de familia que nace casi sin darse cuenta.
-rating: null
+rating: '6'
 related: []
 release_date: 2026-01-04
 rewatches: []
 seasons: []
-status: in_progress
-tags: []
+status: finished
+tags:
+- anime
 title: Journal with Witch
 tmdb_id: 253476
 type: tv
 ---
+
+Un anime muy bonito.
