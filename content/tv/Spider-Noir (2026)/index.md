@@ -1,6 +1,10 @@
 ---
 banner_image: tmdb_mkwVoyP9bFSmfVqU8FJyem52hVR.jpg
+banner_position: 23
 category: '[[Series]]'
+cssclasses:
+- cover-initial
+- cover-right
 date: 2026-06-14
 genres:
 - Crimen
