@@ -1,6 +1,10 @@
 ---
 banner_image: tmdb_jwkIcGNDreXgzOl9Pz8kkQjvWOe.jpg
+banner_position: 29
 category: '[[Películas]]'
+cssclasses:
+- cover-right
+- cover-initial-width-3
 date: 2026-03-15
 genres:
 - Drama
