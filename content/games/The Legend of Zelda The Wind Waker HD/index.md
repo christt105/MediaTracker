@@ -30,3 +30,7 @@ type: videogame
 ---
 
 Diario Zelda Wind Waker
+
+Un juego muy colorido y que huele mucho a aventura. No jugué al original de GameCube, pero por lo que vi tiene bastantes mejoras de calidad de vida.
+
+Entiendo el hecho de tener que apuntarte las melodías tiene un valor añadido, pero no lo hice y como jugaba cada tanto me olvidaba de ellas.
