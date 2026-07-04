@@ -1,6 +1,6 @@
 ---
 banner_image: tvdb_62025943.jpg
-date: ''
+date: 2026-07-03
 genres:
 - Science Fiction
 - Horror
@@ -19,12 +19,12 @@ overview: En una ciudad tan deprimente que es conocida como “el agujero”, un
   principal se entera que un hombre lagarto está matando a su gente, envía una cuadrilla
   de “limpiadores” a la ciudad, lo que detona una guerra entre dos mundos, entre dos
   sociedades…
-rating: ''
+rating: '4'
 related: []
 release_date: 2020-01-13
 rewatches: []
 seasons: []
-status: in_progress
+status: finished
 tags:
 - anime
 thetvdb_id: 370761
@@ -32,3 +32,5 @@ title: Dorohedoro
 tmdb_id: 94404
 type: tv
 ---
+
+No se por que le hago caso al Pol y al Ori. La verdad que los primero episodios no me convencieron mucho, pero lo cogí como rutina y ha mejorado algo. La trama es rara de narices y los personajes son muy carismáticos sinceramente.
