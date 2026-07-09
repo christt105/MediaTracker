@@ -1,6 +1,6 @@
 ---
 banner_image: tvdb_6a22c771cf90d.jpg
-date: ''
+date: 2026-07-08
 genres:
 - Drama
 - Crime
@@ -10,12 +10,12 @@ overview: 14 de octubre del 2001. Dos delincuentes se escapan del Centro Peniten
   en disparar a dos policías a bocajarro. Todas las alarmas se encienden y un dispositivo
   espectacular sale a la búsqueda de los fugitivos… Pero pronto comprobarán que no
   va a ser fácil atraparlos.
-rating: ''
+rating: '5'
 related: []
 release_date: 2026-06-07
 rewatches: []
 seasons: []
-status: in_progress
+status: finished
 tags: []
 thetvdb_id: 478862
 title: 33 días
