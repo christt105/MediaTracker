@@ -24,4 +24,4 @@ tmdb_id: 969681
 type: movie
 ---
 
-Muy disfrutable. Vuelta a los inicios del Peter Parker que conocíamos. Una trama sólida con buena evolución de personajes.
+Muy disfrutable. Vuelta a los inicios del Peter Parker que conocíamos. Una trama sólida con buena evolución de personajes. Probablemente la mejor de las de Tom Holland.
