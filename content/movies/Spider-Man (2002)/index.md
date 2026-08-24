@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_gkINAPOuwUFo2Qphs3OUUbjUKUZ.jpg
 category: '[[Películas]]'
-date: null
+date: 2026-08-23
 genres:
 - Acción
 - Ciencia ficción
@@ -10,7 +10,7 @@ overview: 'Peter Parker es un joven y tímido estudiante que vive con su tía Ma
   su tío Ben desde la muerte de sus padres. Un día es mordido por una araña que ha
   sido modificada genéticamente, descubriendo al día siguiente que posee unos poderes
   poco habituales: tiene la fuerza y agilidad de una araña.'
-rating: null
+rating: '7'
 release_date: 2002-05-01
 rewatches: []
 status: finished
