@@ -16,6 +16,11 @@ rewatches: []
 seasons:
 - Media Tracker/Seasons/Ataque a los Titanes (2013) - OVAs
 - Ataque a los Titanes (2013) - Final Season
+- Ataque a los Titanes - Season 1
+- Ataque a los Titanes - Season 2
+- Ataque a los Titanes - Season 3
+- Ataque a los Titanes - Season 4
+- Ataque a los Titanes - Season 5
 status: finished
 tags:
 - anime
