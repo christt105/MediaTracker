@@ -19,3 +19,9 @@ title: Spider-Man
 tmdb_id: 557
 type: movie
 ---
+
+La recordaba buena, pero no tanto. Es una obra magnífica, el viaje del héroe por excelencia. Todas las subtramas avanzan a un ritmo muy bueno y los historia es espectacular. 
+
+Para tener los años que tiene no ha envejecido nada mal. Obviamente hay aspectos que ya chirrían, 24 años después es completamente normal. Mary Jane es un simple reclamo sin personalidad y algunas acciones de Harry Osborn son un poco raras.
+
+En conjunto es una película excelente que caló en mí desde el primer día que la vi.
