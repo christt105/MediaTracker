@@ -1,11 +1,11 @@
 ---
 banner_image: tmdb_jJJQ1PPXUEchqyZ9YyWzgSNU39Z.jpg
-date: ''
+date: 2026-09-12
 genres:
 - Action
 - Crime
 - Thriller
-image: tmdb_o9rByfNAkGJuXOSQLQ6UpUfGTOQ.jpg
+image: tmdb_bljsIiyPLhtdO46YS0mX4ao2R94.jpg
 overview: After barely surviving a brutal attack by a sadistic serial killer, crime
   boss Jang Dong-su is left humiliated. Determined to catch the killer known as K,
   he forms an uneasy alliance with Jung Tae-seok, a relentless and incorruptible detective
