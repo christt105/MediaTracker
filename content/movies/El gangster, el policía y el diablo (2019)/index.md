@@ -5,7 +5,7 @@ genres:
 - Action
 - Crime
 - Thriller
-image: tmdb_oHlM4abRm6BzrRcz9Nup1uidw9H.jpg
+image: tmdb_o9rByfNAkGJuXOSQLQ6UpUfGTOQ.jpg
 overview: After barely surviving a brutal attack by a sadistic serial killer, crime
   boss Jang Dong-su is left humiliated. Determined to catch the killer known as K,
   he forms an uneasy alliance with Jung Tae-seok, a relentless and incorruptible detective
