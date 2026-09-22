@@ -19,7 +19,7 @@ related: []
 release_date: 2025-06-28
 rewatches: []
 seasons: []
-status: Not Started
+status: not_started
 tags: []
 thetvdb_id: 464419
 title: Lord of Mysteries
