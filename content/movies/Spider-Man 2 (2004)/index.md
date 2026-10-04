@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_faV0HuR6WnQoLrVq3r6mhjaABL9.jpg
 category: '[[Películas]]'
-date: null
+date: 2026-10-03
 genres:
 - Acción
 - Aventura
@@ -23,3 +23,5 @@ title: Spider-Man 2
 tmdb_id: 558
 type: movie
 ---
+
+Espectacular de principio a fin.
