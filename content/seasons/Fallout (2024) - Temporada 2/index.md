@@ -1,7 +1,7 @@
 ---
 banner_image: tmdb_coaPCIqQBPUZsOnJcWZxhaORcDT.jpg
 date: 2026-05-18
-image: tmdb_AnsSKR9LuK0T9bAOcPVA3PUvyWj.jpg
+image: tmdb_yDwhnMhTVr850ErbFUA2QLMs81S.jpg
 rating: '5'
 release_date: null
 rewatches: []
