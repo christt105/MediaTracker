@@ -1,0 +1,27 @@
+{{- $bg := .Site.Params.webmanifest.background_color | default (cond (eq .Site.Params.defaultColor "dark") "#131418" "#ffffff") -}}
+{{- $name := .Site.Params.webmanifest.name | default .Site.Params.sitename | default .Site.Title -}}
+{{- $ctx := dict
+    "name" $name
+    "short_name" (.Site.Params.webmanifest.short_name | default $name)
+    "description" (.Site.Params.description | default "")
+    "lang" .Site.LanguageCode
+    "start_url" .Site.Home.RelPermalink
+    "scope" .Site.Home.RelPermalink
+    "theme_color" (.Site.Params.webmanifest.theme_color | default "#434648")
+    "background_color" $bg
+    "display" (.Site.Params.webmanifest.display | default "standalone")
+-}}
+{{- $manifest := resources.Get "icons/site.webmanifest" | resources.ExecuteAsTemplate "site.webmanifest" $ctx | minify | fingerprint }}
+<link rel="manifest" href="{{ $manifest.RelPermalink }}">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{ $name }}">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+{{- $sw := resources.Get "js/sw.js" | resources.ExecuteAsTemplate "sw.js" . | minify }}
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register({{ $sw.RelPermalink }}, { scope: {{ .Site.Home.RelPermalink }} });
+    });
+  }
+</script>
